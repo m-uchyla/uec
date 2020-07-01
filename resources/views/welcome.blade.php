@@ -9,6 +9,74 @@
     <!--<link rel="manifest" href="site.webmanifest">-->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.ico') }}">
 
+    <style>
+        body{
+            height: 100vh;
+            text-align: center;
+        }
+        /*Trigger Button*/
+        .login-trigger {
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(to bottom right, #B05574, #F87E7B);
+            padding: 15px 30px;
+            border-radius: 30px;
+            position: relative; 
+            top: 50%;
+        }
+
+        /*Modal*/
+        h4 {
+            font-weight: bold;
+            color: #fff;
+        }
+        .close {
+            color: #fff;
+            transform: scale(1.2)
+        }
+        .modal-content {
+            font-weight: bold;
+            background: linear-gradient(to bottom right,#F87E7B,#B05574);
+        }
+        .form-control {
+            margin: 1em 0;
+        }
+        .form-control:hover, .form-control:focus {
+            box-shadow: none;  
+            border-color: #fff;
+        }
+        .username, .password {
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            border-bottom: 2px solid #eee;
+            padding-left: 0;
+            font-weight: normal;
+            background: transparent;  
+        }
+        .form-control::-webkit-input-placeholder {
+            color: #eee;  
+        }
+        .form-control:focus::-webkit-input-placeholder {
+            font-weight: bold;
+            color: #fff;
+        }
+        .login {
+            padding: 6px 20px;
+            border-radius: 20px;
+            background: none;
+            border: 2px solid #FAB87F;
+            color: #FAB87F;
+            font-weight: bold;
+            transition: all .5s;
+            margin-top: 1em;
+        }
+        .login:hover {
+            background: #FAB87F;
+            color: #fff;
+        }
+    </style>
+
 	<!-- CSS here -->
 	<link rel="stylesheet" href="{{ asset('resources/main/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('resources/main/css/owl.carousel.min.css') }}">
@@ -77,7 +145,11 @@
                                                 <li><a href="blog_details.html">Kontakt</a></li>
 											</ul>
 										</li>
-                                        <li><a href="#" class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red">Logowanie</a></li>
+                                        <li>
+                                            <!-- <a href="login" class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red">Logowanie</a> -->
+                                            <a class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red" href="#" data-target="#login" data-toggle="modal">Logowanie</a>
+                                        </li>
+                                        
 									</ul>
 								</nav>
 							</div>
@@ -147,6 +219,27 @@
         <section class="blog_area section-padding">
             <div class="container">
                 <div class="row">
+
+<!--Trigger-->
+
+
+<div id="login" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    
+    <div class="modal-content">
+      <div class="modal-body">
+        <button data-dismiss="modal" class="close">&times;</button>
+        <h4>Login</h4>
+        <form>
+          <input type="text" name="username" class="username form-control" placeholder="Username"/>
+          <input type="password" name="password" class="password form-control" placeholder="password"/>
+          <input class="btn login" type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+  </div>  
+</div>
+
                     <div class="col-lg-8 mb-5 mb-lg-0">
                         <div class="blog_left_sidebar">
                             <article class="blog_item">
