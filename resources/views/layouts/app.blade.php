@@ -9,90 +9,7 @@
     <!--<link rel="manifest" href="site.webmanifest">-->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.ico') }}">
 
-    <style>
-        body{
-            height: 100vh;
-            text-align: center;
-        }
-        /*Trigger Button*/
-        .login-trigger {
-            font-weight: bold;
-            color: #fff;
-            background: linear-gradient(to bottom right, #B05574, #F87E7B);
-            padding: 15px 30px;
-            border-radius: 30px;
-            position: relative; 
-            top: 50%;
-        }
-
-        /*Modal*/
-        h4 {
-            font-weight: bold;
-            color: #fff;
-        }
-        .close {
-            color: #fff;
-            transform: scale(1.2)
-        }
-        .modal-content {
-            font-weight: bold;
-            background: linear-gradient(to bottom right,#F87E7B,#B05574);
-        }
-        .form-control {
-            margin: 1em 0;
-        }
-        .form-control:hover, .form-control:focus {
-            box-shadow: none;  
-            border-color: #fff;
-        }
-        .username, .password {
-            border: none;
-            border-radius: 0;
-            box-shadow: none;
-            border-bottom: 2px solid #eee;
-            padding-left: 0;
-            font-weight: normal;
-            background: transparent;  
-        }
-        .form-control::-webkit-input-placeholder {
-            color: #eee;  
-        }
-        .form-control:focus::-webkit-input-placeholder {
-            font-weight: bold;
-            color: #fff;
-        }
-        .login {
-            padding: 6px 20px;
-            border-radius: 20px;
-            background: none;
-            border: 2px solid #FAB87F;
-            color: #FAB87F;
-            font-weight: bold;
-            transition: all .5s;
-            margin-top: 1em;
-        }
-        .login:hover {
-            background: #FAB87F;
-            color: #fff;
-        }
-    </style>
-
-	<!-- CSS here -->
-	<link rel="stylesheet" href="{{ asset('resources/main/css/bootstrap.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('resources/main/css/owl.carousel.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('resources/main/css/slicknav.css') }}">
-    <link rel="stylesheet" href="{{ asset('resources/main/css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('resources/main/css/hamburgers.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('resources/main/css/gijgo.css') }}">
-    <link rel="stylesheet" href="{{ asset('resources/main/css/animate.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('resources/main/css/animated-headline.css') }}">
-	<link rel="stylesheet" href="{{ asset('resources/main/css/magnific-popup.css') }}">
-	<link rel="stylesheet" href="{{ asset('resources/main/css/fontawesome-all.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('resources/main/css/themify-icons.css') }}">
-	<link rel="stylesheet" href="{{ asset('resources/main/css/slick.css') }}">
-	<link rel="stylesheet" href="{{ asset('resources/main/css/nice-select.css') }}">
-	<link rel="stylesheet" href="{{ asset('resources/main/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('resources/main/css/responsive.css') }}">
+@include('css')
 </head>
 <body>
     <!-- ? Preloader Start -->
@@ -145,10 +62,19 @@
                                                 <li><a href="blog_details.html">Kontakt</a></li>
 											</ul>
 										</li>
+                                        @guest
                                         <li>
-                                            <!-- <a href="login" class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red">Logowanie</a> -->
-                                            <a class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red" href="#" data-target="#login" data-toggle="modal">Logowanie</a>
+                                            <a href="login" class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red">Logowanie</a>
                                         </li>
+                                        @endguest
+                                        @auth
+                                        <li>
+                                            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red">Wyloguj się</a>
+                                        </li>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                @csrf
+                                            </form>
+                                        @endauth
                                         
 									</ul>
 								</nav>
@@ -219,27 +145,6 @@
         <section class="blog_area section-padding">
             <div class="container">
                 <div class="row">
-
-<!--Trigger-->
-
-
-<div id="login" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    
-    <div class="modal-content">
-      <div class="modal-body">
-        <button data-dismiss="modal" class="close">&times;</button>
-        <h4>Login</h4>
-        <form>
-          <input type="text" name="username" class="username form-control" placeholder="Username"/>
-          <input type="password" name="password" class="password form-control" placeholder="password"/>
-          <input class="btn login" type="submit" value="Login" />
-        </form>
-      </div>
-    </div>
-  </div>  
-</div>
-
                     <div class="col-lg-8 mb-5 mb-lg-0">
                         <div class="blog_left_sidebar">
                             <article class="blog_item">
@@ -402,90 +307,16 @@
         <!-- Blog Area End -->
     </main>
         
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding section-bg" data-background="{{ asset('resources/main/img/gallery/footer_bg.png') }}">
-            <div class="container">
-                <!-- Footer Top -->
-                <!-- Footer bottom -->
-                <div class="footer-bottom">
-                    <div class="row">
-                        <div class="col-xl-7 col-lg-8 col-md-7">
-                            <div class="footer-copy-right">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib </a>| Created by <a href="https://facebook.com/VEEXesport" target="_blank">VEEX</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>                   
-                            </div>
-                        </div>
-                        <div class="col-xl-5 col-lg-4 col-md-5">
-                            <div class="footer-copy-right f-right">
-                                <!-- social -->
-                                <div class="footer-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-behance"></i></a>
-                                    <a href="#"><i class="fas fa-globe"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End-->
-    </footer>
+    
+    @include('footer')
+
+
     <!-- Scroll Up -->
     <div id="back-top" >
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
 
-    <!-- JS here -->
-
-    <script src="{{ asset('resources/main/js/vendor/modernizr-3.5.0.min.js') }}"></script>
-    <!-- Jquery, Popper, Bootstrap -->
-    <script src="{{ asset('resources/main/js/vendor/jquery-1.12.4.min.js') }}"></script>
-    <script src="{{ asset('resources/main/js/popper.min.js') }}"></script>
-    <script src="{{ asset('resources/main/js/bootstrap.min.js') }}"></script>
-    <!-- Jquery Mobile Menu -->
-    <script src="{{ asset('resources/main/js/jquery.slicknav.min.js') }}"></script>
-
-    <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="{{ asset('resources/main/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('resources/main/js/slick.min.js') }}"></script>
-    <!-- One Page, Animated-HeadLin -->
-    <script src="{{ asset('resources/main/js/wow.min.js') }}"></script>
-    <script src="{{ asset('resources/main/js/animated.headline.js') }}"></script>
-    <script src="{{ asset('resources/main/js/jquery.magnific-popup.js') }}"></script>
-
-    <!-- Date Picker -->
-    <script src="{{ asset('resources/main/js/gijgo.min.js') }}"></script>
-    <!-- Nice-select, sticky -->
-    <script src="{{ asset('resources/main/js/jquery.nice-select.min.js') }}"></script>
-    <script src="{{ asset('resources/main/js/jquery.sticky.js') }}"></script>
-    
-    <!-- counter , waypoint,Hover Direction -->
-    <script src="{{ asset('resources/main/js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ asset('resources/main/js/waypoints.min.js') }}"></script>
-    <script src="{{ asset('resources/main/js/jquery.countdown.min.js') }}"></script>
-    <script src="{{ asset('resources/main/js/hover-direction-snake.min.js') }}"></script>
-
-    <!-- contact js -->
-    <script src="{{ asset('resources/main/js/contact.js') }}"></script>
-    <script src="{{ asset('resources/main/js/jquery.form.js') }}"></script>
-    <script src="{{ asset('resources/main/js/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('resources/main/js/mail-script.js') }}"></script>
-    <script src="{{ asset('resources/main/js/jquery.ajaxchimp.min.js') }}"></script>
-    
-    <!-- Jquery Plugins, main Jquery -->	
-    <script src="{{ asset('resources/main/js/plugins.js') }}"></script>
-    <script src="{{ asset('resources/main/js/main.js') }}"></script>
-
-    <!-- <script>
-        let elements = document.getElementsByClassName('owl-dot');
-        console.log(elements[0]);
-        elements[0].className = "owl-dot";
-        elements[1].className = "owl-dot active";
-    </script> -->
+    @include('js')
     
     </body>
 </html>

@@ -15,16 +15,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->name('homepage');
+
+Route::get('/test', function () {
+    return view('layouts/app');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
+// Route::get('/home', function () {
+//     return view('home');
+// });
 
 Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
+Route::get('register', function () {return view('register');})->name('register');
+
+Auth::routes();
+
+Route::redirect('/home', '/uec')->name('home');
