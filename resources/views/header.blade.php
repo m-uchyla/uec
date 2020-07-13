@@ -43,7 +43,7 @@
                                         @endguest
                                         @auth
                                         <li>
-                                            <a href="blog.html">Panel użytkownika</a>
+                                            <a href="panel/admin">Panel użytkownika</a>
                                         </li>
                                         <li>
                                             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red">Wyloguj się</a>
