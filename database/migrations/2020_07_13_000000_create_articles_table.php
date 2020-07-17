@@ -20,6 +20,9 @@ class CreateArticlesTable extends Migration
             $table->string('team');
             $table->string('subtitle');
             $table->string('content');
+            $table->string('main_pic');
+            $table->string('big_pic');
+            $table->integer('views');
             $table->timestamps();
         });
     }

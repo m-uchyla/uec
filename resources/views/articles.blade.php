@@ -10,7 +10,7 @@
 	
   <div class="row mt-3" style="margin-bottom:16px">
       <div class="col-lg-6" style="text-align:right">
-      <button type="button" onclick="window.location.href='{{ route('newarticle') }}';"  class="btn btn-light px-5" style="width:400px;height:50px;text-align:"> Dodaj artykuł</button>
+      <button type="button" onclick="window.location.href='{{ route('newarticle') }}';"  class="btn btn-light px-5" style="width:400px;height:50px;"> Dodaj artykuł</button>
       </div>
 
       <div class="col-lg-6">
@@ -102,7 +102,7 @@
                      <th>Ilość wyświetleń</th>
                      <th>Data publikacji</th>
                      <th>Autor</th>
-                     <th>Akcje</th>
+                     <th style="text-align:center">Akcje</th>
                    </tr>
                    </thead>
                    <tbody>
@@ -114,8 +114,18 @@
                         <td>{{ $article->created_at }}</td>
                         <td>{{ $article->author }}</td>
                         <td>
-                        <button type="submit" class="btn btn-light px-5"> Edytuj</button>
-                        <button type="submit" class="btn btn-light px-5"> Usuń</button>
+                        <div class="row mt-3" style="margin:0px">
+                        <div class="col-lg-6" style="text-align:right">
+                        <form method="GET" action="{{ route('editArticle') }}">
+                        @csrf
+                          <input type="hidden" id="articleID" name="articleID" value="{{ $article->id }}">
+                          <button type="submit" class="btn btn-light px-5"> Edytuj</button>
+                        </form>
+                        </div>
+                        <div class="col-lg-6" style="padding:0px" id="{{ $article->id }}">
+                        <button type="button" onClick="confirm( {{ $article->id }} )" class="btn btn-light px-5"> Usuń</button>
+                        </div>
+                        </div>
                         </td>
                       </tr>
                     @endforeach
@@ -127,4 +137,16 @@
      {{ $articles->links() }}
 	 </div>
 	</div><!--End Row-->
+@endsection
+
+@section('script')
+<script>
+  function confirm(id){
+    document.getElementById(id).innerHTML = `<form method="POST" action="{{ route('deleteArticle') }}">
+                          @csrf
+                            <input type="hidden" id="articleID" name="articleID" value="{{ $article->id }}">
+                            <button type="submit" class="btn btn-light px-5"> Potwierdź</button>
+                          </form>`
+  }
+</script>
 @endsection

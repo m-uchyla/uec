@@ -44,17 +44,17 @@
    <ul class="sidebar-menu do-nicescrol">
       <li class="sidebar-header">MAIN NAVIGATION</li>
       <li>
-        <a href="home">
+        <a href="{{ route('homepage') }}">
           <i class="zmdi zmdi-home"></i> <span>Powrót do strony głównej</span>
         </a>
       </li>
       <li>
-        <a href="admin">
+        <a href="{{ route('admin') }}">
           <i class="zmdi zmdi-view-dashboard"></i> <span>Podsumowanie</span>
         </a>
       </li>
       <li>
-        <a href="articles">
+        <a href="{{ route('articles') }}">
           <i class="zmdi zmdi-format-list-bulleted"></i> <span>Artykuły</span>
         </a>
       </li>

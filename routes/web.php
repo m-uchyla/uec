@@ -21,25 +21,24 @@ Route::get('/test', function () {
     return view('layouts/app');
 });
 
-// Route::get('/panel', function () {
-//     return view('admin');
-// });
-
 Route::prefix('panel')->group(function () {
+
     Route::get('admin', function () {
         return view('admin');
-    });
+    })->name('admin');
+
     Route::get('articles', 'ArticleInsertController@get')->name('articles');
+
+    Route::get('articles/edit', 'ArticleInsertController@edit')->name('editArticle');
+
     Route::get('articles/new', function () {
         return view('newarticle');
-    }, ['userid'=> '1'])->name('newarticle');
-    Route::post('articles/new','ArticleInsertController@insert');
-    Route::redirect('home', '../');
-});
+    })->name('newarticle');
 
-// Route::get('/home', function () {
-//     return view('home');
-// });
+    Route::post('articles/new','ArticleInsertController@insert');
+    Route::post('articles/update','ArticleInsertController@update')->name("updateArticle");
+    Route::post('articles/delete','ArticleInsertController@delete')->name("deleteArticle");
+});
 
 Route::get('/login', function () {
     return view('login');
