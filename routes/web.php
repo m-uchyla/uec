@@ -29,9 +29,12 @@ Route::prefix('panel')->group(function () {
     Route::get('admin', function () {
         return view('admin');
     });
-    Route::get('articles', function () {
-        return view('articles');
-    });
+    Route::get('articles', 'ArticleInsertController@get')->name('articles');
+    Route::get('articles/new', function () {
+        return view('newarticle');
+    }, ['userid'=> '1'])->name('newarticle');
+    Route::post('articles/new','ArticleInsertController@insert');
+    Route::redirect('home', '../');
 });
 
 // Route::get('/home', function () {

@@ -44,7 +44,12 @@
    <ul class="sidebar-menu do-nicescrol">
       <li class="sidebar-header">MAIN NAVIGATION</li>
       <li>
-        <a href="index.html">
+        <a href="home">
+          <i class="zmdi zmdi-home"></i> <span>Powrót do strony głównej</span>
+        </a>
+      </li>
+      <li>
+        <a href="admin">
           <i class="zmdi zmdi-view-dashboard"></i> <span>Podsumowanie</span>
         </a>
       </li>
@@ -214,6 +219,8 @@
  
   <!-- Index js -->
   <script src="{{ asset('resources/admin/js/index.js') }}"></script>
+
+  @yield('script')
 
   
 </body>
