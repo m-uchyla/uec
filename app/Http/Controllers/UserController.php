@@ -7,29 +7,13 @@ use DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class ArticleInsertController extends Controller {
+class UserController extends Controller {
 
     public function get(){
 
-        $articles = DB::table('articles')->latest()->simplePaginate(5);
+        $users = DB::table('users')->latest()->simplePaginate(5);
 
-        foreach($articles as $article){
-            $article->author = (DB::table('users')->where('id',$article->author)->first())->name;
-        }
-
-        return view('articles', ['articles' => $articles]);
-    }
-
-    public function getHomepage(){
-
-        $articles = DB::table('articles')->where('isFeatured',0)->latest()->paginate(3);
-        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
-
-        foreach($articles as $article){
-            $article->author = (DB::table('users')->where('id',$article->author)->first())->name;
-        }
-
-        return view('test', ['articles' => $articles, 'featured' => $featured]);
+        return view('users', ['users' => $users]);
     }
 
     public function edit(Request $request){

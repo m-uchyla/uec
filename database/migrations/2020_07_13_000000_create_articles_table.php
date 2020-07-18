@@ -23,6 +23,7 @@ class CreateArticlesTable extends Migration
             $table->string('main_pic');
             $table->string('big_pic');
             $table->integer('views');
+            $table->integer('isFeatured');
             $table->timestamps();
         });
     }

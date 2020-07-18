@@ -13,31 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// Route::get('/', function () {
+//     return view('homepage');
+// })->name('homepage');
+
+Route::get('test', function () {
     return view('homepage');
-})->name('homepage');
+})->name('test');
 
-Route::get('/test', function () {
-    return view('layouts/app');
-});
+Route::get('/', 'ArticleInsertController@getHomepage')->name('homepage');
 
-Route::prefix('panel')->group(function () {
+Route::middleware('can:accessPanel')->group(function() {
+    Route::prefix('panel')->group(function () {
 
-    Route::get('admin', function () {
-        return view('admin');
-    })->name('admin');
+        Route::get('admin', function () {return view('admin');})->name('admin');
 
-    Route::get('articles', 'ArticleInsertController@get')->name('articles');
+        Route::get('articles', 'ArticleInsertController@get')->name('articles');
+        Route::get('articles/edit', 'ArticleInsertController@edit')->name('editArticle');
+        Route::get('articles/new', function () {return view('newarticle');})->name('newarticle');
+        Route::post('articles/new','ArticleInsertController@insert');
+        Route::post('articles/update','ArticleInsertController@update')->name("updateArticle");
+        Route::post('articles/delete','ArticleInsertController@delete')->name("deleteArticle");
 
-    Route::get('articles/edit', 'ArticleInsertController@edit')->name('editArticle');
+        Route::get('users', 'UserController@get')->name('usersList');
+        Route::get('users/edit', 'UserController@edit')->name('editUser');
+        Route::post('users/update','UserController@update')->name("updateUser");
+        Route::post('users/delete','UserController@delete')->name("deleteUser");
 
-    Route::get('articles/new', function () {
-        return view('newarticle');
-    })->name('newarticle');
-
-    Route::post('articles/new','ArticleInsertController@insert');
-    Route::post('articles/update','ArticleInsertController@update')->name("updateArticle");
-    Route::post('articles/delete','ArticleInsertController@delete')->name("deleteArticle");
+    });
 });
 
 Route::get('/login', function () {

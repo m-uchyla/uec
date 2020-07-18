@@ -42,6 +42,8 @@
     </div>
 
     @include('js')
+
+    @yield('script')
     
     </body>
 </html>

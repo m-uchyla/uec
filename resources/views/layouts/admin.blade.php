@@ -37,7 +37,7 @@
   <!--Start sidebar-wrapper-->
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
-      <a href="index.html">
+      <a href="{{ route('homepage') }}">
        <img src="{{ asset('resources/main/img/logo/logo.png') }}" style="width:85px" class="logo-icon" alt="logo icon">
      </a>
    </div>
@@ -56,6 +56,11 @@
       <li>
         <a href="{{ route('articles') }}">
           <i class="zmdi zmdi-format-list-bulleted"></i> <span>Artykuły</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ route('usersList') }}">
+          <i class="zmdi zmdi-face"></i> <span>Użytkownicy</span>
         </a>
       </li>
       <li>

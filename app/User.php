@@ -36,4 +36,14 @@ class User extends Authenticatable
     protected $casts = [
         'updated_at' => 'datetime',
     ];
+
+    /**
+     * checks if the user belongs to a particular group
+     * @param string $role
+     * @return bool
+    */
+    public function role($role) {
+        $role = (array)$role;
+        return in_array($this->role, $role);
+    }
 }
