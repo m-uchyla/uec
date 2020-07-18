@@ -144,7 +144,7 @@
   function confirm(id){
     document.getElementById(id).innerHTML = `<form method="POST" action="{{ route('deleteArticle') }}">
                           @csrf
-                            <input type="hidden" id="articleID" name="articleID" value="{{ $article->id }}">
+                            <input type="hidden" id="articleID" name="articleID" value="`+id+`">
                             <button type="submit" class="btn btn-light px-5"> Potwierdź</button>
                           </form>`
   }
