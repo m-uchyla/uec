@@ -42,7 +42,7 @@
      </a>
    </div>
    <ul class="sidebar-menu do-nicescrol">
-      <li class="sidebar-header">MAIN NAVIGATION</li>
+      <li class="sidebar-header">NAWIGACJA</li>
       <li>
         <a href="{{ route('homepage') }}">
           <i class="zmdi zmdi-home"></i> <span>Powrót do strony głównej</span>
