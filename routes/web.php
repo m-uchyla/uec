@@ -22,6 +22,9 @@ Route::get('test', function () {
 })->name('test');
 
 Route::get('/', 'ArticleInsertController@getHomepage')->name('homepage');
+Route::get('/about', 'ArticleInsertController@getAbout')->name('about');
+
+Route::get('/article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
 
 Route::middleware('can:accessPanel')->group(function() {
     Route::prefix('panel')->group(function () {
@@ -46,6 +49,7 @@ Route::middleware('can:accessPanel')->group(function() {
 Route::get('/login', function () {
     return view('login');
 });
+
 
 Route::get('register', function () {return view('register');})->name('register');
 

@@ -7,7 +7,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                                <a href="index.html"><img src="{{ asset('resources/main/img/logo/logo.png') }}" alt=""></a>
+                                <a href="{{ route('homepage') }}"><img src="{{ asset('resources/main/img/logo/logo.png') }}" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-9 col-lg-10">
@@ -19,8 +19,7 @@
 								</div>
 								<nav class="hamburger-menu">
 									<ul id="navigation">
-										<li><a href="{{ url('/') }}">Strona główna</a></li>
-                                        <li><a href="login">Newsy</a></li>
+										<li><a href="{{ route('homepage') }}">Strona główna</a></li>
                                         <li>
 											<a href="blog.html">Bieżący turniej</a>
 											<ul class="submenu">
@@ -30,20 +29,20 @@
 											</ul>
 										</li>
                                         <li>
-											<a href="blog.html">O nas</a>
+											<a href="{{ route('about') }}">O nas</a>
 											<ul class="submenu">
-                                                <li><a href="blog.html">O projekcie</a></li>
-                                                <li><a href="blog_details.html">Kontakt</a></li>
+                                                <li><a href="{{ route('about') }}">O projekcie</a></li>
+                                                <li><a href="https://facebook.com/UndergroundEsportCup/">Kontakt</a></li>
 											</ul>
 										</li>
                                         @guest
                                         <li>
-                                            <a href="login" class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red">Logowanie</a>
+                                            <a href="{{ route('login') }}" class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red">Logowanie</a>
                                         </li>
                                         @endguest
                                         @auth
                                         <li>
-                                            <a href="panel/admin">Panel użytkownika</a>
+                                            <a href="{{ route('admin') }}">Panel użytkownika</a>
                                         </li>
                                         <li>
                                             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red">Wyloguj się</a>

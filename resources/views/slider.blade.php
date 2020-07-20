@@ -14,7 +14,7 @@
 										@endforeach
 										</h1>
 										<p>{{ $f->subtitle }}</p>
-										<a class="btn" href="#">Zobacz więcej</a>
+										<a class="btn" href="article/{{ $f->id }}">Zobacz więcej</a>
 									</div>
 								</div>
 							</div>
@@ -29,7 +29,7 @@
                                     <span>Drużyna z największą serią zwycięstw</span>
 									<h1>Another<br> team</h1>
 									<p>Jaki jest ich sekret?</p>
-									<a class="btn" href="#">Zobacz więcej</a>
+									<a class="btn" href="">Zobacz więcej</a>
 								</div>
 							</div>
 						</div>

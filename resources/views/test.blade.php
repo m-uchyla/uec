@@ -10,7 +10,7 @@
                             @foreach ($articles as $article)
                                 <article class="blog_item">
                                     <div class="blog_item_img">
-                                        <img class="card-img rounded-0" src="{{ $article->main_pic }}" alt="">
+                                        <a href="article/{{ $article->id }}"><img class="card-img rounded-0" src="{{ $article->main_pic }}" alt=""></a>
                                         <div class="blog_item_date">
                                             <h3>{{ substr($article->created_at,8,-9) }}</h3>
                                             <p>
@@ -56,7 +56,7 @@
                                         </div>
                                     </div>
                                     <div class="blog_details">
-                                        <a class="d-inline-block" href="blog_details.html">
+                                        <a class="d-inline-block" href="article/{{ $article->id }}">
                                             <h2 class="blog-head" style="color: #2d2d2d;">{{ $article->title }}</h2>
                                         </a>
                                         <p>{{ $article->subtitle }}</p>
@@ -68,11 +68,11 @@
                             @endforeach
                             
                             
-                            <!-- <nav class="blog-pagination justify-content-center d-flex">
+                            <nav class="blog-pagination justify-content-center d-flex">
                                 <ul class="pagination">
                                 {{ $articles->links() }}
                                 </ul>
-                            </nav> -->
+                            </nav>
                         </div>
                     </div>
                     <div class="col-lg-4">

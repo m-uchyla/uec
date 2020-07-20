@@ -194,13 +194,13 @@
     <!--End Back To Top Button-->
 	
 	<!--Start footer-->
-	<footer class="footer">
+	<!-- <footer class="footer">
       <div class="container">
         <div class="text-center">
           Copyright © 2020 Dashtreme Admin | Created by VEEX | Underground Esport Cup
         </div>
       </div>
-    </footer>
+    </footer> -->
 	<!--End footer-->
    
   </div><!--End wrapper-->

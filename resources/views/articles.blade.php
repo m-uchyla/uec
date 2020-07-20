@@ -41,40 +41,19 @@
                    </tr>
                    </thead>
                    <tbody>
+                   @foreach ($featured as $f)
                       <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
+                        <td>{{$f->title}}</td>
+                        <td>{{$f->id}}</td>
+                        <td>{{$f->views}}</td>
+                        <td>{{$f->created_at}}</td>
+                        <td>{{$f->author}}</td>
                         <td>
                         <button type="submit" class="btn btn-light px-5"> Edytuj</button>
                         <button type="submit" class="btn btn-light px-5"> Usuń</button>
                         </td>
                       </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>
-                        <button type="submit" class="btn btn-light px-5"> Edytuj</button>
-                        <button type="submit" class="btn btn-light px-5"> Usuń</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>
-                        <button type="submit" class="btn btn-light px-5"> Edytuj</button>
-                        <button type="submit" class="btn btn-light px-5"> Usuń</button>
-                        </td>
-                      </tr>
-
+                    @endforeach
                  </tbody></table>
                </div>
                
@@ -110,23 +89,27 @@
                       <tr>
                         <td>{{ $article->title }}</td>
                         <td>{{ $article->id }}</td>
-                        <td>1235</td>
+                        <td>{{ $article->views }}</td>
                         <td>{{ $article->created_at }}</td>
                         <td>{{ $article->author }}</td>
-                        <td>
-                        <div class="row mt-3" style="margin:0px">
-                        <div class="col-lg-6" style="text-align:right">
-                        <form method="GET" action="{{ route('editArticle') }}">
-                        @csrf
-                          <input type="hidden" id="articleID" name="articleID" value="{{ $article->id }}">
-                          <button type="submit" class="btn btn-light px-5"> Edytuj</button>
-                        </form>
-                        </div>
-                        <div class="col-lg-6" style="padding:0px" id="{{ $article->id }}">
-                        <button type="button" onClick="confirm( {{ $article->id }} )" class="btn btn-light px-5"> Usuń</button>
-                        </div>
-                        </div>
-                        </td>
+                        
+                          <td>
+                          @if ( $article->authorID ==  Auth::id() )
+                          <div class="row mt-3" style="margin:0px">
+                          <div class="col-lg-6" style="text-align:right">
+                          <form method="GET" action="{{ route('editArticle') }}">
+                          @csrf
+                            <input type="hidden" id="articleID" name="articleID" value="{{ $article->id }}">
+                            <button type="submit" class="btn btn-light px-5"> Edytuj</button>
+                          </form>
+                          </div>
+                          <div class="col-lg-6" style="padding:0px" id="{{ $article->id }}">
+                          <button type="button" onClick="confirm( {{ $article->id }} )" class="btn btn-light px-5"> Usuń</button>
+                          </div>
+                          </div>
+                          @endif
+                          </td>
+                          
                       </tr>
                     @endforeach
 

@@ -12,12 +12,29 @@ class ArticleInsertController extends Controller {
     public function get(){
 
         $articles = DB::table('articles')->latest()->simplePaginate(5);
+        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
 
         foreach($articles as $article){
+            $article->authorID = $article->author;
             $article->author = (DB::table('users')->where('id',$article->author)->first())->name;
         }
+        foreach($featured as $f){
+            $f->author = (DB::table('users')->where('id',$f->author)->first())->name;
+        }
 
-        return view('articles', ['articles' => $articles]);
+        return view('articles', ['articles' => $articles, 'featured' => $featured]);
+    }
+
+    public function viewArticle($id){
+
+        $article = DB::table('articles')->where('id',$id)->first();
+        DB::table('articles')->where('id',$id)->increment('views');
+        $article->author = (DB::table('users')->where('id',$article->author)->first())->name;
+        $contents = explode(PHP_EOL, $article->content);
+        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+
+
+        return view('articleView', ['article' => $article, 'featured' => $featured, 'contents' => $contents]);
     }
 
     public function getHomepage(){
@@ -30,6 +47,12 @@ class ArticleInsertController extends Controller {
         }
 
         return view('test', ['articles' => $articles, 'featured' => $featured]);
+    }
+
+    public function getAbout(){
+
+        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        return view('about', ['featured' => $featured]);
     }
 
     public function edit(Request $request){
