@@ -12,38 +12,38 @@
         <div class="row row-group m-0">
             <div class="col-12 col-lg-6 col-xl-3 border-light">
                 <div class="card-body">
-                  <h5 class="text-white mb-0">9526 <span class="float-right"><i class="fa fa-shopping-cart"></i></span></h5>
+                  <h5 class="text-white mb-0">{{$users["count"]}}<span class="float-right"><i class="fa fa-users"></i></span></h5>
                     <div class="progress my-3" style="height:3px;">
                        <div class="progress-bar" style="width:55%"></div>
                     </div>
-                  <p class="mb-0 text-white small-font">Suma użytkowników <span class="float-right">+4.2% <i class="zmdi zmdi-long-arrow-down" style="color:green"></i></span></p>
+                  <p class="mb-0 text-white small-font">Suma użytkowników  {{date("Y-m-d H:i:s",strtotime("-1 days"))}}</p>
                 </div>
             </div>
             <div class="col-12 col-lg-6 col-xl-3 border-light">
                 <div class="card-body">
-                  <h5 class="text-white mb-0">8323 <span class="float-right"><i class="fa fa-usd"></i></span></h5>
+                  <h5 class="text-white mb-0">{{$users["lastWeek"]}}<span class="float-right"><i class="fa fa-user"></i></span></h5>
                     <div class="progress my-3" style="height:3px;">
                        <div class="progress-bar" style="width:55%"></div>
                     </div>
-                  <p class="mb-0 text-white small-font">Nowi użytkownicy (w tym tyg.) <span class="float-right">+1.2% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                  <p class="mb-0 text-white small-font">Nowi użytkownicy (w tym tyg.)</p>
                 </div>
             </div>
             <div class="col-12 col-lg-6 col-xl-3 border-light">
                 <div class="card-body">
-                  <h5 class="text-white mb-0">6200 <span class="float-right"><i class="fa fa-eye"></i></span></h5>
+                  <h5 class="text-white mb-0">{{$views}} <span class="float-right"><i class="fa fa-eye"></i></span></h5>
                     <div class="progress my-3" style="height:3px;">
                        <div class="progress-bar" style="width:55%"></div>
                     </div>
-                  <p class="mb-0 text-white small-font">Suma wyświetleń artykułów <span class="float-right">+5.2% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                  <p class="mb-0 text-white small-font">Suma wyświetleń artykułów</p>
                 </div>
             </div>
             <div class="col-12 col-lg-6 col-xl-3 border-light">
                 <div class="card-body">
-                  <h5 class="text-white mb-0">5630 <span class="float-right"><i class="fa fa-envira"></i></span></h5>
+                  <h5 class="text-white mb-0">{{$lastViews}} <span class="float-right"><i class="fa fa-eye"></i></span></h5>
                     <div class="progress my-3" style="height:3px;">
                        <div class="progress-bar" style="width:55%"></div>
                     </div>
-                  <p class="mb-0 text-white small-font">Wyświetlenia artykułów z 7 dni wstecz <span class="float-right">+2.2% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                  <p class="mb-0 text-white small-font">Wyświetlenia artykułów z 7 dni wstecz</p>
                 </div>
             </div>
         </div>
@@ -70,19 +70,19 @@
 		 <div class="row m-0 row-group text-center border-top border-light-3">
 		   <div class="col-12 col-lg-4">
 		     <div class="p-3">
-		       <h5 class="mb-0">45.87M</h5>
+		       <h5 class="mb-0">{{$users["count"]}}</h5>
 			   <small class="mb-0">Zarejstrowanych użytkowników w sumie</small>
 		     </div>
 		   </div>
 		   <div class="col-12 col-lg-4">
 		     <div class="p-3">
-		       <h5 class="mb-0">15:48</h5>
-			   <small class="mb-0">Nowi użytkownicy z ostatniego miesiąca <span> <i class="fa fa-arrow-up"></i> 12.65%</span></small>
+		       <h5 class="mb-0">{{$users["lastMonth"]}}</h5>
+			   <small class="mb-0">Nowi użytkowicy z ostatniego miesiąca <span> <i class="fa fa-arrow-up"></i> 12.65%</span></small>
 		     </div>
 		   </div>
 		   <div class="col-12 col-lg-4">
 		     <div class="p-3">
-		       <h5 class="mb-0">245.65</h5>
+		       <h5 class="mb-0">{{$users["lastWeek"]}}</h5>
 			   <small class="mb-0">Nowi użytkownicy z ostatniego tygodnia <span> <i class="fa fa-arrow-up"></i> 5.62%</span></small>
 		     </div>
 		   </div>
@@ -90,7 +90,6 @@
 		 
 		</div>
 	 </div>
-
      <div class="col-12 col-lg-4 col-xl-4">
         <div class="card">
            <div class="card-header">Zgłoszenia do turnieju
@@ -311,4 +310,91 @@
 	   </div>
 	 </div>
 	</div><!--End Row-->
+@endsection
+
+@section('script')
+<script>
+$(document).ready(function(){
+
+function getDay(days){
+  let d = new Date();
+  let weekday = new Array(7);
+  weekday[0] = "Niedziela";
+  weekday[1] = "Poniedziałek";
+  weekday[2] = "Wtorek";
+  weekday[3] = "Środa";
+  weekday[4] = "Czwartek";
+  weekday[5] = "Piątek";
+  weekday[6] = "Sobota";
+
+  let n = d.getDay() - days;
+
+  if( n < 0 ){
+    n = 7 + n;
+  }
+  return weekday[n]
+}
+
+const array = @json($count);
+var ctx = document.getElementById('chart1').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [getDay(6), getDay(5), getDay(4), getDay(3), getDay(2), getDay(1), getDay(0)],
+            datasets: [{
+                label: 'New Visitor',
+                data: [array[6], array[5], array[4], array[3], array[2], array[1], array[0]],
+                backgroundColor: '#fff',
+                borderColor: "transparent",
+                pointRadius: "0",
+                borderWidth: 3
+            }, {
+                label: 'Old Visitor',
+                data: [array[13], array[12], array[11], array[10], array[9], array[8], array[7]],
+                backgroundColor: "rgba(255, 255, 255, 0.25)",
+                borderColor: "transparent",
+                pointRadius: "0",
+                borderWidth: 1
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            legend: {
+                display: false,
+                labels: {
+                    fontColor: '#ddd',
+                    boxWidth: 40
+                }
+            },
+            tooltips: {
+                displayColors: false
+            },
+            scales: {
+                xAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                        fontColor: '#ddd'
+                    },
+                    gridLines: {
+                        display: true,
+                        color: "rgba(221, 221, 221, 0.08)"
+                    },
+                }],
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                        fontColor: '#ddd'
+                    },
+                    gridLines: {
+                        display: true,
+                        color: "rgba(221, 221, 221, 0.08)"
+                    },
+                }]
+            }
+
+        }
+    });
+
+});
+</script>
 @endsection

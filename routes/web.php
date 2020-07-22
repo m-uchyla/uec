@@ -29,7 +29,7 @@ Route::get('/article/{id}', 'ArticleInsertController@viewArticle')->name('viewAr
 Route::middleware('can:accessPanel')->group(function() {
     Route::prefix('panel')->group(function () {
 
-        Route::get('admin', function () {return view('admin');})->name('admin');
+        Route::get('admin', 'AdminController@get')->name('admin');
 
         Route::get('articles', 'ArticleInsertController@get')->name('articles');
         Route::get('articles/edit', 'ArticleInsertController@edit')->name('editArticle');
