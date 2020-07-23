@@ -2,7 +2,7 @@
 
 @section('content')
 <!--? Blog Area Start -->
-<section class="blog_area single-post-area section-padding">
+<section class="blog_area single-post-area section-padding" id="article">
          <div class="container">
             <div class="row">
                <div class="col-lg-8 posts-list">
@@ -127,9 +127,9 @@
                         </ul>
                      </aside>
                      <aside class="single_sidebar_widget popular_post_widget">
-                        <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
+                        <h3 class="widget_title" style="color: #2d2d2d;">Zobacz również</h3>
                         <div class="media post_item">
-                           <img src="{{ asset('resources/main/img/post/post_1.png') }}" alt="post">
+                           <img src="{{ asset('resources/main/img/blog/test_blog.png') }}" style="width:50%;height:50%" alt="post">
                            <div class="media-body">
                               <a href="blog_details.html">
                                  <h3 style="color: #2d2d2d;">From life was you fish...</h3>
@@ -138,7 +138,7 @@
                            </div>
                         </div>
                         <div class="media post_item">
-                           <img src="{{ asset('resources/main/assets/img/post/post_2.png') }}" alt="post">
+                           <img src="{{ asset('resources/main/img/post/post_2.png') }}" alt="post">
                            <div class="media-body">
                               <a href="blog_details.html">
                                  <h3 style="color: #2d2d2d;">The Amazing Hubble</h3>
@@ -199,5 +199,34 @@
             </div>
          </div>
       </section>
+      <a href="#article" class="btn" id="click" style="visibility:hidden"></a>
       <!-- Blog Area End -->
+@endsection
+
+@section('script')
+<script>
+
+$(document).ready(function(){
+    document.getElementById("click").click();
+});
+
+
+$('#nav').onePageNav({
+	currentClass: 'current',
+	changeHash: false,
+	scrollSpeed: 750,
+	scrollThreshold: 0.5,
+	filter: '',
+	easing: 'swing',
+	begin: function() {
+		//I get fired when the animation is starting
+	},
+	end: function() {
+		//I get fired when the animation is ending
+	},
+	scrollChange: function($currentListItem) {
+		//I get fired when you enter a section and I pass the list item of the section
+	}
+});
+</script>
 @endsection

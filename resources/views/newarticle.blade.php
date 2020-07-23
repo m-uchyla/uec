@@ -15,7 +15,7 @@
             <label for="input-1" id="title">Tytuł *</label>
             <input type="text" class="form-control" id="title" placeholder="Wprowadź tytuł" maxlength="50" name="title" autofocus required>
            </div>
-           <input type="hidden" id="author" name="author" value="0">
+           <input type="hidden" id="author" name="author" value="{{ Auth::id() }}">
            <div class="form-group">
             <label for="input-2">Drużyna *</label>
             <input type="text" class="form-control" id="team" maxlength="50" placeholder="Podaj drużynę/osobę której dotyczy artykuł" name="team" required>

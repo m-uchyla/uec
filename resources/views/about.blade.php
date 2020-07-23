@@ -87,7 +87,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="{{ asset('resources/main/img/gallery/team2.png') }}" alt="">
+                                <img src="{{ asset('resources/main/img/gallery/team_milek.png') }}" alt="">
                             </div>
                             <div class="team-caption">
                                 <h3><a href="#" style="font-size:25px">Jakub "mil3k" Milewski</a></h3>
@@ -99,7 +99,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="{{ asset('resources/main/img/gallery/team3.png') }}" alt="">
+                                <img src="{{ asset('resources/main/img/gallery/team_qnek.png') }}" alt="">
                             </div>
                             <div class="team-caption">
                                 <h3><a href="#" style="font-size:25px">Jakub "Qn3k" Jankowski</a></h3>

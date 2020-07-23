@@ -21,20 +21,6 @@
 						</div>
 					</div>
 				@endforeach
-				<div class="slide-full d-flex slider-height align-items-center" style="background-image: url( {{asset('resources/main/img/hero/h1_hero2.png)')}};">
-					<div class="container">
-						<div class="row">
-							<div class="col-xl-6 col-lg-8 col-md-7 col-sm-8">
-								<div class="slide-full-content">
-                                    <span>Drużyna z największą serią zwycięstw</span>
-									<h1>Another<br> team</h1>
-									<p>Jaki jest ich sekret?</p>
-									<a class="btn" href="">Zobacz więcej</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 		<!-- slider-area end -->

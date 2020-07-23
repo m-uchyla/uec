@@ -32,14 +32,14 @@ class ArticleInsertController extends Controller {
         $article->author = (DB::table('users')->where('id',$article->author)->first())->name;
         $contents = explode(PHP_EOL, $article->content);
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        $also = DB::table('articles')->orderBy('views')->latest()->simplePaginate(5);
 
-
-        return view('articleView', ['article' => $article, 'featured' => $featured, 'contents' => $contents]);
+        return view('articleView', ['article' => $article, 'featured' => $featured, 'contents' => $contents, 'also' => $also]);
     }
 
     public function getHomepage(){
 
-        $articles = DB::table('articles')->where('isFeatured',0)->latest()->paginate(3);
+        $articles = DB::table('articles')->latest()->paginate(3);
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
 
         foreach($articles as $article){
