@@ -24,7 +24,7 @@ Route::get('test', function () {
 Route::get('/', 'ArticleInsertController@getHomepage')->name('homepage');
 Route::get('/about', 'ArticleInsertController@getAbout')->name('about');
 
-Route::get('/article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
+Route::get('article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
 
 Route::middleware('can:accessPanel')->group(function() {
     Route::prefix('panel')->group(function () {
