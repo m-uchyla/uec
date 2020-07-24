@@ -5983,7 +5983,7 @@ del {
 }
 
 .progress-table-wrap {
-    overflow-x: scroll
+    overflow-x: hidden
 }
 
 .progress-table {

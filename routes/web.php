@@ -23,6 +23,7 @@ Route::get('test', function () {
 
 Route::get('/', 'ArticleInsertController@getHomepage')->name('homepage');
 Route::get('/about', 'ArticleInsertController@getAbout')->name('about');
+Route::get('/bracket', 'BracketController@getView')->name('bracket');
 
 Route::get('article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
 
