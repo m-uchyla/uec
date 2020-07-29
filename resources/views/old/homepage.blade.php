@@ -7,70 +7,82 @@
                 <div class="row">
                     <div class="col-lg-8 mb-5 mb-lg-0">
                         <div class="blog_left_sidebar">
-                            @foreach ($articles as $article)
-                                <article class="blog_item">
-                                    <div class="blog_item_img">
-                                        <a href="article/{{ $article->id }}"><img class="card-img rounded-0" src="{{ $article->main_pic }}" alt=""></a>
-                                        <div class="blog_item_date">
-                                            <h3>{{ substr($article->created_at,8,-9) }}</h3>
-                                            <p>
-                                                @switch(substr($article->created_at,5,-12))
-                                                    @case("01")
-                                                        STY
-                                                        @break
-                                                    @case("02")
-                                                        LUT
-                                                        @break
-                                                    @case("03")
-                                                        MAR
-                                                        @break
-                                                    @case("04")
-                                                        KWI
-                                                        @break
-                                                    @case("05")
-                                                        MAJ
-                                                        @break
-                                                    @case("06")
-                                                        CZE
-                                                        @break
-                                                    @case("07")
-                                                        LIP
-                                                        @break
-                                                    @case("08")
-                                                        SIE
-                                                        @break
-                                                    @case("09")
-                                                        WRZ
-                                                        @break
-                                                    @case("10")
-                                                        PAŹ
-                                                        @break
-                                                    @case("11")
-                                                        LIS
-                                                        @break
-                                                    @case("12")
-                                                        GRU
-                                                        @break
-                                                @endswitch
-                                            </p>
-                                        </div>
+                            <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <img class="card-img rounded-0" src="{{ asset('resources/main/img/blog/single_blog_1.png') }}" alt="">
+                                    <div class="blog_item_date">
+                                        <h3>15</h3>
+                                        <p>Jan</p>
                                     </div>
-                                    <div class="blog_details">
-                                        <a class="d-inline-block" href="article/{{ $article->id }}">
-                                            <h2 class="blog-head" style="color: #2d2d2d;">{{ $article->title }}</h2>
-                                        </a>
-                                        <p>{{ $article->subtitle }}</p>
-                                        <ul class="blog-info-link">
-                                        <li style="color:#999999"><i class="fa fa-user"></i>{{ $article->author }}</li>
-                                        </ul>
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                    </a>
+                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                    <ul class="blog-info-link">
+                                    <li style="color:#999999"><i class="fa fa-user"></i>VEEX</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <img class="card-img rounded-0" src="{{ asset('resources/main/img/blog/single_blog_2.png') }}" alt="">
+                                    <div class="blog_item_date">
+                                        <h3>15</h3>
+                                        <p>Jan</p>
                                     </div>
-                                </article>
-                            @endforeach
-                            
-                            
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                    </a>
+                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                    <ul class="blog-info-link">
+                                        <li style="color:#999999"><i class="fa fa-user"></i>VEEX</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <img class="card-img rounded-0" src="{{ asset('resources/main/img/blog/single_blog_3.png') }}" alt="">
+                                    <div class="blog_item_date">
+                                        <h3>15</h3>
+                                        <p>Jan</p>
+                                    </div>
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                    </a>
+                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                    <ul class="blog-info-link">
+                                        <li style="color:#999999"><i class="fa fa-user"></i>VEEX</li>
+                                    </ul>
+                                </div>
+                            </article>
+
                             <nav class="blog-pagination justify-content-center d-flex">
                                 <ul class="pagination">
-                                {{ $articles->links() }}
+                                    <li class="page-item">
+                                        <a href="#" class="page-link" aria-label="Previous">
+                                            <i class="ti-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link" aria-label="Next">
+                                            <i class="ti-angle-right"></i>
+                                        </a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>

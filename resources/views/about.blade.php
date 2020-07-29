@@ -60,7 +60,7 @@
                             </div>
                             <!-- Caption -->
                             <div class="testimonial-top-cap">
-                                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Qcuis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsa.</p>
+                                <p>Najlepszy turniej online na jaki trafiłem. Cechuje się ogromnym profesjonalizmem i świetnym podejściem do zawodników i kibiców. Gorąco polecam każdemu</p>
                             </div>
 
                         </div>
@@ -110,7 +110,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="{{ asset('resources/main/img/gallery/team1.png') }}" alt="">
+                                <img src="{{ asset('resources/main/img/gallery/team_vexon.png') }}" alt="">
                             </div>
                             <div class="team-caption">
                                 <h3><a href="#" style="font-size:25px">Jacek "Vexon" Sosnowski</a></h3>
@@ -121,7 +121,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="{{ asset('resources/main/img/gallery/team1.png') }}" alt="">
+                                <img src="{{ asset('resources/main/img/gallery/team_2.png') }}" alt="">
                             </div>
                             <div class="team-caption">
                                 <h3><a href="#" style="font-size:25px">Mateusz "VEEX" Uchyła</a></h3>

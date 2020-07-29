@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('homepage');
 // })->name('homepage');
 
-Route::get('test', function () {
-    return view('homepage');
-})->name('test');
+// Route::get('test', function () {
+//     return view('homepage');
+// })->name('test');
 
 Route::get('/', 'ArticleInsertController@getHomepage')->name('homepage');
 Route::get('/about', 'ArticleInsertController@getAbout')->name('about');

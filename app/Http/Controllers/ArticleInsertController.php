@@ -46,7 +46,7 @@ class ArticleInsertController extends Controller {
             $article->author = (DB::table('users')->where('id',$article->author)->first())->name;
         }
 
-        return view('test', ['articles' => $articles, 'featured' => $featured]);
+        return view('homepage', ['articles' => $articles, 'featured' => $featured]);
     }
 
     public function getAbout(){
