@@ -8,24 +8,24 @@
   <meta name="author" content=""/>
   <title>Underground Esport Cup</title>
   <!-- loader-->
-  <link href="{{ asset('resources/admin/css/pace.min.css') }}" rel="stylesheet"/>
-  <script src="{{ asset('resources/admin/js/pace.min.js') }}"></script>
+  <link href="{{ asset('resources/admin/css/pace.min.css', true) }}" rel="stylesheet"/>
+  <script src="{{ asset('resources/admin/js/pace.min.js', true) }}"></script>
   <!--favicon-->
-  <link rel="icon" href="{{ asset('resources/admin/images/favicon.ico') }}" type="image/x-icon">
+  <link rel="icon" href="{{ asset('resources/admin/images/favicon.ico', true) }}" type="image/x-icon">
   <!-- Vector CSS -->
-  <link href="{{ asset('resources/admin/plugins/vectormap/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet"/>
+  <link href="{{ asset('resources/admin/plugins/vectormap/jquery-jvectormap-2.0.2.css', true) }}" rel="stylesheet"/>
   <!-- simplebar CSS-->
-  <link href="{{ asset('resources/admin/plugins/simplebar/css/simplebar.css') }}" rel="stylesheet"/>
+  <link href="{{ asset('resources/admin/plugins/simplebar/css/simplebar.css', true) }}" rel="stylesheet"/>
   <!-- Bootstrap core CSS-->
-  <link href="{{ asset('resources/admin/css/bootstrap.min.css') }}" rel="stylesheet"/>
+  <link href="{{ asset('resources/admin/css/bootstrap.min.css', true) }}" rel="stylesheet"/>
   <!-- animate CSS-->
-  <link href="{{ asset('resources/admin/css/animate.css') }}" rel="stylesheet" type="text/css"/>
+  <link href="{{ asset('resources/admin/css/animate.css', true) }}" rel="stylesheet" type="text/css"/>
   <!-- Icons CSS-->
-  <link href="{{ asset('resources/admin/css/icons.css') }}" rel="stylesheet" type="text/css"/>
+  <link href="{{ asset('resources/admin/css/icons.css', true) }}" rel="stylesheet" type="text/css"/>
   <!-- Sidebar CSS-->
-  <link href="{{ asset('resources/admin/css/sidebar-menu.css') }}" rel="stylesheet"/>
+  <link href="{{ asset('resources/admin/css/sidebar-menu.css', true) }}" rel="stylesheet"/>
   <!-- Custom Style-->
-  <link href="{{ asset('resources/admin/css/app-style.css') }}" rel="stylesheet"/>
+  <link href="{{ asset('resources/admin/css/app-style.css', true) }}" rel="stylesheet"/>
   
 </head>
 
@@ -38,7 +38,7 @@
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
       <a href="{{ route('homepage') }}">
-       <img src="{{ asset('resources/main/img/logo/logo.png') }}" style="width:85px" class="logo-icon" alt="logo icon">
+       <img src="{{ asset('resources/main/img/logo/logo.png', true) }}" style="width:85px" class="logo-icon" alt="logo icon">
      </a>
    </div>
    <ul class="sidebar-menu do-nicescrol">
@@ -211,24 +211,24 @@
   </div><!--End wrapper-->
 
   <!-- Bootstrap core JavaScript-->
-  <script src="{{ asset('resources/admin/js/jquery.min.js') }}"></script>
-  <script src="{{ asset('resources/admin/js/popper.min.js') }}"></script>
-  <script src="{{ asset('resources/admin/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('resources/admin/js/jquery.min.js', true) }}"></script>
+  <script src="{{ asset('resources/admin/js/popper.min.js', true) }}"></script>
+  <script src="{{ asset('resources/admin/js/bootstrap.min.js', true) }}"></script>
 	
  <!-- simplebar js -->
-  <script src="{{ asset('resources/admin/plugins/simplebar/js/simplebar.js') }}"></script>
+  <script src="{{ asset('resources/admin/plugins/simplebar/js/simplebar.js', true) }}"></script>
   <!-- sidebar-menu js -->
-  <script src="{{ asset('resources/admin/js/sidebar-menu.js') }}"></script>
+  <script src="{{ asset('resources/admin/js/sidebar-menu.js', true) }}"></script>
   <!-- loader scripts -->
-  <script src="{{ asset('resources/admin/js/jquery.loading-indicator.js') }}"></script>
+  <script src="{{ asset('resources/admin/js/jquery.loading-indicator.js', true) }}"></script>
   <!-- Custom scripts -->
-  <script src="{{ asset('resources/admin/js/app-script.js') }}"></script>
+  <script src="{{ asset('resources/admin/js/app-script.js', true) }}"></script>
   <!-- Chart js -->
   
-  <script src="{{ asset('resources/admin/plugins/Chart.js/Chart.min.js') }}"></script>
+  <script src="{{ asset('resources/admin/plugins/Chart.js/Chart.min.js', true) }}"></script>
  
   <!-- Index js -->
-  <script src="{{ asset('resources/admin/js/index.js') }}"></script>
+  <script src="{{ asset('resources/admin/js/index.js', true) }}"></script>
 
   @yield('script')
 

@@ -27,7 +27,7 @@
                   <div class="navigation-top">
                   <div class="blog-author">
                      <div class="media align-items-center">
-                        <img src="{{ asset('resources/main/img/blog/author.png') }}" alt="">
+                        <img src="{{ asset('resources/main/img/blog/author.png', true) }}" alt="">
                         <div class="media-body">
                            <a href="#">
                               <h4>Harvard milan</h4>
@@ -43,7 +43,7 @@
                               class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
                               <div class="thumb">
                                  <a href="#">
-                                    <img class="img-fluid" src="{{ asset('resources/main/img/post/preview.png') }}" alt="">
+                                    <img class="img-fluid" src="{{ asset('resources/main/img/post/preview.png', true) }}" alt="">
                                  </a>
                               </div>
                               <div class="arrow">
@@ -73,7 +73,7 @@
                               </div>
                               <div class="thumb">
                                  <a href="#">
-                                    <img class="img-fluid" src="{{ asset('resources/main/img/post/next.png') }}" alt="">
+                                    <img class="img-fluid" src="{{ asset('resources/main/img/post/next.png', true) }}" alt="">
                                  </a>
                               </div>
                            </div>

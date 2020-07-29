@@ -24,10 +24,10 @@
                         <!-- about-img -->
                         <div class="about-img ">
                             <div class="about-font-img ">
-                                <img src="{{ asset('resources/main/img/gallery/about.png') }}" alt="">
+                                <img src="{{ asset('resources/main/img/gallery/about.png', true) }}" alt="">
                             </div>
                             <div class="about-back-img ">
-                                <img src="{{ asset('resources/main/img/gallery/about2.png') }}" alt="">
+                                <img src="{{ asset('resources/main/img/gallery/about2.png', true) }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                             <!-- founder -->
                             <div class="testimonial-founder d-flex align-items-center justify-content-center mb-40">
                                 <div class="founder-img">
-                                    <img src="{{ asset('resources/main/img/gallery/testimonial.png') }}" alt="">
+                                    <img src="{{ asset('resources/main/img/gallery/testimonial.png', true) }}" alt="">
                                 </div>
                                 <div class="founder-text">
                                     <span>Imię "nick" nazwisko</span>
@@ -87,7 +87,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="{{ asset('resources/main/img/gallery/team_milek.png') }}" alt="">
+                                <img src="{{ asset('resources/main/img/gallery/team_milek.png', true) }}" alt="">
                             </div>
                             <div class="team-caption">
                                 <h3><a href="#" style="font-size:25px">Jakub "mil3k" Milewski</a></h3>
@@ -99,7 +99,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="{{ asset('resources/main/img/gallery/team_qnek.png') }}" alt="">
+                                <img src="{{ asset('resources/main/img/gallery/team_qnek.png', true) }}" alt="">
                             </div>
                             <div class="team-caption">
                                 <h3><a href="#" style="font-size:25px">Jakub "Qn3k" Jankowski</a></h3>
@@ -110,7 +110,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="{{ asset('resources/main/img/gallery/team_vexon.png') }}" alt="">
+                                <img src="{{ asset('resources/main/img/gallery/team_vexon.png', true) }}" alt="">
                             </div>
                             <div class="team-caption">
                                 <h3><a href="#" style="font-size:25px">Jacek "Vexon" Sosnowski</a></h3>
@@ -121,7 +121,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="{{ asset('resources/main/img/gallery/team_2.png') }}" alt="">
+                                <img src="{{ asset('resources/main/img/gallery/team_2.png', true) }}" alt="">
                             </div>
                             <div class="team-caption">
                                 <h3><a href="#" style="font-size:25px">Mateusz "VEEX" Uchyła</a></h3>
