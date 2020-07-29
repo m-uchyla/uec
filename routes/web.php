@@ -28,7 +28,7 @@ Route::get('/bracket', 'BracketController@getView')->name('bracket');
 
 Route::get('article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
 
-Route::get('/list', 'https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations')
+Route::get('/list', 'APIController@getList')
     ->header('X-Api-Key','QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U')
     ->header('Authorization','organizer:registration')
     ->header('Range','0-49')
