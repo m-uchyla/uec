@@ -28,6 +28,7 @@ Route::get('/bracket', 'BracketController@getView')->name('bracket');
 
 Route::get('article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
 
+
 Route::get('/list', 'APIController@getList')
     ->name('list');
 
