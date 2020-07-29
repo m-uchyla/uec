@@ -7,7 +7,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                                <a href="{{ route('homepage') }}"><img src="{{ asset('resources/main/img/logo/logo.png') }}" alt=""></a>
+                                <a href="{{ route('homepage') }}"><img src="{{ asset('resources/main/img/logo/logo.png', true) }}" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-9 col-lg-10">

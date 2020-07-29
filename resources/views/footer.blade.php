@@ -1,7 +1,7 @@
 
 <footer>
         <!-- Footer Start-->
-        <div class="footer-area footer-padding section-bg" data-background="{{ asset('resources/main/img/gallery/footer_bg.png') }}">
+        <div class="footer-area footer-padding section-bg" data-background="{{ asset('resources/main/img/gallery/footer_bg.png', true) }}">
             <div class="container">
                 <!-- Footer Top -->
                 <!-- Footer bottom -->

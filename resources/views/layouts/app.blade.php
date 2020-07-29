@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="manifest" href="site.webmanifest">-->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.ico', true) }}">
 
 @include('css')
 </head>
@@ -18,7 +18,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="{{ asset('resources/main/img/logo/loder.png') }}" alt="">
+                    <img src="{{ asset('resources/main/img/logo/loder.png', true) }}" alt="">
                 </div>
             </div>
         </div>
