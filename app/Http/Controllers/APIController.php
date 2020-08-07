@@ -48,10 +48,36 @@ class APIController extends Controller {
                 "custom_fields"=> [],
                 "type" => "team",
                 "lineup" => [
+                    [
                         "name" => "A team player name",
                         "email" => "player_1@team.com",
                         "custom_user_identifier" => "acme:account:1234",
                         "custom_fields" => []
+                    ],
+                    [
+                        "name" => "A team player name",
+                        "email" => "player_2@team.com",
+                        "custom_user_identifier" => "acme:account:1234",
+                        "custom_fields" => []
+                    ],
+                    [
+                        "name" => "A team player name",
+                        "email" => "player_3@team.com",
+                        "custom_user_identifier" => "acme:account:1234",
+                        "custom_fields" => []
+                    ],
+                    [
+                        "name" => "A team player name",
+                        "email" => "player_4@team.com",
+                        "custom_user_identifier" => "acme:account:1234",
+                        "custom_fields" => []
+                    ],
+                    [
+                        "name" => "A team player name",
+                        "email" => "player_5@team.com",
+                        "custom_user_identifier" => "acme:account:1234",
+                        "custom_fields" => []
+                    ]
                 ]
             ]);
         return $response;
