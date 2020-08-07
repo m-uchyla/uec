@@ -15,13 +15,12 @@ class APIController extends Controller {
     public function getList(){
         $response = Http::withHeaders([
             'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
-            'Authorization' => '
-            https://account.toornament.com/oauth2/authorize?
-            response_type=code&
-            client_id=QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U&
-            redirect_uri=https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations&
-            scope=organizer:registration&
-            state=csrf_token()',
+            'Authorization' => Http::post('https://api.toornament.com/oauth/v2/token', [
+                'grant_type' => 'client_credentials',
+                'client_id' => 'e61fd46a3437441ae2ed72085mqhuwuo8gsggggskgk4og8owcckkckgcskws4kkk0000ocws8',
+                'client_secret' =>'1l80dg7iyxs0s8ggocwg80s4k8gwcscc0k4gog04w4gs4gw40o',
+                'scope' => 'organizer:registration',
+                ]),
             'Range' => '0-49'
         ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations', [
             'name' => 'Taylor',
