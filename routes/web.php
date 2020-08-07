@@ -31,6 +31,8 @@ Route::get('article/{id}', 'ArticleInsertController@viewArticle')->name('viewArt
 
 Route::get('/list', 'APIController@getList')
     ->name('list');
+Route::get('/send', 'APIController@update')
+    ->name('send');
 
 Route::middleware('can:accessPanel')->group(function() {
     Route::prefix('panel')->group(function () {
