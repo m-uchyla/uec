@@ -22,9 +22,7 @@ class APIController extends Controller {
                 'scope' => 'organizer:registration',
                 ]),
             'Range' => '0-49'
-        ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations', [
-            'name' => 'Taylor',
-        ]);
+        ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations');
         return $response;
     }
 
