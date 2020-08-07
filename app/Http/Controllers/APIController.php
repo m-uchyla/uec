@@ -51,31 +51,31 @@ class APIController extends Controller {
                     [
                         "name" => "A team player name",
                         "email" => "player_1@team.com",
-                        "custom_user_identifier" => "acme:account:1234",
+                        "custom_user_identifier" => "acme:account:1",
                         "custom_fields" => []
                     ],
                     [
                         "name" => "A team player name",
                         "email" => "player_2@team.com",
-                        "custom_user_identifier" => "acme:account:1234",
+                        "custom_user_identifier" => "acme:account:2",
                         "custom_fields" => []
                     ],
                     [
                         "name" => "A team player name",
                         "email" => "player_3@team.com",
-                        "custom_user_identifier" => "acme:account:1234",
+                        "custom_user_identifier" => "acme:account:3",
                         "custom_fields" => []
                     ],
                     [
                         "name" => "A team player name",
                         "email" => "player_4@team.com",
-                        "custom_user_identifier" => "acme:account:1234",
+                        "custom_user_identifier" => "acme:account:4",
                         "custom_fields" => []
                     ],
                     [
                         "name" => "A team player name",
                         "email" => "player_5@team.com",
-                        "custom_user_identifier" => "acme:account:1234",
+                        "custom_user_identifier" => "acme:account:5",
                         "custom_fields" => []
                     ]
                 ]
