@@ -15,7 +15,7 @@ class APIController extends Controller {
     public function getList(){
         $response = Http::withHeaders([
             'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
-            'Authorization' => Http::post('https://api.toornament.com/oauth/v2/token', [
+            'Authorization' => Http::asForm()->post('https://api.toornament.com/oauth/v2/token', [
                 'grant_type' => 'client_credentials',
                 'client_id' => 'e61fd46a3437441ae2ed72085mqhuwuo8gsggggskgk4og8owcckkckgcskws4kkk0000ocws8',
                 'client_secret' =>'1l80dg7iyxs0s8ggocwg80s4k8gwcscc0k4gog04w4gs4gw40o',
