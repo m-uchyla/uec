@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.ico', true) }}">
 
 @include('css')
+@yield('style')
 </head>
 <body>
     <!-- ? Preloader Start -->
