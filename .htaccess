@@ -20,4 +20,6 @@
     RewriteRule ^ index.php [L]
 
     Header add Access-Control-Allow-Origin "http://uec-veex.herokuapp.com"
+
+    Origin: http://uec-veex.herokuapp.com
 </IfModule>

@@ -22,14 +22,12 @@
 							<div class="table-head">
 								<div class="serial">#</div>
 								<div class="country">Drużyna</div>
+								<div class="visit">Zwycięstwa</div>
+								<div class="visit">Remisy</div>
+								<div class="visit">Porażki</div>
+								<div class="visit">Zagrane mecze</div>
+								<div class="visit">Poddane mecze</div>
 								<div class="visit">Punkty</div>
-								<div class="visit">Rundy</div>
-								<div class="visit">Rundy</div>
-								<div class="visit">Rundy</div>
-								<div class="visit">Rundy</div>
-								<div class="visit">Rundy</div>
-								<div class="visit">Rundy</div>
-								<div class="visit">Rundy</div>
 							</div>
 							<div class="table-row">
 								<div class="serial">01</div>
@@ -40,8 +38,6 @@
 								<div class="visit">645</div>
 								<div class="visit">645</div>
 								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">642</div>
 							</div>
 						</div>
 					</div>
