@@ -15,7 +15,7 @@
                 </div>
                 <div class="row">
                     <!-- single Tem -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-" style="margin-bottom:30px">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
                     <h2 style="text-align:center">Grupa A</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
@@ -36,7 +36,7 @@
 					</div>
                     </div>
                     
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-" style="margin-bottom:30px">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
                     <h2 style="text-align:center">Grupa B</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
