@@ -1,519 +1,118 @@
 @extends('layouts.app')
 
 @section('style')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
 <style>
-/*!
- * Responsive Tournament Bracket
- * Copyright 2016 Jakub Hájek
- * Licensed under MIT (https://opensource.org/licenses/MIT)
- */
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700';
 
-//
-// GOOGLE FONT
-// ---------------------------
-@import 'https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700&subset=latin-ext';
-
-
-//
-// VARIABLES
-// ---------------------------
-@breakpoint-xs: 24em;
-@breakpoint-sm: 38em;
-@breakpoint-md: 52em;
-@breakpoint-lg: 72em;
-
-
-//
-// GENERAL RULES
-// ---------------------------
-* {
-  &,
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
-}
-
-html {
-  font-size: 15px;
-  
-  @media (min-width: @breakpoint-sm) { font-size: 14px; }
-  @media (min-width: @breakpoint-md) { font-size: 15px; }
-  @media (min-width: @breakpoint-lg) { font-size: 16px; }
-}
-
-body {
-  background-color: #f1f1f1;
-  font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
-}
-
-.container {
-  width: 90%;
-  min-width: 18em;
-  margin: 20px auto;
-}
-
-h1, h2 { 
-  text-align: center;
-}
-
-h1 { 
-  font-size: 2rem; 
-  font-weight: 700;
-  margin-bottom: 0.5em;
-}
-
-h2 { 
-  font-size: 1.4rem; 
-  font-weight: 600;
-   margin-bottom: 2em;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-}
-
-
-//
-// TOURNAMENT BRACKET
-// ---------------------------
-.tournament-bracket {
-  display: flex;
-  flex-direction: column;
-  
-  @media (min-width: @breakpoint-sm) {
-    flex-direction: row;
-  }
-}
-
-.tournament-bracket__round {
-  display: block;
-  margin-left: -3px;
-  flex: 1;
-}
-
-.tournament-bracket__round-title {
-  color: #9e9e9e;
-  font-size: 0.95rem;
-  font-weight: 400;
-  text-align: center;
-  font-style: italic;
-  margin-bottom: 0.5em;
-}
-
-.tournament-bracket__list {
-  display: flex;
-  flex-direction: column;
-  flex-flow: row wrap;
-  justify-content: center;
-  height: 100%;
-  min-height: 100%;
-  border-bottom: 1px dashed #e5e5e5;
-  padding-bottom: 2em;
-  margin-bottom: 2em;
-  transition: padding 0.2s ease-in-out, margin 0.2s ease-in-out;
-  
-  @media (max-width: @breakpoint-xs) {
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-  }
-  
-  @media (min-width: @breakpoint-sm) {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-right: 1px dashed #e5e5e5;
-    border-bottom: 0;
-  }
-  
-  .tournament-bracket__round:last-child & {
-    border: 0;
-  }
-}
-
-.tournament-bracket__item {
-  display: flex;
-  flex: 0 1 auto;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  padding: 2% 0;
-  width: 48%;
-  transition: padding 0.2s linear;
-  
-  &:nth-child(odd) {
-    margin-right: 2%;
-  }
-  
-  &:nth-child(even) {
-    margin-left: 2%;
-  }
-  
-  &::after {
-    transition: width 0.2s linear;
-  }
-  
-  @media (max-width: @breakpoint-xs) {
-    width: 100%;
-    
-    &:nth-child(odd),
-    &:nth-child(even) {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
-  
-  @media (min-width: @breakpoint-sm) {
-    padding: 0.5em 1em;
-    // flex-grow: 2;
-    width: 100%;
-    
-    &:nth-child(odd),
-    &:nth-child(even) {
-      margin: 0;
-    }
-    
-    &::after {
-      position: absolute;
-      right: 0;
-      content: '';
-      display: block;
-      width: 1em;
-      height: 45%;
-      border-right: 2px solid #9e9e9e;
-    }
-
-    &:nth-child(odd)::after {
-      top: 50%;
-      border-top: 2px solid #9e9e9e;
-      transform: translateY(-1px);
-      
-      .tournament-bracket--rounded & {
-        border-top-right-radius: 0.6em;
-      }
-    }
-    
-    &:nth-child(even)::after {
-      bottom: 50%;
-      border-bottom: 2px solid #9e9e9e;
-      transform: translateY(1px);
-      
-      .tournament-bracket--rounded & {
-        border-bottom-right-radius: 0.6em;
-      }
-    }
-    .tournament-bracket__round:first-child & {
-       padding-left: 0;
-    }
-    .tournament-bracket__round:last-child & {
-       padding-right: 0;
-
-       &::after {
-         display: none;
-       }
-    }
-
-    .tournament-bracket__round:nth-last-child(2) & {
-      &::after {
-        border-radius: 0;
-        border-right: 0;
-      }
-    }  
-  }
-  
-  @media (min-width: @breakpoint-lg) {
-    padding: 0.5em 1.5em;
-    
-    &::after {
-      width: 1.5em;
-    }
-  }
-}
-
-
-.tournament-bracket__match {
-  display: flex;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 1em;
-  border: 1px solid transparent;
-  border-radius: 0.1em;
-  box-shadow: 0 2px 0 0 #e5e5e5;
-  outline: none; 
-  cursor: pointer;
-  transition: padding 0.2s ease-in-out, border 0.2s linear;
-  
-  &:focus {
-    border-color: #2196F3;
-  }
-  
-  &::before,
-  &::after {
-    transition: all 0.2s linear;
-  }
-  
-  @media (max-width: @breakpoint-xs) {
-    padding: 0.75em 0.5em;
-  }
-  
-  @media (min-width: @breakpoint-sm) {
-    &::before,
-    &::after {
-      position: absolute;
-      left: 0;
-      z-index: 1;
-      content: '';
-      display: block;
-      width: 1em;
-      height: 10%;
-      border-left: 2px solid #9e9e9e;
-    }
-
-    &::before  {
-      bottom: 50%;
-      border-bottom: 2px solid #9e9e9e;
-      transform: translate(0, 1px);
-      
-      .tournament-bracket--rounded & {
-        border-bottom-left-radius: 0.6em;
-      }
-    }
-
-    &::after  {
-      top: 50%;
-      border-top: 2px solid #9e9e9e;
-      transform: translate(0, -1px);
-      
-      .tournament-bracket--rounded & {
-        border-top-left-radius: 0.6em;
-      }
-    }
-  }
-  
-  @media (min-width: @breakpoint-lg) {
-    &::before,
-    &::after {
-      width: 1.5em;
-    }
-    
-    &::before {
-      transform: translate(0, 1px);
-    }
-    
-    &::after {
-      transform: translate(0, -1px);
-    }
-  }
-}
-
-.tournament-bracket__round:last-child .tournament-bracket__match {
-  &::before,
-  &::after {
-    border-left: 0;
-  }
-  
-  &::before  {
-    border-bottom-left-radius: 0;
-  }
-  
-  &::after  {
-    display: none;
-  }
-}
-
-.tournament-bracket__round:first-child .tournament-bracket__match {
-  &::before,
-  &::after {
-    display: none;
-  }
-}
-
-.tournament-bracket__content {
-  display: flex;
-  
-  &::after {
-    content: ':';
-    width: 1em;
-    text-align: center;
-    padding: 0.2em 0.1em;
-    
-    @media (min-width: @breakpoint-sm) {
-       order: 1;
-    }
-  }
-  
-  & .tournament-bracket__team:first-child {
-    width: 50%;
-    order: 0;
-    text-align: right;
-    
-    @media (min-width: @breakpoint-sm) and (max-width: @breakpoint-md) {
-      align-items: flex-end;
-    }
-    
-    & .tournament-bracket__country {
-      order: 2;
-      justify-content: flex-end;
-      
-      @media (min-width: @breakpoint-xs) {
-        order: 0;
-      } 
-      
-      @media (min-width: @breakpoint-sm) and (max-width: @breakpoint-md) {
-        flex-direction: column-reverse;
-        align-items: flex-end;
-      }
-    }
-    
-    & .tournament-bracket__score {
-      order: 0;
-      
-      @media (min-width: @breakpoint-xs) {
-         order: 2;
-      }
-    }
-  }
-  
-  & .tournament-bracket__team:last-child {
-    width: 50%;
-    order: 2;
-    text-align: left;
-    
-    @media (min-width: @breakpoint-sm) and (max-width: @breakpoint-md) {
-      align-items: flex-start;
-    }
-    
-    & .tournament-bracket__country {
-      @media (min-width: @breakpoint-sm) {
-        justify-content: flex-start;
-      }
-      
-      @media (min-width: @breakpoint-sm) and (max-width: @breakpoint-md) {
-        align-items: flex-start;
-      }
-    }
-    
-    .tournament-bracket__code {
-      order: 1;
-    }
-  }
-}
-
-
-.tournament-bracket__table {
-  width: 100%;
-}
-
-.tournament-bracket__caption {
-  font-size: 0.8rem;
-  color: #BDBDBD;
-  font-weight: 300;
-  padding-bottom: 0.75em;
-}
-
-.tournament-bracket__team {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  
-  @media (min-width: @breakpoint-xs) {
-    flex-direction: column-reverse;
-  }
-  
-  @media (min-width: @breakpoint-sm) {
-    flex-direction: column-reverse;
-  }
-}
-
-.tournament-bracket__country {
-  font-size: 0.95rem;
-  display: flex;
-  margin-top: 0.5em;
-  align-items: center;
-  
-  @media (max-width: @breakpoint-xs) {
-    margin-top: 0;
-  }
-  
-  @media (min-width: @breakpoint-sm) and (max-width: @breakpoint-md) {
-    display: flex;
-    flex-direction: column;
-    
-    .tournament-bracket__code {
-      margin-top: 0.2em;
-    }
-  }
-}
-
-.tournament-bracket__code {
-  padding: 0 0.5em;
-  color: #212121;
-  font-weight: 600;
-  text-transform: uppercase;
-  border: 0;
-  text-decoration: none;
-  cursor: help;
-  transition: padding 0.2s ease-in-out;
-  
-  @media (max-width: @breakpoint-xs) {
-    padding: 0 0.25em;
-  }
-  
-  @media (min-width: @breakpoint-sm) and (max-width: @breakpoint-md) {
-    padding: 0;
-  }
-}
-
-.tournament-bracket__score {
-  display: flex;
-  align-items: center;
-  
-  .tournament-bracket__team:first-child & {
-    flex-direction: row-reverse;
-    padding-left: 0.75em;
-  }
-  
-  .tournament-bracket__team:last-child & {
-    padding-right: 0.75em;
-  }
-}
-
-.tournament-bracket__number {
+.bracket {
   display: inline-block;
-  padding: 0.2em 0.4em 0.2em;
-  border-bottom: 0.075em solid transparent;
-  font-size: 0.95rem;
-  background-color: #F5F5F5;
-  border-color: spin(shade(#F5F5F5, 10%), -10);
-  
-  .tournament-bracket__team--winner & {
-    background-color: #FFF176;
-    border-color: spin(shade(#FFF176, 2%), -10);
-  }
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 0;
+}
+.bracket .round {
+  display: inline-block;
+  vertical-align: middle;
+}
+.bracket .round .winners > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.bracket .round .winners > div.matchups .matchup:last-child {
+  margin-bottom: 0 !important;
+}
+.bracket .round .winners > div.matchups .matchup .participants {
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+.bracket .round .winners > div.matchups .matchup .participants .participant {
+  box-sizing: border-box;
+  color: #858585;
+  border-left: 0.25rem solid #858585;
+  background: white;
+  width: 14rem;
+  height: 3rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+}
+.bracket .round .winners > div.matchups .matchup .participants .participant.winner {
+  color: #60c645;
+  border-color: #60c645;
+}
+.bracket .round .winners > div.matchups .matchup .participants .participant.loser {
+  color: #dc563f;
+  border-color: #dc563f;
+}
+.bracket .round .winners > div.matchups .matchup .participants .participant:not(:last-child) {
+  border-bottom: thin solid #f0f2f2;
+}
+.bracket .round .winners > div.matchups .matchup .participants .participant span {
+  margin: 0 1.25rem;
+  line-height: 3;
+  font-size: 1rem;
+  font-family: "Roboto Slab";
+}
+.bracket .round .winners > div.connector.filled .line, .bracket .round .winners > div.connector.filled.bottom .merger:after, .bracket .round .winners > div.connector.filled.top .merger:before {
+  border-color: #60c645;
+}
+.bracket .round .winners > div.connector .line, .bracket .round .winners > div.connector .merger {
+  box-sizing: border-box;
+  width: 2rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.bracket .round .winners > div.connector .line {
+  border-bottom: thin solid #c0c0c8;
+  height: 4rem;
+}
+.bracket .round .winners > div.connector .merger {
+  position: relative;
+  height: 8rem;
+}
+.bracket .round .winners > div.connector .merger:before, .bracket .round .winners > div.connector .merger:after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  border: 0 solid;
+  border-color: #c0c0c8;
+}
+.bracket .round .winners > div.connector .merger:before {
+  border-right-width: thin;
+  border-top-width: thin;
+}
+.bracket .round .winners > div.connector .merger:after {
+  border-right-width: thin;
+  border-bottom-width: thin;
+}
+.bracket .round.quarterfinals .winners:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.bracket .round.quarterfinals .winners .matchups .matchup:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.bracket .round.semifinals .winners .matchups .matchup:not(:last-child) {
+  margin-bottom: 10rem;
+}
+.bracket .round.semifinals .winners .connector .merger {
+  height: 16rem;
+}
+.bracket .round.semifinals .winners .connector .line {
+  height: 8rem;
+}
+.bracket .round.finals .winners .connector .merger {
+  height: 3rem;
+}
+.bracket .round.finals .winners .connector .line {
+  height: 1.5rem;
 }
 
-.tournament-bracket__medal {
-  padding: 0 0.5em;
-}
-
-.tournament-bracket__medal--gold {
-  color: #FFD700;
-}
-
-.tournament-bracket__medal--silver {
-  color: #C0C0C0;
-}
-
-.tournament-bracket__medal--bronze {
-  color: #CD7F32;
-}
 </style>
 @endsection
 
@@ -837,318 +436,84 @@ h2 {
                     </div>
 
 
-					<div class="container">
-						<h1>Responsive Tournament Bracket</h1>
-						<h2>Ice hockey at the 1998 Winter Olympics – Men's tournament</h2>
-						<div class="tournament-bracket tournament-bracket--rounded">                                                     
-							<div class="tournament-bracket__round tournament-bracket__round--quarterfinals">
-							<h3 class="tournament-bracket__round-title">Quarterfinals</h3>
-							<ul class="tournament-bracket__list">
-								<li class="tournament-bracket__item">
-								<div class="tournament-bracket__match" tabindex="0">
-									<table class="tournament-bracket__table">
-									<caption class="tournament-bracket__caption">
-										<time datetime="1998-02-18">18 February 1998</time>
-									</caption>
-									<thead class="sr-only">
-										<tr>
-										<th>Country</th>
-										<th>Score</th>
-										</tr>
-									</thead>  
-									<tbody class="tournament-bracket__content">
-										<tr class="tournament-bracket__team tournament-bracket__team--winner">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Canada">CAN</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-ca" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">4</span>
-										</td>
-										</tr>
-										<tr class="tournament-bracket__team">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Kazakhstan">KAZ</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-kz" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">1</span>
-										</td>
-										</tr>
-									</tbody>
-									</table>
-								</div>
-								</li>
-
-								<li class="tournament-bracket__item">
-								<div class="tournament-bracket__match" tabindex="0">
-									<table class="tournament-bracket__table">
-									<caption class="tournament-bracket__caption">
-										<time datetime="1998-02-18">18 February 1998</time>
-									</caption>
-									<thead class="sr-only">
-										<tr>
-										<th>Country</th>
-										<th>Score</th>
-										</tr>
-									</thead>  
-									<tbody class="tournament-bracket__content">
-										<tr class="tournament-bracket__team tournament-bracket__team--winner">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Czech Republic">CZE</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-cz" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">4</span>
-										</td>
-										</tr>
-										<tr class="tournament-bracket__team">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Unitede states of America">USA</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-us" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">1</span>
-										</td>
-										</tr>
-									</tbody>
-									</table>
-								</div>
-								</li>
-								<li class="tournament-bracket__item">
-								<div class="tournament-bracket__match" tabindex="0">
-									<table class="tournament-bracket__table">
-									<caption class="tournament-bracket__caption">
-										<time datetime="1998-02-18">18 February 1998</time>
-									</caption>
-									<thead class="sr-only">
-										<tr>
-										<th>Country</th>
-										<th>Score</th>
-										</tr>
-									</thead>  
-									<tbody class="tournament-bracket__content">
-										<tr class="tournament-bracket__team tournament-bracket__team--winner">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Finland">FIN</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-fi" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">2</span>
-										</td>
-										</tr>
-										<tr class="tournament-bracket__team">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Sweden">SVE</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-se" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">1</span>
-										</td>
-										</tr>
-									</tbody>
-									</table>
-								</div>
-								</li>
-
-								<li class="tournament-bracket__item">
-								<div class="tournament-bracket__match" tabindex="0">
-									<table class="tournament-bracket__table">
-									<caption class="tournament-bracket__caption">
-										<time datetime="1998-02-18">18 February 1998</time>
-									</caption>
-									<thead class="sr-only">
-										<tr>
-										<th>Country</th>
-										<th>Score</th>
-										</tr>
-									</thead>  
-									<tbody class="tournament-bracket__content">
-										<tr class="tournament-bracket__team tournament-bracket__team--winner">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Russia">RUS</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-ru" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">4</span>
-										</td>
-										</tr>
-										<tr class="tournament-bracket__team">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Belarus">BEL</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-by" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">1</span>
-										</td>
-										</tr>
-									</tbody>
-									</table>
-								</div>
-								</li>
-							</ul>
-							</div>
-							<div class="tournament-bracket__round tournament-bracket__round--semifinals">
-							<h3 class="tournament-bracket__round-title">Semifinals</h3>
-							<ul class="tournament-bracket__list">
-								<li class="tournament-bracket__item">
-								<div class="tournament-bracket__match" tabindex="0">
-									<table class="tournament-bracket__table">
-									<caption class="tournament-bracket__caption">
-										<time datetime="1998-02-20">20 February 1998</time>
-									</caption>
-									<thead class="sr-only">
-										<tr>
-										<th>Country</th>
-										<th>Score</th>
-										</tr>
-									</thead>  
-									<tbody class="tournament-bracket__content">
-										<tr class="tournament-bracket__team">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Canada">CAN</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-ca" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">1</span>
-										</td>
-										</tr>
-										<tr class="tournament-bracket__team tournament-bracket__team--winner">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Czech Republic">CZE</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-cz" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">2</span>
-										</td>
-										</tr>
-									</tbody>
-									</table>
-								</div>
-								</li>
-
-								<li class="tournament-bracket__item">
-								<div class="tournament-bracket__match" tabindex="0">
-									<table class="tournament-bracket__table">
-									<caption class="tournament-bracket__caption">
-										<time datetime="1998-02-20">20 February 1998</time>
-									</caption>
-									<thead class="sr-only">
-										<tr>
-										<th>Country</th>
-										<th>Score</th>
-										</tr>
-									</thead>  
-									<tbody class="tournament-bracket__content">
-										<tr class="tournament-bracket__team">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Finland">FIN</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-fi" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">4</span>
-										</td>
-										</tr>
-										<tr class="tournament-bracket__team tournament-bracket__team--winner">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Russia">RUS</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-ru" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">7</span>
-										</td>
-										</tr>
-									</tbody>
-									</table>
-								</div>
-								</li>
-							</ul>
-							</div>
-							<div class="tournament-bracket__round tournament-bracket__round--bronze">
-							<h3 class="tournament-bracket__round-title">Bronze medal game</h3>
-							<ul class="tournament-bracket__list">
-								<li class="tournament-bracket__item">
-								<div class="tournament-bracket__match" tabindex="0">
-									<table class="tournament-bracket__table">
-									<caption class="tournament-bracket__caption">
-										<time datetime="1998-02-21">21 February 1998</time>
-									</caption>
-									<thead class="sr-only">
-										<tr>
-										<th>Country</th>
-										<th>Score</th>
-										</tr>
-									</thead>  
-									<tbody class="tournament-bracket__content">
-										<tr class="tournament-bracket__team tournament-bracket__team--winner">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Finland">FIN</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-fi" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">3</span>
-											<span class="tournament-bracket__medal tournament-bracket__medal--bronze fa fa-trophy" aria-label="Bronze medal"></span>
-										</td>
-										</tr>
-										<tr class="tournament-bracket__team">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Canada">CAN</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-ca" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">2</span>
-										</td>
-										</tr>
-									</tbody>
-									</table>
-								</div>
-								</li>
-							</ul>
-							</div>
-							<div class="tournament-bracket__round tournament-bracket__round--gold">
-							<h3 class="tournament-bracket__round-title">Gold medal game</h3>
-							<ul class="tournament-bracket__list">
-								<li class="tournament-bracket__item">
-								<div class="tournament-bracket__match" tabindex="0">
-									<table class="tournament-bracket__table">
-									<caption class="tournament-bracket__caption">
-										<time datetime="1998-02-22">22 February 1998</time>
-									</caption>
-									<thead class="sr-only">
-										<tr>
-										<th>Country</th>
-										<th>Score</th>
-										</tr>
-									</thead>  
-									<tbody class="tournament-bracket__content">
-										<tr class="tournament-bracket__team tournament-bracket__team--winner">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Czech Republic">CZE</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-cz" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">1</span>
-											<span class="tournament-bracket__medal tournament-bracket__medal--gold fa fa-trophy" aria-label="Gold medal"></span>
-										</td>
-										</tr>
-										<tr class="tournament-bracket__team">
-										<td class="tournament-bracket__country">
-											<abbr class="tournament-bracket__code" title="Russia">RUS</abbr>
-											<span class="tournament-bracket__flag flag-icon flag-icon-ru" aria-label="Flag"></span>
-										</td>
-										<td class="tournament-bracket__score">
-											<span class="tournament-bracket__number">0</span>
-											<span class="tournament-bracket__medal tournament-bracket__medal--silver fa fa-trophy" aria-label="Silver medal"></span>
-										</td>
-										</tr>
-									</tbody>
-									</table>
-								</div>
-								</li>
-							</ul>
-							</div>
-						</div>
-						</div>
+					<div class="bracket">
+  <section class="round quarterfinals">
+    <div class="winners">
+      <div class="matchups">
+        <div class="matchup">
+          <div class="participants">
+            <div class="participant winner"><span>Uno</span></div>
+            <div class="participant"><span>Ocho</span></div>
+          </div>
+        </div>
+        <div class="matchup">
+          <div class="participants">
+            <div class="participant"><span>Dos</span></div>
+            <div class="participant winner"><span>Siete</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="connector">
+        <div class="merger"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="winners">
+      <div class="matchups">
+        <div class="matchup">
+          <div class="participants">
+            <div class="participant"><span>Treis</span></div>
+            <div class="participant winner"><span>Seis</span></div>
+          </div>
+        </div>
+        <div class="matchup">
+          <div class="participants">
+            <div class="participant"><span>Cuatro</span></div>
+            <div class="participant winner"><span>Cinco</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="connector">
+        <div class="merger"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </section>
+  <section class="round semifinals">
+    <div class="winners">
+      <div class="matchups">
+        <div class="matchup">
+          <div class="participants">
+            <div class="participant winner"><span>Uno</span></div>
+            <div class="participant"><span>Dos</span></div>
+          </div>
+        </div>
+        <div class="matchup">
+          <div class="participants">
+            <div class="participant winner"><span>Seis</span></div>
+            <div class="participant"><span>Cinco</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="connector">
+        <div class="merger"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </section>
+  <section class="round finals">
+    <div class="winners">
+      <div class="matchups">
+        <div class="matchup">
+          <div class="participants">
+            <div class="participant winner"><span>Uno</span></div>
+            <div class="participant"><span>Seis</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 					
                 </div>
 
