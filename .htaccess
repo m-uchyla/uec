@@ -19,5 +19,8 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
+    Header add Access-Control-Allow-Origin "https://uec-veex.herokuapp.com/"
     Header add Access-Control-Allow-Origin "http://uec-veex.herokuapp.com/"
+    Header add Access-Control-Allow-Origin "http://undergroundesportcup.pl/"
+    Header add Access-Control-Allow-Origin "https://undergroundesportcup.pl/"
 </IfModule>
