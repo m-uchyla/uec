@@ -62,47 +62,156 @@
 						</div>
 					</div>
                     </div>
-                    
+
+					<!-- single Tem -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">Grupa B</h2>
+                    <h2 style="text-align:center">Grupa A</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
 							<div class="table-head">
 								<div class="serial">#</div>
 								<div class="country">Drużyna</div>
+								<div class="visit">Zwycięstwa</div>
+								<div class="visit">Remisy</div>
+								<div class="visit">Porażki</div>
 								<div class="visit">Punkty</div>
-								<div class="visit">Rundy</div>
 							</div>
 							<div class="table-row">
 								<div class="serial">01</div>
 								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645032</div>
-								<div class="visit">645032</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">02</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">03</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">04</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
 							</div>
 						</div>
 					</div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">Grupa C</h2>
+
+					<!-- single Tem -->
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
+                    <h2 style="text-align:center">Grupa A</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
 							<div class="table-head">
 								<div class="serial">#</div>
 								<div class="country">Drużyna</div>
+								<div class="visit">Zwycięstwa</div>
+								<div class="visit">Remisy</div>
+								<div class="visit">Porażki</div>
 								<div class="visit">Punkty</div>
-								<div class="visit">Rundy</div>
 							</div>
 							<div class="table-row">
 								<div class="serial">01</div>
-								<div class="country">Bardzo długa nazwa teamu</div>
-								<div class="visit">99</div>
-								<div class="visit">99</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">02</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">03</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">04</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
 							</div>
 						</div>
 					</div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">Grupa D</h2>
+
+					<!-- single Tem -->
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
+                    <h2 style="text-align:center">Grupa A</h2>
+                    <div class="progress-table-wrap">
+						<div class="progress-table">
+							<div class="table-head">
+								<div class="serial">#</div>
+								<div class="country">Drużyna</div>
+								<div class="visit">Zwycięstwa</div>
+								<div class="visit">Remisy</div>
+								<div class="visit">Porażki</div>
+								<div class="visit">Punkty</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">01</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">02</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">03</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">04</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+							</div>
+						</div>
+					</div>
+                    </div>
+                    
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
+                    <h2 style="text-align:center">Grupa B</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
 							<div class="table-head">
