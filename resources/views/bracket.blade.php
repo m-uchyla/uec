@@ -22,15 +22,26 @@
 							<div class="table-head">
 								<div class="serial">#</div>
 								<div class="country">Drużyna</div>
-                                <div class="country">Drużyna</div>
 								<div class="visit">Punkty</div>
+								<div class="visit">Rundy</div>
+								<div class="visit">Rundy</div>
+								<div class="visit">Rundy</div>
+								<div class="visit">Rundy</div>
+								<div class="visit">Rundy</div>
+								<div class="visit">Rundy</div>
 								<div class="visit">Rundy</div>
 							</div>
 							<div class="table-row">
 								<div class="serial">01</div>
 								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645032</div>
-								<div class="visit">645032</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">645</div>
+								<div class="visit">642</div>
 							</div>
 						</div>
 					</div>
