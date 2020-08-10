@@ -19,26 +19,26 @@
                     <h2 style="text-align:center">Grupa A</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
-							<div class="table-head">
-								<div class="serial">#</div>
-								<div class="country">Drużyna</div>
-								<div class="visit">Zwycięstwa</div>
-								<div class="visit">Remisy</div>
-								<div class="visit">Porażki</div>
-								<div class="visit">Zagrane mecze</div>
-								<div class="visit">Poddane mecze</div>
-								<div class="visit">Punkty</div>
-							</div>
-							<div class="table-row">
-								<div class="serial">01</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-							</div>
+							<tr class="table-head">
+								<th class="serial">#</th>
+								<th class="country">Drużyna</th>
+								<th class="visit">Zwycięstwa</th>
+								<th class="visit">Remisy</th>
+								<th class="visit">Porażki</th>
+								<th class="visit">Zagrane mecze</th>
+								<th class="visit">Poddane mecze</th>
+								<th class="visit">Punkty</th>
+							</tr>
+							<tr class="table-row">
+								<td class="serial">01</td>
+								<td class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</td>
+								<td class="visit">645</td>
+								<td class="visit">645</td>
+								<td class="visit">645</td>
+								<td class="visit">645</td>
+								<td class="visit">645</td>
+								<td class="visit">645</td>
+							</tr>
 						</div>
 					</div>
                     </div>
