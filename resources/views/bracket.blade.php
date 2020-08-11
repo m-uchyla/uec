@@ -332,72 +332,139 @@
                     </div>
                 </div>
                 <div class="row">
-					<!-- single semifinal -->
+					<!-- single quaterfinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
                     <h2 style="text-align:center">I ćwierćfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							<div class="table-row">
 								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial">01</div>
+								<div class="serial" style="padding-left: 10px;" >01</div>
 							</div>
 							<div class="table-row">
 								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial">02</div>
+								<div class="serial" style="padding-left: 10px;" >02</div>
 							</div>
 						</div>
 					</div>
                     </div>
-					<!-- single semifinal -->
+					<!-- single quaterfinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
                     <h2 style="text-align:center">II ćwierćfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							<div class="table-row">
 								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial">01</div>
+								<div class="serial" style="padding-left: 10px;" >01</div>
 							</div>
 							<div class="table-row">
 								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial">02</div>
+								<div class="serial" style="padding-left: 10px;" >02</div>
 							</div>
 						</div>
 					</div>
                     </div>
-					<!-- single semifinal -->
+					<!-- single quaterfinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
                     <h2 style="text-align:center">III ćwierćfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							<div class="table-row">
 								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial">01</div>
+								<div class="serial" style="padding-left: 10px;" >01</div>
 							</div>
 							<div class="table-row">
 								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial">02</div>
+								<div class="serial" style="padding-left: 10px;" >02</div>
 							</div>
 						</div>
 					</div>
                     </div>
-					<!-- single semifinal -->
+					<!-- single quaterfinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
                     <h2 style="text-align:center">IV ćwierćfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							<div class="table-row">
 								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial">01</div>
+								<div class="serial" style="padding-left: 10px;" >01</div>
 							</div>
 							<div class="table-row">
 								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial">02</div>
+								<div class="serial" style="padding-left: 10px;" >02</div>
 							</div>
 						</div>
 					</div>
                     </div>
-					
-					
+
+                </div>
+				<div class="row">
+					<!-- single semifinal -->
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-" style="margin-bottom:30px">
+                    <h2 style="text-align:center">I półfinał</h2>
+                    <div class="progress-table-wrap">
+						<div class="progress-table" style="padding:0px">
+							<div class="table-row">
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="serial" style="padding-left: 10px;" >01</div>
+							</div>
+							<div class="table-row">
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="serial" style="padding-left: 10px;" >02</div>
+							</div>
+						</div>
+					</div>
+                    </div>
+					<!-- single semifinal -->
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-" style="margin-bottom:30px">
+                    <h2 style="text-align:center">II półfinał</h2>
+                    <div class="progress-table-wrap">
+						<div class="progress-table" style="padding:0px">
+							<div class="table-row">
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="serial" style="padding-left: 10px;" >01</div>
+							</div>
+							<div class="table-row">
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="serial" style="padding-left: 10px;" >02</div>
+							</div>
+						</div>
+					</div>
+                    </div>
+                </div>
+				<div class="row">
+					<!-- single 3rd place -->
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-" style="margin-bottom:30px">
+                    <h2 style="text-align:center">Mecz o 3 msc.</h2>
+                    <div class="progress-table-wrap">
+						<div class="progress-table" style="padding:0px">
+							<div class="table-row">
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="serial" style="padding-left: 10px;" >01</div>
+							</div>
+							<div class="table-row">
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="serial" style="padding-left: 10px;" >02</div>
+							</div>
+						</div>
+					</div>
+                    </div>
+					<!-- single final -->
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-" style="margin-bottom:30px">
+                    <h2 style="text-align:center">Finał</h2>
+                    <div class="progress-table-wrap">
+						<div class="progress-table" style="padding:0px">
+							<div class="table-row">
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="serial" style="padding-left: 10px;" >01</div>
+							</div>
+							<div class="table-row">
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
+								<div class="serial" style="padding-left: 10px;" >02</div>
+							</div>
+						</div>
+					</div>
+                    </div>
                 </div>
 
             </div>
