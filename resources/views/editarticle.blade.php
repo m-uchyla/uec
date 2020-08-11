@@ -44,6 +44,6 @@
           </form>
          </div>
          </div>
-	 </div>
+	 </div> 
 	</div><!--End Row-->
 @endsection
