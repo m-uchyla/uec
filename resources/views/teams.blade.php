@@ -20,7 +20,7 @@
 						<div class="progress-table">
 							<div class="table-head">
 								<div class="serial">#</div>
-								<div class="country">Logo</div>
+								<div class="serial">Logo</div>
 								<div class="country">Nazwa drużyny</div>
 								<div class="visit">Fanpage</div>
 								<div class="visit">Kapitan</div>
