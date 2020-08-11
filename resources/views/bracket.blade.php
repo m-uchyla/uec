@@ -318,7 +318,20 @@
 						</div>
 					</div>
                     </div>
+					
+					
+                </div>
 
+				<div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-70" style="margin-top: 150px;">
+                            <span>Etap trzeci</span>
+                            <h2>Faza pucharowa</h2>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
 					<!-- single semifinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
                     <h2 style="text-align:center">I ćwierćfinał</h2>
@@ -337,7 +350,7 @@
                     </div>
 					<!-- single semifinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">I ćwierćfinał</h2>
+                    <h2 style="text-align:center">II ćwierćfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							<div class="table-row">
@@ -353,7 +366,7 @@
                     </div>
 					<!-- single semifinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">I ćwierćfinał</h2>
+                    <h2 style="text-align:center">III ćwierćfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							<div class="table-row">
@@ -369,7 +382,7 @@
                     </div>
 					<!-- single semifinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">I ćwierćfinał</h2>
+                    <h2 style="text-align:center">IV ćwierćfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							<div class="table-row">
