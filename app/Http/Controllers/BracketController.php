@@ -18,5 +18,12 @@ class BracketController extends Controller {
         return view('bracket', ['featured' => $featured]);
     }
 
+    public function getTeams(){
+
+        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+
+        return view('teams', ['featured' => $featured]);
+    }
+
     
 }

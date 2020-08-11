@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'ArticleInsertController@getHomepage')->name('homepage');
 Route::get('/about', 'ArticleInsertController@getAbout')->name('about');
 Route::get('/bracket', 'BracketController@getView')->name('bracket');
+Route::get('/teams', 'BracketController@getTeams')->name('teams');
 
 
 Route::get('article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
