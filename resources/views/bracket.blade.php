@@ -434,7 +434,7 @@
                 </div>
 				<div class="row">
 					<!-- single 3rd place -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-" style="margin-bottom:30px">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2" style="margin-bottom:30px">
                     <h2 style="text-align:center">Mecz o 3 msc.</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
@@ -450,7 +450,7 @@
 					</div>
                     </div>
 					<!-- single final -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-" style="margin-bottom:30px">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2" style="margin-bottom:30px">
                     <h2 style="text-align:center">Finał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
