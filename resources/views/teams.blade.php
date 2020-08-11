@@ -32,7 +32,112 @@
 								<div class="visit">Facebook link</div>
 								<div class="visit">Nick gracza</div>
 							</div>
-						</div>
+							<div class="table-row">
+								<div class="serial">02</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">03</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">04</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">05</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">06</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">07</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">08</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">09</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">10</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">11</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">12</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">13</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">14</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">15</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+							<div class="table-row">
+								<div class="serial">16</div>
+								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
+								<div class="country"> Canada </div>
+								<div class="visit">Facebook link</div>
+								<div class="visit">Nick gracza</div>
+							</div>
+						</div> 
 					</div>
                     </div>		
                 </div>
