@@ -400,7 +400,7 @@
                 </div>
 				<div class="row">
 					<!-- single semifinal -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-" style="margin-bottom:30px">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3" style="margin-bottom:30px">
                     <h2 style="text-align:center">I półfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
@@ -416,7 +416,7 @@
 					</div>
                     </div>
 					<!-- single semifinal -->
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 offset-xl-3 offset-lg-3 offset-md-3 offset-sm-3" style="margin-bottom:30px">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 offset-xl-3 offset-lg-3 offset-md-3 offset-sm-3" style="margin-bottom:30px">
                     <h2 style="text-align:center">II półfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
