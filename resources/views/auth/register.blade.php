@@ -55,6 +55,8 @@
 					  <i class="icon-user"></i>
 				  </div>
 
+				  </div>
+			  </div>
 				  <div class="form-group">
 			  <label for="lastName" class="sr-only">Last name</label>
 			   <div class="position-relative has-icon-right">
@@ -68,11 +70,12 @@
 					  <i class="icon-user"></i>
 				  </div>
 
-
+				  </div>
+			  </div>
 			  <div class="form-group">
-			  <label for="Nick" class="sr-only">Nick</label>
+			  <label for="nick" class="sr-only">Nick</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="Nick" name="Nick" class="form-control input-shadow @error('Nick') is-invalid @enderror" placeholder="Wprowadź nazwę użytkownika" required >
+				  <input type="text" id="nick" name="nick" class="form-control input-shadow @error('nick') is-invalid @enderror" placeholder="Wprowadź nazwę użytkownika" required >
           @error('nick')
               <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -82,10 +85,12 @@
 					  <i class="icon-user"></i>
 				  </div>
 
+				  </div>
+			  </div>
 				  <div class="form-group">
-			  <label for="name" class="sr-only">Steam ID64</label>
+			  <label for="steamID" class="sr-only">Steam ID64</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="steamID" name="steamID" class="form-control input-shadow @error('steamID') is-invalid @enderror" placeholder="Wprowadź steam ID 64 (np. ze strony www.steamid.io)">
+				  <input type="text" id="steamID" name="steamID" class="form-control input-shadow @error('steamID') is-invalid @enderror" placeholder="Steam ID 64 (ze strony www.steamid.io)">
           @error('steamID')
               <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
