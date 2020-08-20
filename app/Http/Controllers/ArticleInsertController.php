@@ -43,7 +43,11 @@ class ArticleInsertController extends Controller {
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
 
         foreach($articles as $article){
-            $article->author = (DB::table('users')->where('id',$article->author)->first())->name;
+            $author = DB::table('users')->where('id',$article->author)->first();
+            // $name = $author->name;
+            // $nick = ` "`.$author->nick.`" `;
+            // $lastName = $author->lastName;
+            $article->author = $author->name.(` "`.$author->nick.`" `).$author->lastName;
         }
 
         return view('homepage', ['articles' => $articles, 'featured' => $featured]);
