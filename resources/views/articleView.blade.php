@@ -19,7 +19,7 @@
                         </ul></br>
                         <h3 style="color: #2d2d2d; font-size:25px">{{$article->subtitle}} </h3> </br>
                         @foreach ($contents as $content)
-                           <p>{{!! $content !!}}</p>
+                           <p>{!! $content !!}</p>
                         @endforeach
                      </div>
                   </div>
