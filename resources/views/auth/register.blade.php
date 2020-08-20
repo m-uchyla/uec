@@ -41,11 +41,52 @@
 		  <div class="card-title text-uppercase text-center py-3">Rejestracja</div>
         <form method="POST" action="{{ route('register') }}">
         @csrf
-			  <div class="form-group">
+
+		<div class="form-group">
 			  <label for="name" class="sr-only">Name</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="name" name="name" class="form-control input-shadow @error('name') is-invalid @enderror" placeholder="Wprowadź nazwę użytkownika" required autofocus>
+				  <input type="text" id="name" name="name" class="form-control input-shadow @error('name') is-invalid @enderror" placeholder="Wprowadź imię" required autofocus>
           @error('name')
+              <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+              </span>
+            @enderror
+				  <div class="form-control-position">
+					  <i class="icon-user"></i>
+				  </div>
+
+				  <div class="form-group">
+			  <label for="lastName" class="sr-only">Last name</label>
+			   <div class="position-relative has-icon-right">
+				  <input type="text" id="lastName" name="lastName" class="form-control input-shadow @error('lastName') is-invalid @enderror" placeholder="Wprowadź nazwisko" required >
+          @error('lastName')
+              <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+              </span>
+            @enderror
+				  <div class="form-control-position">
+					  <i class="icon-user"></i>
+				  </div>
+
+
+			  <div class="form-group">
+			  <label for="Nick" class="sr-only">Nick</label>
+			   <div class="position-relative has-icon-right">
+				  <input type="text" id="Nick" name="Nick" class="form-control input-shadow @error('Nick') is-invalid @enderror" placeholder="Wprowadź nazwę użytkownika" required >
+          @error('nick')
+              <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+              </span>
+            @enderror
+				  <div class="form-control-position">
+					  <i class="icon-user"></i>
+				  </div>
+
+				  <div class="form-group">
+			  <label for="name" class="sr-only">Steam ID64</label>
+			   <div class="position-relative has-icon-right">
+				  <input type="text" id="steamID" name="steamID" class="form-control input-shadow @error('steamID') is-invalid @enderror" placeholder="Wprowadź steam ID 64 (np. ze strony www.steamid.io)">
+          @error('steamID')
               <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
               </span>
