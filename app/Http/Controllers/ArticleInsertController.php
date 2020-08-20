@@ -47,7 +47,7 @@ class ArticleInsertController extends Controller {
             // $name = $author->name;
             // $nick = ` "`.$author->nick.`" `;
             // $lastName = $author->lastName;
-            $article->author = $author->name.(` "`.$author->nick.`" `).$author->lastName;
+            $article->author = $author->name.(' "'.$author->nick.'" ').$author->lastName;
         }
 
         return view('homepage', ['articles' => $articles, 'featured' => $featured]);
