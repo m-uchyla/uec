@@ -87,21 +87,7 @@
 
 				  </div>
 			  </div>
-				  <div class="form-group">
-			  <label for="steamID" class="sr-only">Steam ID64</label>
-			   <div class="position-relative has-icon-right">
-				  <input type="text" id="steamID" name="steamID" class="form-control input-shadow @error('steamID') is-invalid @enderror" placeholder="Steam ID 64 (ze strony www.steamid.io)">
-          @error('steamID')
-              <span class="invalid-feedback" role="alert">
-                <strong>{{ $message }}</strong>
-              </span>
-            @enderror
-				  <div class="form-control-position">
-					  <i class="icon-user"></i>
-				  </div>
 
-			   </div>
-			  </div>
 			  <div class="form-group">
 			  <label for="email" class="sr-only">Email</label>
 			   <div class="position-relative has-icon-right">
