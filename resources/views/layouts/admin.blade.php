@@ -45,31 +45,43 @@
    </div>
    <ul class="sidebar-menu do-nicescrol">
       <li class="sidebar-header">NAWIGACJA</li>
+
       <li>
         <a href="{{ route('homepage') }}">
           <i class="zmdi zmdi-home"></i> <span>Powrót do strony głównej</span>
         </a>
       </li>
+
       <li>
         <a href="{{ route('default') }}">
           <i class="zmdi zmdi-view-dashboard"></i> <span>Default</span>
         </a>
       </li>
-      <li>
-        <a href="{{ route('admin') }}">
-          <i class="zmdi zmdi-view-dashboard"></i> <span>Podsumowanie</span>
-        </a>
-      </li>
-      <li>
-        <a href="{{ route('articles') }}">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Artykuły</span>
-        </a>
-      </li>
-      <li>
-        <a href="{{ route('usersList') }}">
-          <i class="zmdi zmdi-face"></i> <span>Użytkownicy</span>
-        </a>
-      </li>
+
+      @if ((Auth::user()->role) < 2)
+        <li>
+          <a href="{{ route('admin') }}">
+            <i class="zmdi zmdi-view-dashboard"></i> <span>Podsumowanie</span>
+          </a>
+        </li>
+      @endif
+
+      @if ((Auth::user()->role) < 4)
+        <li>
+          <a href="{{ route('articles') }}">
+            <i class="zmdi zmdi-format-list-bulleted"></i> <span>Artykuły</span>
+          </a>
+        </li>
+      @endif
+
+      @if ((Auth::user()->role) < 1)
+        <li>
+          <a href="{{ route('usersList') }}">
+            <i class="zmdi zmdi-face"></i> <span>Użytkownicy</span>
+          </a>
+        </li>
+      @endif
+      
       <li>
         <a href="register.html" target="_blank">
           <i class="zmdi zmdi-account-circle"></i> <span>Profil</span>
