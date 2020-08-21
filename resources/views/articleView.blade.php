@@ -31,7 +31,7 @@
                      </div>
                   </div>
                   
-                  <div class="navigation-top">
+                  <!-- <div class="navigation-top">
                   <div class="blog-author">
                      <div class="media align-items-center">
                         <img src="{{ asset('resources/main/img/blog/author.png', true) }}" alt="">
@@ -86,7 +86,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  </div> -->
 
                </div>
                <div class="col-lg-4">
