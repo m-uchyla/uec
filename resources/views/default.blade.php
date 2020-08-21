@@ -4,7 +4,7 @@
 	
   <div class="content-wrapper">
     <div class="container-fluid">
-      <p> {{ Auth::user() }} </p>
+      <p> {{ Auth::user()->role }} </p>
   <!--Start Dashboard Content-->
 
 	
