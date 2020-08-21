@@ -15,8 +15,8 @@ class ArticleInsertController extends Controller {
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
 
         foreach($articles as $article){
-            $article->authorID = $article->author;
-            $article->author = (DB::table('users')->where('id',$article->author)->first())->name;
+            $author = DB::table('users')->where('id',$article->author)->first();
+            $article->author = $author->name.(' "'.$author->nick.'" ').$author->lastName;
         }
         foreach($featured as $f){
             $f->author = (DB::table('users')->where('id',$f->author)->first())->name;
@@ -29,7 +29,8 @@ class ArticleInsertController extends Controller {
 
         $article = DB::table('articles')->where('id',$id)->first();
         DB::table('articles')->where('id',$id)->increment('views');
-        $article->author = (DB::table('users')->where('id',$article->author)->first())->name;
+        $author = DB::table('users')->where('id',$article->author)->first();
+        $article->author = $author->name.(' "'.$author->nick.'" ').$author->lastName;
         $contents = explode(PHP_EOL, $article->content);
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
         $also = DB::table('articles')->orderBy('views', 'desc')->latest()->simplePaginate(5);
@@ -45,9 +46,6 @@ class ArticleInsertController extends Controller {
 
         foreach($articles as $article){
             $author = DB::table('users')->where('id',$article->author)->first();
-            // $name = $author->name;
-            // $nick = ` "`.$author->nick.`" `;
-            // $lastName = $author->lastName;
             $article->author = $author->name.(' "'.$author->nick.'" ').$author->lastName;
         }
 
