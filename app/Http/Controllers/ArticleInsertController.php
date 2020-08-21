@@ -16,6 +16,7 @@ class ArticleInsertController extends Controller {
 
         foreach($articles as $article){
             $author = DB::table('users')->where('id',$article->author)->first();
+            $article->authorID = $article->author;
             $article->author = $author->name.(' "'.$author->nick.'" ').$author->lastName;
         }
         foreach($featured as $f){
