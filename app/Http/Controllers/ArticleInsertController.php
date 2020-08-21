@@ -41,6 +41,7 @@ class ArticleInsertController extends Controller {
 
         $articles = DB::table('articles')->latest()->paginate(3);
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        $also = DB::table('articles')->orderBy('views', 'desc')->latest()->simplePaginate(5);
 
         foreach($articles as $article){
             $author = DB::table('users')->where('id',$article->author)->first();
@@ -50,7 +51,7 @@ class ArticleInsertController extends Controller {
             $article->author = $author->name.(' "'.$author->nick.'" ').$author->lastName;
         }
 
-        return view('homepage', ['articles' => $articles, 'featured' => $featured]);
+        return view('homepage', ['articles' => $articles, 'featured' => $featured, 'also' => $also]);
     }
 
     public function getAbout(){
