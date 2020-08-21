@@ -90,94 +90,125 @@
 
                </div>
                <div class="col-lg-4">
-                  <div class="blog_right_sidebar">
-                  
-                     <aside class="single_sidebar_widget post_category_widget">
-                        <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
-                        <ul class="list cat-list">
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Resaurant food</p>
-                                 <p>(37)</p>
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Travel news</p>
-                                 <p>(10)</p>
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Modern technology</p>
-                                 <p>(03)</p>
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Product</p>
-                                 <p>(11)</p>
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Inspiration</p>
-                                 <p>(21)</p>
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="d-flex">
-                                 <p>Health Care</p>
-                                 <p>(21)</p>
-                              </a>
-                           </li>
-                        </ul>
-                     </aside>
-                     <aside class="single_sidebar_widget popular_post_widget">
-                        <h3 class="widget_title" style="color: #2d2d2d;">Zobacz również</h3>
-                        @foreach ($also as $a)
-                        <div class="media post_item">
-                           <img src="{{$a->main_pic}}" style="width:50%;height:50%" alt="post">
-                           <div class="media-body">
-                              <a href="{{ route('viewArticle',[$a->id]) }}">
-                                 <h3 style="color: #2d2d2d;">{{$a->title}}</h3>
-                              </a>
-                              <p>{{ substr($a->created_at,0,-8) }}</p>
-                           </div>
+                        <div class="blog_right_sidebar">
+                        {{-- 
+                        
+                            <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title" style="color: #2d2d2d;">Trwający mecz</h3>
+                                <div class="media post_item">
+                                    <img src="{{ asset('resources/main/img/gallery/team.png', true) }}" alt="post">
+                                    <div class="media-body" style="text-align:center">
+                                            <h3 style="color: #2d2d2d;">Erydan Esports</h3>
+                                            <h3 style="color: #2d2d2d;">VS</h3>
+                                            <h3 style="color: #2d2d2d;">Erydan Esports</h3>
+                                        <p style="text-align:center">BO3</p>
+                                    </div>
+                                    <img src="{{ asset('resources/main/img/gallery/team.png', true) }}" alt="post">
+                                </div>
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                        type="submit">Oglądaj na żywo</button>
+                            </aside>
+                        
+                        --}}
+                            @guest
+                            <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title" style="color: #2d2d2d;">Zapisz się do turnieju</h3>
+                                <div class="media post_item">
+                                    <p>Wkrótce rozpoczną się zapisy do turnieju. Bądz gotowy i załóż konto już teraz!</p>
+                                </div>
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('register') }}';"
+                                        type="submit">Rejestracja</button>
+                            </aside>
+                            @endguest
+                            @auth
+                            <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title" style="color: #2d2d2d;">Zapisz się do turnieju</h3>
+                                <div class="media post_item">
+                                    <p>Zostałeś już zapisany do drużyny? Jeżeli nie- odwiedź swój profil, dołącz do istniejącej drużyny, lub utwórz ją i bądz gotów na zapisy do turnieju!</p>
+                                </div>
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('default') }}';"
+                                        type="button">Panel drużyn</button>
+                            </aside>
+                            @endauth
+                            <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title" style="color: #2d2d2d;">Najpopularniejsze posty</h3>
+                                @foreach ($also as $a)
+                                <div class="media post_item">
+                                <img src="{{$a->main_pic}}" style="width:50%;height:50%" alt="post">
+                                <div class="media-body">
+                                    <a href="{{ route('viewArticle',[$a->id]) }}">
+                                        <h3 style="color: #2d2d2d;">{{$a->title}}</h3>
+                                    </a>
+                                    <p>{{ substr($a->created_at,0,-8) }}</p>
+                                </div>
+                                </div>
+                                @endforeach
+                            </aside>
+                            {{--  
+                            <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title" style="color: #2d2d2d;">Wspierają nas</h3>
+                                <img style="length=350px"  src="{{ asset('resources/main/img/gallery/yabu_ad.png', true) }}" alt="">
+                            </aside>
+                            --}}
+                            <aside class="single_sidebar_widget post_category_widget">
+                                <h4 class="widget_title" style="color: #2d2d2d;">Bądź na bieżąco</h4>
+                                <ul class="list cat-list" >
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                        <p> Facebook</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Twitter</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>YouTube</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </aside>
+                            {{--
+                            <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title" style="color: #2d2d2d;">Najbliższe spotkania</h3>
+                                <div class="media post_item">
+                                <img src="{{ asset('resources/main/img/gallery/team.png', true) }}" alt="post">
+                                    <div class="media-body" style="text-align:center">
+                                            <h3 style="color: #2d2d2d;">Erydan Esports</h3>
+                                            <h3 style="color: #2d2d2d;">VS</h3>
+                                            <h3 style="color: #2d2d2d;">Erydan Esports</h3>
+                                        <p style="text-align:center">12 czerwiec </br> godz. 20:00</p>
+                                    </div>
+                                    <img src="{{ asset('resources/main/img/gallery/team.png', true) }}" alt="post">
+                                </div>
+                                <div class="media post_item">
+                                <img src="{{ asset('resources/main/img/gallery/team.png', true) }}" alt="post">
+                                    <div class="media-body" style="text-align:center">
+                                            <h3 style="color: #2d2d2d;">Erydan Esports</h3>
+                                            <h3 style="color: #2d2d2d;">VS</h3>
+                                            <h3 style="color: #2d2d2d;">Erydan Esports</h3>
+                                        <p style="text-align:center">12 czerwiec </br> godz. 20:00</p>
+                                    </div>
+                                    <img src="{{ asset('resources/main/img/gallery/team.png', true) }}" alt="post">
+                                </div>
+                                <div class="media post_item">
+                                <img src="{{ asset('resources/main/img/gallery/team.png', true) }}" alt="post">
+                                    <div class="media-body" style="text-align:center">
+                                            <h3 style="color: #2d2d2d;">Erydan Esports</h3>
+                                            <h3 style="color: #2d2d2d;">VS</h3>
+                                            <h3 style="color: #2d2d2d;">Erydan Esports</h3>
+                                        <p style="text-align:center">12 czerwiec </br> godz. 20:00</p>
+                                    </div>
+                                    <img src="{{ asset('resources/main/img/gallery/team.png', true) }}" alt="post">
+                                </div>
+                            </aside>
+                            --}}
+
                         </div>
-                        @endforeach
-                     </aside>
-                     <aside class="single_sidebar_widget tag_cloud_widget">
-                        <h4 class="widget_title" style="color: #2d2d2d;">Tag Clouds</h4>
-                        <ul class="list">
-                           <li>
-                              <a href="#">project</a>
-                           </li>
-                           <li>
-                              <a href="#">love</a>
-                           </li>
-                           <li>
-                              <a href="#">technology</a>
-                           </li>
-                           <li>
-                              <a href="#">travel</a>
-                           </li>
-                           <li>
-                              <a href="#">restaurant</a>
-                           </li>
-                           <li>
-                              <a href="#">life style</a>
-                           </li>
-                           <li>
-                              <a href="#">design</a>
-                           </li>
-                           <li>
-                              <a href="#">illustration</a>
-                           </li>
-                        </ul>
-                     </aside>
-                  </div>
-               </div>
+                    </div>
             </div>
          </div>
       </section>
