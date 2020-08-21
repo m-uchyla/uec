@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "aos": "^2.3.4",
-        "simditor": "^2.3.28"
+        "simditor": "^2.3.28",
+        "trumbowyg": "^2.21.0"
     }
 }
