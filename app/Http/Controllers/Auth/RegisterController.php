@@ -53,7 +53,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:20', 'min:4'],
             'lastName' => ['required', 'string', 'max:20', 'min:4'],
             'nick' => ['required', 'string', 'max:20', 'min:4'],
-            'steamID' => ['required', 'string', 'max:25', 'min:15'],
+            'steamID' => ['string', 'max:25', 'min:15'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
