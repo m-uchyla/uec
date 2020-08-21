@@ -1,4 +1,9 @@
 @extends('layouts.admin')
+
+@section('style')
+<link rel="stylesheet" href="{{ asset('resources/trumbowyg/dist/ui/trumbowyg.min.css', true) }}">
+@endsection
+
 @section('content')
 
 <div class="clearfix"></div>
@@ -46,4 +51,22 @@
          </div>
 	 </div> 
 	</div><!--End Row-->
+@endsection
+
+@section('script')
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+<script src="{{ asset('resources/trumbowyg/dist/trumbowyg.min.js', true) }}"></script>
+
+
+<script>
+
+$('#content').trumbowyg();
+
+function charcountupdate(str) {
+	var lng = str.length;
+	document.getElementById("charcount").innerHTML = 5000-lng + ' pozostało z 5000 znaków';
+}
+
+</script>
 @endsection
