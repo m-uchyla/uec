@@ -10,7 +10,7 @@
     @yield('style')
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.ico', true) }}">
     @include('css')
-
+    <script data-ad-client="ca-pub-9696942259354560" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
     <!-- ? Preloader Start -->
