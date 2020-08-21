@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
+@section('style')
+<meta property="og:title" content="{{$article->title}} - UEC" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="{{$article->subtitle}}" />
+<meta property="og:image" content="{{ $article->main_pic }}" />
+@endsection
+
 @section('content')
 <!--? Blog Area Start -->
 <section class="blog_area single-post-area section-padding" id="article">
