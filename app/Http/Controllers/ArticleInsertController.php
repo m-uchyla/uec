@@ -42,7 +42,7 @@ class ArticleInsertController extends Controller {
     public function getHomepage(){
 
         $articles = DB::table('articles')->latest()->paginate(3);
-        $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','desc')->get();
+        $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','asc')->get();
         $also = DB::table('articles')->orderBy('views', 'desc')->latest()->simplePaginate(5);
 
         foreach($articles as $article){
