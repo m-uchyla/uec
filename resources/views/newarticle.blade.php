@@ -1,12 +1,12 @@
 @extends('layouts.admin')
 
 @section('style')
-<link rel="stylesheet" type="text/css" href="{{ asset('resources/editor/style/simditor.css', true) }}" />
-<script type="text/javascript" src="{{ asset('resources/editor/scripts/jquery.min.js', true) }}"></script>
-<script type="text/javascript" src="{{ asset('resources/editor/scripts/module.js', true) }}"></script>
-<script type="text/javascript" src="{{ asset('resources/editor/scripts/hotkeys.js', true) }}"></script>
-<script type="text/javascript" src="{{ asset('resources/editor/scripts/uploader.js', true) }}"></script>
-<script type="text/javascript" src="{{ asset('resources/editor/scripts/simditor.js', true) }}"></script>
+<link rel="stylesheet" type="text/css" href="{{ asset('resources/editor/assets/style/simditor.css', true) }}" />
+<script type="text/javascript" src="{{ asset('resources/editor/assets/scripts/jquery.min.js', true) }}"></script>
+<script type="text/javascript" src="{{ asset('resources/editor/assets/scripts/module.js', true) }}"></script>
+<script type="text/javascript" src="{{ asset('resources/editor/assets/scripts/hotkeys.js', true) }}"></script>
+<script type="text/javascript" src="{{ asset('resources/editor/assets/scripts/uploader.js', true) }}"></script>
+<script type="text/javascript" src="{{ asset('resources/editor/assets/scripts/simditor.js', true) }}"></script>
 @endsection
 
 @section('content')
