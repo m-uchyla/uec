@@ -1,4 +1,14 @@
 @extends('layouts.admin')
+
+@section('style')
+<link rel="stylesheet" type="text/css" href="{{ asset('resources/editor/style/simditor.css', true) }}" />
+<script type="text/javascript" src="{{ asset('resources/editor/scripts/jquery.min.js', true) }}"></script>
+<script type="text/javascript" src="{{ asset('resources/editor/scripts/module.js', true) }}"></script>
+<script type="text/javascript" src="{{ asset('resources/editor/scripts/hotkeys.js', true) }}"></script>
+<script type="text/javascript" src="{{ asset('resources/editor/scripts/uploader.js', true) }}"></script>
+<script type="text/javascript" src="{{ asset('resources/editor/scripts/simditor.js', true) }}"></script>
+@endsection
+
 @section('content')
 
 <div class="clearfix"></div>
@@ -50,6 +60,13 @@
 @endsection
 
 @section('script')
+<script>
+var editor = new Simditor({
+  textarea: $('#content')
+  //optional options
+});
+</script>
+
 <script>
 
 function charcountupdate(str) {

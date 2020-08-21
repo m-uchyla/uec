@@ -26,6 +26,8 @@
   <link href="{{ asset('resources/admin/css/sidebar-menu.css', true) }}" rel="stylesheet"/>
   <!-- Custom Style-->
   <link href="{{ asset('resources/admin/css/app-style.css', true) }}" rel="stylesheet"/>
+ 
+  @yield('style')
   
 </head>
 
