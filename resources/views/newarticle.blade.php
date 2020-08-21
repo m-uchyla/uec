@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('style')
-<link rel="stylesheet" href="{{ asset('node_modules/trumbowyg/dist/ui/trumbowyg.min.css', true) }}">
+<link rel="stylesheet" href="{{ asset('resources/trumbowyg/dist/ui/trumbowyg.min.css', true) }}">
 @endsection
 
 @section('content')
@@ -57,7 +57,7 @@
 @section('script')
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-<script src="{{ asset('node_modules/trumbowyg/dist/trumbowyg.min.js', true) }}"></script>
+<script src="{{ asset('resources/trumbowyg/dist/trumbowyg.min.js', true) }}"></script>
 
 
 <script>
