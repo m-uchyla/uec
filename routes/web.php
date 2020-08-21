@@ -39,19 +39,26 @@ Route::middleware('can:accessPanel')->group(function() {
     Route::prefix('panel')->group(function () {
 
         Route::get('default', function () {return view('default');})->name('default');
-        Route::get('admin', 'AdminController@get')->name('admin');
 
-        Route::get('articles', 'ArticleInsertController@get')->name('articles');
-        Route::get('articles/edit', 'ArticleInsertController@edit')->name('editArticle');
-        Route::get('articles/new', function () {return view('newarticle');})->name('newarticle');
-        Route::post('articles/new','ArticleInsertController@insert');
-        Route::post('articles/update','ArticleInsertController@update')->name("updateArticle");
-        Route::post('articles/delete','ArticleInsertController@delete')->name("deleteArticle");
+        Route::middleware('can:accessDashboard')->group(function() {
+            Route::get('admin', 'AdminController@get')->name('admin');
+        });
 
-        Route::get('users', 'UserController@get')->name('usersList');
-        Route::get('users/edit', 'UserController@edit')->name('editUser');
-        Route::post('users/update','UserController@update')->name("updateUser");
-        Route::post('users/delete','UserController@delete')->name("deleteUser");
+        Route::middleware('can:accessArticles')->group(function() {
+            Route::get('articles', 'ArticleInsertController@get')->name('articles');
+            Route::get('articles/edit', 'ArticleInsertController@edit')->name('editArticle');
+            Route::get('articles/new', function () {return view('newarticle');})->name('newarticle');
+            Route::post('articles/new','ArticleInsertController@insert');
+            Route::post('articles/update','ArticleInsertController@update')->name("updateArticle");
+            Route::post('articles/delete','ArticleInsertController@delete')->name("deleteArticle");
+        });
+
+        Route::middleware('can:accessArticles')->group(function() {
+            Route::get('users', 'UserController@get')->name('usersList');
+            Route::get('users/edit', 'UserController@edit')->name('editUser');
+            Route::post('users/update','UserController@update')->name("updateUser");
+            Route::post('users/delete','UserController@delete')->name("deleteUser");
+        });
 
     });
 });
