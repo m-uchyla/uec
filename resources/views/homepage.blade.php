@@ -102,7 +102,7 @@
                                 <div class="media post_item">
                                     <p>Wkrótce rozpoczną się zapisy do turnieju. Bądz gotowy i załóż konto już teraz!</p>
                                 </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('register') }}';"
                                         type="submit">Rejestracja</button>
                             </aside>
                             @endguest
@@ -112,8 +112,8 @@
                                 <div class="media post_item">
                                     <p>Zostałeś już zapisany do drużyny? Jeżeli nie- odwiedź swój profil, dołącz do istniejącej drużyny, lub utwórz ją i bądz gotów na zapisy do turnieju!</p>
                                 </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                        type="submit">Panel drużyn</button>
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('default') }}';"
+                                        type="button">Panel drużyn</button>
                             </aside>
                             @endauth
                             <aside class="single_sidebar_widget popular_post_widget">
