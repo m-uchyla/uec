@@ -38,6 +38,7 @@ Route::get('/send', 'APIController@update')
 Route::middleware('can:accessPanel')->group(function() {
     Route::prefix('panel')->group(function () {
 
+        Route::get('default', function () {return view('default');})->name('default');
         Route::get('admin', 'AdminController@get')->name('admin');
 
         Route::get('articles', 'ArticleInsertController@get')->name('articles');

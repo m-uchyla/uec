@@ -51,6 +51,11 @@
         </a>
       </li>
       <li>
+        <a href="{{ route('default') }}">
+          <i class="zmdi zmdi-view-dashboard"></i> <span>Default</span>
+        </a>
+      </li>
+      <li>
         <a href="{{ route('admin') }}">
           <i class="zmdi zmdi-view-dashboard"></i> <span>Podsumowanie</span>
         </a>
