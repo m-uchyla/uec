@@ -12,7 +12,7 @@ class ArticleInsertController extends Controller {
     public function get(){
 
         $articles = DB::table('articles')->latest()->simplePaginate(5);
-        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','asc')->get();
 
         foreach($articles as $article){
             $author = DB::table('users')->where('id',$article->author)->first();
@@ -33,7 +33,7 @@ class ArticleInsertController extends Controller {
         $author = DB::table('users')->where('id',$article->author)->first();
         $article->author = $author->name.(' "'.$author->nick.'" ').$author->lastName;
         $contents = explode(PHP_EOL, $article->content);
-        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','asc')->get();
         $also = DB::table('articles')->orderBy('views', 'desc')->latest()->simplePaginate(5);
 
         return view('articleView', ['article' => $article, 'featured' => $featured, 'contents' => $contents, 'also' => $also]);
@@ -55,7 +55,7 @@ class ArticleInsertController extends Controller {
 
     public function getAbout(){
 
-        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','asc')->get();
         return view('about', ['featured' => $featured]);
     }
 
