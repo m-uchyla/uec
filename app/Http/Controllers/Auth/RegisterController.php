@@ -53,7 +53,6 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:20', 'min:4'],
             'lastName' => ['required', 'string', 'max:20', 'min:4'],
             'nick' => ['required', 'string', 'max:20', 'min:4'],
-            'steamID' => ['string', 'max:25', 'min:15'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -71,7 +70,6 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'lastName' => $data['lastName'],
             'nick' => $data['nick'],
-            'steamID' => $data['steamID'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
