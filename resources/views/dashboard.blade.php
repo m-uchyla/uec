@@ -73,7 +73,7 @@
                              <div class="table-responsive">
                             <table class="table table-hover table-striped">
                                 <tbody>  
-                                    @foreach ($ivite as $i)                                  
+                                    @foreach ($invite as $i)                                  
                                     <tr>
                                         <td>
                                             <strong>{{$i->owner}}</strong> zaprosił Cię do drużyny <strong>"{{$i->team}}"</strong>
