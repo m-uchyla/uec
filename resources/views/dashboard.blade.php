@@ -37,7 +37,7 @@
                             @if (($main->teamName)!= null )
                                 <h6>Drużyna, której jesteś założycielem</h6>
                                 <p>
-                                    $main->teamName
+                                    {{$main->teamName}}
                                 </p>
                             @endif
                         </div>
@@ -80,6 +80,13 @@
                                         </td>
                                     </tr>
                                     @endforeach
+                                    @if ($invite == null)
+                                    <tr>
+                                        <td>
+                                            Brak nowych zaproszeń
+                                        </td>
+                                    </tr>
+                                    @endif
                                 </tbody>
                             </table>
                           </div>
