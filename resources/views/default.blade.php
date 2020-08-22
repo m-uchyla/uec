@@ -142,29 +142,29 @@
                 <div class="tab-pane" id="edit">
                     <form method="POST" action="{{ route('createTeam') }}">
                     @csrf
-                        <input type="hidden" value="{{Auth::id()}}">
+                        <input type="hidden" name="ownerID" value="{{Auth::id()}}">
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Nazwa drużyny</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" placeholder="Wprowadź nazwę teamu">
+                                <input class="form-control" type="text" id="teamName" name="teamName" placeholder="Wprowadź nazwę teamu">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Fanpage (opcjonalnie)</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="url" placeholder="Podaj link do strony drużyny na facebooku">
+                                <input class="form-control" type="url" id="facebook" name="facebook" placeholder="Podaj link do strony drużyny na facebooku">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="email" placeholder="Wprowadź główny email kontaktowy drużyny">
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Wprowadź główny email kontaktowy drużyny">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Logo</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="url" placeholder="Podaj link do logotypu drużyny (BEZ TŁA)">
+                                <input class="form-control" type="url" id="logo" name="logo" placeholder="Podaj link do logotypu drużyny (BEZ TŁA)">
                             </div>
                         </div>
                         <div class="form-group row">
