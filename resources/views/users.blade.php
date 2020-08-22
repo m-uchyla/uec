@@ -85,8 +85,13 @@
                   <thead>
                    <tr>
                      <th>ID</th>
+                     <th>Imię</th>
                      <th>Nick</th>
+                     <th>Nazwisko</th>
                      <th>E-mail</th>
+                     <th>Data urodzenia</th>
+                     <th>SteamID</th>
+                     <th>Zdjęcie</th>
                      <th>Rola</th>
                      <th>Utworzono</th>
                      <th>Edytowano</th>
@@ -98,7 +103,12 @@
                       <tr>
                         <td>{{ $user->id }}</td>
                         <td>{{ $user->name }}</td>
+                        <td>{{ $user->nick }}</td>
+                        <td>{{ $user->lastName }}</td>
                         <td>{{ $user->email }}</td>
+                        <td>{{ $user->dateOfBirth }}</td>
+                        <td>{{ $user->steamID }}</td>
+                        <td>{{ $user->photo }}</td>
                         <td>{{ $user->role }}</td>
                         <td>{{ $user->created_at }}</td>
                         <td>{{ $user->updated_at }}</td>

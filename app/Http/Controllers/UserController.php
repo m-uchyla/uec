@@ -39,15 +39,35 @@ class UserController extends Controller {
     }
 
     public function update(Request $request){
+        // $name = $request->input('name');
+        // $email = $request->input('email');
+        // $role = $request->input('role');
+        // $id = $request->input('id');
+
+        // $data=array(
+        //     "name"=>$name,
+        //     "email"=>$email,
+        //     "role"=>$role,
+        // );
         $name = $request->input('name');
+        $lastName = $request->input('lastName');
+        $nick = $request->input('nick');
         $email = $request->input('email');
-        $role = $request->input('role');
+        $dateOfBirth = $request->input('dateOfBirth');
+        $photo = $request->input('photo');
+        $steamID = $request->input('steamID');
         $id = $request->input('id');
+        $role = $request->input('role');
 
         $data=array(
             "name"=>$name,
+            "lastName"=>$lastName,
+            "nick"=>$nick,
             "email"=>$email,
-            "role"=>$role,
+            "dateOfBirth"=>$dateOfBirth,
+            "photo"=>$photo,
+            "steamID"=>$steamID,
+            "role"=>$role
         );
 
         DB::table('users')->where('id',$id)->update($data);
