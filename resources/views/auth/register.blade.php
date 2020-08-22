@@ -11,7 +11,7 @@
   <link href="{{ asset('resources/admin/css/pace.min.css') }}" rel="stylesheet"/>
   <script src="{{ asset('resources/admin/js/pace.min.js') }}"></script>
   <!--favicon-->
-  <link rel="icon" href="{{ asset('resources/admin/images/favicon.ico') }}" type="image/x-icon">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.png', true) }}">
   <!-- Bootstrap core CSS-->
   <link href="{{ asset('resources/admin/css/bootstrap.min.css') }}" rel="stylesheet"/>
   <!-- animate CSS-->

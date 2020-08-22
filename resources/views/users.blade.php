@@ -118,11 +118,11 @@
                         <form method="GET" action="{{ route('editUser') }}">
                         @csrf
                           <input type="hidden" id="userID" name="userID" value="{{ $user->id }}">
-                          <button type="submit" class="btn btn-light px-5"> Edytuj</button>
+                          <button type="submit" class="btn btn-light px-5" style="margin-right: 50px;"> Edytuj</button>
                         </form>
                         </div>
                         <div class="col-lg-6" style="padding:0px" id="{{ $user->id }}">
-                        <button type="button" onClick="confirm({{ $user->id }})" class="btn btn-light px-5"> Usuń</button>
+                        <button type="button" onClick="confirm({{ $user->id }})" class="btn btn-light px-5" style="margin-right: 50px;"> Usuń</button>
                         </div>
                         </div>
                         </td>

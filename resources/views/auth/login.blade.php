@@ -8,7 +8,7 @@
   <meta name="author" content=""/>
   <title>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</title>
   <!--favicon-->
-  <link rel="icon" href="{{ asset('resources/admin/images/favicon.ico') }}" type="image/x-icon">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.png', true) }}">
   <!-- Bootstrap core CSS-->
   <link href="{{ asset('resources/admin/css/bootstrap.min.css') }}" rel="stylesheet"/>
   <!-- animate CSS-->
