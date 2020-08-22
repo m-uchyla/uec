@@ -39,6 +39,7 @@ Route::middleware('can:accessPanel')->group(function() {
     Route::prefix('panel')->group(function () {
 
         Route::get('default', function () {return view('default');})->name('default');
+        Route::get('profile', 'UserController@getProfile')->name('profile');
 
         Route::middleware('can:accessDashboard')->group(function() {
             Route::get('admin', 'AdminController@get')->name('admin');

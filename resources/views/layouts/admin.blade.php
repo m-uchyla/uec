@@ -83,7 +83,7 @@
       @endif
       
       <li>
-        <a href="register.html" target="_blank">
+        <a href="{{ route('profile') }}">
           <i class="zmdi zmdi-account-circle"></i> <span>Profil</span>
         </a>
       </li>

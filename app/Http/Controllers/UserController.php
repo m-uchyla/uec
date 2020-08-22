@@ -16,6 +16,13 @@ class UserController extends Controller {
         return view('users', ['users' => $users]);
     }
 
+    public function getProfile(){
+
+        $user = DB::table('users')->where('id',Auth::id())->first();
+
+        return view('profile', ['user' => $user]);
+    }
+
     public function edit(Request $request){
         $id = $request->input("userID");
         $user = DB::table('users')->where('id',$id)->first();
