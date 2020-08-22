@@ -122,7 +122,7 @@
                         </form>
                         </div>
                         <div class="col-lg-6" style="padding:0px" id="{{ $user->id }}">
-                        <button type="button" onClick="confirm({{ $user->id }})" class="btn btn-light px-5" style="margin-right: 50px;"> Usuń</button>
+                        <button type="button" onClick="confirm({{ $user->id }})" class="btn btn-light px-5" style="margin-left: 50px;"> Usuń</button>
                         </div>
                         </div>
                         </td>
