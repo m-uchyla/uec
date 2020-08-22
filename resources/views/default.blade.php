@@ -44,8 +44,6 @@
                             <a href="javascript:void();" class="badge badge-dark badge-pill">bootstrap</a>
                             <a href="javascript:void();" class="badge badge-dark badge-pill">responsive-design</a>
                             <hr>
-                            <!-- @if (Auth::user->name)
-                            @endif -->
                             <span class="badge badge-primary"><i class="fa fa-user"></i> 900 Followers</span>
                             <span class="badge badge-success"><i class="fa fa-cog"></i> 43 Forks</span>
                             <span class="badge badge-danger"><i class="fa fa-eye"></i> 245 Views</span>
