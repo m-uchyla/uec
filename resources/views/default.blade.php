@@ -5,36 +5,36 @@
   <div class="content-wrapper">
     <div class="container-fluid">
       
-    <div class="col-lg-8">
+    <div class="col-lg-12">
            <div class="card">
             <div class="card-body">
             <ul class="nav nav-tabs nav-tabs-primary top-icon nav-justified">
                 <li class="nav-item">
-                    <a href="javascript:void();" data-target="#profile" data-toggle="pill" class="nav-link active"><i class="icon-user"></i> <span class="hidden-xs">Profile</span></a>
+                    <a href="javascript:void();" data-target="#profile" data-toggle="pill" class="nav-link active"><i class="icon-user"></i> <span class="hidden-xs">Podsumowanie</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="javascript:void();" data-target="#messages" data-toggle="pill" class="nav-link"><i class="icon-envelope-open"></i> <span class="hidden-xs">Messages</span></a>
+                    <a href="javascript:void();" data-target="#messages" data-toggle="pill" class="nav-link"><i class="icon-envelope-open"></i> <span class="hidden-xs">Zarządzaj drużyną</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="javascript:void();" data-target="#edit" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Edit</span></a>
+                    <a href="javascript:void();" data-target="#edit" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Utwórz drużynę</span></a>
                 </li>
             </ul>
             <div class="tab-content p-3">
                 <div class="tab-pane active" id="profile">
-                    <h5 class="mb-3">User Profile</h5>
+                    <h5 class="mb-3">{{Auth::user->name}} "{{Auth::user->nick}}" {{Auth::user->lastName}}</h5>
                     <div class="row">
                         <div class="col-md-6">
-                            <h6>About</h6>
+                            <h6>Kontakt</h6>
                             <p>
                                 Web Designer, UI/UX Engineer
                             </p>
-                            <h6>Hobbies</h6>
+                            <!-- <h6>Hobbies</h6>
                             <p>
                                 Indie music, skiing and hiking. I love the great outdoors.
-                            </p>
+                            </p> -->
                         </div>
                         <div class="col-md-6">
-                            <h6>Recent badges</h6>
+                            <h6>Twoje drużyny</h6>
                             <a href="javascript:void();" class="badge badge-dark badge-pill">html5</a>
                             <a href="javascript:void();" class="badge badge-dark badge-pill">react</a>
                             <a href="javascript:void();" class="badge badge-dark badge-pill">codeply</a>
@@ -44,6 +44,8 @@
                             <a href="javascript:void();" class="badge badge-dark badge-pill">bootstrap</a>
                             <a href="javascript:void();" class="badge badge-dark badge-pill">responsive-design</a>
                             <hr>
+                            <!-- @if (Auth::user->name)
+                            @endif -->
                             <span class="badge badge-primary"><i class="fa fa-user"></i> 900 Followers</span>
                             <span class="badge badge-success"><i class="fa fa-cog"></i> 43 Forks</span>
                             <span class="badge badge-danger"><i class="fa fa-eye"></i> 245 Views</span>
@@ -129,75 +131,36 @@
                 </div>
                 <div class="tab-pane" id="edit">
                     <form>
+
+                        <input type="hidden" value="{{Auth::id()}}">
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                            <label class="col-lg-3 col-form-label form-control-label">Nazwa drużyny</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" value="Mark">
+                                <input class="form-control" type="text" placeholder="Wprowadź nazwę teamu">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                            <label class="col-lg-3 col-form-label form-control-label">Fanpage</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" value="Jhonsan">
+                                <input class="form-control" type="url" placeholder="Podaj link do strony drużyny na facebooku">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="email" value="mark@example.com">
+                                <input class="form-control" type="email" placeholder="Wprowadź główny email kontaktowy drużyny">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Change profile</label>
+                            <label class="col-lg-3 col-form-label form-control-label">Logo</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="file">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Website</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="url" value="">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Address</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="text" value="" placeholder="Street">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label"></label>
-                            <div class="col-lg-6">
-                                <input class="form-control" type="text" value="" placeholder="City">
-                            </div>
-                            <div class="col-lg-3">
-                                <input class="form-control" type="text" value="" placeholder="State">
-                            </div>
-                        </div>
-                       
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Username</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="text" value="jhonsanmark">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Password</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="password" value="11111122333">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
-                            <div class="col-lg-9">
-                                <input class="form-control" type="password" value="11111122333">
+                                <input class="form-control" type="url" placeholder="Podaj link do logotypu drużyny (BEZ TŁA)">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label"></label>
                             <div class="col-lg-9">
-                                <input type="reset" class="btn btn-secondary" value="Cancel">
-                                <input type="button" class="btn btn-primary" value="Save Changes">
+                                <input type="button" class="btn btn-light px-5" value="Utwórz drużynę">
                             </div>
                         </div>
                     </form>
