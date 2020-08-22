@@ -73,20 +73,19 @@
                              <div class="table-responsive">
                             <table class="table table-hover table-striped">
                                 <tbody>  
-                                    @foreach ($invite as $i)                                  
+                                    @forelse ($invite as $i)                                  
                                     <tr>
                                         <td>
                                             <strong>{{$i->owner}}</strong> zaprosił Cię do drużyny <strong>"{{$i->team}}"</strong>
                                         </td>
                                     </tr>
-                                    @endforeach
-                                    @if ($invite == null)
+                                    @empty
                                     <tr>
                                         <td>
                                             Brak nowych zaproszeń
                                         </td>
                                     </tr>
-                                    @endif
+                                    @endforelse
                                 </tbody>
                             </table>
                           </div>
