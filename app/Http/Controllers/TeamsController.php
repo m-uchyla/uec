@@ -17,7 +17,7 @@ class TeamsController extends Controller {
         $invite = DB::table('teams-users')->where('userID', Auth::id())->where('isAccepted', 0)->get();
 
         // foreach($teams as $t){
-        //     $t->name = strval(DB::table('teams')->where('teamID',$t)->select("teamName")->first());
+        //     $t = DB::table('teams')->where('teamID',$t)->select("teamName")->first();
         // }
 
         if($invite != null){

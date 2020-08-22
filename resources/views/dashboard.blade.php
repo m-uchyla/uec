@@ -12,12 +12,18 @@
                 <li class="nav-item">
                     <a href="javascript:void();" data-target="#profile" data-toggle="pill" class="nav-link active"><i class="icon-user"></i> <span class="hidden-xs">Podsumowanie</span></a>
                 </li>
+                @if (($main->teamName)!= null )
                 <li class="nav-item">
                     <a href="javascript:void();" data-target="#messages" data-toggle="pill" class="nav-link"><i class="icon-envelope-open"></i> <span class="hidden-xs">Zarządzaj drużyną</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="javascript:void();" data-target="#edit" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Utwórz drużynę</span></a>
+                    <a href="javascript:void();" data-target="#edit" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Edytuj drużynę</span></a>
                 </li>
+                @else
+                <li class="nav-item">
+                    <a href="javascript:void();" data-target="#new" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Utwórz drużynę</span></a>
+                </li>
+                @endif
             </ul>
             <div class="tab-content p-3">
                 <div class="tab-pane active" id="profile">
@@ -28,10 +34,12 @@
                             <p>
                             {{Auth::user()->email}}
                             </p>
-                            <h6>Drużyna, której jesteś założycielem</h6>
-                            <p>
-                                Erydan Esports
-                            </p>
+                            @if (($main->teamName)!= null )
+                                <h6>Drużyna, której jesteś założycielem</h6>
+                                <p>
+                                    $main->teamName
+                                </p>
+                            @endif
                         </div>
                         <div class="col-md-6">
                             <h6>Drużyny, do których należysz</h6>
@@ -64,32 +72,14 @@
                             <h5 class="mt-2 mb-3">Zaproszenia do drużyny</h5>
                              <div class="table-responsive">
                             <table class="table table-hover table-striped">
-                                <tbody>                                    
+                                <tbody>  
+                                    @foreach ($ivite as $i)                                  
                                     <tr>
                                         <td>
-                                            <strong>VEEX</strong> zaprosił Cię do drużyny <strong>`Erydan Esports`</strong>
+                                            <strong>{{$i->owner}}</strong> zaprosił Cię do drużyny <strong>"{{$i->team}}"</strong>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <strong>Gary</strong> deleted My Board1 in <strong>`Discussions`</strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <strong>Kensington</strong> deleted MyBoard3 in <strong>`Discussions`</strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <strong>John</strong> deleted My Board1 in <strong>`Discussions`</strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <strong>Skell</strong> deleted his post Look at Why this is.. in <strong>`Discussions`</strong>
-                                        </td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                           </div>
