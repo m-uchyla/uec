@@ -7,7 +7,7 @@ use DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class ArticleInsertController extends Controller {
+class TeamsController extends Controller {
 
     // public function get(){
 
