@@ -173,6 +173,11 @@
                                 <input type="button" class="btn btn-light px-5" value="Utwórz drużynę">
                             </div>
                         </div>
+                        @error('account')
+                          <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                          </span>
+                        @enderror
                     </form>
                 </div>
             </div>
