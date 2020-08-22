@@ -20,9 +20,11 @@ class TeamsController extends Controller {
         //     $t->name = strval(DB::table('teams')->where('teamID',$t)->select("teamName")->first());
         // }
 
-        foreach($invite as $i){
-            $i->owner = strval(DB::table('users')->where('id',$i->$userID)->select('nick')->first());
-            $i->team = strval(DB::table('teams')->where('id',$i->$teamID)->select('teamName')->first());
+        if($invite != null){
+            foreach($invite as $i){
+                $i->owner = strval(DB::table('users')->where('id',$i->$userID)->select('nick')->first());
+                $i->team = strval(DB::table('teams')->where('id',$i->$teamID)->select('teamName')->first());
+            }
         }
 
         return view('dashboard', ['main' => $main, 'teams' => $teams, 'invite' => $invite]);
