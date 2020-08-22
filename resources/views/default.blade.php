@@ -35,18 +35,30 @@
                         </div>
                         <div class="col-md-6">
                             <h6>Twoje drużyny</h6>
-                            <a href="javascript:void();" class="badge badge-dark badge-pill">html5</a>
-                            <a href="javascript:void();" class="badge badge-dark badge-pill">react</a>
-                            <a href="javascript:void();" class="badge badge-dark badge-pill">codeply</a>
-                            <a href="javascript:void();" class="badge badge-dark badge-pill">angularjs</a>
-                            <a href="javascript:void();" class="badge badge-dark badge-pill">css3</a>
-                            <a href="javascript:void();" class="badge badge-dark badge-pill">jquery</a>
-                            <a href="javascript:void();" class="badge badge-dark badge-pill">bootstrap</a>
-                            <a href="javascript:void();" class="badge badge-dark badge-pill">responsive-design</a>
+                            <div class="badge badge-dark badge-pill">html5</div>
+                            <div class="badge badge-dark badge-pill">react</div>
+                            <div class="badge badge-dark badge-pill">codeply</div>
+                            <div" class="badge badge-dark badge-pill">angularjs</div>
+                            <div class="badge badge-dark badge-pill">css3</div>
+                            <div class="badge badge-dark badge-pill">jquery</div>
+                            <div class="badge badge-dark badge-pill">bootstrap</div>
+                            <div class="badge badge-dark badge-pill">responsive-design</div>
                             <hr>
-                            <span class="badge badge-primary"><i class="fa fa-user"></i> 900 Followers</span>
-                            <span class="badge badge-success"><i class="fa fa-cog"></i> 43 Forks</span>
-                            <span class="badge badge-danger"><i class="fa fa-eye"></i> 245 Views</span>
+                            @if ( (Auth::user()->steamID)== null)
+                            <span class="badge badge-danger">Brak przypisanego Steam ID 64 do konta</span>
+                            @endif
+                            @if ( (Auth::user()->photo)== null)
+                            <span class="badge badge-danger">Brak przypisanego zdjęcia do konta</span>
+                            @endif
+                            @if ( (Auth::user()->dateOfBirth)== null)
+                            <span class="badge badge-danger">Brak przypisanej daty urodzenia do konta</span>
+                            @endif
+                            @if ( ((Auth::user()->dateOfBirth) != null) && ((Auth::user()->steamID) != null) && ((Auth::user()->photo) != null))
+                            <span class="badge badge-success">Konto aktywne</span>
+                            @endif
+                            @if ( ((Auth::user()->dateOfBirth) == null) || ((Auth::user()->steamID) == null) || ((Auth::user()->photo) == null))
+                            <span class="badge badge-primary">Konto nieaktywne, uzupełnij brakujące informacje</span>
+                            @endif
                         </div>
                         <div class="col-md-12">
                             <h5 class="mt-2 mb-3"><span class="fa fa-clock-o ion-clock float-right"></span> Recent Activity</h5>
