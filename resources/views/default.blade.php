@@ -38,7 +38,7 @@
                             <div class="badge badge-dark badge-pill">html5</div>
                             <div class="badge badge-dark badge-pill">react</div>
                             <div class="badge badge-dark badge-pill">codeply</div>
-                            <div" class="badge badge-dark badge-pill">angularjs</div>
+                            <div class="badge badge-dark badge-pill">angularjs</div>
                             <div class="badge badge-dark badge-pill">css3</div>
                             <div class="badge badge-dark badge-pill">jquery</div>
                             <div class="badge badge-dark badge-pill">bootstrap</div>
