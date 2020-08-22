@@ -17,12 +17,12 @@ class TeamsController extends Controller {
         $invite = DB::table('teams-users')->where('userID', Auth::id())->where('isAccepted', 0);
 
         foreach($teams as $t){
-            $t = DB::table('teams')->where('teamID',$t)->select("teamName")->first();
+            $t = (DB::table('teams')->where('teamID',$t)->first())->teamName;
         }
 
         foreach($invite as $i){
-            $i->owner = DB::table('users')->where('id',$i->$userID)->select('nick')->first();
-            $i->team = DB::table('teams')->where('id',$i->$teamID)->select('teamName')->first();
+            $i->owner = (DB::table('users')->where('id',$i->$userID)->first())->nick;
+            $i->team = (DB::table('teams')->where('id',$i->$teamID)->first())->teamName;
         }
 
         return view('dashboard', ['main' => $main, 'teams' => $teams, 'invite' => $invite]);
