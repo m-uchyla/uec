@@ -53,8 +53,15 @@
       </li>
 
       <li>
-        <a href="{{ route('default') }}">
-          <i class="zmdi zmdi-view-dashboard"></i> <span>Default</span>
+        <a href="{{ route('dashboard') }}">
+          <i class="zmdi zmdi-view-dashboard"></i> <span>Panel główny</span>
+        </a>
+      </li>
+
+            
+      <li>
+        <a href="{{ route('profile') }}">
+          <i class="zmdi zmdi-account-circle"></i> <span>Edytuj profil</span>
         </a>
       </li>
 
@@ -81,12 +88,6 @@
           </a>
         </li>
       @endif
-      
-      <li>
-        <a href="{{ route('profile') }}">
-          <i class="zmdi zmdi-account-circle"></i> <span>Profil</span>
-        </a>
-      </li>
       <!-- <li>
         <a href="icons.html">
           <i class="zmdi zmdi-invert-colors"></i> <span>UI Icons</span>

@@ -38,7 +38,7 @@ Route::get('/send', 'APIController@update')
 Route::middleware('can:accessPanel')->group(function() {
     Route::prefix('panel')->group(function () {
 
-        Route::get('default', function () {return view('default');})->name('default');
+        Route::get('dashboard', 'TeamsController@dashboard')->name('dashboard');
         Route::post('createTeam', 'TeamsController@insert')->name('createTeam');
         Route::get('profile', 'UserController@getProfile')->name('profile');
         Route::post('profileEdit', 'UserController@updateProfile')->name('profileEdit');

@@ -6,25 +6,27 @@ use Illuminate\Http\Request;
 use DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class TeamsController extends Controller {
 
-    // public function get(){
+    public function dashboard(){
 
-    //     $articles = DB::table('articles')->latest()->simplePaginate(5);
-    //     $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','asc')->get();
+        $main = DB::table('teams')->where('ownerID', Auth::id())->first();
+        $teams = DB::table('teams-users')->where('userID', Auth::id())->where('isAccepted', 1)->select("teamID");
+        $invite = DB::table('teams-users')->where('userID', Auth::id())->where('isAccepted', 0);
 
-    //     foreach($articles as $article){
-    //         $author = DB::table('users')->where('id',$article->author)->first();
-    //         $article->authorID = $article->author;
-    //         $article->author = $author->name.(' "'.$author->nick.'" ').$author->lastName;
-    //     }
-    //     foreach($featured as $f){
-    //         $f->author = (DB::table('users')->where('id',$f->author)->first())->name;
-    //     }
+        foreach($teams as $t){
+            $t = DB::table('teams')->where('teamID',$t)->first()->teamName;
+        }
 
-    //     return view('articles', ['articles' => $articles, 'featured' => $featured]);
-    // }
+        foreach($invite as $i){
+            $i->owner = DB::table('users')->where('id',$i->$userID)->first()->nick;
+            $i->team = DB::table('teams')->where('id',$i->$teamID)->first()->teamName;
+        }
+
+        return view('dashboard', ['main' => $main, 'teams' => $teams, 'invite' => $invite]);
+    }
 
     // public function viewArticle($id){
 
