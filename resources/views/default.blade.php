@@ -26,15 +26,15 @@
                         <div class="col-md-6">
                             <h6>Kontakt</h6>
                             <p>
-                                Web Designer, UI/UX Engineer
+                            {{Auth::user()->email}}
                             </p>
-                            <!-- <h6>Hobbies</h6>
+                            <h6>Drużyna, której jesteś założycielem</h6>
                             <p>
-                                Indie music, skiing and hiking. I love the great outdoors.
-                            </p> -->
+                                Erydan Esports
+                            </p>
                         </div>
                         <div class="col-md-6">
-                            <h6>Twoje drużyny</h6>
+                            <h6>Drużyny, do których należysz</h6>
                             <div class="badge badge-dark badge-pill">html5</div>
                             <div class="badge badge-dark badge-pill">react</div>
                             <div class="badge badge-dark badge-pill">codeply</div>
@@ -61,13 +61,13 @@
                             @endif
                         </div>
                         <div class="col-md-12">
-                            <h5 class="mt-2 mb-3"><span class="fa fa-clock-o ion-clock float-right"></span> Recent Activity</h5>
+                            <h5 class="mt-2 mb-3">Zaproszenia do drużyny</h5>
                              <div class="table-responsive">
                             <table class="table table-hover table-striped">
                                 <tbody>                                    
                                     <tr>
                                         <td>
-                                            <strong>Abby</strong> joined ACME Project Team in <strong>`Collaboration`</strong>
+                                            <strong>VEEX</strong> zaprosił Cię do drużyny <strong>`Erydan Esports`</strong>
                                         </td>
                                     </tr>
                                     <tr>
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label">Fanpage</label>
+                            <label class="col-lg-3 col-form-label form-control-label">Fanpage (opcjonalnie)</label>
                             <div class="col-lg-9">
                                 <input class="form-control" type="url" placeholder="Podaj link do strony drużyny na facebooku">
                             </div>
