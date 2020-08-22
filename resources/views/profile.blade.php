@@ -9,7 +9,7 @@
 <div class="card-body">
            <div class="card-title">Edytuj profil</div>
            <hr>
-           <form method="POST" action="{{ route('editProfile') }}">
+           <form method="POST">
            @csrf
            <div class="form-group">
             <label for="input-1" id="title">Imię</label>
