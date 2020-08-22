@@ -54,4 +54,29 @@ class UserController extends Controller {
 
         return redirect()->route('usersList');
     }
+
+    public function updateProfile(Request $request){
+        $name = $request->input('name');
+        $lastName = $request->input('lastName');
+        $nick = $request->input('nick');
+        $email = $request->input('email');
+        $dateOfBirth = $request->input('dateOfBirth');
+        $photo = $request->input('photo');
+        $steamID = $request->input('steamID');
+        $id = $request->input('id');
+
+        $data=array(
+            "name"=>$name,
+            "lastName"=>$lastName,
+            "nick"=>$nick,
+            "email"=>$email,
+            "dateOfBirth"=>$dateOfBirth,
+            "photo"=>$photo,
+            "steamID"=>$steamID,
+        );
+
+        DB::table('users')->where('id',$id)->update($data);
+
+        return redirect()->route('profile');
+    }
 }

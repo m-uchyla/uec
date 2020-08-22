@@ -40,6 +40,7 @@ Route::middleware('can:accessPanel')->group(function() {
 
         Route::get('default', function () {return view('default');})->name('default');
         Route::get('profile', 'UserController@getProfile')->name('profile');
+        Route::post('profileEdit', 'UserController@updateProfile')->name('profileEdit');
 
         Route::middleware('can:accessDashboard')->group(function() {
             Route::get('admin', 'AdminController@get')->name('admin');

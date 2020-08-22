@@ -9,8 +9,9 @@
 <div class="card-body">
            <div class="card-title">Edytuj profil</div>
            <hr>
-           <form method="POST">
+           <form method="POST" action="{{ route('profileEdit') }}">
            @csrf
+           <input type="hidden" id="id" value="{{$user->id}}"name="id">
            <div class="form-group">
             <label for="input-1" id="title">Imię</label>
             <input type="text" class="form-control" id="name" value="{{$user->name}}" maxlength="50" name="name" autofocus required>
