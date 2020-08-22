@@ -140,8 +140,8 @@
                   </div>
                 </div>
                 <div class="tab-pane" id="edit">
-                    <form>
-
+                    <form method="POST" action="{{ route('createTeam') }}">
+                    @csrf
                         <input type="hidden" value="{{Auth::id()}}">
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Nazwa drużyny</label>
@@ -170,14 +170,9 @@
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label"></label>
                             <div class="col-lg-9">
-                                <input type="button" class="btn btn-light px-5" value="Utwórz drużynę">
+                                <input type="submit" class="btn btn-light px-5" value="Utwórz drużynę">
                             </div>
                         </div>
-                        @error('account')
-                          <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                          </span>
-                        @enderror
                     </form>
                 </div>
             </div>
