@@ -54,7 +54,7 @@
            </div>
            <div class="form-group">
             <label for="input-1" id="title">Rola</label>
-            <input type="text" class="form-control" id="email" value="{{$user->role}}" maxlength="50" name="email" required>
+            <input type="text" class="form-control" id="role" value="{{$user->role}}" maxlength="50" name="role" required>
            </div>
            <div class="form-group">
             <button type="submit" class="btn btn-light px-5"><i class="zmdi zmdi-assignment"></i>  Edytuj</button>
