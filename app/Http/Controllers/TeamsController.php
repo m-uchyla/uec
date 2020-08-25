@@ -98,7 +98,7 @@ class TeamsController extends Controller {
             "email"=>$email
         );
 
-        DB::table('teams')->where('id',$ownerID)->update($data);
+        DB::table('teams')->where('ownerID',$ownerID)->update($data);
 
         return redirect()->route('default');
     }
