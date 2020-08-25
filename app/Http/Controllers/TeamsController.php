@@ -84,28 +84,24 @@ class TeamsController extends Controller {
 
     // }
 
-    // public function update(Request $request){
-    //     $title = $request->input('title');
-    //     $team = $request->input('team');
-    //     $subtitle = $request->input('subtitle');
-    //     $content = $request->input('content');
-    //     $main_pic = $request->input('main_pic');
-    //     $big_pic = $request->input('big_pic');
-    //     $id = $request->input('id');
+    public function update(Request $request){
+        $teamName = $request->input('teamName');
+        $logo = $request->input('logo');
+        $email = $request->input('email');
+        $facebook = $request->input('facebook');
+        $ownerID = $request->input('ownerID');
 
-    //     $data=array(
-    //         "title"=>$title,
-    //         "team"=>$team,
-    //         "subtitle"=>$subtitle,
-    //         "content"=>$content,
-    //         "big_pic"=>$big_pic,
-    //         "main_pic"=>$main_pic
-    //     );
+        $data=array(
+            "teamName"=>$teamName,
+            "logo"=>$logo,
+            "facebook"=>$facebook,
+            "email"=>$email
+        );
 
-    //     DB::table('articles')->where('id',$id)->update($data);
+        DB::table('teams')->where('id',$ownerID)->update($data);
 
-    //     return redirect()->route('articles');
-    // }
+        return redirect()->route('default');
+    }
 
     public function insert(Request $request){
         $teamName = $request->input('teamName');

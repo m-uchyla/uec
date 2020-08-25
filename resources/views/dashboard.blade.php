@@ -133,6 +133,42 @@
                   </div>
                 </div>
                 <div class="tab-pane" id="edit">
+                    <form method="POST" action="{{ route('editTeam') }}">
+                    @csrf
+                        <input type="hidden" name="ownerID" value="{{Auth::id()}}">
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Nazwa drużyny</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" id="teamName" name="teamName" value="{{$main->teamName}}">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Fanpage (opcjonalnie)</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="url" id="facebook" name="facebook" value="{{$main->facebook}}">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="email" id="email" name="email" value="{{$main->email}}">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Logo</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="url" id="logo" name="logo" value="{{$main->logo}}">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-9">
+                                <input type="submit" class="btn btn-light px-5" value="Edytuj drużynę">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane" id="new">
                     <form method="POST" action="{{ route('createTeam') }}">
                     @csrf
                         <input type="hidden" name="ownerID" value="{{Auth::id()}}">
