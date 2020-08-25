@@ -15,7 +15,13 @@ class TeamsController extends Controller {
         $main = DB::table('teams')->where('ownerID', Auth::id())->first();
         // $teams = DB::table('teams-users')->where('userID', Auth::id())->where('isAccepted', 1)->select("teamID");
         $invite = DB::table('teams-users')->where('userID', Auth::id())->where('isAccepted', 0)->get();
-        $teams = DB::table('teams')->where('teamID', (DB::table('teams-users')->where('userID', Auth::id())->where('isAccepted', 1)->select("teamID")->get()))->where('isAccepted', 0)->get();
+        //$teams = DB::table('teams')->where('teamID', (DB::table('teams-users')->where('userID', Auth::id())->where('isAccepted', 1)->select("teamID")->get()))->where('isAccepted', 0)->get();
+
+        $teams = DB::table('teams-users')
+            ->join('teams', 'teams-users.teamID', '=', 'teams.teamID')
+            ->select('teams.teamName')
+            ->where('teams-users.userID', Auth::id())
+            ->get();
 
         // foreach($teams as $t){
         //     $t = DB::table('teams')->where('teamID',$t)->select("teamName")->first();
