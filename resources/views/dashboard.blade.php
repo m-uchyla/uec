@@ -44,7 +44,7 @@
                         <div class="col-md-6">
                             <h6>Drużyny, do których należysz</h6>
                             @forelse ($teams as $t)
-                            <div class="badge badge-dark badge-pill">{{$t}}</div>
+                            <div class="badge badge-dark badge-pill">{{$t->teamName}}</div>
                             @empty
                             <div class="badge badge-dark badge-pill">BRAK DRUŻYN</div>
                             @endforelse
