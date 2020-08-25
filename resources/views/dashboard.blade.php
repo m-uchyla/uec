@@ -43,14 +43,11 @@
                         </div>
                         <div class="col-md-6">
                             <h6>Drużyny, do których należysz</h6>
-                            <div class="badge badge-dark badge-pill">html5</div>
-                            <div class="badge badge-dark badge-pill">react</div>
-                            <div class="badge badge-dark badge-pill">codeply</div>
-                            <div class="badge badge-dark badge-pill">angularjs</div>
-                            <div class="badge badge-dark badge-pill">css3</div>
-                            <div class="badge badge-dark badge-pill">jquery</div>
-                            <div class="badge badge-dark badge-pill">bootstrap</div>
-                            <div class="badge badge-dark badge-pill">responsive-design</div>
+                            @forelse ($teams as $t)
+                            <div class="badge badge-dark badge-pill">{{$t}}</div>
+                            @empty
+                            <div class="badge badge-dark badge-pill">BRAK DRUŻYN</div>
+                            @endforelse
                             <hr>
                             @if ( (Auth::user()->steamID)== null)
                             <span class="badge badge-danger">Brak przypisanego Steam ID 64 do konta</span>
