@@ -67,8 +67,8 @@
 
       @if ((Auth::user()->role) < 2)
         <li>
-          <a href="{{ route('zmdi zmdi-balance') }}">
-            <i class="zmdi zmdi-view-dashboard"></i> <span>Panel administracyjny</span>
+          <a href="{{ route('admin') }}">
+            <i class="zmdi zmdi-balance"></i> <span>Panel administracyjny</span>
           </a>
         </li>
       @endif
