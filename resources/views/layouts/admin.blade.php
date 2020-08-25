@@ -88,6 +88,36 @@
           </a>
         </li>
       @endif
+
+    <li class="sidebar-header">NAWIGACJA TURNIEJU</li>
+    <li>
+        <a href="{{ route('bracket') }}">
+          <i class="zmdi zmdi-calendar-check"></i> <span>Harmonogram meczy</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{ route('bracket') }}">
+          <i class="zmdi zmdi-accounts-list-alt"></i> <span>Drabinka</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{ route('teams') }}">
+          <i class="zmdi zmdi-accounts"></i> <span>Drużyny</span>
+        </a>
+    </li>
+
+    <li class="sidebar-header">NAWIGACJA STRONY GŁÓWNEJ</li>
+    <li>
+        <a href="{{ route('homepage') }}">
+          <i class="zmdi zmdi-assignment"></i> <span>Newsy</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ route('about') }}">
+          <i class="zmdi zmdi-info"></i> <span>O nas</span>
+        </a>
+      </li>
+
       <!-- <li>
         <a href="icons.html">
           <i class="zmdi zmdi-invert-colors"></i> <span>UI Icons</span>

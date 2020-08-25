@@ -12,17 +12,19 @@
                 <li class="nav-item">
                     <a href="javascript:void();" data-target="#profile" data-toggle="pill" class="nav-link active"><i class="icon-user"></i> <span class="hidden-xs">Podsumowanie</span></a>
                 </li>
-                @if (($main->teamName)!= null )
-                <li class="nav-item">
-                    <a href="javascript:void();" data-target="#messages" data-toggle="pill" class="nav-link"><i class="icon-envelope-open"></i> <span class="hidden-xs">Zarządzaj drużyną</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="javascript:void();" data-target="#edit" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Edytuj drużynę</span></a>
-                </li>
-                @else
-                <li class="nav-item">
-                    <a href="javascript:void();" data-target="#new" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Utwórz drużynę</span></a>
-                </li>
+                @if ( ((Auth::user()->dateOfBirth) != null) && ((Auth::user()->steamID) != null) && ((Auth::user()->photo) != null))
+                    @if (($main->teamName)!= null )
+                        <li class="nav-item">
+                            <a href="javascript:void();" data-target="#messages" data-toggle="pill" class="nav-link"><i class="icon-envelope-open"></i> <span class="hidden-xs">Zarządzaj drużyną</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void();" data-target="#edit" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Edytuj drużynę</span></a>
+                        </li>
+                    @else
+                        <li class="nav-item">
+                            <a href="javascript:void();" data-target="#new" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Utwórz drużynę</span></a>
+                        </li>
+                    @endif
                 @endif
             </ul>
             <div class="tab-content p-3">

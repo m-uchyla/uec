@@ -100,7 +100,7 @@ class TeamsController extends Controller {
 
         DB::table('teams')->where('ownerID',$ownerID)->update($data);
 
-        return redirect()->route('default');
+        return redirect()->route('dashboard');
     }
 
     public function insert(Request $request){
@@ -130,6 +130,6 @@ class TeamsController extends Controller {
 
         DB::table('teams-users')->insert($data1);
 
-        return redirect()->route('default');
+        return redirect()->route('dashboard');
     }
 }
