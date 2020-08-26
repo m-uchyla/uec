@@ -134,6 +134,7 @@
                     </table>
                   </div>
                 </div>
+                @if ($main != null )
                 <div class="tab-pane" id="edit">
                     <form method="POST" action="{{ route('editTeam') }}">
                     @csrf
@@ -170,6 +171,7 @@
                         </div>
                     </form>
                 </div>
+                @endif
                 <div class="tab-pane" id="new">
                     <form method="POST" action="{{ route('createTeam') }}">
                     @csrf
