@@ -13,7 +13,7 @@
                     <a href="javascript:void();" data-target="#profile" data-toggle="pill" class="nav-link active"><i class="icon-user"></i> <span class="hidden-xs">Podsumowanie</span></a>
                 </li>
                 @if ( ((Auth::user()->dateOfBirth) != null) && ((Auth::user()->steamID) != null) && ((Auth::user()->photo) != null))
-                    @if (($main->teamName)!= null )
+                    @if ($main != null )
                         <li class="nav-item">
                             <a href="javascript:void();" data-target="#messages" data-toggle="pill" class="nav-link"><i class="icon-envelope-open"></i> <span class="hidden-xs">Zarządzaj drużyną</span></a>
                         </li>
