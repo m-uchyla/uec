@@ -36,7 +36,7 @@
                             <p>
                             {{Auth::user()->email}}
                             </p>
-                            @if (($main->teamName)!= null )
+                            @if ($main != null )
                                 <h6>Drużyna, której jesteś założycielem</h6>
                                 <p>
                                     {{$main->teamName}}
