@@ -29,15 +29,6 @@
             </ul>
             <div class="tab-content p-3">
                 <div class="tab-pane active" id="profile">
-                <div class="alert alert-danger alert-dismissible" role="alert">
-				   <button type="button" class="close" data-dismiss="alert">×</button>
-				    <div class="alert-icon">
-					 <i class="icon-info"></i>
-				    </div>
-				    <div class="alert-message">
-				      <span><strong>Info!</strong> Lorem Ipsum is simply dummy text.</span>
-				    </div>
-                  </div>
                     <h5 class="mb-3">{{Auth::user()->name}} "{{Auth::user()->nick}}" {{Auth::user()->lastName}}</h5>
                     <div class="row">
                         <div class="col-md-6">
