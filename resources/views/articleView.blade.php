@@ -126,7 +126,7 @@
                                 <div class="media post_item">
                                     <p>Zostałeś już zapisany do drużyny? Jeżeli nie- odwiedź swój profil, dołącz do istniejącej drużyny, lub utwórz ją i bądz gotów na zapisy do turnieju!</p>
                                 </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('default') }}';"
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('dashboard') }}';"
                                         type="button">Panel drużyn</button>
                             </aside>
                             @endauth
