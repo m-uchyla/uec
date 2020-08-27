@@ -44,7 +44,7 @@ class TeamsController extends Controller {
         return view('dashboard', ['main' => $main, 'teams' => $teams, 'invite' => $invite, 'players' => $players]);
     }
 
-    public function invite(){
+    public function invite(Request $request){
         $teamID = $request->input('teamID');
         $email = $request->input('email');
         $userID = DB::table('users')->where('email', $email)->select('id')->first();
@@ -62,7 +62,7 @@ class TeamsController extends Controller {
         return redirect()->route('dashboard');
     }
 
-    public function acceptInvite(){
+    public function acceptInvite(Request $request){
         $teamuserID = $request->input('teamuserID');
 
         DB::table('teams-users')->where('teamuserID', $teamuserID)->update(['isAccepted' => 1]);
@@ -70,7 +70,7 @@ class TeamsController extends Controller {
         return redirect()->route('dashboard');
     }
 
-    public function rejectInvite(){
+    public function rejectInvite(Request $request){
         $teamuserID = $request->input('teamuserID');
 
         DB::table('teams-users')->where('teamuserID', $teamuserID)->delete();
