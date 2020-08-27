@@ -13,19 +13,13 @@ class TeamsController extends Controller {
     public function dashboard(){
 
         $main = DB::table('teams')->where('ownerID', Auth::id())->first();
-        // $teams = DB::table('teams-users')->where('userID', Auth::id())->where('isAccepted', 1)->select("teamID");
         $invite = DB::table('teams-users')->where('userID', Auth::id())->where('isAccepted', 0)->get();
-        //$teams = DB::table('teams')->where('teamID', (DB::table('teams-users')->where('userID', Auth::id())->where('isAccepted', 1)->select("teamID")->get()))->where('isAccepted', 0)->get();
-
+        
         $teams = DB::table('teams-users')
             ->join('teams', 'teams-users.teamID', '=', 'teams.teamID')
             ->select('teams.teamName')
             ->where('teams-users.userID', Auth::id())
             ->get();
-
-        // foreach($teams as $t){
-        //     $t = DB::table('teams')->where('teamID',$t)->select("teamName")->first();
-        // }
 
         if($invite != null){
             foreach($invite as $i){
@@ -34,7 +28,15 @@ class TeamsController extends Controller {
             }
         }
 
-        return view('dashboard', ['main' => $main, 'teams' => $teams, 'invite' => $invite]);
+        if($main != null){
+            $players = DB::table('teams-users')
+            ->join('users', 'teams-users.userID', '=', 'users.id')
+            ->select('users.*')
+            ->where('teams-users.teamID', $main->teamID)
+            ->get();
+        }
+
+        return view('dashboard', ['main' => $main, 'teams' => $teams, 'invite' => $invite, 'players' => $players]);
     }
 
     // public function viewArticle($id){

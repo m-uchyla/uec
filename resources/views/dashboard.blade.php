@@ -93,45 +93,44 @@
                     <!--/row-->
                 </div>
                 <div class="tab-pane" id="messages">
-                    <div class="alert alert-info alert-dismissible" role="alert">
-				   <button type="button" class="close" data-dismiss="alert">×</button>
-				    <div class="alert-icon">
-					 <i class="icon-info"></i>
-				    </div>
-				    <div class="alert-message">
-				      <span><strong>Info!</strong> Lorem Ipsum is simply dummy text.</span>
-				    </div>
-                  </div>
+                    <h4 style="text-align:center"> Drużyna </h4>
+                <h5 class="mt-2 mb-3">Członkowie drużyny</h5>
                   <div class="table-responsive">
                     <table class="table table-hover table-striped">
-                        <tbody>                                    
+                        <tbody>  
+                            @forelse ($players as $p)                                  
                             <tr>
                                 <td>
-                                   <span class="float-right font-weight-bold">3 hrs ago</span> Here is your a link to the latest summary report from the..
+                                   <span class="float-right font-weight-bold">Usuń</span> 
+                                   {{$p->name}} "{{$p->nick}}" {{$p->lastName}}
                                 </td>
                             </tr>
+                            @empty
                             <tr>
                                 <td>
-                                   <span class="float-right font-weight-bold">Yesterday</span> There has been a request on your account since that was..
+                                   <span class="float-right font-weight-bold"></span> 
+                                   Brak graczy
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                   <span class="float-right font-weight-bold">9/10</span> Porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                   <span class="float-right font-weight-bold">9/4</span> Vestibulum tincidunt ullamcorper eros eget luctus. 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                   <span class="float-right font-weight-bold">9/4</span> Maxamillion ais the fix for tibulum tincidunt ullamcorper eros. 
-                                </td>
-                            </tr>
+                            @endforelse
                         </tbody> 
                     </table>
+                    <form method="POST" action="">
+                    @csrf
+                        <input type="hidden" name="ownerID" value="{{Auth::id()}}">
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Wprowadź email zawodnika, którego chcesz dodać do drużyny">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-9">
+                                <input type="submit" class="btn btn-light px-5" value="Zaproś">
+                            </div>
+                        </div>
+                    </form>
                   </div>
                 </div>
                 @if ($main != null )
