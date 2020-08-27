@@ -23,12 +23,12 @@ class TeamsController extends Controller {
 
         if($invite != null){
             foreach($invite as $i){
-                $i->owner = json_encode(DB::table('teams')
+                $i->owner = (DB::table('teams')
                     ->join('users', 'teams.ownerID', '=', 'users.id')
                     ->select('users.nick')
                     ->where('teams.teamID', $i->teamID)
-                    ->first());
-                $i->team = json_encode(DB::table('teams')->where('teamID',$i->teamID)->select('teamName')->first());
+                    ->first())->nick;
+                $i->team = (DB::table('teams')->where('teamID',$i->teamID)->select('teamName')->first())->teamName;
             }
         }
 
