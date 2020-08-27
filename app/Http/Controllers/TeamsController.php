@@ -50,7 +50,9 @@ class TeamsController extends Controller {
             "isAccepted"=>0,
         );
 
-        DB::table('teams-users')->insert($data);
+        if (DB::table('teams-users')->where('teamID', $teamID)->where('userID', $userID)->doesntExist()){
+            DB::table('teams-users')->insert($data);
+        }
 
         return redirect()->route('dashboard');
     }

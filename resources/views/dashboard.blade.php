@@ -80,20 +80,32 @@
                             <h5 class="mt-2 mb-3">Zaproszenia do drużyny</h5>
                              <div class="table-responsive">
                             <table class="table table-hover table-striped">
-                                <tbody>  
-                                    @forelse ($invite as $i)                                  
-                                    <tr>
-                                        <td>
-                                            <strong>{{$i->owner}}</strong> zaprosił Cię do drużyny <strong>"{{$i->team}}"</strong>
-                                        </td>
-                                    </tr>
-                                    @empty
-                                    <tr>
-                                        <td>
-                                            Brak nowych zaproszeń
-                                        </td>
-                                    </tr>
-                                    @endforelse
+                                <tbody>
+                                    @if ( ((Auth::user()->dateOfBirth) == null) || ((Auth::user()->steamID) == null) || ((Auth::user()->photo) == null))
+                                        <tr>
+                                            <td>
+                                                Konto nieaktywne, zaproszenia ukryte
+                                            </td>
+                                        </tr>
+                                    @else  
+                                        @forelse ($invite as $i)                                  
+                                        <tr>
+                                            <td>
+                                                <span class="float-right font-weight-bold">
+                                                <input type="button" class="btn btn-light px-5" value="Akceptuj">
+                                                <input type="button" class="btn btn-light px-5" value="Odrzuć">
+                                                </span>
+                                                <strong>{{$i->owner}}</strong> zaprosił Cię do drużyny <strong>"{{$i->team}}"</strong> 
+                                            </td>
+                                        </tr>
+                                        @empty
+                                        <tr>
+                                            <td>
+                                                Brak nowych zaproszeń
+                                            </td>
+                                        </tr>
+                                        @endforelse
+                                    @endif
                                 </tbody>
                             </table>
                           </div>
