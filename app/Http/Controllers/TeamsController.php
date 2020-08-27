@@ -28,7 +28,7 @@ class TeamsController extends Controller {
                     ->select('users.nick')
                     ->where('teams.teamID', $i->teamID)
                     ->first();
-                $i->team = DB::table('teams')->where('id',$i->$teamID)->select('teamName')->first();
+                $i->team = DB::table('teams')->where('id',$i->teamID)->select('teamName')->first();
             }
         }
 
