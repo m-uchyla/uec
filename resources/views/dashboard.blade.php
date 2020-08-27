@@ -29,6 +29,15 @@
             </ul>
             <div class="tab-content p-3">
                 <div class="tab-pane active" id="profile">
+                <div class="alert alert-danger alert-dismissible" role="alert">
+				   <button type="button" class="close" data-dismiss="alert">×</button>
+				    <div class="alert-icon">
+					 <i class="icon-info"></i>
+				    </div>
+				    <div class="alert-message">
+				      <span><strong>Info!</strong> Lorem Ipsum is simply dummy text.</span>
+				    </div>
+                  </div>
                     <h5 class="mb-3">{{Auth::user()->name}} "{{Auth::user()->nick}}" {{Auth::user()->lastName}}</h5>
                     <div class="row">
                         <div class="col-md-6">
@@ -92,10 +101,11 @@
                     </div>
                     <!--/row-->
                 </div>
+                @if ($main != null )
                 <div class="tab-pane" id="messages">
-                    <h4 style="text-align:center"> Drużyna </h4>
+                    <h4 style="text-align:center"> {{$main->teamName}} </h4>
                 <h5 class="mt-2 mb-3">Członkowie drużyny</h5>
-                  <div class="table-responsive">
+                  <div class="table-responsive" style="margin-bottom:25px">
                     <table class="table table-hover table-striped">
                         <tbody>  
                             @forelse ($players as $p)                                  
@@ -117,7 +127,7 @@
                     </table>
                   </div>
                   <h5 class="mt-2 mb-3">Zaproś zawodników</h5>
-                  @if ($main != null )
+                  
                   <form method="POST" action="{{ route('invite') }}">
                     @csrf
                         <input type="hidden" name="ownerID" value="{{Auth::id()}}">
