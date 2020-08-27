@@ -116,6 +116,7 @@
                         </tbody> 
                     </table>
                   </div>
+                  <h5 class="mt-2 mb-3">Zaproś zawodników</h5>
                   @if ($main != null )
                   <form method="POST" action="{{ route('invite') }}">
                     @csrf
@@ -125,14 +126,8 @@
                             <div class="col-lg-6">
                                 <input type="hidden" type="teamID" id="teamID" value="{{$main->teamID}}">
                                 <input class="form-control" type="email" id="email" name="email" placeholder="Wprowadź email zawodnika, którego chcesz dodać do drużyny">
-                                <input type="submit" class="btn btn-light px-5" value="Zaproś">
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label"></label>
-                            <div class="col-lg-9">
-                                <input type="submit" class="btn btn-light px-5" value="Zaproś">
-                            </div>
+                            <input type="submit" class="btn btn-light px-5" value="Zaproś">
                         </div>
                     </form>
                 </div>
