@@ -116,17 +116,15 @@
                         </tbody> 
                     </table>
                   </div>
-                  <form method="POST" action="">
+                  @if ($main != null )
+                  <form method="POST" action="{{ route('invite') }}">
                     @csrf
                         <input type="hidden" name="ownerID" value="{{Auth::id()}}">
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email</label>
                             <div class="col-lg-6">
+                                <input type="hidden" type="teamID" id="teamID" value="{{$main->teamID}}">
                                 <input class="form-control" type="email" id="email" name="email" placeholder="Wprowadź email zawodnika, którego chcesz dodać do drużyny">
-                                <input type="submit" class="btn btn-light px-5" value="Zaproś">
-                            </div>
-                            <input type="submit" class="btn btn-light px-5" value="Zaproś">
-                            <div class="col-lg-9">
                                 <input type="submit" class="btn btn-light px-5" value="Zaproś">
                             </div>
                         </div>
@@ -138,7 +136,6 @@
                         </div>
                     </form>
                 </div>
-                @if ($main != null )
                 <div class="tab-pane" id="edit">
                     <form method="POST" action="{{ route('editTeam') }}">
                     @csrf

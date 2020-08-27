@@ -42,6 +42,8 @@ Route::middleware('can:accessPanel')->group(function() {
         Route::post('createTeam', 'TeamsController@insert')->name('createTeam');
         Route::post('editTeam', 'TeamsController@update')->name('editTeam');
 
+        Route::post('invite', 'TeamsController@invite')->name('invite');
+
         Route::get('profile', 'UserController@getProfile')->name('profile');
         Route::post('profileEdit', 'UserController@updateProfile')->name('profileEdit');
 

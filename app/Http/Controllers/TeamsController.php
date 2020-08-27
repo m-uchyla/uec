@@ -39,6 +39,22 @@ class TeamsController extends Controller {
         return view('dashboard', ['main' => $main, 'teams' => $teams, 'invite' => $invite, 'players' => $players]);
     }
 
+    public function invite(){
+        $teamID = $request->input('teamID');
+        $email = $request->input('email');
+        $userID = DB::table('users')->where('email', $email)->select('id')->first();
+
+        $data=array(
+            "teamID"=>$teamID,
+            "userID"=>$userID,
+            "isAccepted"=>0,
+        );
+
+        DB::table('teams-users')->insert($data);
+
+        return redirect()->route('dashboard');
+    }
+
     // public function viewArticle($id){
 
     //     $article = DB::table('articles')->where('id',$id)->first();
