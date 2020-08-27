@@ -185,7 +185,10 @@
      
   <ul class="navbar-nav align-items-center right-nav-link">
     <li class="nav-item">
-    <input type="button" class="btn btn-light px-5" onclick="window.location.href='{{ route('logout') }}';" value="Wyloguj">
+    <form method="POST" action="{{ route('logout') }}"> 
+    @csrf
+      <input type="submit" class="btn btn-light px-5" value="Wyloguj">
+    </form>
     </li>
   </ul>
 </nav>
