@@ -94,12 +94,12 @@
                                                 <span class="float-right font-weight-bold">
                                                 <form method="POST" action="{{ route('acceptInvite') }}">
                                                     @csrf
-                                                    <input type="hidden" name="teamuserID" value="{{$i->team-userID}}">
+                                                    <input type="hidden" name="teamuserID" value="{{$i->teamuserID}}">
                                                     <input type="submit" class="btn btn-light px-5" value="Akceptuj">
                                                 </form>
                                                 <form method="POST" action="{{ route('rejectInvite') }}">
                                                     @csrf
-                                                    <input type="hidden" name="teamuserID" value="{{$i->team-userID}}">
+                                                    <input type="hidden" name="teamuserID" value="{{$i->teamuserID}}">
                                                     <input type="submit" class="btn btn-light px-5" value="Odrzuć">
                                                 </form>
                                                 </span>

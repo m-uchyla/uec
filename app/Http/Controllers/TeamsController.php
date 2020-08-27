@@ -65,7 +65,7 @@ class TeamsController extends Controller {
     public function acceptInvite(){
         $teamuserID = $request->input('teamuserID');
 
-        DB::table('teams-users')->where('team-userID', $teamuserID)->update(['isAccepted' => 1]);
+        DB::table('teams-users')->where('teamuserID', $teamuserID)->update(['isAccepted' => 1]);
 
         return redirect()->route('dashboard');
     }
@@ -73,7 +73,7 @@ class TeamsController extends Controller {
     public function rejectInvite(){
         $teamuserID = $request->input('teamuserID');
 
-        DB::table('teams-users')->where('team-userID', $teamuserID)->delete();
+        DB::table('teams-users')->where('teamuserID', $teamuserID)->delete();
 
         return redirect()->route('dashboard');
     }
