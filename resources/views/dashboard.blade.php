@@ -92,8 +92,16 @@
                                         <tr>
                                             <td>
                                                 <span class="float-right font-weight-bold">
-                                                <input type="button" class="btn btn-light px-5" value="Akceptuj">
-                                                <input type="button" class="btn btn-light px-5" value="Odrzuć">
+                                                <form method="POST" action="{{ route('acceptInvite') }}">
+                                                    @csrf
+                                                    <input type="hidden" name="teamuserID" value="{{$i->team-userID}}">
+                                                    <input type="submit" class="btn btn-light px-5" value="Akceptuj">
+                                                </form>
+                                                <form method="POST" action="{{ route('rejectInvite') }}">
+                                                    @csrf
+                                                    <input type="hidden" name="teamuserID" value="{{$i->team-userID}}">
+                                                    <input type="submit" class="btn btn-light px-5" value="Odrzuć">
+                                                </form>
                                                 </span>
                                                 <strong>{{$i->owner}}</strong> zaprosił Cię do drużyny <strong>"{{$i->team}}"</strong> 
                                             </td>

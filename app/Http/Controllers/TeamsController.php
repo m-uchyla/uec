@@ -19,6 +19,7 @@ class TeamsController extends Controller {
             ->join('teams', 'teams-users.teamID', '=', 'teams.teamID')
             ->select('teams.teamName')
             ->where('teams-users.userID', Auth::id())
+            ->where('teams-users.isAccepted', 1)
             ->get();
 
         if($invite != null){
@@ -61,52 +62,21 @@ class TeamsController extends Controller {
         return redirect()->route('dashboard');
     }
 
-    // public function viewArticle($id){
+    public function acceptInvite(){
+        $teamuserID = $request->input('teamuserID');
 
-    //     $article = DB::table('articles')->where('id',$id)->first();
-    //     DB::table('articles')->where('id',$id)->increment('views');
-    //     $author = DB::table('users')->where('id',$article->author)->first();
-    //     $article->author = $author->name.(' "'.$author->nick.'" ').$author->lastName;
-    //     $contents = explode(PHP_EOL, $article->content);
-    //     $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','asc')->get();
-    //     $also = DB::table('articles')->orderBy('views', 'desc')->latest()->simplePaginate(5);
+        DB::table('teams-users')->where('team-userID', $teamuserID)->update(['isAccepted' => 1]);
 
-    //     return view('articleView', ['article' => $article, 'featured' => $featured, 'contents' => $contents, 'also' => $also]);
-    // }
+        return redirect()->route('dashboard');
+    }
 
-    // public function getHomepage(){
+    public function rejectInvite(){
+        $teamuserID = $request->input('teamuserID');
 
-    //     $articles = DB::table('articles')->latest()->paginate(3);
-    //     $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','asc')->get();
-    //     $also = DB::table('articles')->orderBy('views', 'desc')->latest()->simplePaginate(5);
+        DB::table('teams-users')->where('team-userID', $teamuserID)->delete();
 
-    //     foreach($articles as $article){
-    //         $author = DB::table('users')->where('id',$article->author)->first();
-    //         $article->author = $author->name.(' "'.$author->nick.'" ').$author->lastName;
-    //     }
-
-    //     return view('homepage', ['articles' => $articles, 'featured' => $featured, 'also' => $also]);
-    // }
-
-    // public function getAbout(){
-
-    //     $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','asc')->get();
-    //     return view('about', ['featured' => $featured]);
-    // }
-
-    // public function edit(Request $request){
-    //     $id = $request->input("articleID");
-    //     $article = DB::table('articles')->where('id',$id)->first();
-    //     return view('editArticle',['article'=> $article]);
-
-    // }
-
-    // public function delete(Request $request){
-    //     $id = $request->input("articleID");
-    //     $article = DB::table('articles')->where('id',$id)->delete();
-    //     return redirect()->route('articles');
-
-    // }
+        return redirect()->route('dashboard');
+    }
 
     public function update(Request $request){
         $teamName = $request->input('teamName');
