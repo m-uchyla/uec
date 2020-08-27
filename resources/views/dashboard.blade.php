@@ -123,7 +123,9 @@
                             <label class="col-lg-3 col-form-label form-control-label">Email</label>
                             <div class="col-lg-6">
                                 <input class="form-control" type="email" id="email" name="email" placeholder="Wprowadź email zawodnika, którego chcesz dodać do drużyny">
+                                <input type="submit" class="btn btn-light px-5" value="Zaproś">
                             </div>
+                            <input type="submit" class="btn btn-light px-5" value="Zaproś">
                             <div class="col-lg-9">
                                 <input type="submit" class="btn btn-light px-5" value="Zaproś">
                             </div>
