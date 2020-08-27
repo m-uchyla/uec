@@ -115,13 +115,17 @@
                             @endforelse
                         </tbody> 
                     </table>
-                    <form method="POST" action="">
+                  </div>
+                  <form method="POST" action="">
                     @csrf
                         <input type="hidden" name="ownerID" value="{{Auth::id()}}">
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email</label>
-                            <div class="col-lg-9">
+                            <div class="col-lg-6">
                                 <input class="form-control" type="email" id="email" name="email" placeholder="Wprowadź email zawodnika, którego chcesz dodać do drużyny">
+                            </div>
+                            <div class="col-lg-9">
+                                <input type="submit" class="btn btn-light px-5" value="Zaproś">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -131,7 +135,6 @@
                             </div>
                         </div>
                     </form>
-                  </div>
                 </div>
                 @if ($main != null )
                 <div class="tab-pane" id="edit">
