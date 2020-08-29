@@ -98,7 +98,7 @@ class ArticleInsertController extends Controller {
 
     public function insert(Request $request){
 
-        $validatedData = $request->validate([
+        $request->validate([
             'author' => ['required'],
             'title' => ['required', 'max:255', 'min:4'],
             'team' => ['required', 'max:255', 'min:2'],
@@ -108,21 +108,13 @@ class ArticleInsertController extends Controller {
             'big_pic' => ['ends_with:png,jpg,jpeg', 'max:255', 'nullable', 'active_url'],
         ]);
 
-        $author = $validatedData->author;
-        $title = $validatedData->title;
-        $team = $validatedData->team;
-        $subtitle = $validatedData->subtitle;
-        $content = $validatedData->content;
-        $main_pic = $validatedData->main_pic;
-        $big_pic = $validatedData->big_pic;
-
-        // $author = $request->input('author');
-        // $title = $request->input('title');
-        // $team = $request->input('team');
-        // $subtitle = $request->input('subtitle');
-        // $content = $request->input('content');
-        // $main_pic = $request->input('main_pic');
-        // $big_pic = $request->input('big_pic');
+        $author = $request->input('author');
+        $title = $request->input('title');
+        $team = $request->input('team');
+        $subtitle = $request->input('subtitle');
+        $content = $request->input('content');
+        $main_pic = $request->input('main_pic');
+        $big_pic = $request->input('big_pic');
 
         $data=array(
             "author"=>$author,
