@@ -15,6 +15,15 @@
            <div class="card-title">Nowy artykuł</div>
            <hr>
            <form method="POST" action="{{ route('newarticle') }}">
+           @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
            @csrf
            <div class="form-group">
             <label for="input-1" id="title">Tytuł *</label>
