@@ -34,7 +34,7 @@ class TeamsController extends Controller {
         }
 
         $players = null;
-        
+
         if($main != null){
             $players = DB::table('teams-users')
             ->join('users', 'teams-users.userID', '=', 'users.id')
@@ -57,7 +57,7 @@ class TeamsController extends Controller {
             "isAccepted"=>0,
         );
 
-        if (DB::table('teams-users')->where('teamID', $teamID)->where('userID', $userID)->doesntExist()){
+        if ((DB::table('teams-users')->where('teamID', $teamID)->where('userID', $userID)->count()) == 0){
             DB::table('teams-users')->insert($data);
         }
 
