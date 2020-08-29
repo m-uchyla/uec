@@ -33,6 +33,8 @@ class TeamsController extends Controller {
             }
         }
 
+        $players = null;
+        
         if($main != null){
             $players = DB::table('teams-users')
             ->join('users', 'teams-users.userID', '=', 'users.id')
