@@ -29,6 +29,15 @@
             </ul>
             <div class="tab-content p-3">
                 <div class="tab-pane active" id="profile">
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                     <h5 class="mb-3">{{Auth::user()->name}} "{{Auth::user()->nick}}" {{Auth::user()->lastName}}</h5>
                     <div class="row">
                         <div class="col-md-6">

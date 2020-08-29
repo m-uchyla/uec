@@ -79,6 +79,15 @@ class TeamsController extends Controller {
     }
 
     public function update(Request $request){
+
+        $request->validate([
+            'teamName' => ['required', 'max:255', 'min:2'],
+            'logo' => ['required', 'max:255', 'min:4', 'active_url'],
+            'email' => ['required', 'max:255', 'min:4', 'email'],
+            'facebook' => ['nullable', 'max:255', 'min:4', 'active_url'],
+            'ownerID' => ['required'],
+        ]);
+
         $teamName = $request->input('teamName');
         $logo = $request->input('logo');
         $email = $request->input('email');
@@ -98,6 +107,15 @@ class TeamsController extends Controller {
     }
 
     public function insert(Request $request){
+
+        $request->validate([
+            'teamName' => ['required', 'max:255', 'min:2'],
+            'logo' => ['required', 'max:255', 'min:4', 'active_url'],
+            'email' => ['required', 'max:255', 'min:4', 'email'],
+            'facebook' => ['nullable', 'max:255', 'min:4', 'active_url'],
+            'ownerID' => ['required'],
+        ]);
+
         $teamName = $request->input('teamName');
         $logo = $request->input('logo');
         $email = $request->input('email');
