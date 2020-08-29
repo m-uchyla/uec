@@ -57,7 +57,7 @@ class TeamsController extends Controller {
             "isAccepted"=>0,
         );
 
-        if ((DB::table('teams-users')->where('teamID', $teamID)->where('userID', $userID)->count()) == 0){
+        if ((DB::table('teams-users')->where('teamID', $teamID)->where('userID', $userID)->first()) == null){
             DB::table('teams-users')->insert($data);
         }
 
