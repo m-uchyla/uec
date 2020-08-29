@@ -40,11 +40,11 @@
            </div>
            <div class="form-group">
             <label for="input-4">Link do grafiki głownej *</label>
-            <input type="text" class="form-control" id="main_pic" placeholder="Link do obrazu o wymiarach: " maxlength="250" name="main_pic" required>
+            <input type="url" class="form-control" id="main_pic" placeholder="Link do obrazu o wymiarach: " maxlength="250" name="main_pic" required>
            </div>
            <div class="form-group">
             <label for="input-5">Link do grafiki dodatkowej</label>
-            <input type="text" class="form-control" id="big_pic" maxlength="250" placeholder="Tylko na potrzeby wyróżnionego posta. Link do obrazu o wymiarach" name="big_pic">
+            <input type="url" class="form-control" id="big_pic" maxlength="250" placeholder="Tylko na potrzeby wyróżnionego posta. Link do obrazu o wymiarach" name="big_pic">
            </div>
            <div class="form-group">
             <label for="input-6">Treść *</label>

@@ -42,7 +42,7 @@
 			  <div class="form-group">
 			  <label for="email" class="sr-only">Email</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="email" name="email" class="form-control input-shadow @error('email') is-invalid @enderror" placeholder="Podaj adres email" autocomplete="email" autofocus required>
+				  <input type="email" id="email" name="email" class="form-control input-shadow @error('email') is-invalid @enderror" placeholder="Podaj adres email" autocomplete="email" autofocus required>
           @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
