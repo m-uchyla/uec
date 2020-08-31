@@ -10,6 +10,30 @@
     @yield('style')
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.png', true) }}">
     @include('css')
+    <style>
+      .cookie-banner {
+  position: fixed;
+  bottom: 40px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  padding: 5px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.close {
+  height: 20px;
+  background-color: #777;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+    </style>
     <script data-ad-client="ca-pub-9696942259354560" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
@@ -35,13 +59,27 @@
         
     
     @include('footer')
-
+    <div class=’cookie-banner’ style=’display: none’>
+<p>
+    By using our website, you agree to our 
+    <a href=’insert-link’>cookie policy</a>
+  </p>
+<button class=’close’>&times;</button>
+</div>
 
     <!-- Scroll Up -->
     <!-- <div id="back-top" >
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div> -->
-
+<script>
+  if (localStorage.getItem(‘cookieSeen’) != ‘shown’) {
+  $(‘.cookie-banner’).delay(2000).fadeIn();
+  localStorage.setItem(‘cookieSeen’,’shown’)
+};
+$(‘.close’).click(function() {
+  $(‘.cookie-banner’).fadeOut();
+})
+  </script>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
       <script>
