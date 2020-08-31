@@ -54,12 +54,9 @@ class TeamsController extends Controller {
         $data=array(
             "teamID"=>$teamID,
             "userID"=>$userID,
-            "isAccepted"=>0,
         );
 
-        if ((DB::table('teams-users')->where('teamID', $teamID)->where('userID', $userID)->first()) == null){
-            DB::table('teams-users')->insert($data);
-        }
+        DB::table('teams-users')->insertOrIgnore($data);
 
         return redirect()->route('dashboard');
     }
