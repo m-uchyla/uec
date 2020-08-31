@@ -82,7 +82,7 @@
     <script>
       function cookie() {
         if (localStorage.getItem('cookieSeen') != 'shown') {
-          document.getElementById('cookie-banner').delay(2000).fadeIn();
+          document.getElementById('cookie-banner').fadeIn();
           localStorage.setItem('cookieSeen','shown')
         };
 
