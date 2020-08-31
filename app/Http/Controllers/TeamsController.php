@@ -56,7 +56,7 @@ class TeamsController extends Controller {
             "userID"=>$userID,
         );
 
-        DB::table('teams-users')->insertOrIgnore($data);
+        DB::table('teams-users')->insert($data);
 
         return redirect()->route('dashboard');
     }
