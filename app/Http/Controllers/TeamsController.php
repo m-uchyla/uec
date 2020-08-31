@@ -49,7 +49,7 @@ class TeamsController extends Controller {
     public function invite(Request $request){
         $teamID = $request->input('teamID');
         $email = $request->input('email');
-        $userID = DB::table('users')->where('email', $email)->select('id')->first();
+        $userID = (DB::table('users')->where('email', $email)->first())->id;
 
         $data=array(
             "teamID"=>$teamID,
