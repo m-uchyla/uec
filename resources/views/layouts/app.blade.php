@@ -35,12 +35,12 @@
         
     
     @include('footer')
-    <div class=’cookie-banner’ style=’display: none’>
+    <div class='cookie-banner' style='display: none'>
 <p>
     By using our website, you agree to our 
-    <a href=’insert-link’>cookie policy</a>
+    <a href='insert-link'>cookie policy</a>
   </p>
-<button class=’close-cookie’>&times;</button>
+<button class='close-cookie'>&times;</button>
 </div>
 
     <!-- Scroll Up -->
