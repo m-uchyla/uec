@@ -48,16 +48,16 @@
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div> -->
 <script>
+  $( document ).ready(function() {
+    if (localStorage.getItem('cookieSeen') != 'shown') {
+      document.getElementById('cookie-banner').delay(2000).fadeIn();
+      localStorage.setItem('cookieSeen','shown')
+    };
 
-  if (localStorage.getItem('cookieSeen') != 'shown') {
-    document.getElementById('cookie-banner').delay(2000).fadeIn();
-    localStorage.setItem('cookieSeen','shown')
-  };
-
-  document.getElementById('.close-cookie').click(function() {
-    document.getElementById('.cookie-banner').fadeOut();
-  })
-
+    document.getElementById('.close-cookie').click(function() {
+      document.getElementById('.cookie-banner').fadeOut();
+    })
+  });
 </script>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
