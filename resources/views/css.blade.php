@@ -14,4 +14,3 @@
 	<link rel="stylesheet" href="{{ asset('resources/main/css/nice-select.css', true) }}">
 	<link rel="stylesheet" href="{{ asset('resources/main/css/style.css', true) }}">
 	<link rel="stylesheet" href="{{ asset('resources/main/css/responsive.css', true) }}">
-	<script src='https://code.jquery.com/jquery-3.5.1.js'></script>
