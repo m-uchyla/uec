@@ -11,8 +11,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.png', true) }}">
     @include('css')
     <script data-ad-client="ca-pub-9696942259354560" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="stylesheet" href="purecookie.css"/>
+    <script src="purecookie.js"></script>
 </head>
-<body onload="cookie();">
+<body>
     <!-- ? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -35,13 +37,6 @@
         
     
     @include('footer')
-    <div class='cookie-banner' id='cookie-banner' style='display: none'>
-<p>
-    Używając naszej strony zgadzasz się na 
-    <a href='insert-link'> używanie ciasteczek</a>
-  </p>
-<button class='close-cookie' id='close-cookie'>&times;</button>
-</div>
 
     <!-- Scroll Up -->
     <!-- <div id="back-top" >
@@ -78,19 +73,6 @@
     @include('js')
 
     @yield('script')
-
-    <script>
-      function cookie() {
-        if (localStorage.getItem('cookieSeen') != 'shown') {
-          document.getElementById('cookie-banner').style.display='inline';
-          localStorage.setItem('cookieSeen','shown')
-        };
-
-        document.getElementById('.close-cookie').click(function() {
-          document.getElementById('.cookie-banner').style.display='none';
-        })
-      };
-    </script>
     
     </body>
 </html>
