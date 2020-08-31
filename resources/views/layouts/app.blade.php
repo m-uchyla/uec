@@ -82,12 +82,12 @@
     <script>
       function cookie() {
         if (localStorage.getItem('cookieSeen') != 'shown') {
-          document.getElementById('cookie-banner').fadeIn();
+          document.getElementById('cookie-banner').style.display='inline';
           localStorage.setItem('cookieSeen','shown')
         };
 
         document.getElementById('.close-cookie').click(function() {
-          document.getElementById('.cookie-banner').fadeOut();
+          document.getElementById('.cookie-banner').style.display='none';
         })
       };
     </script>
