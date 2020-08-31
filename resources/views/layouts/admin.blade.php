@@ -88,7 +88,7 @@
           </a>
         </li>
       @endif
-
+    @if ((Auth::user()->role) < 2)
     <li class="sidebar-header">NAWIGACJA TURNIEJU</li>
     <li>
         <a href="{{ route('bracket') }}">
@@ -105,7 +105,7 @@
           <i class="zmdi zmdi-accounts"></i> <span>Drużyny</span>
         </a>
     </li>
-
+    @endif
     <li class="sidebar-header">NAWIGACJA STRONY GŁÓWNEJ</li>
     <li>
         <a href="{{ route('homepage') }}">

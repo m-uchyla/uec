@@ -19,15 +19,19 @@
 								</div>
 								<nav class="hamburger-menu">
 									<ul id="navigation">
-										<li><a href="{{ route('homepage') }}">Strona główna</a></li>
-                                        <li>
-											<a href="blog.html">Bieżący turniej</a>
-											<ul class="submenu">
-                                                <li><a href="blog.html">Harmonogram meczy</a></li>
-                                                <li><a href="{{ route('bracket') }}">Drabinka</a></li>
-                                                <li><a href="{{ route('teams') }}">Drużyny</a></li>
-											</ul>
-										</li>
+                                        <li><a href="{{ route('homepage') }}">Strona główna</a></li>
+                                        @auth
+                                            @if ((Auth::user()->role) < 2)
+                                            <li>
+                                                <a href="blog.html">Bieżący turniej</a>
+                                                <ul class="submenu">
+                                                    <li><a href="blog.html">Harmonogram meczy</a></li>
+                                                    <li><a href="{{ route('bracket') }}">Drabinka</a></li>
+                                                    <li><a href="{{ route('teams') }}">Drużyny</a></li>
+                                                </ul>
+                                            </li>
+                                            @endif
+                                        @endauth
                                         <li>
 											<a href="{{ route('about') }}">O nas</a>
 											<ul class="submenu">
