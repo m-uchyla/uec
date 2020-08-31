@@ -12,7 +12,7 @@
     @include('css')
     <script data-ad-client="ca-pub-9696942259354560" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
-<body>
+<body onload="cookie();">
     <!-- ? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -48,7 +48,7 @@
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div> -->
 <script>
-  $( document ).ready(function() {
+  function cookie() {
     if (localStorage.getItem('cookieSeen') != 'shown') {
       document.getElementById('cookie-banner').delay(2000).fadeIn();
       localStorage.setItem('cookieSeen','shown')
@@ -57,7 +57,7 @@
     document.getElementById('.close-cookie').click(function() {
       document.getElementById('.cookie-banner').fadeOut();
     })
-  });
+  };
 </script>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
