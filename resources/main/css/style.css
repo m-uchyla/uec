@@ -2806,24 +2806,42 @@ nav.nav-menu-show {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .slider-area .slide-full {
+        background-position: left center
+    }
+
     .slider-height {
         height: 800px
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .slider-area .slide-full {
+        background-position: left center
+    }
+
     .slider-height {
         height: 650px
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .slider-area .slide-full {
+        background-position: left center
+    }
+
     .slider-height {
         height: 600px
     }
 }
 
 @media (max-width: 575px) {
+
+    .slider-area .slide-full {
+        background-position: left center
+    }
+
     .slider-height {
         height: 600px
     }
