@@ -47,18 +47,7 @@
     <!-- <div id="back-top" >
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div> -->
-<script>
-  function cookie() {
-    if (localStorage.getItem('cookieSeen') != 'shown') {
-      document.getElementById('cookie-banner').delay(2000).fadeIn();
-      localStorage.setItem('cookieSeen','shown')
-    };
 
-    document.getElementById('.close-cookie').click(function() {
-      document.getElementById('.cookie-banner').fadeOut();
-    })
-  };
-</script>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
       <script>
@@ -89,6 +78,19 @@
     @include('js')
 
     @yield('script')
+
+    <script>
+      function cookie() {
+        if (localStorage.getItem('cookieSeen') != 'shown') {
+          document.getElementById('cookie-banner').delay(2000).fadeIn();
+          localStorage.setItem('cookieSeen','shown')
+        };
+
+        document.getElementById('.close-cookie').click(function() {
+          document.getElementById('.cookie-banner').fadeOut();
+        })
+      };
+    </script>
     
     </body>
 </html>
