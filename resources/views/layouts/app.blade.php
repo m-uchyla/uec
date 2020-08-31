@@ -35,12 +35,12 @@
         
     
     @include('footer')
-    <div class='cookie-banner' style='display: none'>
+    <div class='cookie-banner' id='cookie-banner' style='display: none'>
 <p>
-    By using our website, you agree to our 
-    <a href='insert-link'>cookie policy</a>
+    Używając naszej strony zgadzasz się na 
+    <a href='insert-link'> używanie ciasteczek</a>
   </p>
-<button class='close-cookie'>&times;</button>
+<button class='close-cookie' id='close-cookie'>&times;</button>
 </div>
 
     <!-- Scroll Up -->
@@ -48,14 +48,17 @@
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div> -->
 <script>
+
   if (localStorage.getItem('cookieSeen') != 'shown') {
-  $('.cookie-banner').delay(2000).fadeIn();
-  localStorage.setItem('cookieSeen','shown')
-};
-$('.close-cookie').click(function() {
-  $('.cookie-banner').fadeOut();
-})
-  </script>
+    document.getElementById('cookie-banner').delay(2000).fadeIn();
+    localStorage.setItem('cookieSeen','shown')
+  };
+
+  document.getElementById('.close-cookie').click(function() {
+    document.getElementById('.cookie-banner').fadeOut();
+  })
+
+</script>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
       <script>
