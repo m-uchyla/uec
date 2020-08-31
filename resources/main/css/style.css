@@ -5119,6 +5119,10 @@ nav.nav-menu-show {
 }
 
 @media (max-width: 991px) {
+    .slide-full {
+        background-position: left center
+    }
+
     .single-post-area .sidebar-widgets {
         padding-bottom: 0px
     }
