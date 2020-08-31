@@ -48,12 +48,12 @@
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div> -->
 <script>
-  if (localStorage.getItem(‘cookieSeen’) != ‘shown’) {
-  $(‘.cookie-banner’).delay(2000).fadeIn();
-  localStorage.setItem(‘cookieSeen’,’shown’)
+  if (localStorage.getItem('cookieSeen') != 'shown') {
+  $('.cookie-banner').delay(2000).fadeIn();
+  localStorage.setItem('cookieSeen','shown')
 };
-$(‘.close-cookie’).click(function() {
-  $(‘.cookie-banner’).fadeOut();
+$('.close-cookie').click(function() {
+  $('.cookie-banner').fadeOut();
 })
   </script>
     <!-- Load Facebook SDK for JavaScript -->
