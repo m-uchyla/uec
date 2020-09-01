@@ -3,7 +3,7 @@
 @section('content')
         <!--? Blog Area Start-->
         <!--? About Start-->
-        <section class="about-area section-padding2"  id="about">
+        <section class="about-area section-padding2"  id="about" style="padding-bottom: 0px">
             <div class="container"> 
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-10">
@@ -35,20 +35,17 @@
             </div>
         </section>
         <!-- About  End-->
+
+
         <!--? All startups Start -->
-        <div class="starups-area testimonial-area fix">
-            <!--left Contents  -->
+        <!-- <div class="starups-area testimonial-area fix">
             <div class="starups-img">
                 <div class="play-btn"><a class="popup-video" href="https://youtu.be/KWgl4uyeiHQ"><i class="flaticon-null-3"></i></a></div>
             </div>
-            <!-- Right Contents -->
             <div class="starups">
-                <!--? Testimonial Start -->
                 <div class="h1-testimonial-active">
-                    <!-- Single Testimonial -->
                     <div class="single-testimonial text-center">
                         <div class="testimonial-caption ">
-                            <!-- founder -->
                             <div class="testimonial-founder d-flex align-items-center justify-content-center mb-40">
                                 <div class="founder-img">
                                     <img src="https://i.imgur.com/6ewtPHO.png" alt="">
@@ -58,7 +55,6 @@
                                     <p>Były manager ACTINA PACT i Pompa Team</p>
                                 </div>
                             </div>
-                            <!-- Caption -->
                             <div class="testimonial-top-cap">
                                 <p>Najlepszy turniej online na jaki trafiłem. Cechuje się ogromnym profesjonalizmem i świetnym podejściem do zawodników i kibiców. Gorąco polecam każdemu</p>
                             </div>
@@ -66,10 +62,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- Testimonial End -->
             </div>
-        </div>
+        </div> -->
         <!--All startups End -->
+
+
         <!--? Team Start -->
         <div class="team-area section-padding30">
             <div class="container">
