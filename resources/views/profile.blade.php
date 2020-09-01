@@ -31,9 +31,9 @@
            <div class="form-group">
             <label for="input-1" id="title">Steam ID 64</label>
             @if ( $user->steamID == null )
-            <input type="number" class="form-control" id="steamID" placeholder="Podaj steamID 64 (np. przy użyciu www.steamid.io)" minlength="17" maxlength="17" name="steamID">
+            <input type="text" class="form-control" id="steamID" placeholder="Podaj steamID 64 (np. przy użyciu www.steamid.io)" minlength="17" maxlength="17" name="steamID">
             @else
-            <input type="number" class="form-control" id="steamID" value="{{$user->steamID}}" minlength="17" maxlength="17" name="steamID">
+            <input type="text" class="form-control" id="steamID" value="{{$user->steamID}}" minlength="17" maxlength="17" name="steamID">
             @endif
            </div>
            <div class="form-group">
@@ -49,7 +49,7 @@
             @if ( $user->photo == null )
             <input type="url" class="form-control" id="photo" maxlength="200" placeholder="Podaj link do Twojego zdjęcia (np. przy użyciu https://imgur.com/)" name="photo">
             @else
-            <input type="text" class="form-control" id="photo" maxlength="200" value="{{$user->photo}}" name="photo">
+            <input type="url" class="form-control" id="photo" maxlength="200" value="{{$user->photo}}" name="photo">
             @endif
            </div>
            <div class="form-group">

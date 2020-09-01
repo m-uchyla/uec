@@ -49,14 +49,20 @@ class TeamsController extends Controller {
     public function invite(Request $request){
         $teamID = $request->input('teamID');
         $email = $request->input('email');
-        $userID = (DB::table('users')->where('email', $email)->first())->id;
+        $user = DB::table('users')->where('email', $email)->first();
+        if ($user){
+            $userID = $user->id;
+        }
 
         $data=array(
             "teamID"=>$teamID,
             "userID"=>$userID,
         );
 
-        if ( DB::table('teams-users')->where('userID', $userID)->where('teamID', $teamID)->doesntExist()){
+        if ( 
+        (DB::table('teams-users')->where('userID', $userID)->where('teamID', $teamID)->doesntExist())
+        &&
+        (DB::table('users')->where('email', $email)->exists()) ){
         DB::table('teams-users')->insert($data);
         }
 
