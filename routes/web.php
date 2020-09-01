@@ -45,6 +45,7 @@ Route::middleware('can:accessPanel')->group(function() {
         Route::post('invite', 'TeamsController@invite')->name('invite');
         Route::post('acceptInvite', 'TeamsController@acceptInvite')->name('acceptInvite');
         Route::post('rejectInvite', 'TeamsController@rejectInvite')->name('rejectInvite');
+        Route::post('remove', 'TeamsController@remove')->name('remove');
 
         Route::get('profile', 'UserController@getProfile')->name('profile');
         Route::post('profileEdit', 'UserController@updateProfile')->name('profileEdit');
