@@ -40,7 +40,7 @@
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
       <a href="{{ route('homepage') }}">
-       <img src="{{ asset('resources/main/img/logo/logo.png', true) }}" style="width:85px" class="logo-icon" alt="logo icon">
+       <img src="{{ asset('resources/main/img/logo/logo1.png', true) }}" style="width:85px" class="logo-icon" alt="logo icon">
      </a>
    </div>
    <ul class="sidebar-menu do-nicescrol">

@@ -52,20 +52,17 @@ class TeamsController extends Controller {
         $user = DB::table('users')->where('email', $email)->first();
         if ($user){
             $userID = $user->id;
+            
+
+            $data=array(
+                "teamID"=>$teamID,
+                "userID"=>$userID,
+            );
+
+            if ( DB::table('teams-users')->where('userID', $userID)->where('teamID', $teamID)->doesntExist() ){
+                DB::table('teams-users')->insert($data);
+            }
         }
-
-        $data=array(
-            "teamID"=>$teamID,
-            "userID"=>$userID,
-        );
-
-        if ( 
-        (DB::table('teams-users')->where('userID', $userID)->where('teamID', $teamID)->doesntExist())
-        &&
-        (DB::table('users')->where('email', $email)->exists()) ){
-        DB::table('teams-users')->insert($data);
-        }
-
         return redirect()->route('dashboard');
     }
 
