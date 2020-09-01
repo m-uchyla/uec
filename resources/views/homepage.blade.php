@@ -140,17 +140,12 @@
                                 <h4 class="widget_title" style="color: #2d2d2d;">Bądź na bieżąco</h4>
                                 <ul class="list cat-list" >
                                     <li>
-                                        <a href="#" class="d-flex">
+                                        <a href="https://www.facebook.com/UndergroundEsportCup/" class="d-flex" target="_blank">
                                         <p> Facebook</p>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Twitter</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
+                                        <a href="https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg" class="d-flex" target="_blank">
                                             <p>YouTube</p>
                                         </a>
                                     </li>
