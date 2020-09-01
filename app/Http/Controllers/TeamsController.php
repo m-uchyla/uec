@@ -82,6 +82,15 @@ class TeamsController extends Controller {
         return redirect()->route('dashboard');
     }
 
+    public function remove(Request $request){
+        $userID = $request->input('userID');
+        $teamID = $request->input('teamID');
+
+        DB::table('teams-users')->where('teamID', $teamID)->where('userID', $userID)->delete();
+
+        return redirect()->route('dashboard');
+    }
+
     public function update(Request $request){
 
         $request->validate([
