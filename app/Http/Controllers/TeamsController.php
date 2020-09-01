@@ -40,6 +40,7 @@ class TeamsController extends Controller {
             ->join('users', 'teams-users.userID', '=', 'users.id')
             ->select('users.*')
             ->where('teams-users.teamID', $main->teamID)
+            ->where('teams-users.isAccepted', 1)
             ->get();
         }
 

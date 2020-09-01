@@ -148,7 +148,7 @@
                                                 @csrf
                                                 <input type="hidden" name="userID" value="{{$p->id}}">
                                                 <input type="hidden" name="teamID" value="{{$main->teamID}}">
-                                                <span class="float-right font-weight-bold"><input type="submit">Usuń</input></span> 
+                                                <span class="float-right font-weight-bold"><input type="submit" style="btn btn-light px-5" value="Usuń"></span> 
                                             </form>
                                             {{$p->name}} "{{$p->nick}}" {{$p->lastName}}
                                         </td>
