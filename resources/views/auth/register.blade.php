@@ -130,7 +130,7 @@
 			  
 			   <div class="form-group">
 			     <div class="icheck-material-white">
-                   <input type="checkbox" id="user-checkbox" checked="" />
+                   <input type="checkbox" id="user-checkbox" checked="" required />
                    <label for="user-checkbox">Zgadzam się z <a href="{{ route('terms') }}" target="_blank">REGULAMINEM SERWISU</a></label>
 			     </div>
 			    </div>
