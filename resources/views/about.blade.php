@@ -39,7 +39,7 @@
         <div class="starups-area testimonial-area fix">
             <!--left Contents  -->
             <div class="starups-img">
-                <div class="play-btn"><a class="popup-video" href="https://www.youtube.com/watch?v=ssBM8JaPMiw"><i class="flaticon-null-3"></i></a></div>
+                <div class="play-btn"><a class="popup-video" href="https://youtu.be/KWgl4uyeiHQ"><i class="flaticon-null-3"></i></a></div>
             </div>
             <!-- Right Contents -->
             <div class="starups">
@@ -51,11 +51,11 @@
                             <!-- founder -->
                             <div class="testimonial-founder d-flex align-items-center justify-content-center mb-40">
                                 <div class="founder-img">
-                                    <img src="{{ asset('resources/main/img/gallery/testimonial.png', true) }}" alt="">
+                                    <img src="https://i.imgur.com/6ewtPHO.png" alt="">
                                 </div>
                                 <div class="founder-text">
-                                    <span>Imię "nick" nazwisko</span>
-                                    <p>Funkcja</p>
+                                    <span>Krzysiek "KXN" Szymczak</span>
+                                    <p>Były manager ACTINA PACT i Pompa Team</p>
                                 </div>
                             </div>
                             <!-- Caption -->
