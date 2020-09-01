@@ -40,6 +40,7 @@ class TeamsController extends Controller {
             ->join('users', 'teams-users.userID', '=', 'users.id')
             ->select('users.*')
             ->where('teams-users.teamID', $main->teamID)
+            ->where('teams-users.isAccepted', 1)
             ->get();
         }
 
@@ -49,17 +50,20 @@ class TeamsController extends Controller {
     public function invite(Request $request){
         $teamID = $request->input('teamID');
         $email = $request->input('email');
-        $userID = (DB::table('users')->where('email', $email)->first())->id;
+        $user = DB::table('users')->where('email', $email)->first();
+        if ($user){
+            $userID = $user->id;
+            
 
-        $data=array(
-            "teamID"=>$teamID,
-            "userID"=>$userID,
-        );
+            $data=array(
+                "teamID"=>$teamID,
+                "userID"=>$userID,
+            );
 
-        if ( DB::table('teams-users')->where('userID', $userID)->where('teamID', $teamID)->doesntExist()){
-        DB::table('teams-users')->insert($data);
+            if ( DB::table('teams-users')->where('userID', $userID)->where('teamID', $teamID)->doesntExist() ){
+                DB::table('teams-users')->insert($data);
+            }
         }
-
         return redirect()->route('dashboard');
     }
 
@@ -75,6 +79,15 @@ class TeamsController extends Controller {
         $teamuserID = $request->input('teamuserID');
 
         DB::table('teams-users')->where('teamuserID', $teamuserID)->delete();
+
+        return redirect()->route('dashboard');
+    }
+
+    public function remove(Request $request){
+        $userID = $request->input('userID');
+        $teamID = $request->input('teamID');
+
+        DB::table('teams-users')->where('teamID', $teamID)->where('userID', $userID)->delete();
 
         return redirect()->route('dashboard');
     }

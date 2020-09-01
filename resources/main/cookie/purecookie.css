@@ -58,7 +58,7 @@
 
 @media (max-width: 980px) {
     .cookieConsentContainer {
-        bottom: 0px !important;
+        bottom: 100px !important;
         left: 0px !important;
         width: 100% !important;
     }

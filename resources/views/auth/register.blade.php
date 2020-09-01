@@ -30,7 +30,7 @@
    <!-- end loader -->
 
 <!-- Start wrapper-->
- <div id="wrapper" style="margin-top:150px"> 
+ <div id="wrapper" style="margin-top:100px"> 
 
 	<div class="card card-authentication1 mx-auto my-4">
 		<div class="card-body">
@@ -128,12 +128,12 @@
 			   </div>
 			  </div>
 			  
-			   <!-- <div class="form-group">
+			   <div class="form-group">
 			     <div class="icheck-material-white">
-                   <input type="checkbox" id="user-checkbox" checked="" />
-                   <label for="user-checkbox">I Agree With Terms & Conditions</label>
+                   <input type="checkbox" id="user-checkbox" checked="" required />
+                   <label for="user-checkbox">Zgadzam się z <a href="{{ route('terms') }}" target="_blank">REGULAMINEM SERWISU</a></label>
 			     </div>
-			    </div> -->
+			    </div>
 			  
 			 <button type="submit" class="btn btn-light btn-block waves-effect waves-light">Załóż konto</button>
 			  <div class="text-center mt-3" style="margin-bottom:16px">Lub</div>

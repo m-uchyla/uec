@@ -134,20 +134,33 @@
                   <div class="table-responsive" style="margin-bottom:25px">
                     <table class="table table-hover table-striped">
                         <tbody>  
-                            @forelse ($players as $p)                                  
-                            <tr>
-                                <td>
-                                   <span class="float-right font-weight-bold">Usuń</span> 
-                                   {{$p->name}} "{{$p->nick}}" {{$p->lastName}}
-                                </td>
-                            </tr>
+                            @forelse ($players as $p) 
+                                @if ($p->id == Auth::user()->id)
+                                    <tr>
+                                        <td>
+                                        {{$p->name}} "{{$p->nick}}" {{$p->lastName}}
+                                        </td>
+                                    </tr> 
+                                @else                                
+                                    <tr>
+                                        <td>
+                                            <form method="POST" action="{{ route('remove') }}">
+                                                @csrf
+                                                <input type="hidden" name="userID" value="{{$p->id}}">
+                                                <input type="hidden" name="teamID" value="{{$main->teamID}}">
+                                                <span class="float-right font-weight-bold"><input type="submit" class="btn btn-light px-5" value="Usuń"></span> 
+                                            </form>
+                                            {{$p->name}} "{{$p->nick}}" {{$p->lastName}}
+                                        </td>
+                                    </tr>
+                                @endif
                             @empty
-                            <tr>
-                                <td>
-                                   <span class="float-right font-weight-bold"></span> 
-                                   Brak graczy
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>
+                                    <span class="float-right font-weight-bold"></span> 
+                                    Brak graczy
+                                    </td>
+                                </tr>
                             @endforelse
                         </tbody> 
                     </table>
