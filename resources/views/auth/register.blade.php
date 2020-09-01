@@ -30,7 +30,7 @@
    <!-- end loader -->
 
 <!-- Start wrapper-->
- <div id="wrapper" style="margin-top:150px"> 
+ <div id="wrapper" style="margin-top:100px"> 
 
 	<div class="card card-authentication1 mx-auto my-4">
 		<div class="card-body">
@@ -131,7 +131,7 @@
 			   <div class="form-group">
 			     <div class="icheck-material-white">
                    <input type="checkbox" id="user-checkbox" checked="" />
-                   <label for="user-checkbox">Zgadzam się z <a href="google.com" target="_blank">REGULAMINEM SERIWUS</a></label>
+                   <label for="user-checkbox">Zgadzam się z <a href="{{ route('terms') }}" target="_blank">REGULAMINEM SERWISU</a></label>
 			     </div>
 			    </div>
 			  
