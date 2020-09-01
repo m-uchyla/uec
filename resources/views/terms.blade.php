@@ -2,10 +2,10 @@
 
 @section('content')
         <!--? Blog Area Start-->
-        <section class="about-area section-padding2"  id="terms">
+        <section class="about-area section-padding2"  id="terms" style="padding-top:0px">
             <a href="#terms" class="btn" id="click" style="visibility:hidden"></a>
             <!--? Team Start -->
-            <div class="team-area section-padding30">
+            <div class="team-area section-padding30" style="padding-top:50px">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
