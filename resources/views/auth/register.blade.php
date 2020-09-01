@@ -128,12 +128,12 @@
 			   </div>
 			  </div>
 			  
-			   <!-- <div class="form-group">
+			   <div class="form-group">
 			     <div class="icheck-material-white">
                    <input type="checkbox" id="user-checkbox" checked="" />
-                   <label for="user-checkbox">I Agree With Terms & Conditions</label>
+                   <label for="user-checkbox">Zgadzam się z <a href="google.com" target="_blank">REGULAMINEM SERIWUS</a></label>
 			     </div>
-			    </div> -->
+			    </div>
 			  
 			 <button type="submit" class="btn btn-light btn-block waves-effect waves-light">Załóż konto</button>
 			  <div class="text-center mt-3" style="margin-bottom:16px">Lub</div>
