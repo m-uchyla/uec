@@ -120,7 +120,7 @@ class ArticleInsertController extends Controller {
             'title' => ['required', 'max:255', 'min:4'],
             'team' => ['required', 'max:255', 'min:2'],
             'subtitle' => ['required', 'max:255', 'min:4'],
-            'content' => ['required', 'max:5010', 'min:4'],
+            'content' => ['required', 'max:10010', 'min:4'],
             'main_pic' => ['required', 'ends_with:png,jpg,jpeg', 'max:255', 'min:4', 'active_url'],
             'big_pic' => ['ends_with:png,jpg,jpeg', 'max:255', 'nullable', 'active_url'],
         ]);

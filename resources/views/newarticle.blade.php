@@ -49,9 +49,9 @@
            <div class="form-group">
             <label for="input-6">Treść *</label>
             <!-- <input type="text" class="form-control" id="input-4" placeholder="Enter Password"> -->
-            <textarea id="content" onkeyup="charcountupdate(this.value)" name="content" rows="10" class="form-control" maxlength="5000" required> </textarea>
-            <span id=charcount></span>
+            <textarea id="content" onkeyup="charcountupdate(this.value)" name="content" rows="10" class="form-control" maxlength="10000" required> </textarea>
            </div>
+           <span id=charcount></span>
             <p>* - pola wymagane</p>
            <div class="form-group">
             <button type="submit" class="btn btn-light px-5"><i class="zmdi zmdi-assignment"></i>  Dodaj</button>
@@ -75,7 +75,7 @@ $('#content').trumbowyg();
 
 function charcountupdate(str) {
 	var lng = str.length;
-	document.getElementById("charcount").innerHTML = 5000-lng + ' pozostało z 5000 znaków';
+	document.getElementById("charcount").innerHTML = 10000-lng + ' pozostało z 10000 znaków';
 }
 
 </script>
