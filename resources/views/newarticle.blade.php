@@ -27,7 +27,7 @@
            @csrf
            <div class="form-group">
             <label for="input-1" id="title">Tytuł *</label>
-            <input type="text" class="form-control" id="title" placeholder="Wprowadź tytuł" maxlength="50" name="title" autofocus required>
+            <input type="text" class="form-control" id="title" placeholder="Wprowadź tytuł" maxlength="250" name="title" autofocus required>
            </div>
            <input type="hidden" id="author" name="author" value="{{ Auth::id() }}">
            <div class="form-group">
@@ -36,7 +36,7 @@
            </div>
            <div class="form-group">
             <label for="input-3">Podtytuł *</label>
-            <input type="text" class="form-control" id="subtitle" maxlength="200" placeholder="Napisz dwa-trzy zdania do czego odnosi się artykuł nawiązując do tytułu." name="subtitle" required>
+            <input type="text" class="form-control" id="subtitle" maxlength="250" placeholder="Napisz dwa-trzy zdania do czego odnosi się artykuł nawiązując do tytułu." name="subtitle" required>
            </div>
            <div class="form-group">
             <label for="input-4">Link do grafiki głownej *</label>
