@@ -15,6 +15,15 @@
            <div class="card-title">Edytuj artykuł</div>
            <hr>
            <form method="POST" action="{{ route('updateArticle') }}">
+           @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
            @csrf
            <input type="hidden" id="id" name="id" value="{{ $article->id }}">
            <div class="form-group">

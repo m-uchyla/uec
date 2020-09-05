@@ -64,7 +64,7 @@ Route::middleware('can:accessPanel')->group(function() {
             Route::post('articles/delete','ArticleInsertController@delete')->name("deleteArticle");
         });
 
-        Route::middleware('can:accessArticles')->group(function() {
+        Route::middleware('can:accessUsers')->group(function() {
             Route::get('users', 'UserController@get')->name('usersList');
             Route::get('users/edit', 'UserController@edit')->name('editUser');
             Route::post('users/update','UserController@update')->name("updateUser");
