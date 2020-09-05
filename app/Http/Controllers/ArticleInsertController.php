@@ -82,7 +82,6 @@ class ArticleInsertController extends Controller {
     public function update(Request $request){
 
         $request->validate([
-            'author' => ['required'],
             'title' => ['required', 'max:255', 'min:4'],
             'team' => ['required', 'max:255', 'min:2'],
             'subtitle' => ['required', 'max:255', 'min:4'],
