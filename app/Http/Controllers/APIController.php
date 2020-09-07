@@ -84,5 +84,10 @@ class APIController extends Controller {
         return $response;
     }
 
+    public function registration (Request $request){
+
+        return null;
+    }
+
     
 }

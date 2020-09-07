@@ -157,10 +157,10 @@
                     <td>{{$r->lineup[0]->name}}</td>
                     <td>{{$r->created_at}}</td>
 					          <td>
-                    <form method="GET" action="">
+                    <form method="GET" action="{{ route('registration') }}">
                         @csrf
-                        <input type="hidden" id="articleID" name="articleID" value="">
-                        <button type="submit" class="btn btn-light px-5"> Edytuj</button>
+                        <input type="hidden" id="registrationID" name="registrationID" value="{{$r->id}}">
+                        <button type="submit" class="btn btn-light px-5">Moderowanie</button>
                     </form>
                     </td>
                    </tr>

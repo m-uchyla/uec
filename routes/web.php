@@ -53,6 +53,7 @@ Route::middleware('can:accessPanel')->group(function() {
 
         Route::middleware('can:accessDashboard')->group(function() {
             Route::get('admin', 'AdminController@get')->name('admin');
+            Route::get('registration', 'APIController@registration')->name('registration');
         });
 
         Route::middleware('can:accessArticles')->group(function() {
