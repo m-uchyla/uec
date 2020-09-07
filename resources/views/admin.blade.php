@@ -106,20 +106,20 @@
              <table class="table align-items-center">
                <tbody>
                <tr>
-                   <td></i>Suma miejsc</td>
+                   <td></i>Suma zgłoszeń</td>
                    <td>16</td>
                  </tr>
                  <tr>
                    <td><i class="fa fa-circle text-white mr-2"></i> Potwierdzone zgłoszenia</td>
-                   <td>9</td>
+                   <td id='accepted'>9</td>
                  </tr>
                  <tr>
                    <td><i class="fa fa-circle text-light-2 mr-2"></i>Niepotwierdzone zgłoszenia</td>
-                   <td>4</td>
+                   <td id='pending'>4</td>
                  </tr>
                  <tr>
                    <td><i class="fa fa-circle text-light-3 mr-2"></i>Wolne miejsca</td>
-                   <td>3</td>
+                   <td id='free'>3</td>
 
                  </tr>
                </tbody>
@@ -303,20 +303,6 @@ var ctx = document.getElementById('chart1').getContext('2d');
         }
     });
 
-    const arrayR = @json($registrations);
-
-    function getNumber(status){
-
-      for each (let r in arrayR){
-
-        if (arrayR.status == status){
-        number++;
-        }
-
-      }
-      return number;
-    }
-
     var ctx = document.getElementById("chart2").getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'doughnut',
@@ -329,9 +315,9 @@ var ctx = document.getElementById('chart1').getContext('2d');
                     "rgba(255, 255, 255, 0.20)"
                 ],
                 data: [
-                  getNumber('accepted'), 
-                  getNumber('pending'), 
-                  (16 - getNumber('accepted')) 
+                  document.getElementById("accepted").innerHTML, 
+                  document.getElementById("pending").innerHTML, 
+                  document.getElementById("free") .innerHTML
                 ],
                 borderWidth: [0, 0, 0]
             }]
