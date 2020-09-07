@@ -150,20 +150,22 @@
                    </thead>
                    <tbody>
                    @foreach ($registrations as $r)
-                   <tr>
-                    <td>{{$r->name}}</td>
-                    <td>{{$r->email}}</td>
-                    <td>{{$r->id}}</td>
-                    <td>{{$r->lineup[0]->name}}</td>
-                    <td>{{$r->created_at}}</td>
-					          <td>
-                    <form method="GET" action="{{ route('registration') }}">
-                        @csrf
-                        <input type="hidden" id="registrationID" name="registrationID" value="{{$r->id}}">
-                        <button type="submit" class="btn btn-light px-5">Moderowanie</button>
-                    </form>
-                    </td>
-                   </tr>
+                    @if($r->status == "pending")
+                    <tr>
+                      <td>{{$r->name}}</td>
+                      <td>{{$r->email}}</td>
+                      <td>{{$r->id}}</td>
+                      <td>{{$r->lineup[0]->name}}</td>
+                      <td>{{$r->created_at}}</td>
+                      <td>
+                      <form method="GET" action="{{ route('registration') }}">
+                          @csrf
+                          <input type="hidden" id="registrationID" name="registrationID" value="{{$r->id}}">
+                          <button type="submit" class="btn btn-light px-5">Moderowanie</button>
+                      </form>
+                      </td>
+                    </tr>
+                    @endif
                    @endforeach
 
 
@@ -192,72 +194,25 @@
                      <th>Akcja</th>
                    </tr>
                    </thead>
-                   <tbody><tr>
-                    <td>Iphone 5</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405822</td>
-                    <td>$ 1250.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 90%"></div>
-                        </div></td>
-                   </tr>
-
-                   <tr>
-                    <td>Earphone GL</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405820</td>
-                    <td>$ 1500.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 60%"></div>
-                        </div></td>
-                   </tr>
-
-                   <tr>
-                    <td>HD Hand Camera</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405830</td>
-                    <td>$ 1400.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 70%"></div>
-                        </div></td>
-                   </tr>
-
-                   <tr>
-                    <td>Clasic Shoes</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405825</td>
-                    <td>$ 1200.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 100%"></div>
-                        </div></td>
-                   </tr>
-
-                   <tr>
-                    <td>Hand Watch</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405840</td>
-                    <td>$ 1800.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 40%"></div>
-                        </div></td>
-                   </tr>
-				   
-				   <tr>
-                    <td>Clasic Shoes</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405825</td>
-                    <td>$ 1200.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 100%"></div>
-                        </div></td>
-                   </tr>
-
+                   <tbody>
+                   @foreach ($registrations as $r)
+                    @if($r->status == "accepted")
+                    <tr>
+                      <td>{{$r->name}}</td>
+                      <td>{{$r->email}}</td>
+                      <td>{{$r->id}}</td>
+                      <td>{{$r->lineup[0]->name}}</td>
+                      <td>{{$r->created_at}}</td>
+                      <td>
+                      <form method="GET" action="{{ route('registration') }}">
+                          @csrf
+                          <input type="hidden" id="registrationID" name="registrationID" value="{{$r->id}}">
+                          <button type="submit" class="btn btn-light px-5">Zgłoszenie</button>
+                      </form>
+                      </td>
+                    </tr>
+                    @endif
+                   @endforeach
                  </tbody></table>
                </div>
 	   </div>
@@ -345,6 +300,37 @@ var ctx = document.getElementById('chart1').getContext('2d');
                 }]
             }
 
+        }
+    });
+
+    var ctx = document.getElementById("chart2").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ["Potwierdzone zgłoszenia", "Niepotwierdzone zgłoszenia", "Wolne miejsca"],
+            datasets: [{
+                backgroundColor: [
+                    "#ffffff",
+                    "rgba(255, 255, 255, 0.50)",
+                    "rgba(255, 255, 255, 0.20)"
+                ],
+                data: [2, 0, 14],
+                borderWidth: [0, 0, 0]
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            legend: {
+                position: "bottom",
+                display: false,
+                labels: {
+                    fontColor: '#ddd',
+                    boxWidth: 15
+                }
+            },
+            tooltips: {
+                displayColors: false
+            }
         }
     });
 
