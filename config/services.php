@@ -30,4 +30,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'toornament_api' => [
+        'clientID' => env('CLIENT_ID', 'e61fd46a3437441ae2ed72085mqhuwuo8gsggggskgk4og8owcckkckgcskws4kkk0000ocws8'),
+        'clientSecret' => env('CLIENT_SECRET', '1l80dg7iyxs0s8ggocwg80s4k8gwcscc0k4gog04w4gs4gw40o'),
+        'apiKey' => env('API_KEY', 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U'),
+    ]
+
 ];
