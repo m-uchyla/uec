@@ -154,7 +154,7 @@
                     <td>{{$r->name}}</td>
                     <td>{{$r->email}}</td>
                     <td>{{$r->id}}</td>
-                    <td>{{$r->lineup[0]}}</td>
+                    <td>{{$r->lineup[0]->name}}</td>
                     <td>{{$r->created_at}}</td>
 					          <td>
                     <form method="GET" action="">
