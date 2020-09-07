@@ -307,7 +307,7 @@ var ctx = document.getElementById('chart1').getContext('2d');
 
     function getNumber(status){
 
-      for each (r in arrayR){
+      for each (let r in arrayR){
 
         if (arrayR.status == status){
         number++;
