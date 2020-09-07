@@ -128,9 +128,6 @@
          </div>
      </div>
 	</div><!--End Row-->
-  @foreach ($test as $t)
-    {{$t}}
-  @endforeach
 	@foreach ($registrations as $r)
   
 	<div class="row">
