@@ -45,7 +45,7 @@ class AdminController extends Controller {
             'Range' => 'registrations=0-16'
         ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations');
 
-        return view('admin', ['views' => $views, 'lastViews' => $lastViews,'users' => $users, 'count' => $count, 'registrations' => $registrations]);
+        return view('admin', ['views' => $views, 'lastViews' => $lastViews,'users' => $users, 'count' => $count, 'registrations' => json_decode($registrations)]);
     }
 
     
