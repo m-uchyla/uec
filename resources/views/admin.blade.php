@@ -129,7 +129,7 @@
      </div>
 	</div><!--End Row-->
 	@foreach ($registrations as $r)
-  {{$r}}
+  {{$r->name}}
   @endforeach
 	<div class="row">
 	 <div class="col-12 col-lg-12">
