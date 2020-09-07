@@ -128,7 +128,6 @@
          </div>
      </div>
 	</div><!--End Row-->
-	@foreach ($registrations as $r)
   
 	<div class="row">
 	 <div class="col-12 col-lg-12">
@@ -144,21 +143,28 @@
                      <th>Nazwa drużyny</th>
                      <th>Email</th>
                      <th>ID drużyny</th>
-                     <th>Ilość graczy</th>
+                     <th>Kapitan</th>
                      <th>Data zgłoszenia</th>
                      <th>Akcja</th>
                    </tr>
                    </thead>
-                   <tbody><tr>
+                   <tbody>
+                   @foreach ($registrations as $r)
+                   <tr>
                     <td>{{$r->name}}</td>
                     <td>{{$r->email}}</td>
                     <td>{{$r->id}}</td>
-                    <td>$ 1250.00</td>
+                    <td>{{$r->lineup[0]}}</td>
                     <td>{{$r->created_at}}</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 90%"></div>
-                        </div></td>
+					          <td>
+                    <form method="GET" action="">
+                        @csrf
+                        <input type="hidden" id="articleID" name="articleID" value="">
+                        <button type="submit" class="btn btn-light px-5"> Edytuj</button>
+                    </form>
+                    </td>
                    </tr>
+                   @endforeach
 
 
                  </tbody></table>
@@ -255,7 +261,6 @@
                  </tbody></table>
                </div>
 	   </div>
-     @endforeach
 	 </div>
 	</div><!--End Row-->
 @endsection
