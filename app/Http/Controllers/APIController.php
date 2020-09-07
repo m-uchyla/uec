@@ -21,11 +21,12 @@ class APIController extends Controller {
             'scope' => 'organizer:registration',
             ])->json();
 
-        $response = Http::withHeaders([
+        $registrations = Http::withHeaders([
             'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
             'Authorization' => $token['access_token'],
-            'Range' => 'registrations=0-49'
+            'Range' => 'registrations=0-16'
         ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations');
+        
         return $response;
     }
 

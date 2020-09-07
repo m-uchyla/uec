@@ -128,7 +128,9 @@
          </div>
      </div>
 	</div><!--End Row-->
-	
+	@foreach ($registrations as $r)
+  {{$r}}
+  @endforeach
 	<div class="row">
 	 <div class="col-12 col-lg-12">
 	   <div class="card">
