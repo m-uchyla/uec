@@ -303,6 +303,20 @@ var ctx = document.getElementById('chart1').getContext('2d');
         }
     });
 
+    const arrayR = @json($registrations);
+
+    function getNumber(status){
+
+      for each (r in arrayR){
+
+        if (arrayR.status == status){
+        number++;
+        }
+
+      }
+      return number;
+    }
+
     var ctx = document.getElementById("chart2").getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'doughnut',
@@ -314,7 +328,11 @@ var ctx = document.getElementById('chart1').getContext('2d');
                     "rgba(255, 255, 255, 0.50)",
                     "rgba(255, 255, 255, 0.20)"
                 ],
-                data: [2, 0, 14],
+                data: [
+                  getNumber('accepted'), 
+                  getNumber('pending'), 
+                  (16 - getNumber('accepted')) 
+                ],
                 borderWidth: [0, 0, 0]
             }]
         },
