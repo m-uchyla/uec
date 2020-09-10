@@ -70,14 +70,14 @@
 <script>
   var limit = 5;
   $('input.single-checkbox').on('change', function(evt) {
-    if($(this).siblings(':checked').length >= limit) {
-        this.checked = false;
-        if($(this).siblings(':checked').length == limit) {
+    if($(this).siblings(':checked').length > limit-1) {
           document.getElementById("submit").disabled = false;
         }
+    if($(this).siblings(':checked').length >= limit) {
+        this.checked = false;
     } else if($(this).siblings(':checked').length < limit) {
       document.getElementById("submit").disabled = true;
-    }
+    } 
   });
 </script>
 @endsection

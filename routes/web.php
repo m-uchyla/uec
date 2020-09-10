@@ -44,7 +44,7 @@ Route::middleware('can:accessPanel')->group(function() {
         Route::post('profileEdit', 'UserController@updateProfile')->name('profileEdit');
 
         Route::get('signIn', 'TeamsController@signIn')->name('signIn');
-        Route::post('signIn/create', 'ApiController@signIn')->name('createSignIn');
+        Route::post('signIn/create', 'APIController@signIn')->name('createSignIn');
 
         Route::middleware('can:accessDashboard')->group(function() {
             Route::get('admin', 'AdminController@get')->name('admin');
