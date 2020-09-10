@@ -14,19 +14,19 @@
            <input type="hidden" id="teamID" value="{{$main->teamID}}" name="teamID">
            <div class="form-group">
             <label for="input-1" id="title">Nazwa drużyny</label>
-            <input type="text" class="form-control" id="teamName" value="{{$main->teamName}}" name="teamName" disabled required>
+            <input type="text" class="form-control" id="teamName" value="{{$main->teamName}}" name="teamName" readonly required>
            </div>
            <div class="form-group">
             <label for="input-1" id="title">Logo drużyny</label>
-            <input type="text" class="form-control" id="logo" value="{{$main->logo}}" name="logo" disabled required>
+            <input type="text" class="form-control" id="logo" value="{{$main->logo}}" name="logo" readonly required>
            </div>
            <div class="form-group">
             <label for="input-1" id="title">Email kontaktowy</label>
-            <input type="text" class="form-control" id="email" value="{{$main->email}}" name="email" disabled required>
+            <input type="text" class="form-control" id="email" value="{{$main->email}}" name="email" readonly required>
            </div>
            <div class="form-group">
             <label for="input-1" id="title">Fanpage</label>
-            <input type="email" class="form-control" id="facebook" value="{{$main->facebook}}" maxlength="50" name="facebook" disabled>
+            <input type="email" class="form-control" id="facebook" value="{{$main->facebook}}" maxlength="50" name="facebook" readonly>
            </div>
            <div class="form-group" style="margin-top: 30px; margin-bottom: 25px">
             <label for="input-1" id="title">Wyznacz podstawowy skład (5 osób)</label><br>
@@ -81,7 +81,7 @@
   });
 
   $(document).ready(function() {
-    $('input.single-checkbox').).click(function() {
+    $('input.single-checkbox').click(function() {
 
       if(($(this).siblings(':checked').length) > (limit-1)) {
           document.getElementById("submit").disabled = false;
