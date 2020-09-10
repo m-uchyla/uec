@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Http;
 class APIController extends Controller {
 
 
-    protected function getToken(){
+    private function getToken(){
         return (Http::asForm()->post('https://api.toornament.com/oauth/v2/token', [
             'grant_type' => 'client_credentials',
             'client_id' => 'e61fd46a3437441ae2ed72085mqhuwuo8gsggggskgk4og8owcckkckgcskws4kkk0000ocws8',
@@ -24,7 +24,7 @@ class APIController extends Controller {
 
         $registrations = Http::withHeaders([
             'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
-            'Authorization' => getToken(),
+            'Authorization' => $this->getToken(),
             'Range' => 'registrations=0-16'
         ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations');
         
@@ -64,7 +64,7 @@ class APIController extends Controller {
 
         $response = Http::withHeaders([
             'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
-            'Authorization' => getToken()
+            'Authorization' => $this->getToken(),
         ])->post('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations', [
                 "name" => $name,
                 "email" => $email,

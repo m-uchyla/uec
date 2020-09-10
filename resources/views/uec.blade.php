@@ -79,5 +79,17 @@
       document.getElementById("submit").disabled = true;
     } 
   });
+
+  $(document).ready(function() {
+    $('input.single-checkbox').).click(function() {
+
+      if(($(this).siblings(':checked').length) > (limit-1)) {
+          document.getElementById("submit").disabled = false;
+      }else if($(this).siblings(':checked').length < limit) {
+        document.getElementById("submit").disabled = true;
+      } 
+
+    })
+  });
 </script>
 @endsection
