@@ -51,6 +51,8 @@ Route::middleware('can:accessPanel')->group(function() {
         Route::get('profile', 'UserController@getProfile')->name('profile');
         Route::post('profileEdit', 'UserController@updateProfile')->name('profileEdit');
 
+        Route::get('signIn', function () {return view('uec');})->name('signIn');
+
         Route::middleware('can:accessDashboard')->group(function() {
             Route::get('admin', 'AdminController@get')->name('admin');
             Route::get('registration', 'APIController@registration')->name('registration');
