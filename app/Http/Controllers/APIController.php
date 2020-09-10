@@ -33,6 +33,7 @@ class APIController extends Controller {
 
     public function signIn(Request $request){
 
+        // try{
         $teamID = $request->input('teamID');
         $name = $request->input('teamName');
         $logo = $request->input('logo');
@@ -40,9 +41,25 @@ class APIController extends Controller {
         $fanpage = $request->input('facebook');
         $ownerID = $request->input('ownerID');
 
-        for ($i = 0; i<8; $i++){
-            $number = 'player'.$i;
-            $players[$i] = $request->input($number);
+        for ($i = 0; i<(DB::table('teams-users')->where('teamID', $teamID)->count()); $i++){
+            $data = $request->input('player'.$i);
+            if($data){
+                $player = DB::table('users')->where('id', $data)->first();
+            
+                $lineup[$i] = [
+                    "name" => $player->nick,
+                    "email" => $player->email,
+                    "custom_user_identifier" => $player->id,
+                    "custom_fields" => 
+                    [
+                        'imie' => $player->name,
+                        'nazwisko' => $player->lastName,
+                        'zdjecie' => $player->photo,
+                        'steam_id_64' => $player->steamID,
+                        'data_urodzenia' => $player->dateOfBirth
+                    ]
+                ];
+            }
         }
 
         $response = Http::withHeaders([
@@ -58,78 +75,17 @@ class APIController extends Controller {
                     "fanpage" => $fanpage,
                 ],
                 "type" => "team",
-                "lineup" => [
-                    [
-                        "name" => "A team player name",
-                        "email" => "player_1@team.com",
-                        "custom_user_identifier" => "acme:account:1",
-                        "custom_fields" => 
-                        [
-                            'imie' => 'name',
-                            'nazwisko' => 'lastName',
-                            'zdjecie' => 'zdjecie',
-                            'steam_id_64' => 'steam_id_64',
-                            'data_urodzenia' => '01.01.2001'
-                        ]
-                    ],
-                    [
-                        "name" => "A team player name",
-                        "email" => "player_2@team.com",
-                        "custom_user_identifier" => "acme:account:2",
-                        "custom_fields" => 
-                        [
-                            'imie' => 'name',
-                            'nazwisko' => 'lastName',
-                            'zdjecie' => 'zdjecie',
-                            'steam_id_64' => 'steam_id_64',
-                            'data_urodzenia' => '01.01.2001'
-                        ]
-                    ],
-                    [
-                        "name" => "A team player name",
-                        "email" => "player_3@team.com",
-                        "custom_user_identifier" => "acme:account:3",
-                        "custom_fields" => 
-                        [
-                            'imie' => 'name',
-                            'nazwisko' => 'lastName',
-                            'zdjecie' => 'zdjecie',
-                            'steam_id_64' => 'steam_id_64',
-                            'data_urodzenia' => '01.01.2001'
-                        ]
-                    ],
-                    [
-                        "name" => "A team player name",
-                        "email" => "player_4@team.com",
-                        "custom_user_identifier" => "acme:account:4",
-                        "custom_fields" => 
-                        [
-                            'imie' => 'name',
-                            'nazwisko' => 'lastName',
-                            'zdjecie' => 'zdjecie',
-                            'steam_id_64' => 'steam_id_64',
-                            'data_urodzenia' => '01.01.2001'
-                        ]
-                    ],
-                    [
-                        "name" => "A team player name",
-                        "email" => "player_5@team.com",
-                        "custom_user_identifier" => "acme:account:5",
-                        "custom_fields" => 
-                        [
-                            'imie' => 'name',
-                            'nazwisko' => 'lastName',
-                            'zdjecie' => 'zdjecie',
-                            'steam_id_64' => 'steam_id_64',
-                            'data_urodzenia' => '01.01.2001'
-                        ]
-                    ]
-                ]
+                "lineup" => $lineup
             ]);
 
             DB::table('teams')->where('teamID', $teamID)->update(['signedIn' => 1]);
         
             return $response;
+        // }catch(Throwable $e){
+        //     report($e);
+
+        //     return redirect()->route('dashboard'); 
+        // }
     }
 
     public function registration (Request $request){

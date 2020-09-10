@@ -9,7 +9,7 @@
 <div class="card-body">
            <div class="card-title">Zapisz się do najbliższej edycji Underground Esport Cup CS:GO!</div>
            <hr>
-           <form method="POST" action="">
+           <form method="POST" action="{{ route('createSignIn') }}">
            @csrf
            <input type="hidden" id="teamID" value="{{$main->teamID}}" name="teamID">
            <div class="form-group">
@@ -72,11 +72,10 @@
   $('input.single-checkbox').on('change', function(evt) {
     if($(this).siblings(':checked').length >= limit) {
         this.checked = false;
-    }
-    if($(this).siblings(':checked').length == limit) {
-      document.getElementById("submit").disabled = false;
-    }
-    if($(this).siblings(':checked').length < limit) {
+        if($(this).siblings(':checked').length == limit) {
+          document.getElementById("submit").disabled = false;
+        }
+    } else if($(this).siblings(':checked').length < limit) {
       document.getElementById("submit").disabled = true;
     }
   });
