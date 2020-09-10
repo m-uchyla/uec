@@ -47,7 +47,7 @@
           </div>
           </form>
          </div>
-@elseif
+@else
 <div class="card-title">Jak zapisać się do najbliższej edycji Underground Esport Cup CS:GO?</div>
 <hr>
 <p> Aby Twoja drużyna mogła wziąć udział w rozgrywkach UEC wypełnij poniższe instrukcje w podanej kolejności: </p>
