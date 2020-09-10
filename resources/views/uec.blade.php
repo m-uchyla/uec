@@ -14,7 +14,7 @@
            <input type="hidden" id="teamID" value="{{$main->teamID}}" name="teamID">
            <div class="form-group">
             <label for="input-1" id="title">Nazwa drużyny</label>
-            <input type="text" class="form-control" id="teamName" value="{{$main->teamName}} name="teamName" disabled required>
+            <input type="text" class="form-control" id="teamName" value="{{$main->teamName}}" name="teamName" disabled required>
            </div>
            <div class="form-group">
             <label for="input-1" id="title">Logo drużyny</label>
@@ -34,11 +34,9 @@
            </div>
            <div class="form-group" style="margin-top: 30px; margin-bottom: 25px">
             <label for="input-1" id="title">Wyznacz podstawowy skład (5 osób)</label><br>
-            {{$i = 0}}
-            @foreach ($players as $player)
-            <input class="single-checkbox" type="checkbox" name="{{'vehicle'.$i}}" value="{{$player->id}}"> {{$player->name}} "{{$player->nick}}" {{$player->lastName}}<br>
-            {{$i++}}
-            @endforeach
+            @for ($i = 0; $i< count($players); $i++)
+            <input class="single-checkbox" type="checkbox" name="{{'vehicle'.$i}}" value="{{$players[$i]->id}}"> {{$players[$i]->name}} "{{$players[$i]->nick}}" {{$players[$i]->lastName}}<br>
+            @endfor
            </div>
            <div class="form-group">
             <button type="submit" class="btn btn-light px-5"><i class="zmdi zmdi-assignment"></i>  Zapisz się!</button>
