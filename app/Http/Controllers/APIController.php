@@ -66,7 +66,7 @@ class APIController extends Controller {
             'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
             'Authorization' => $this->getToken(),
         ])->post('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations', [
-                "name" => $name,
+                "name" => 'test',
                 "email" => $email,
                 "custom_user_identifier" => $teamID,
                 "custom_fields"=> 
@@ -75,9 +75,7 @@ class APIController extends Controller {
                     "fanpage" => $fanpage,
                 ],
                 "type" => "team",
-                "lineup" => [
-                    $lineup
-                ]
+                "lineup" => $lineup
             ]);
 
             DB::table('teams')->where('teamID', $teamID)->update(['signedIn' => 1]);
