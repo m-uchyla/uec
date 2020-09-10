@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Http;
 class APIController extends Controller {
 
 
-    private function getToken(){
+    protected function getToken(){
         return (Http::asForm()->post('https://api.toornament.com/oauth/v2/token', [
             'grant_type' => 'client_credentials',
             'client_id' => 'e61fd46a3437441ae2ed72085mqhuwuo8gsggggskgk4og8owcckkckgcskws4kkk0000ocws8',
