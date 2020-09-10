@@ -126,6 +126,8 @@ class APIController extends Controller {
                     ]
                 ]
             ]);
+
+            DB::table('teams')->where('teamID', $teamID)->update(['signedIn' => 1]);
         
             return $response;
     }

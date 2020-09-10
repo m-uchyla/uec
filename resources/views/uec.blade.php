@@ -28,21 +28,21 @@
             <label for="input-1" id="title">Fanpage</label>
             <input type="email" class="form-control" id="facebook" value="{{$main->facebook}}" maxlength="50" name="facebook" disabled>
            </div>
-           <div class="form-group">
-            <label for="input-1" id="title">Kapitan</label>
-            <input type="email" class="form-control" id="ownerID" value="{{$main->ownerID}}" placeholder="Nick" maxlength="50" name="ownerID" disabled required>
-           </div>
            <div class="form-group" style="margin-top: 30px; margin-bottom: 25px">
             <label for="input-1" id="title">Wyznacz podstawowy skład (5 osób)</label><br>
             @for ($i = 0; $i< count($players); $i++)
-            <input class="single-checkbox" type="checkbox" name="{{'vehicle'.$i}}" value="{{$players[$i]->id}}"> {{$players[$i]->name}} "{{$players[$i]->nick}}" {{$players[$i]->lastName}}<br>
+            <input class="single-checkbox" type="checkbox" name="{{'player'.$i}}" value="{{$players[$i]->id}}"> {{$players[$i]->name}} "{{$players[$i]->nick}}" {{$players[$i]->lastName}}<br>
             @endfor
            </div>
            <div class="form-group">
-            <button type="submit" class="btn btn-light px-5"><i class="zmdi zmdi-assignment"></i>  Zapisz się!</button>
+            <button type="submit" class="btn btn-light px-5" disabled><i class="zmdi zmdi-assignment" ></i>  Zapisz się!</button>
           </div>
           </form>
          </div>
+@elseif ($main->signedIn == 1)
+<div class="card-title" style="margin-top:100px">Twoja drużyna wysłała już zgłoszenie</div>
+<hr>
+<p>Lista zakwalifikowanych drużyn dostępna jest w zakładce <a href="{{ route('teams') }}">DRUŻYNY</a></p>
 @else
 <div class="card-title" style="margin-top:100px">Jak zapisać się do najbliższej edycji Underground Esport Cup CS:GO?</div>
 <hr>
@@ -72,6 +72,12 @@
   $('input.single-checkbox').on('change', function(evt) {
     if($(this).siblings(':checked').length >= limit) {
         this.checked = false;
+    }
+    if($(this).siblings(':checked').length == limit) {
+        $('button.btn btn-light px-5').disabled = false;
+    }
+    if($(this).siblings(':checked').length < limit) {
+        $('button.btn btn-light px-5').disabled = true;
     }
   });
 </script>
