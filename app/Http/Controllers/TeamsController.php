@@ -47,22 +47,50 @@ class TeamsController extends Controller {
         return view('dashboard', ['main' => $main, 'teams' => $teams, 'invite' => $invite, 'players' => $players]);
     }
 
+    public function signIn(){
+
+        $main = DB::table('teams')->where('ownerID', Auth::id())->first();
+        
+        
+        $teams = DB::table('teams-users')
+            ->join('teams', 'teams-users.teamID', '=', 'teams.teamID')
+            ->select('teams.teamName')
+            ->where('teams-users.userID', Auth::id())
+            ->where('teams-users.isAccepted', 1)
+            ->get();
+
+        $players = null;
+
+        if($main != null){
+            $players = DB::table('teams-users')
+            ->join('users', 'teams-users.userID', '=', 'users.id')
+            ->select('users.*')
+            ->where('teams-users.teamID', $main->teamID)
+            ->where('teams-users.isAccepted', 1)
+            ->get();
+        }
+
+        return view('uec', ['main' => $main, 'players' => $players]);
+    }
+
     public function invite(Request $request){
         $teamID = $request->input('teamID');
         $email = $request->input('email');
         $user = DB::table('users')->where('email', $email)->first();
-        if ($user){
-            $userID = $user->id;
-            
+        if ( (DB::table('teams-users')->where('teamID', $teamID)->count()) < 8){
+            if ($user){
+                $userID = $user->id;
+                
 
-            $data=array(
-                "teamID"=>$teamID,
-                "userID"=>$userID,
-            );
+                $data=array(
+                    "teamID"=>$teamID,
+                    "userID"=>$userID,
+                );
 
-            if ( DB::table('teams-users')->where('userID', $userID)->where('teamID', $teamID)->doesntExist() ){
-                DB::table('teams-users')->insert($data);
-            }
+                if ( DB::table('teams-users')->where('userID', $userID)->where('teamID', $teamID)->doesntExist() ){
+                    DB::table('teams-users')->insert($data);
+                }
+            }   
         }
         return redirect()->route('dashboard');
     }

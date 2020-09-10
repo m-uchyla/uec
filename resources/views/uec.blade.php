@@ -5,42 +5,40 @@
 	
   <div class="content-wrapper">
     <div class="container-fluid">
-@if(false)
+@if($main)
 <div class="card-body">
            <div class="card-title">Zapisz się do najbliższej edycji Underground Esport Cup CS:GO!</div>
            <hr>
            <form method="POST" action="">
            @csrf
-           <input type="hidden" id="teamID" value="0" name="teamID">
+           <input type="hidden" id="teamID" value="{{$main->teamID}}" name="teamID">
            <div class="form-group">
             <label for="input-1" id="title">Nazwa drużyny</label>
-            <input type="text" class="form-control" id="teamName" value="teamName" maxlength="50" name="teamName" autofocus required>
+            <input type="text" class="form-control" id="teamName" value="{{$main->teamName}} name="teamName" disabled required>
            </div>
            <div class="form-group">
             <label for="input-1" id="title">Logo drużyny</label>
-            <input type="text" class="form-control" id="logo" value="logo" maxlength="50" name="logo"  required>
+            <input type="text" class="form-control" id="logo" value="{{$main->logo}}" name="logo" disabled required>
            </div>
            <div class="form-group">
             <label for="input-1" id="title">Email kontaktowy</label>
-            <input type="text" class="form-control" id="email" value="email" maxlength="50" name="email"  required>
+            <input type="text" class="form-control" id="email" value="{{$main->email}}" name="email" disabled required>
            </div>
            <div class="form-group">
             <label for="input-1" id="title">Fanpage</label>
-            <input type="email" class="form-control" id="facebook" value="facebook" maxlength="50" name="facebook" required>
+            <input type="email" class="form-control" id="facebook" value="{{$main->facebook}}" maxlength="50" name="facebook" disabled>
            </div>
            <div class="form-group">
             <label for="input-1" id="title">Kapitan</label>
-            <input type="email" class="form-control" id="ownerID" value="ownerID" maxlength="50" name="ownerID" required>
+            <input type="email" class="form-control" id="ownerID" value="{{$main->ownerID}}" placeholder="Nick" maxlength="50" name="ownerID" disabled required>
            </div>
            <div class="form-group" style="margin-top: 30px; margin-bottom: 25px">
             <label for="input-1" id="title">Wyznacz podstawowy skład (5 osób)</label><br>
-            <input class="single-checkbox" type="checkbox" name="vehicle" value="Bike"> Level 1<br>
-            <input class="single-checkbox" type="checkbox" name="vehicle" value="Bike"> Level 2<br>
-            <input class="single-checkbox" type="checkbox" name="vehicle" value="Bike"> Level 3<br>
-            <input class="single-checkbox" type="checkbox" name="vehicle" value="Bike"> Level 4<br>
-            <input class="single-checkbox" type="checkbox" name="vehicle" value="Bike"> Level 5<br>
-            <input class="single-checkbox" type="checkbox" name="vehicle" value="Bike"> Level 6<br>
-            <input class="single-checkbox" type="checkbox" name="vehicle" value="Bike"> Level 7<br>
+            {{$i = 0}}
+            @foreach ($players as $player)
+            <input class="single-checkbox" type="checkbox" name="{{'vehicle'.$i}}" value="{{$player->id}}"> {{$player->name}} "{{$player->nick}}" {{$player->lastName}}<br>
+            {{$i++}}
+            @endforeach
            </div>
            <div class="form-group">
             <button type="submit" class="btn btn-light px-5"><i class="zmdi zmdi-assignment"></i>  Zapisz się!</button>
@@ -48,7 +46,7 @@
           </form>
          </div>
 @else
-<div class="card-title">Jak zapisać się do najbliższej edycji Underground Esport Cup CS:GO?</div>
+<div class="card-title" style="margin-top:100px">Jak zapisać się do najbliższej edycji Underground Esport Cup CS:GO?</div>
 <hr>
 <p> Aby Twoja drużyna mogła wziąć udział w rozgrywkach UEC wypełnij poniższe instrukcje w podanej kolejności: </p>
 <ol>
