@@ -35,7 +35,7 @@
             @endfor
            </div>
            <div class="form-group">
-            <button type="submit" class="btn btn-light px-5" disabled><i class="zmdi zmdi-assignment" ></i>  Zapisz się!</button>
+            <button type="submit" id="submit" class="btn btn-light px-5" disabled><i class="zmdi zmdi-assignment" ></i>  Zapisz się!</button>
           </div>
           </form>
          </div>
@@ -74,10 +74,10 @@
         this.checked = false;
     }
     if($(this).siblings(':checked').length == limit) {
-        $('button.btn btn-light px-5').disabled = false;
+      document.getElementById("submit").disabled = false;
     }
     if($(this).siblings(':checked').length < limit) {
-        $('button.btn btn-light px-5').disabled = true;
+      document.getElementById("submit").disabled = true;
     }
   });
 </script>
