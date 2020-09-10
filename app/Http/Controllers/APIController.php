@@ -75,7 +75,9 @@ class APIController extends Controller {
                     "fanpage" => $fanpage,
                 ],
                 "type" => "team",
-                "lineup" => $lineup
+                "lineup" => [
+                    $lineup
+                ]
             ]);
 
             DB::table('teams')->where('teamID', $teamID)->update(['signedIn' => 1]);
