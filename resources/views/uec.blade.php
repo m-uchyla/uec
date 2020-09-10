@@ -70,7 +70,7 @@
 <script>
   var limit = 5;
   $('input.single-checkbox').on('change', function(evt) {
-    if($(this).siblings(':checked').length > limit-1) {
+    if(($(this).siblings(':checked').length) > (limit-1)) {
           document.getElementById("submit").disabled = false;
         }
     if($(this).siblings(':checked').length >= limit) {

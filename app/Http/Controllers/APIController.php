@@ -41,7 +41,7 @@ class APIController extends Controller {
         $fanpage = $request->input('facebook');
         $ownerID = $request->input('ownerID');
 
-        for ($i = 0; i<(DB::table('teams-users')->where('teamID', $teamID)->count()); $i++){
+        for ($i = 0; $i<(DB::table('teams-users')->where('teamID', $teamID)->count()); $i++){
             $data = $request->input('player'.$i);
             if($data){
                 $player = DB::table('users')->where('id', $data)->first();
