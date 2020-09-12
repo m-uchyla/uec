@@ -5,7 +5,7 @@
 	
   <div class="content-wrapper">
     <div class="container-fluid">
-@if($main)
+@if($main->signedIn == 0)
 <div class="card-body">
            <div class="card-title">Zapisz się do najbliższej edycji Underground Esport Cup CS:GO!</div>
            <hr>
@@ -43,7 +43,7 @@
 <div class="card-title" style="margin-top:100px">Twoja drużyna wysłała już zgłoszenie</div>
 <hr>
 <p>Lista zakwalifikowanych drużyn dostępna jest w zakładce <a href="{{ route('teams') }}">DRUŻYNY</a></p>
-@else
+@elseif (!$main)
 <div class="card-title" style="margin-top:100px">Jak zapisać się do najbliższej edycji Underground Esport Cup CS:GO?</div>
 <hr>
 <p> Aby Twoja drużyna mogła wziąć udział w rozgrywkach UEC wypełnij poniższe instrukcje w podanej kolejności: </p>
@@ -70,26 +70,9 @@
 <script>
   const limit = 5;
   $('input.single-checkbox').on('change', function(evt) {
-    if(($(this).siblings(':checked').length) > (limit-2)) {
-          document.getElementById("submit").disabled = false;
-        }
     if($(this).siblings(':checked').length >= limit) {
         this.checked = false;
-    } else if($(this).siblings(':checked').length < limit) {
-      document.getElementById("submit").disabled = true;
-    } 
-  });
-
-  $(document).ready(function() {
-    $('input.single-checkbox').click(function() {
-
-      if(($(this).siblings(':checked').length) > (limit-1)) {
-          document.getElementById("submit").disabled = false;
-      }else if($(this).siblings(':checked').length < limit) {
-        document.getElementById("submit").disabled = true;
-      } 
-
-    })
+    }
   });
 </script>
 @endsection

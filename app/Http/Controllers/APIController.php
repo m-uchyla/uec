@@ -69,6 +69,7 @@ class APIController extends Controller {
                 "name" => $name,
                 "email" => $email,
                 "custom_user_identifier" => $teamID,
+                "status"=> "pending",
                 "custom_fields"=> 
                 [
                     'logo' => $logo,
@@ -77,6 +78,15 @@ class APIController extends Controller {
                 "type" => "team",
                 "lineup" => $lineup
             ]);
+
+        // $update = Http::withHeaders([
+        //     'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
+        //     'Authorization' => $this->getToken(),
+        //     ])->post('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations', [
+        //         "name"=> $name,
+        //         "status"=> "pending",
+
+        // ]);
 
             DB::table('teams')->where('teamID', $teamID)->update(['signedIn' => 1]);
         
