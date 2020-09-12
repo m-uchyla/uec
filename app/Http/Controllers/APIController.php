@@ -33,7 +33,7 @@ class APIController extends Controller {
 
     public function signIn(Request $request){
 
-        // try{
+        try{
         $teamID = $request->input('teamID');
         $name = $request->input('teamName');
         $logo = $request->input('logo');
@@ -84,12 +84,12 @@ class APIController extends Controller {
 
             DB::table('teams')->where('teamID', $teamID)->update(['signedIn' => 1]);
         
-            return $response;
-        // }catch(Throwable $e){
-        //     report($e);
+            return redirect()->route('dashboard');
+        }catch(Throwable $e){
+            report($e);
 
-        //     return redirect()->route('dashboard'); 
-        // }
+            return redirect()->route('dashboard'); 
+        }
     }
 
     public function registration (Request $request){
