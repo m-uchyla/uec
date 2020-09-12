@@ -43,12 +43,11 @@ class APIController extends Controller {
 
         $counter = 0;
 
-        for ($i = 0; $i<(count($players)); $i++){
+        for ($i = 0; $i<(DB::table('teams-users')->where('teamID', $teamID)->count()); $i++){
             $data = $request->input('player'.$i);
             if($data){
-
                 $player = DB::table('users')->where('id', $data)->first();
-        
+            
                 $lineup[$counter] = [
                     "name" => $player->nick,
                     "email" => $player->email,
