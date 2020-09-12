@@ -35,14 +35,14 @@
             @endfor
            </div>
            <div class="form-group">
-            <button type="submit" id="submit" class="btn btn-light px-5" disabled><i class="zmdi zmdi-assignment" ></i>  Zapisz się!</button>
+            <button type="submit" id="submit" class="btn btn-light px-5"><i class="zmdi zmdi-assignment" ></i>  Zapisz się!</button>
           </div>
           </form>
          </div>
 @elseif ($main->signedIn == 1)
 <div class="card-title" style="margin-top:100px">Twoja drużyna wysłała już zgłoszenie</div>
 <hr>
-<p>Lista zakwalifikowanych drużyn dostępna jest w zakładce <a href="{{ route('teams') }}">DRUŻYNY</a></p>
+<p>Lista zgłoszonych drużyn dostępna jest w zakładce <a href="{{ route('teams') }}">DRUŻYNY</a></p>
 @elseif (!$main)
 <div class="card-title" style="margin-top:100px">Jak zapisać się do najbliższej edycji Underground Esport Cup CS:GO?</div>
 <hr>
@@ -54,8 +54,8 @@
   <li>W tej samej zakładce po przejściu do zarządzania drużyną kapitan ma możliwość zaprosić pozostałych członków drużyny</li>
   <li>Po wysłaniu zaproszeń, gracze powinni zaakceptować zaproszenia</li>
   <li>Jeżeli wszyscy gracze należą już do drużyny, kapitan może powrócić w to miejsce, pojawi się tutaj formularz zgłoszeniowy</li>
-  <li>Po wysłaniu formularza pozostało oczekiwanie na decyzję administracji. Jeżeli drużyna oraz gracze posiadają poprawne informacje, oraz wszelkie formularze są bezbłędnie wypełnione, Twoja drużyna pojawi się wśród drużyn zakwalifikowanych do turnieju</li>
-  <li>Lista zakwalifikowanych drużyn dostępna jest w zakładce <a href="{{ route('teams') }}">DRUŻYNY</a></li>
+  <li>Po wysłaniu formularza (jeżeli drużyna oraz gracze posiadają poprawne informacje, oraz wszelkie formularze są bezbłędnie wypełnione) Twoja drużyna pojawi się wśród drużyn zapisanych do turnieju w zakładce <a href="{{ route('teams') }}">DRUŻYNY</a></li>
+  <li>Administracja dodatkowo przejrzy poprawność zgłoszenia każdej z ekip. Jeżeli drużyn będzie więcej niż 16 decyduje koleność zgłoszeń. Ostateczna lista drużyn zostanie ogłoszona na <a href="https://facebook.com/UndergroundEsportCup">FANPAGE'U UEC</a></li>
 </ol>
 <br>
 <br>

@@ -41,12 +41,15 @@ class APIController extends Controller {
         $fanpage = $request->input('facebook');
         $ownerID = $request->input('ownerID');
 
-        for ($i = 0; $i<(DB::table('teams-users')->where('teamID', $teamID)->count()); $i++){
+        $counter = 0;
+
+        for ($i = 0; $i<(count($players)); $i++){
             $data = $request->input('player'.$i);
             if($data){
+
                 $player = DB::table('users')->where('id', $data)->first();
-            
-                $lineup[$i] = [
+        
+                $lineup[$counter] = [
                     "name" => $player->nick,
                     "email" => $player->email,
                     "custom_user_identifier" => $player->id,
@@ -59,6 +62,8 @@ class APIController extends Controller {
                         'data_urodzenia' => $player->dateOfBirth
                     ]
                 ];
+
+                $counter++;
             }
         }
 
@@ -69,7 +74,6 @@ class APIController extends Controller {
                 "name" => $name,
                 "email" => $email,
                 "custom_user_identifier" => $teamID,
-                "status"=> "pending",
                 "custom_fields"=> 
                 [
                     'logo' => $logo,
@@ -78,15 +82,6 @@ class APIController extends Controller {
                 "type" => "team",
                 "lineup" => $lineup
             ]);
-
-        // $update = Http::withHeaders([
-        //     'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
-        //     'Authorization' => $this->getToken(),
-        //     ])->post('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations', [
-        //         "name"=> $name,
-        //         "status"=> "pending",
-
-        // ]);
 
             DB::table('teams')->where('teamID', $teamID)->update(['signedIn' => 1]);
         
