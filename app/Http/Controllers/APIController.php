@@ -30,7 +30,7 @@ class APIController extends Controller {
 
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
         
-        return view('teams',['list'=> $registrations, 'featured' => $featured]);
+        return view('teams',['list'=> json_decode($registrations), 'featured' => $featured]);
     }
 
     public function signIn(Request $request){
