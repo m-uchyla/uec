@@ -25,10 +25,12 @@ class APIController extends Controller {
         $registrations = Http::withHeaders([
             'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
             'Authorization' => $this->getToken(),
-            'Range' => 'registrations=0-16'
+            'Range' => 'registrations=0-32'
         ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations');
+
+        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
         
-        return $response;
+        return view('teams',['list'=> $registrations, 'featured' => $featured]);
     }
 
     public function signIn(Request $request){
