@@ -230,10 +230,19 @@ class APIController extends Controller {
         ]);
         $matches= json_decode($matches);
 
-        return $matches;
+        $iter = 0;
+        foreach ($matches as $m){
+            if($iter == 7){
+                $m->round=1;
+                $iter = 0;
+            } else{
+                $m->round=0;
+                $iter++;
+            }            
+        }
 
-        // $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
-        // return view('schedule',['featured' => $featured, 'matches' => $matches]);
+        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        return view('schedule',['featured' => $featured, 'matches' => $matches]);
     }
 
 }

@@ -34,8 +34,11 @@
                 </div>
 
 				<div class="section-top-border">
-				<h3 class="mb-30">Runda</h3>
+				
 					@forelse($matches as $match)
+							@if($match->round == 1)
+								<h3 class="mb-30">Runda</h3>
+							@endif
 							<div class="row">
 								<div class="col-md-4">
 									<div class="single-defination match">
