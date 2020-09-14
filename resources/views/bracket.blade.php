@@ -224,7 +224,7 @@
 												<div class="serial">{{$aditional["E"][$i]->rank}}</div>
 												<div class="country">
 											@if($aditional["E"][$i]->participant->custom_fields->fanpage)
-											<a href='{{$groups["E"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
+											<a href='{{$aditional["E"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
 											{{$aditional["E"][$i]->participant->name}}</a>
 											@else
 											{{$aditional["E"][$i]->participant->name}}
@@ -269,7 +269,7 @@
 										<div class="serial">{{$aditional["F"][$i]->rank}}</div>
 										<div class="country">
 											@if($aditional["F"][$i]->participant->custom_fields->fanpage)
-											<a href='{{$groups["F"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
+											<a href='{{$aditional["F"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
 											{{$aditional["F"][$i]->participant->name}}</a>
 											@else
 											{{$aditional["F"][$i]->participant->name}}
