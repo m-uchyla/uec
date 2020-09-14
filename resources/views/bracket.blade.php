@@ -23,17 +23,17 @@
 								<div class="serial">#</div>
 								<div class="country">Drużyna</div>
 								<div class="visit">Zwycięstwa</div>
-								<div class="visit">Remisy</div>
 								<div class="visit">Porażki</div>
+								<div class="visit">Meczy</div>
 								<div class="visit">Punkty</div>
 							</div>
 							<div class="table-row">
-								<div class="serial">01</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">{{$groups["A"][1]->participant->name}}</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
+								<div class="serial">{{$groups["A"][1]->rank}}</div>
+								<div class="country">{{$groups["A"][1]->participant->name}}</div>
+								<div class="visit">{{$groups["A"][1]->properties->wins}}</div>
+								<div class="visit">{{$groups["A"][1]->properties->losses}}</div>
+								<div class="visit">{{$groups["A"][1]->properties->played}}</div>
+								<div class="visit">{{$groups["A"][1]->points}}</div>
 							</div>
 							<div class="table-row">
 								<div class="serial">02</div>
