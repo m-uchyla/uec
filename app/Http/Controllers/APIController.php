@@ -223,10 +223,7 @@ class APIController extends Controller {
             'X-Api-Key' => $this->x_api_key,
             'Authorization' => $this->getToken('result'),
             'Range' => 'matches=0-99'
-        ])->get($this->toornament_link.$this->tournament_id.'/matches', [
-            'is_scheduled' => 1,
-            'scheduled_after' => '2020-09-14 14:37:00'
-        ]);
+        ])->get($this->toornament_link.$this->tournament_id.'/matches',);
         $matches= json_decode($matches);
 
         return $matches;
