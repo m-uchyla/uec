@@ -81,7 +81,8 @@ class APIController extends Controller {
             }
         }
 
-        return view('bracket',['groups'=> $groups]);
+        return $groups;
+        // return view('bracket',['groups'=> $groups]);
     }
 
     public function signIn(Request $request){
