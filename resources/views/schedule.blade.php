@@ -9,7 +9,7 @@
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-70">
                             <span>Harmonogram</span>
-                            <h2>Lista spotkań UEC sezon 2</h2>
+                            <h2>Lista spotkań UEC S2</h2>
                         </div> 
                     </div>
                 </div>
@@ -18,14 +18,8 @@
 					<h3 class="mb-30">Definition</h3>
 					<div class="row">
 						<div class="col-md-4">
-							<div class="single-defination">
-								<div class="progress-table-wrap">
-									<div class="progress-table">
-										<div class="table-head">
-											<div class="country">Nazwa drużyny</div>
-										</div>
-									</div>
-								</div>
+							<div class="single-defination" style="background-color:grey">
+								<h3>Erydan Esports kjsnksjfd</h3>
 							</div>
 						</div>
 						<div class="col-md-4">
@@ -36,7 +30,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="single-defination">
-								<div class="progress-table-wrap">
+								<div class="progress-table-wrap" style="padding-bottom: 10px;padding-top: 10px;">
 									<div class="progress-table">
 										<div class="table-head">
 											<div class="country">Nazwa drużyny</div>
