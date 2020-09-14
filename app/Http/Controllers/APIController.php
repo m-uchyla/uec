@@ -28,6 +28,10 @@ class APIController extends Controller {
         '3920456038338666540'
     ];
 
+    private $finals_id=
+        '3920456542151671808'
+    ;
+
 
     private function getToken($scope){
         return (Http::asForm()->post('https://api.toornament.com/oauth/v2/token', [
@@ -135,8 +139,16 @@ class APIController extends Controller {
             return strcmp($a->rank, $b->rank);
         });
 
-        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
-        return view('bracket',['groups'=> $groups, 'featured' => $featured, 'aditional' => $aditional]);
+        $finals = Http::withHeaders([
+            'X-Api-Key' => $this->x_api_key,
+            'Authorization' => $this->getToken('result'),
+            'Range' => 'matches=0-99'
+        ])->where('stage_ids',$this->finals_id)->get($this->toornament_link.$this->tournament_id.'/matches');
+
+        return $finals;
+
+        // $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        // return view('bracket',['groups'=> $groups, 'featured' => $featured, 'aditional' => $aditional]);
     }
 
     public function signIn(Request $request){
