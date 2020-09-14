@@ -45,7 +45,7 @@
 						<div class="col-md-4">
 							<div class="single-defination" style="text-align:center">
 								<p class="vs">VS</p>
-								<h4 class="mb-20">{{$match->scheduled_datetime}}</h4>
+								<h4 class="mb-20">{{substr($match->scheduled_datetime, 0, -6)}}</h4>
 							</div>
 						</div>
 						<div class="col-md-4">
