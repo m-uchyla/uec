@@ -53,7 +53,7 @@ class APIController extends Controller {
             'Authorization' => $this->getToken('result'),
             'Range' => 'items=0-49'
         ])->get($this->toornament_link.$this->tournament_id.'/stages/3920455650677407744/ranking-items');
-        // json_decode($first)
+        $first= json_decode($first);
         $groups=[];
         $a = 0;
         $b = 0;
