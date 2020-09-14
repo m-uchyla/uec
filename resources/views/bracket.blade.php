@@ -4,7 +4,7 @@
         <!--? Team Start -->
         <div class="team-area section-padding30">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" id='bracket'>
                     <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-70">
@@ -269,7 +269,7 @@
 						</div>
 					</div>
                     </div>
-
+					<a href="#bracket" class="btn" id="click" style="visibility:hidden"></a>
 					<!-- single Tem -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
                     <h2 style="text-align:center">Grupa F</h2>

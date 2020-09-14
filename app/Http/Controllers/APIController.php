@@ -81,7 +81,9 @@ class APIController extends Controller {
             }
         }
 
-        return view('bracket',['groups'=> $groups]);
+        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+
+        return view('bracket',['groups'=> $groups, 'featured' => $featured]);
     }
 
     public function signIn(Request $request){
