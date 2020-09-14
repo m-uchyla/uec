@@ -35,25 +35,26 @@
 
 				<div class="section-top-border">
 					<h3 class="mb-30">Definition</h3>
+					@foreach($matches as $match)
 					<div class="row">
 						<div class="col-md-4">
 							<div class="single-defination match">
-								<h3>Erydan Esports kjsnksjfd</h3>
+								<h3>{{$match->opponents->participant[0]->name}}</h3>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="single-defination" style="text-align:center">
 								<p class="vs">VS</p>
-								<h4 class="mb-20">14.09.2020 godz. 21:00</h4>
-								
+								<h4 class="mb-20">{{$match->scheduled_datetime}}</h4>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="single-defination match">
-								<h3>Erydan Esports kjsnksjfd</h3>
+								<h3>{{$match->opponents->participant[1]->name}}</h3>
 							</div>
 						</div>
 					</div>
+					@endforeach
 				</div>
                 </div>
             </div>

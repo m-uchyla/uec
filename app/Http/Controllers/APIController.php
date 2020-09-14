@@ -225,15 +225,13 @@ class APIController extends Controller {
             'Range' => 'matches=0-99'
         ])->get($this->toornament_link.$this->tournament_id.'/matches',[
             'is_scheduled' => 1,
-            'scheduled_after' => $now
+            'scheduled_after' => $now,
+            'sort' => 'schedule'
         ]);
         $matches= json_decode($matches);
 
-        return $matches;
-
-        // $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
-        // return view('schedule',['featured' => $featured]);
+        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        return view('schedule',['featured' => $featured, 'matches' => $matches]);
     }
 
-    
 }
