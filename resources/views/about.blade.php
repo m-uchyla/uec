@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                             <div class="testimonial-top-cap">
-                                <p>Najlepszy turniej online na jaki trafiłem. Cechuje się ogromnym profesjonalizmem i świetnym podejściem do zawodników i kibiców. Gorąco polecam każdemu</p>
+                                <p>Jest to jeden z najlepiej organizowanych turnijeów na amatorskim szczeblu na które trafiłem. Szczególnie warto uwagę zwrócić na realizację transmisji, która jest boska. Jeśli szukasz turnieju dla swojej drużyny- UEC to najlepszy wybór</p>
                             </div>
 
                         </div>
