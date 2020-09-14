@@ -227,7 +227,7 @@ class APIController extends Controller {
             'is_scheduled' => 1,
             'scheduled_after' => $now
         ]);
-        $matches= json_decode($finals);
+        $matches= json_decode($matches);
 
         return $matches;
 
