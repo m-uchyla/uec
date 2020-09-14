@@ -18,25 +18,20 @@
 					<h3 class="mb-30">Definition</h3>
 					<div class="row">
 						<div class="col-md-4">
-							<div class="single-defination" style="background-color:grey">
+							<div class="single-defination" style="background-color:#f9f9ff; padding-top:20px;padding-bottom:20px;text-align:center">
 								<h3>Erydan Esports kjsnksjfd</h3>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="single-defination">
-								<h4 class="mb-20">VS</h4>
-								<p>14.09.2020 godz. 21:00</p>
+								<p>VS</p>
+								<h4 class="mb-20">14.09.2020 godz. 21:00</h4>
+								
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="single-defination">
-								<div class="progress-table-wrap" style="padding-bottom: 10px;padding-top: 10px;">
-									<div class="progress-table">
-										<div class="table-head">
-											<div class="country">Nazwa drużyny</div>
-										</div>
-									</div>
-								</div>
+							<div class="single-defination" style="background-color:#f9f9ff; padding-top:20px;padding-bottom:20px;text-align:center">
+								<h3>Erydan Esports kjsnksjfd</h3>
 							</div>
 						</div>
 					</div>
