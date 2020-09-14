@@ -8,8 +8,8 @@
                     <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-70">
-                            <span>Etap pierwszy</span>
-                            <h2>Rozgrywki fazy grupowej</h2>
+                            <span>Harmonogram</span>
+                            <h2>Lista spotkań UEC sezon 2</h2>
                         </div> 
                     </div>
                 </div>
