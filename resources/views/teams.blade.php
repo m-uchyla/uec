@@ -27,7 +27,7 @@
 								<div class="visit">Zawodnik #4</div>
 								<div class="visit">Zawodnik #5</div>
 							</div>
-							@for ($i = 0; $i < count($list); $i++)
+							@for ($i = 1; $i-1 < count($list); $i++)
 							<div class="table-row">
 								<div class="serial">{{$i}}</div>
 								<div class="country"><a href="{{$list[$i]->custom_fields->fanpage}}" style='color:#c51414'>{{$list[$i]->name}}</a></div>

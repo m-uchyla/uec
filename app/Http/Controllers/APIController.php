@@ -79,7 +79,6 @@ class APIController extends Controller {
                     break;
                     
             }
-            $counter++;
         }
 
         return view('bracket',['groups'=> $groups]);
