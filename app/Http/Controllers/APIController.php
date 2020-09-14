@@ -147,6 +147,7 @@ class APIController extends Controller {
             'stage_ids' => $this->finals_id,
             'sort' => 'structure'
         ]);
+        $finals= json_decode($finals);
 
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
         return view('bracket',['groups'=> $groups, 'featured' => $featured, 'aditional' => $aditional, 'finals' => $finals]);
