@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                             <div class="testimonial-top-cap">
-                                <p>Jest to jeden z najlepiej organizowanych turnijeów na amatorskim szczeblu na które trafiłem. Szczególnie warto uwagę zwrócić na realizację transmisji, która jest boska. Jeśli szukasz turnieju dla swojej drużyny- UEC to najlepszy wybór</p>
+                                <p>Jest to jeden z najlepiej organizowanych turniejeów na amatorskim szczeblu na które trafiłem. Szczególnie warto uwagę zwrócić na realizację transmisji, która jest boska. Jeśli szukasz turnieju dla swojej drużyny- UEC to najlepszy wybór</p>
                             </div>
 
                         </div>
