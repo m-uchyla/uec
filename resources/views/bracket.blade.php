@@ -30,7 +30,7 @@
 							<div class="table-row">
 								<div class="serial">01</div>
 								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
+								<div class="visit">{{$groups["A"][1]->name}}</div>
 								<div class="visit">645</div>
 								<div class="visit">645</div>
 								<div class="visit">645</div>

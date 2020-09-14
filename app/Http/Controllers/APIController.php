@@ -10,12 +10,25 @@ use Illuminate\Support\Facades\Http;
 
 class APIController extends Controller {
 
+    private $client_id= 'e61fd46a3437441ae2ed72085mqhuwuo8gsggggskgk4og8owcckkckgcskws4kkk0000ocws8';
+    private $client_secret= '1l80dg7iyxs0s8ggocwg80s4k8gwcscc0k4gog04w4gs4gw40o';
+    private $toornament_link= 'https://api.toornament.com/organizer/v2/tournaments/';
+    private $tournament_id= '3784327726246748160';
+    private $x_api_key= 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U';
+
+    private $first_group_id= [
+        '3920455651516268658',
+        '3920455651482714145',
+        '3920455651516268631',
+        '3920455651516268604'
+    ];
+
 
     private function getToken($scope){
         return (Http::asForm()->post('https://api.toornament.com/oauth/v2/token', [
             'grant_type' => 'client_credentials',
-            'client_id' => 'e61fd46a3437441ae2ed72085mqhuwuo8gsggggskgk4og8owcckkckgcskws4kkk0000ocws8',
-            'client_secret' =>'1l80dg7iyxs0s8ggocwg80s4k8gwcscc0k4gog04w4gs4gw40o',
+            'client_id' => $this->client_id,
+            'client_secret' =>$this->client_secret,
             'scope' => 'organizer:'.$scope,
             ])->json())['access_token'];
     }
@@ -23,10 +36,10 @@ class APIController extends Controller {
     public function getList(){
 
         $registrations = Http::withHeaders([
-            'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
+            'X-Api-Key' => $this->x_api_key,
             'Authorization' => $this->getToken('participant'),
             'Range' => 'participants=0-49'
-        ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/participants');
+        ])->get($this->toornament_link.$this->tournament_id.'/participants');
 
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
         
@@ -36,14 +49,40 @@ class APIController extends Controller {
     public function getBracket(){
 
         $first = Http::withHeaders([
-            'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
+            'X-Api-Key' => $this->x_api_key,
             'Authorization' => $this->getToken('result'),
             'Range' => 'items=0-49'
-        ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/stages/3920455650677407744/ranking-items');
-        
-        return $first;
+        ])->get($this->toornament_link.$this->tournament_id.'/stages/3920455650677407744/ranking-items');
+        // json_decode($first)
+        $groups=[];
+        $a = 0;
+        $b = 0;
+        $c = 0;
+        $d = 0;
+        foreach ($first as $f){
+            switch ($f->group_id) {
+                case $this->first_group_id[0]:
+                    $groups['A'][$a] = $f;
+                    $a++;
+                    break;
+                case $this->first_group_id[1]:
+                    $groups['B'][$b] = $f;
+                    $b++;
+                    break;
+                case $this->first_group_id[2]:
+                    $groups['C'][$c] = $f;
+                    $c++;
+                    break;
+                case $this->first_group_id[3]:
+                    $groups['D'][$d] = $f;
+                    $d++;
+                    break;
+                    
+            }
+            $counter++;
+        }
 
-        // return view('bracket',['first'=> json_decode($first), 'featured' => $featured]);
+        return view('bracket',['groups'=> $groups]);
     }
 
     public function signIn(Request $request){
@@ -82,9 +121,9 @@ class APIController extends Controller {
         }
 
         $response = Http::withHeaders([
-            'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
+            'X-Api-Key' => $this->x_api_key,
             'Authorization' => $this->getToken('registration'),
-        ])->post('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations', [
+        ])->post($this->toornament_link.$this->tournament_id.'/registrations', [
                 "name" => $name,
                 "email" => $email,
                 "custom_user_identifier" => $teamID,
