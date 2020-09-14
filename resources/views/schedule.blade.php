@@ -39,7 +39,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="single-defination match">
-								<h3>{{$match->opponents->participant[0]->name}}</h3>
+								<h3>{{$match->opponents[0]->participant->name}}</h3>
 							</div>
 						</div>
 						<div class="col-md-4">
@@ -50,7 +50,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="single-defination match">
-								<h3>{{$match->opponents->participant[1]->name}}</h3>
+								<h3>{{$match->opponents[1]->participant->name}}</h3>
 							</div>
 						</div>
 					</div>
