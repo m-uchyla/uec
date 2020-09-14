@@ -35,7 +35,9 @@
 
 				<div class="section-top-border">
 				<h3 class="mb-30">Runda</h3>
+				{{--
 				{{$i = 0}}
+				--}}
 					@foreach($matches as $match)
 							<div class="row">
 								<div class="col-md-4">
