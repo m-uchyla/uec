@@ -36,28 +36,28 @@
 								<div class="visit">{{$groups["A"][1]->points}}</div>
 							</div>
 							<div class="table-row">
-								<div class="serial">02</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
+								<div class="serial">{{$groups["B"][1]->rank}}</div>
+								<div class="country">{{$groups["B"][1]->participant->name}}</div>
+								<div class="visit">{{$groups["B"][1]->properties->wins}}</div>
+								<div class="visit">{{$groups["B"][1]->properties->losses}}</div>
+								<div class="visit">{{$groups["B"][1]->properties->played}}</div>
+								<div class="visit">{{$groups["B"][1]->points}}</div>
 							</div>
 							<div class="table-row">
-								<div class="serial">03</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
+								<div class="serial">{{$groups["C"][1]->rank}}</div>
+								<div class="country">{{$groups["C"][1]->participant->name}}</div>
+								<div class="visit">{{$groups["C"][1]->properties->wins}}</div>
+								<div class="visit">{{$groups["C"][1]->properties->losses}}</div>
+								<div class="visit">{{$groups["C"][1]->properties->played}}</div>
+								<div class="visit">{{$groups["C"][1]->points}}</div>
 							</div>
 							<div class="table-row">
-								<div class="serial">04</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
+								<div class="serial">{{$groups["D"][1]->rank}}</div>
+								<div class="country">{{$groups["D"][1]->participant->name}}</div>
+								<div class="visit">{{$groups["D"][1]->properties->wins}}</div>
+								<div class="visit">{{$groups["D"][1]->properties->losses}}</div>
+								<div class="visit">{{$groups["D"][1]->properties->played}}</div>
+								<div class="visit">{{$groups["D"][1]->points}}</div>
 							</div>
 						</div>
 					</div>
