@@ -33,6 +33,19 @@ class APIController extends Controller {
         return view('teams',['list'=> json_decode($registrations), 'featured' => $featured]);
     }
 
+    public function getBracket(){
+
+        $first = Http::withHeaders([
+            'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
+            'Authorization' => $this->getToken(),
+            'Range' => 'items=0-49'
+        ])->get('https://api.toornament.com/organizer/v2/tournaments/{tournament_id}/stages/{stage_id}/ranking-items');
+        
+        return $first;
+
+        // return view('bracket',['first'=> json_decode($first), 'featured' => $featured]);
+    }
+
     public function signIn(Request $request){
 
         try{

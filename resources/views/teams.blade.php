@@ -2,7 +2,7 @@
 
 @section('content')
         <!--? Team Start -->
-        <div class="team-area section-padding30">
+        <div class="team-area section-padding30" id="teams">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
@@ -20,26 +20,31 @@
 						<div class="progress-table">
 							<div class="table-head">
 								<div class="serial">#</div>
-								<div class="serial">Logo</div>
 								<div class="country">Nazwa drużyny</div>
-								<div class="visit">Fanpage</div>
-								<div class="visit">Kapitan</div>
+								<div class="visit">Zawodnik #1</div>
+								<div class="visit">Zawodnik #2</div>
+								<div class="visit">Zawodnik #3</div>
+								<div class="visit">Zawodnik #4</div>
+								<div class="visit">Zawodnik #5</div>
 							</div>
-							@foreach ($list as $team)
+							@for ($i = 0; $i < count($list); $i++)
 							<div class="table-row">
-								<div class="serial">01</div>
-								<div class="serial"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag"></div>
-								<div class="country"> {{$team->name}} </div>
-								<div class="visit"> {{$team->lineup[0]->name}} </div>
-								<div class="visit">Nick gracza</div>
+								<div class="serial">$i</div>
+								<div class="country"> {{$list[$i]->name}} </div>
+								<div class="visit">{{$list[$i]->lineup[0]->name}} </div>
+								<div class="visit">{{$list[$i]->lineup[1]->name}}</div>
+								<div class="visit">{{$list[$i]->lineup[2]->name}}</div>
+								<div class="visit">{{$list[$i]->lineup[3]->name}}</div>
+								<div class="visit">{{$list[$i]->lineup[4]->name}}</div>
 							</div>
-							@endforeach
+							@endfor
 						</div> 
 					</div>
                     </div>		
                 </div>
             </div>
         </div>
+		<a href="#teams" class="btn" id="click" style="visibility:hidden"></a>
 @endsection
 
 @section('script')
