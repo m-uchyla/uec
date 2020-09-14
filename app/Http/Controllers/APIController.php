@@ -115,11 +115,11 @@ class APIController extends Controller {
         $f = 0;
         foreach ($second as $s){
             switch ($s->group_id) {
-                case $this->$second_group_id[0]:
+                case $this->second_group_id[0]:
                     $aditional['E'][$e] = $s;
                     $e++;
                     break;
-                case $this->$second_group_id[1]:
+                case $this->second_group_id[1]:
                     $aditional['F'][$f] = $s;
                     $f++;
                     break;
