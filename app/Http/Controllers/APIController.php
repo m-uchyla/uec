@@ -144,7 +144,8 @@ class APIController extends Controller {
             'Authorization' => $this->getToken('result'),
             'Range' => 'matches=0-99'
         ])->get($this->toornament_link.$this->tournament_id.'/matches', [
-            'stage_ids' => $this->finals_id
+            'stage_ids' => $this->finals_id,
+            'sort' => 'structure'
         ]);
 
         return $finals;
