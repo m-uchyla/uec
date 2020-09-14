@@ -147,14 +147,16 @@
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
-							<div class="table-row">
-								<div class="serial">{{$aditional["E"][$i]->rank}}</div>
-								<div class="country">{{$aditional["E"][$i]->participant->name}}</div>
-								<div class="visit">{{$aditional["E"][$i]->properties->wins}}</div>
-								<div class="visit">{{$aditional["E"][$i]->properties->losses}}</div>
-								<div class="visit">{{$aditional["E"][$i]->properties->played}}</div>
-								<div class="visit">{{$aditional["E"][$i]->points}}</div>
-							</div>
+								@if($aditional["F"][$i]->participant)
+									<div class="table-row">
+										<div class="serial">{{$aditional["E"][$i]->rank}}</div>
+										<div class="country">{{$aditional["E"][$i]->participant->name}}</div>
+										<div class="visit">{{$aditional["E"][$i]->properties->wins}}</div>
+										<div class="visit">{{$aditional["E"][$i]->properties->losses}}</div>
+										<div class="visit">{{$aditional["E"][$i]->properties->played}}</div>
+										<div class="visit">{{$aditional["E"][$i]->points}}</div>
+									</div>
+								@endif
 							@endfor
 						</div>
 					</div>
@@ -174,16 +176,16 @@
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
-							@if($aditional["F"][$i]->participant)
-							<div class="table-row">
-								<div class="serial">{{$aditional["F"][$i]->rank}}</div>
-								<div class="country">{{$aditional["F"][$i]->participant->name}}</div>
-								<div class="visit">{{$aditional["F"][$i]->properties->wins}}</div>
-								<div class="visit">{{$aditional["F"][$i]->properties->losses}}</div>
-								<div class="visit">{{$aditional["F"][$i]->properties->played}}</div>
-								<div class="visit">{{$aditional["F"][$i]->points}}</div>
-							</div>
-							@endif
+								@if($aditional["F"][$i]->participant)
+									<div class="table-row">
+										<div class="serial">{{$aditional["F"][$i]->rank}}</div>
+										<div class="country">{{$aditional["F"][$i]->participant->name}}</div>
+										<div class="visit">{{$aditional["F"][$i]->properties->wins}}</div>
+										<div class="visit">{{$aditional["F"][$i]->properties->losses}}</div>
+										<div class="visit">{{$aditional["F"][$i]->properties->played}}</div>
+										<div class="visit">{{$aditional["F"][$i]->points}}</div>
+									</div>
+								@endif
 							@endfor
 						</div>
 					</div>
