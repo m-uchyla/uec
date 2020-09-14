@@ -126,13 +126,17 @@ class APIController extends Controller {
             }
         }
 
-        // usort($aditional['E'], 'cmp');
-        // usort($aditional['F'], 'cmp');
+        usort($aditional['E'], function($a, $b)
+        {
+            return strcmp($a->rank, $b->rank);
+        });
+        usort($aditional['F'], function($a, $b)
+        {
+            return strcmp($a->rank, $b->rank);
+        });
 
-        return $aditional;
-
-        // $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
-        // return view('bracket',['groups'=> $groups, 'featured' => $featured, 'aditional' => $aditional]);
+        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        return view('bracket',['groups'=> $groups, 'featured' => $featured, 'aditional' => $aditional]);
     }
 
     public function signIn(Request $request){
