@@ -11,8 +11,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.png', true) }}">
     @include('css')
     <script data-ad-client="ca-pub-9696942259354560" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <link rel="stylesheet" href="{{ asset('resources/main/cookie/purecookie.css', true) }}"/>
-    <script src="{{ asset('resources/main/cookie/purecookie.js', true) }}"></script>
 </head>
 <body>
     <!-- ? Preloader Start -->
