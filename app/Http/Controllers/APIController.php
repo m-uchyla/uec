@@ -25,8 +25,8 @@ class APIController extends Controller {
         $registrations = Http::withHeaders([
             'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
             'Authorization' => $this->getToken(),
-            'Range' => 'registrations=0-32'
-        ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/registrations');
+            'Range' => 'participants=0-49'
+        ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/participants');
 
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
         
@@ -39,7 +39,7 @@ class APIController extends Controller {
             'X-Api-Key' => 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U',
             'Authorization' => $this->getToken(),
             'Range' => 'items=0-49'
-        ])->get('https://api.toornament.com/organizer/v2/tournaments/{tournament_id}/stages/{stage_id}/ranking-items');
+        ])->get('https://api.toornament.com/organizer/v2/tournaments/3784327726246748160/stages/3920455650677407744/ranking-items');
         
         return $first;
 

@@ -29,8 +29,8 @@
 							</div>
 							@for ($i = 0; $i < count($list); $i++)
 							<div class="table-row">
-								<div class="serial">$i</div>
-								<div class="country"> {{$list[$i]->name}} </div>
+								<div class="serial">{{$i}}</div>
+								<div class="country"><a href="{{$list[$i]->fanpage}}">{{$list[$i]->name}}</a></div>
 								<div class="visit">{{$list[$i]->lineup[0]->name}} </div>
 								<div class="visit">{{$list[$i]->lineup[1]->name}}</div>
 								<div class="visit">{{$list[$i]->lineup[2]->name}}</div>
