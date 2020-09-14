@@ -214,9 +214,9 @@ class APIController extends Controller {
         }
     }
 
-    public function registration (Request $request){
+    public function getSchedule (){
 
-        return null;
+        return view('schedule');
     }
 
     
