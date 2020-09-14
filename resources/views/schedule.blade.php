@@ -41,18 +41,28 @@
 							<div class="row">
 								<div class="col-md-4">
 									<div class="single-defination match">
+										@if ($match->opponents[0]->participant)
 										<h3>{{$match->opponents[0]->participant->name}}</h3>
+										@else
+										<h3>TBA</h3>
+										@endif
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="single-defination" style="text-align:center">
 										<p class="vs">VS</p>
+										@if($match->scheduled_datetime)
 										<h4 class="mb-20">{{date("H:i:s d-m-Y", strtotime($match->scheduled_datetime))}}</h4>
+										@endif
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="single-defination match">
+									@if ($match->opponents[1]->participant)
 										<h3>{{$match->opponents[1]->participant->name}}</h3>
+										@else
+										<h3>TBA</h3>
+										@endif
 									</div>
 								</div>
 							</div>
