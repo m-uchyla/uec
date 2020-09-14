@@ -86,14 +86,22 @@ class APIController extends Controller {
             }
         }
 
-        
-        function cmp($a, $b) {
+        usort($groups['A'], function($a, $b)
+        {
             return strcmp($a->rank, $b->rank);
-        }
-        usort($groups['A'], 'cmp');
-        usort($groups['B'], 'cmp');
-        usort($groups['C'], 'cmp');
-        usort($groups['D'], 'cmp');
+        });
+        usort($groups['B'], function($a, $b)
+        {
+            return strcmp($a->rank, $b->rank);
+        });
+        usort($groups['C'], function($a, $b)
+        {
+            return strcmp($a->rank, $b->rank);
+        });
+        usort($groups['D'], function($a, $b)
+        {
+            return strcmp($a->rank, $b->rank);
+        });
 
 
         $second = Http::withHeaders([
@@ -118,13 +126,13 @@ class APIController extends Controller {
             }
         }
 
-        usort($aditional['E'], 'cmp');
-        usort($aditional['F'], 'cmp');
+        // usort($aditional['E'], 'cmp');
+        // usort($aditional['F'], 'cmp');
 
         return $aditional;
 
-        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
-        return view('bracket',['groups'=> $groups, 'featured' => $featured, 'aditional' => $aditional]);
+        // $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        // return view('bracket',['groups'=> $groups, 'featured' => $featured, 'aditional' => $aditional]);
     }
 
     public function signIn(Request $request){
