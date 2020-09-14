@@ -23,6 +23,11 @@ class APIController extends Controller {
         '3920455651516268604'
     ];
 
+    private $second_group_id= [
+        '3920456038305112081',
+        '3920456038338666540'
+    ];
+
 
     private function getToken($scope){
         return (Http::asForm()->post('https://api.toornament.com/oauth/v2/token', [
@@ -81,25 +86,45 @@ class APIController extends Controller {
             }
         }
 
-        usort($groups['A'], function($a, $b)
-        {
+        
+        function cmp($a, $b) {
             return strcmp($a->rank, $b->rank);
-        });
-        usort($groups['B'], function($a, $b)
-        {
-            return strcmp($a->rank, $b->rank);
-        });
-        usort($groups['C'], function($a, $b)
-        {
-            return strcmp($a->rank, $b->rank);
-        });
-        usort($groups['D'], function($a, $b)
-        {
-            return strcmp($a->rank, $b->rank);
-        });
+        }
+        usort($groups['A'], 'cmp');
+        usort($groups['B'], 'cmp');
+        usort($groups['C'], 'cmp');
+        usort($groups['D'], 'cmp');
+
+
+        $second = Http::withHeaders([
+            'X-Api-Key' => $this->x_api_key,
+            'Authorization' => $this->getToken('result'),
+            'Range' => 'items=0-49'
+        ])->get($this->toornament_link.$this->tournament_id.'/stages/3920456037466251264/ranking-items');
+        $second= json_decode($second);
+        $aditional=[];
+        $e = 0;
+        $f = 0;
+        foreach ($second as $s){
+            switch ($s->group_id) {
+                case $this->$second_group_id[0]:
+                    $aditional['E'][$e] = $s;
+                    $e++;
+                    break;
+                case $this->$second_group_id[1]:
+                    $aditional['F'][$f] = $s;
+                    $f++;
+                    break;
+            }
+        }
+
+        usort($aditional['E'], 'cmp');
+        usort($aditional['F'], 'cmp');
+
+        return $aditional;
 
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
-        return view('bracket',['groups'=> $groups, 'featured' => $featured]);
+        return view('bracket',['groups'=> $groups, 'featured' => $featured, 'aditional' => $aditional]);
     }
 
     public function signIn(Request $request){

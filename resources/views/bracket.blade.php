@@ -57,7 +57,7 @@
 							@for ($i=0;$i < 4;$i++)
 							<div class="table-row">
 								<div class="serial">{{$groups["B"][$i]->rank}}</div>
-								<div class="country">{{$groups["B"][$i]->participant->name}}</div>
+								<div class="country"><a href='{{$groups["B"][$i]->participant->custom_fields->fanpage}}'>{{$groups["B"][$i]->participant->name}}</a></div>
 								<div class="visit">{{$groups["B"][$i]->properties->wins}}</div>
 								<div class="visit">{{$groups["B"][$i]->properties->losses}}</div>
 								<div class="visit">{{$groups["B"][$i]->properties->played}}</div>
