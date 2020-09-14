@@ -232,7 +232,7 @@ class APIController extends Controller {
 
         $iter = 0;
         foreach ($matches as $m){
-            if($iter == 7){
+            if($iter == 8){
                 $m->round=1;
                 $iter = 0;
             } else{
