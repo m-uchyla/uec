@@ -10,26 +10,27 @@ use Illuminate\Support\Facades\Http;
 
 class APIController extends Controller {
 
-    private $client_id= 'e61fd46a3437441ae2ed72085mqhuwuo8gsggggskgk4og8owcckkckgcskws4kkk0000ocws8';
-    private $client_secret= '1l80dg7iyxs0s8ggocwg80s4k8gwcscc0k4gog04w4gs4gw40o';
+    private $client_id= '70257817dfff160b4ee5df711uuq67pfb6v4skg4sw08c4k8co80wg4skowok8cws004kg8c8o';
+    private $client_secret= '38wdsxt25oqoscogwgsg04gskso80800sc8o4480wwkg8448cc';
     private $toornament_link= 'https://api.toornament.com/organizer/v2/tournaments/';
-    private $tournament_id= '3784327726246748160';
-    private $x_api_key= 'QxqirJ6zBGM45sI4xZo1X5X9_XTB4Q_54P1TyixXl2U';
+    // private $tournament_id= '3784327726246748160';
+    private $tournament_id= '3759322905472999424';
+    private $x_api_key= 'B7BAhJ4kDUI4l7d12rwMEdLfFDelET_NNbLw_wm4pT4';
 
     private $first_group_id= [
-        '3920455651516268658',
-        '3920455651482714145',
-        '3920455651516268631',
-        '3920455651516268604'
+        '3921463444860035105',
+        '3921463444893589564',
+        '3921463444893589591',
+        '3921463444893589618'
     ];
 
     private $second_group_id= [
-        '3920456038305112081',
-        '3920456038338666540'
+        '3921470623060557841',
+        '3921470623094112300'
     ];
 
     private $finals_id=
-        '3920456542151671808'
+        '3921472689046593536'
     ;
 
 
@@ -61,7 +62,7 @@ class APIController extends Controller {
             'X-Api-Key' => $this->x_api_key,
             'Authorization' => $this->getToken('result'),
             'Range' => 'items=0-49'
-        ])->get($this->toornament_link.$this->tournament_id.'/stages/3920455650677407744/ranking-items');
+        ])->get($this->toornament_link.$this->tournament_id.'/stages/3921463444088283136/ranking-items');
         $first= json_decode($first);
         $groups=[];
         $a = 0;
@@ -112,7 +113,7 @@ class APIController extends Controller {
             'X-Api-Key' => $this->x_api_key,
             'Authorization' => $this->getToken('result'),
             'Range' => 'items=0-49'
-        ])->get($this->toornament_link.$this->tournament_id.'/stages/3920456037466251264/ranking-items');
+        ])->get($this->toornament_link.$this->tournament_id.'/stages/3921470622221697024/ranking-items');
         $second= json_decode($second);
         $aditional=[];
         $e = 0;
