@@ -122,7 +122,7 @@
 							<div class="table-row">
 								<div class="serial">{{$groups["C"][$i]->rank}}</div>
 								<div class="country">
-								@if{$groups["C"][$i]->participant->custom_fields->fanpage)
+								@if($groups["C"][$i]->participant->custom_fields->fanpage)
 									<a href='{{$groups["C"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
 									{{$groups["C"][$i]->participant->name}}</a>
 									@else
