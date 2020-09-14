@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'ArticleInsertController@getHomepage')->name('homepage');
 Route::get('/about', 'ArticleInsertController@getAbout')->name('about');
 Route::get('/terms', 'ArticleInsertController@getTerms')->name('terms');
+Route::get('/regulamin', 'ArticleInsertController@getRegulamin')->name('regulamin');
 Route::get('/bracket', 'APIController@getBracket')->name('bracket');
 Route::get('/teams', 'APIController@getList')->name('teams');
 Route::get('/schedule', 'APIController@getSchedule')->name('schedule');
