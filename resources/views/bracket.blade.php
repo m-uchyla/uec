@@ -314,12 +314,12 @@
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							<div class="table-row">
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial" style="padding-left: 10px;" >01</div>
+								<div class="country">{{$finals[0]->opponents[0]->participant->name}}</div>
+								<div class="serial" style="padding-left: 10px;" >{{$finals[0]->opponents[0]->score}}</div>
 							</div>
 							<div class="table-row">
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial" style="padding-left: 10px;" >02</div>
+								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">{{$finals[0]->opponents[1]->participant->name}}</div>
+								<div class="serial" style="padding-left: 10px;" >{{$finals[0]->opponents[1]->score}}</div>
 							</div>
 						</div>
 					</div>

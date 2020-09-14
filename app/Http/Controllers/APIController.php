@@ -148,10 +148,8 @@ class APIController extends Controller {
             'sort' => 'structure'
         ]);
 
-        return $finals;
-
-        // $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
-        // return view('bracket',['groups'=> $groups, 'featured' => $featured, 'aditional' => $aditional]);
+        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        return view('bracket',['groups'=> $groups, 'featured' => $featured, 'aditional' => $aditional, 'finals' => $finals]);
     }
 
     public function signIn(Request $request){
