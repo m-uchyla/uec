@@ -34,26 +34,30 @@
                 </div>
 
 				<div class="section-top-border">
-					<h3 class="mb-30">Definition</h3>
 					@foreach($matches as $match)
-					<div class="row">
-						<div class="col-md-4">
-							<div class="single-defination match">
-								<h3>{{$match->opponents[0]->participant->name}}</h3>
+						@for($i = 0; $i< 9; $i++)
+							@if($i = 0)
+								<h3 class="mb-30">Runda</h3>
+							@endif
+							<div class="row">
+								<div class="col-md-4">
+									<div class="single-defination match">
+										<h3>{{$match->opponents[0]->participant->name}}</h3>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="single-defination" style="text-align:center">
+										<p class="vs">VS</p>
+										<h4 class="mb-20">{{date("H:i:s d-m-Y", strtotime($match->scheduled_datetime))}}</h4>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="single-defination match">
+										<h3>{{$match->opponents[1]->participant->name}}</h3>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="single-defination" style="text-align:center">
-								<p class="vs">VS</p>
-								<h4 class="mb-20">{{date("H:i:s d-m-Y", strtotime($match->scheduled_datetime))}}</h4>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="single-defination match">
-								<h3>{{$match->opponents[1]->participant->name}}</h3>
-							</div>
-						</div>
-					</div>
+						@endfor
 					@endforeach
 				</div>
                 </div>
