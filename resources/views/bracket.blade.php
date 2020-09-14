@@ -174,6 +174,7 @@
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
+							@if($aditional["F"][$i]->participant)
 							<div class="table-row">
 								<div class="serial">{{$aditional["F"][$i]->rank}}</div>
 								<div class="country">{{$aditional["F"][$i]->participant->name}}</div>
@@ -182,6 +183,7 @@
 								<div class="visit">{{$aditional["F"][$i]->properties->played}}</div>
 								<div class="visit">{{$aditional["F"][$i]->points}}</div>
 							</div>
+							@endif
 							@endfor
 						</div>
 					</div>
