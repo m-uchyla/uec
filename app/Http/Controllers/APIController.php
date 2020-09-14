@@ -235,7 +235,7 @@ class APIController extends Controller {
         foreach ($matches as $m){
             if($iter == 8){
                 $m->round=1;
-                $iter = 0;
+                $iter = 1;
             } else{
                 $m->round=0;
                 $iter++;
