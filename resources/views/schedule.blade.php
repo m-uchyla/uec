@@ -21,7 +21,7 @@
 
 @section('content')
         <!--? Team Start -->
-        <div class="team-area section-padding30" id='bracket'>
+        <div class="team-area section-padding30" id='schedule'>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
@@ -74,6 +74,7 @@
                 </div>
             </div>
         </div>
+		<a href="#schedule" class="btn" id="click" style="visibility:hidden"></a>
 @endsection
 
 @section('script')

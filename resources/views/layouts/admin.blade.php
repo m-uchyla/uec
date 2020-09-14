@@ -97,7 +97,7 @@
       @endif
     <li class="sidebar-header">NAWIGACJA TURNIEJU</li>
     <li>
-        <a href="{{ route('bracket') }}">
+        <a href="{{ route('schedule') }}">
           <i class="zmdi zmdi-calendar-check"></i> <span>Harmonogram meczy</span>
         </a>
     </li>

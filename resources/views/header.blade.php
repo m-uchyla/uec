@@ -23,7 +23,7 @@
                                             <li>
                                                 <a href="blog.html">Bieżący turniej</a>
                                                 <ul class="submenu">
-                                                    <li><a href="blog.html">Harmonogram meczy</a></li>
+                                                    <li><a href="{{ route('schedule') }}">Harmonogram meczy</a></li>
                                                     <li><a href="{{ route('bracket') }}">Drabinka</a></li>
                                                     <li><a href="{{ route('teams') }}">Drużyny</a></li>
                                                 </ul>
