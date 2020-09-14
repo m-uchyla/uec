@@ -85,10 +85,21 @@ class APIController extends Controller {
         {
             return strcmp($a->rank, $b->rank);
         });
+        usort($groups['B'], function($a, $b)
+        {
+            return strcmp($a->rank, $b->rank);
+        });
+        usort($groups['C'], function($a, $b)
+        {
+            return strcmp($a->rank, $b->rank);
+        });
+        usort($groups['D'], function($a, $b)
+        {
+            return strcmp($a->rank, $b->rank);
+        });
 
         $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
-        return $groups;
-        // return view('bracket',['groups'=> $groups, 'featured' => $featured]);
+        return view('bracket',['groups'=> $groups, 'featured' => $featured]);
     }
 
     public function signIn(Request $request){

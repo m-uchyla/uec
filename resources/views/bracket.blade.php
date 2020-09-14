@@ -27,38 +27,16 @@
 								<div class="visit">Meczy</div>
 								<div class="visit">Punkty</div>
 							</div>
+							@for ($i=0;$i < 4;$i++)
 							<div class="table-row">
-								<div class="serial">{{$groups["A"][1]->rank}}</div>
-								<div class="country">{{$groups["A"][1]->participant->name}}</div>
-								<div class="visit">{{$groups["A"][1]->properties->wins}}</div>
-								<div class="visit">{{$groups["A"][1]->properties->losses}}</div>
-								<div class="visit">{{$groups["A"][1]->properties->played}}</div>
-								<div class="visit">{{$groups["A"][1]->points}}</div>
+								<div class="serial">{{$groups["A"][$i]->rank}}</div>
+								<div class="country">{{$groups["A"][$i]->participant->name}}</div>
+								<div class="visit">{{$groups["A"][$i]->properties->wins}}</div>
+								<div class="visit">{{$groups["A"][$i]->properties->losses}}</div>
+								<div class="visit">{{$groups["A"][$i]->properties->played}}</div>
+								<div class="visit">{{$groups["A"][$i]->points}}</div>
 							</div>
-							<div class="table-row">
-								<div class="serial">{{$groups["B"][1]->rank}}</div>
-								<div class="country">{{$groups["B"][1]->participant->name}}</div>
-								<div class="visit">{{$groups["B"][1]->properties->wins}}</div>
-								<div class="visit">{{$groups["B"][1]->properties->losses}}</div>
-								<div class="visit">{{$groups["B"][1]->properties->played}}</div>
-								<div class="visit">{{$groups["B"][1]->points}}</div>
-							</div>
-							<div class="table-row">
-								<div class="serial">{{$groups["C"][1]->rank}}</div>
-								<div class="country">{{$groups["C"][1]->participant->name}}</div>
-								<div class="visit">{{$groups["C"][1]->properties->wins}}</div>
-								<div class="visit">{{$groups["C"][1]->properties->losses}}</div>
-								<div class="visit">{{$groups["C"][1]->properties->played}}</div>
-								<div class="visit">{{$groups["C"][1]->points}}</div>
-							</div>
-							<div class="table-row">
-								<div class="serial">{{$groups["D"][1]->rank}}</div>
-								<div class="country">{{$groups["D"][1]->participant->name}}</div>
-								<div class="visit">{{$groups["D"][1]->properties->wins}}</div>
-								<div class="visit">{{$groups["D"][1]->properties->losses}}</div>
-								<div class="visit">{{$groups["D"][1]->properties->played}}</div>
-								<div class="visit">{{$groups["D"][1]->points}}</div>
-							</div>
+							@endfor
 						</div>
 					</div>
                     </div>
@@ -76,38 +54,16 @@
 								<div class="visit">Porażki</div>
 								<div class="visit">Punkty</div>
 							</div>
+							@for ($i=0;$i < 4;$i++)
 							<div class="table-row">
-								<div class="serial">01</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
+								<div class="serial">{{$groups["B"][$i]->rank}}</div>
+								<div class="country">{{$groups["B"][$i]->participant->name}}</div>
+								<div class="visit">{{$groups["B"][$i]->properties->wins}}</div>
+								<div class="visit">{{$groups["B"][$i]->properties->losses}}</div>
+								<div class="visit">{{$groups["B"][$i]->properties->played}}</div>
+								<div class="visit">{{$groups["B"][$i]->points}}</div>
 							</div>
-							<div class="table-row">
-								<div class="serial">02</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-							</div>
-							<div class="table-row">
-								<div class="serial">03</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-							</div>
-							<div class="table-row">
-								<div class="serial">04</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-							</div>
+							@endfor
 						</div>
 					</div>
                     </div>
@@ -125,38 +81,16 @@
 								<div class="visit">Porażki</div>
 								<div class="visit">Punkty</div>
 							</div>
+							@for ($i=0;$i < 4;$i++)
 							<div class="table-row">
-								<div class="serial">01</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
+								<div class="serial">{{$groups["C"][$i]->rank}}</div>
+								<div class="country">{{$groups["C"][$i]->participant->name}}</div>
+								<div class="visit">{{$groups["C"][$i]->properties->wins}}</div>
+								<div class="visit">{{$groups["C"][$i]->properties->losses}}</div>
+								<div class="visit">{{$groups["C"][$i]->properties->played}}</div>
+								<div class="visit">{{$groups["C"][$i]->points}}</div>
 							</div>
-							<div class="table-row">
-								<div class="serial">02</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-							</div>
-							<div class="table-row">
-								<div class="serial">03</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-							</div>
-							<div class="table-row">
-								<div class="serial">04</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-							</div>
+							@endfor
 						</div>
 					</div>
                     </div>
@@ -174,38 +108,16 @@
 								<div class="visit">Porażki</div>
 								<div class="visit">Punkty</div>
 							</div>
+							@for ($i=0;$i < 4;$i++)
 							<div class="table-row">
-								<div class="serial">01</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
+								<div class="serial">{{$groups["D"][$i]->rank}}</div>
+								<div class="country">{{$groups["D"][$i]->participant->name}}</div>
+								<div class="visit">{{$groups["D"][$i]->properties->wins}}</div>
+								<div class="visit">{{$groups["D"][$i]->properties->losses}}</div>
+								<div class="visit">{{$groups["D"][$i]->properties->played}}</div>
+								<div class="visit">{{$groups["D"][$i]->points}}</div>
 							</div>
-							<div class="table-row">
-								<div class="serial">02</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-							</div>
-							<div class="table-row">
-								<div class="serial">03</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-							</div>
-							<div class="table-row">
-								<div class="serial">04</div>
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-								<div class="visit">645</div>
-							</div>
+							@endfor
 						</div>
 					</div>
                     </div>
