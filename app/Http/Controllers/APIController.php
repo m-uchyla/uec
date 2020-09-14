@@ -225,7 +225,7 @@ class APIController extends Controller {
             'Range' => 'matches=0-99'
         ])->get($this->toornament_link.$this->tournament_id.'/matches', [
             'is_scheduled' => 1,
-            'scheduled_after' => date('Y-m-d H:i:s')
+            'scheduled_after' => '2020-09-14 14:37:00'
         ]);
         $matches= json_decode($matches);
 
