@@ -32,11 +32,11 @@
 							<div class="table-row">
 								<div class="serial">{{$groups["A"][$i]->rank}}</div>
 								<div class="country">
-									@if{$groups["B"][$i]->participant->custom_fields->fanpage)
-									<a href='{{$groups["B"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
-									{{$groups["B"][$i]->participant->name}}</a>
+									@if($groups["A"][$i]->participant->custom_fields->fanpage)
+									<a href='{{$groups["A"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
+									{{$groups["A"][$i]->participant->name}}</a>
 									@else
-									{{$groups["B"][$i]->participant->name}}
+									{{$groups["A"][$i]->participant->name}}
 									@endif
 								</div>
 								<div class="visit">{{$groups["A"][$i]->properties->wins}}</div>
@@ -77,7 +77,7 @@
 							<div class="table-row">
 								<div class="serial">{{$groups["B"][$i]->rank}}</div>
 								<div class="country">
-									@if{$groups["B"][$i]->participant->custom_fields->fanpage)
+								@if($groups["B"][$i]->participant->custom_fields->fanpage)
 									<a href='{{$groups["B"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
 									{{$groups["B"][$i]->participant->name}}</a>
 									@else
@@ -118,15 +118,15 @@
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
-							@if($aditional["C"][$i]->participant)
+							@if($groups["C"][$i]->participant->custom_fields->fanpage)
 							<div class="table-row">
 								<div class="serial">{{$groups["C"][$i]->rank}}</div>
 								<div class="country">
-								@if{$groups["B"][$i]->participant->custom_fields->fanpage)
-									<a href='{{$groups["B"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
-									{{$groups["B"][$i]->participant->name}}</a>
+								@if{$groups["C"][$i]->participant->custom_fields->fanpage)
+									<a href='{{$groups["C"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
+									{{$groups["C"][$i]->participant->name}}</a>
 									@else
-									{{$groups["B"][$i]->participant->name}}
+									{{$groups["C"][$i]->participant->name}}
 									@endif
 								</div>
 								<div class="visit">{{$groups["C"][$i]->properties->wins}}</div>
@@ -167,11 +167,11 @@
 							<div class="table-row">
 								<div class="serial">{{$groups["D"][$i]->rank}}</div>
 								<div class="country">
-								@if{$groups["B"][$i]->participant->custom_fields->fanpage)
-									<a href='{{$groups["B"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
-									{{$groups["B"][$i]->participant->name}}</a>
+								@if($groups["D"][$i]->participant->custom_fields->fanpage)
+									<a href='{{$groups["D"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
+									{{$groups["D"][$i]->participant->name}}</a>
 									@else
-									{{$groups["B"][$i]->participant->name}}
+									{{$groups["D"][$i]->participant->name}}
 									@endif
 								</div>
 								<div class="visit">{{$groups["D"][$i]->properties->wins}}</div>
@@ -219,15 +219,15 @@
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
-							@if{$groups["B"][$i]->participant->custom_fields->fanpage)
+							@if($aditional["E"][$i]->participant)
 											<div class="table-row">
 												<div class="serial">{{$aditional["E"][$i]->rank}}</div>
 												<div class="country">
-											@if({{$groups["B"][$i]->participant->custom_fields->fanpage}})
-											<a href='{{$groups["B"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
-											{{$groups["B"][$i]->participant->name}}</a>
+											@if($groups["E"][$i]->participant->custom_fields->fanpage)
+											<a href='{{$groups["E"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
+											{{$groups["E"][$i]->participant->name}}</a>
 											@else
-											{{$groups["B"][$i]->participant->name}}
+											{{$groups["E"][$i]->participant->name}}
 											@endif
 										</div>
 										<div class="visit">{{$aditional["E"][$i]->properties->wins}}</div>
@@ -264,15 +264,15 @@
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
-							@if{$groups["B"][$i]->participant->custom_fields->fanpage)
+							@if($aditional["F"][$i]->participant)
 									<div class="table-row">
 										<div class="serial">{{$aditional["F"][$i]->rank}}</div>
 										<div class="country">
-											@if({{$groups["B"][$i]->participant->custom_fields->fanpage}})
-											<a href='{{$groups["B"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
-											{{$groups["B"][$i]->participant->name}}</a>
+											@if($groups["F"][$i]->participant->custom_fields->fanpage)
+											<a href='{{$groups["F"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
+											{{$groups["F"][$i]->participant->name}}</a>
 											@else
-											{{$groups["B"][$i]->participant->name}}
+											{{$groups["F"][$i]->participant->name}}
 											@endif
 										</div>
 										<div class="visit">{{$aditional["F"][$i]->properties->wins}}</div>
