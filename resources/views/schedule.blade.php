@@ -34,11 +34,9 @@
                 </div>
 
 				<div class="section-top-border">
+				<h3 class="mb-30">Runda</h3>
 					@foreach($matches as $match)
-						@for($i = 0; $i< 9; $i++)
-							@if($i = 0)
-								<h3 class="mb-30">Runda</h3>
-							@endif
+							<h3 class="mb-30">Runda</h3>
 							<div class="row">
 								<div class="col-md-4">
 									<div class="single-defination match">
@@ -57,7 +55,6 @@
 									</div>
 								</div>
 							</div>
-						@endfor
 					@endforeach
 				</div>
                 </div>
