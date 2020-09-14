@@ -216,7 +216,8 @@ class APIController extends Controller {
 
     public function getSchedule (){
 
-        return view('schedule');
+        $featured = DB::table('articles')->where('isFeatured',1)->latest()->get();
+        return view('schedule',['featured' => $featured]);
     }
 
     
