@@ -143,7 +143,9 @@ class APIController extends Controller {
             'X-Api-Key' => $this->x_api_key,
             'Authorization' => $this->getToken('result'),
             'Range' => 'matches=0-99'
-        ])->where('stage_ids',$this->finals_id)->get($this->toornament_link.$this->tournament_id.'/matches');
+        ])->get($this->toornament_link.$this->tournament_id.'/matches', [
+            'stage_ids' => $this->finals_id
+        ]);
 
         return $finals;
 
