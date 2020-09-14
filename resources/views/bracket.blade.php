@@ -2,9 +2,9 @@
 
 @section('content')
         <!--? Team Start -->
-        <div class="team-area section-padding30">
+        <div class="team-area section-padding30" id='bracket'>
             <div class="container">
-                <div class="row justify-content-center" id='bracket'>
+                <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-70">
@@ -223,11 +223,11 @@
 											<div class="table-row">
 												<div class="serial">{{$aditional["E"][$i]->rank}}</div>
 												<div class="country">
-											@if($groups["E"][$i]->participant->custom_fields->fanpage)
+											@if($aditional["E"][$i]->participant->custom_fields->fanpage)
 											<a href='{{$groups["E"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
-											{{$groups["E"][$i]->participant->name}}</a>
+											{{$aditional["E"][$i]->participant->name}}</a>
 											@else
-											{{$groups["E"][$i]->participant->name}}
+											{{$aditional["E"][$i]->participant->name}}
 											@endif
 										</div>
 										<div class="visit">{{$aditional["E"][$i]->properties->wins}}</div>
@@ -268,11 +268,11 @@
 									<div class="table-row">
 										<div class="serial">{{$aditional["F"][$i]->rank}}</div>
 										<div class="country">
-											@if($groups["F"][$i]->participant->custom_fields->fanpage)
+											@if($aditional["F"][$i]->participant->custom_fields->fanpage)
 											<a href='{{$groups["F"][$i]->participant->custom_fields->fanpage}}' style='color:#b91010'>
-											{{$groups["F"][$i]->participant->name}}</a>
+											{{$aditional["F"][$i]->participant->name}}</a>
 											@else
-											{{$groups["F"][$i]->participant->name}}
+											{{$aditional["F"][$i]->participant->name}}
 											@endif
 										</div>
 										<div class="visit">{{$aditional["F"][$i]->properties->wins}}</div>
