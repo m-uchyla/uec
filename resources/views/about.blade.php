@@ -38,9 +38,9 @@
 
 
         <!--? All startups Start -->
-        <!-- <div class="starups-area testimonial-area fix">
+        <div class="starups-area testimonial-area fix">
             <div class="starups-img">
-                <div class="play-btn"><a class="popup-video" href="https://youtu.be/KWgl4uyeiHQ"><i class="flaticon-null-3"></i></a></div>
+                <div class="play-btn"><a class="popup-video" href="https://www.youtube.com/watch?v=gv2uuj-nIJE"><i class="flaticon-null-3"></i></a></div>
             </div>
             <div class="starups">
                 <div class="h1-testimonial-active">
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!--All startups End -->
 
 
