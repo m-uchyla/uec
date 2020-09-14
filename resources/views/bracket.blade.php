@@ -28,7 +28,7 @@
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
-							@if($aditional["A"][$i]->participant)
+							@if($groups["A"][$i]->participant)
 							<div class="table-row">
 								<div class="serial">{{$groups["A"][$i]->rank}}</div>
 								<div class="country">
@@ -73,7 +73,7 @@
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
-							@if($aditional["B"][$i]->participant)
+							@if($groups["B"][$i]->participant)
 							<div class="table-row">
 								<div class="serial">{{$groups["B"][$i]->rank}}</div>
 								<div class="country">
@@ -163,7 +163,7 @@
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
-							@if($aditional["D"][$i]->participant)
+							@if($groups["D"][$i]->participant)
 							<div class="table-row">
 								<div class="serial">{{$groups["D"][$i]->rank}}</div>
 								<div class="country">
