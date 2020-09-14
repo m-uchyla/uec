@@ -466,14 +466,28 @@
                     <h2 style="text-align:center">II półfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
-							<div class="table-row">
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial" style="padding-left: 10px;" >01</div>
-							</div>
-							<div class="table-row">
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial" style="padding-left: 10px;" >02</div>
-							</div>
+								@if($finals[5]->opponents[0]->participant)
+									<div class="table-row">
+										<div class="country">{{$finals[5]->opponents[0]->participant->name}}</div>
+										<div class="serial" style="padding-left: 10px;" >{{$finals[5]->opponents[0]->score}}</div>
+									</div>
+								@else
+									<div class="table-row">
+										<div class="country">TBA</div>
+										<div class="serial" style="padding-left: 10px;" >--</div>
+									</div>
+								@endif
+								@if($finals[5]->opponents[1]->participant)
+									<div class="table-row">
+										<div class="country">{{$finals[5]->opponents[1]->participant->name}}</div>
+										<div class="serial" style="padding-left: 10px;" >{{$finals[5]->opponents[1]->score}}</div>
+									</div>
+								@else
+									<div class="table-row">
+										<div class="country">TBA</div>
+										<div class="serial" style="padding-left: 10px;" >--</div>
+									</div>
+								@endif
 						</div>
 					</div>
                     </div>
@@ -484,14 +498,28 @@
                     <h2 style="text-align:center">Mecz o 3 msc.</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
-							<div class="table-row">
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial" style="padding-left: 10px;" >01</div>
-							</div>
-							<div class="table-row">
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial" style="padding-left: 10px;" >02</div>
-							</div>
+							@if($finals[6]->opponents[0]->participant)
+									<div class="table-row">
+										<div class="country">{{$finals[6]->opponents[0]->participant->name}}</div>
+										<div class="serial" style="padding-left: 10px;" >{{$finals[6]->opponents[0]->score}}</div>
+									</div>
+								@else
+									<div class="table-row">
+										<div class="country">TBA</div>
+										<div class="serial" style="padding-left: 10px;" >--</div>
+									</div>
+								@endif
+								@if($finals[6]->opponents[1]->participant)
+									<div class="table-row">
+										<div class="country">{{$finals[6]->opponents[1]->participant->name}}</div>
+										<div class="serial" style="padding-left: 10px;" >{{$finals[6]->opponents[1]->score}}</div>
+									</div>
+								@else
+									<div class="table-row">
+										<div class="country">TBA</div>
+										<div class="serial" style="padding-left: 10px;" >--</div>
+									</div>
+								@endif
 						</div>
 					</div>
                     </div>
@@ -500,14 +528,28 @@
                     <h2 style="text-align:center">Finał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
-							<div class="table-row">
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial" style="padding-left: 10px;" >01</div>
-							</div>
-							<div class="table-row">
-								<div class="country"> <img src="{{ asset('resources/main/img/elements/f1.jpg', true) }}" alt="flag">Canada</div>
-								<div class="serial" style="padding-left: 10px;" >02</div>
-							</div>
+							@if($finals[7]->opponents[0]->participant)
+									<div class="table-row">
+										<div class="country">{{$finals[7]->opponents[0]->participant->name}}</div>
+										<div class="serial" style="padding-left: 10px;" >{{$finals[7]->opponents[0]->score}}</div>
+									</div>
+								@else
+									<div class="table-row">
+										<div class="country">TBA</div>
+										<div class="serial" style="padding-left: 10px;" >--</div>
+									</div>
+								@endif
+								@if($finals[7]->opponents[1]->participant)
+									<div class="table-row">
+										<div class="country">{{$finals[7]->opponents[1]->participant->name}}</div>
+										<div class="serial" style="padding-left: 10px;" >{{$finals[7]->opponents[1]->score}}</div>
+									</div>
+								@else
+									<div class="table-row">
+										<div class="country">TBA</div>
+										<div class="serial" style="padding-left: 10px;" >--</div>
+									</div>
+								@endif
 						</div>
 					</div>
                     </div>
