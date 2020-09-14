@@ -34,10 +34,9 @@
                 </div>
 
 				<div class="section-top-border">
-				
 					@forelse($matches as $match)
 							@if($match->round == 1)
-								<h3 class="mb-30">Runda</h3>
+								<h3 class="mb-30" style="padding-bottom:125px"></h3>
 							@endif
 							<div class="row">
 								<div class="col-md-4">
