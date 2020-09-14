@@ -35,8 +35,8 @@
 
 				<div class="section-top-border">
 				<h3 class="mb-30">Runda</h3>
+				{{$i = 0}}
 					@foreach($matches as $match)
-							<h3 class="mb-30">Runda</h3>
 							<div class="row">
 								<div class="col-md-4">
 									<div class="single-defination match">
@@ -45,7 +45,7 @@
 								</div>
 								<div class="col-md-4">
 									<div class="single-defination" style="text-align:center">
-										<p class="vs">VS</p>
+										<p class="vs">VS {{$i}}</p>
 										<h4 class="mb-20">{{date("H:i:s d-m-Y", strtotime($match->scheduled_datetime))}}</h4>
 									</div>
 								</div>
@@ -55,6 +55,7 @@
 									</div>
 								</div>
 							</div>
+							{{$i++}}
 					@endforeach
 				</div>
                 </div>
