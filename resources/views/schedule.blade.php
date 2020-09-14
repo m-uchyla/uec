@@ -6,7 +6,15 @@
 	background-color:#f9f9ff; 
 	padding-top:20px;
 	padding-bottom:20px;
-	text-align:center
+	text-align:center;
+	font-weight: 700;
+	color: #262d48;
+}
+.vs{
+	color: #ad1515;
+	font-size: 20px;
+	font-weight: 550;
+	margin-bottom: 5px;
 }
 </style>
 @endsection
@@ -35,13 +43,13 @@
 						</div>
 						<div class="col-md-4">
 							<div class="single-defination" style="text-align:center">
-								<p>VS</p>
+								<p class="vs">VS</p>
 								<h4 class="mb-20">14.09.2020 godz. 21:00</h4>
 								
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="single-defination" style="background-color:#f9f9ff; padding-top:20px;padding-bottom:20px;text-align:center">
+							<div class="single-defination match">
 								<h3>Erydan Esports kjsnksjfd</h3>
 							</div>
 						</div>
