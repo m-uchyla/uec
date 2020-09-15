@@ -234,7 +234,7 @@ class APIController extends Controller {
         $iter = 0;
         $round = 1;
         foreach ($matches as $m){
-            if($iter == 8 || $iter == 16 || $iter == 24 || $iter == 28 || $iter == 32 || $iter == 36 || $iter == 40 || $iter == 42 || $iter == 43){
+            if($iter == 0|| $iter == 8 || $iter == 16 || $iter == 24 || $iter == 28 || $iter == 32 || $iter == 36 || $iter == 40 || $iter == 42 || $iter == 43){
                 $m->round=$round;
                 $iter++;
                 $round++;
