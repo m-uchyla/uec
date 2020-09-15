@@ -36,7 +36,7 @@
 				<div class="section-top-border">
 					@forelse($matches as $match)
 							@if($match->round != 0)
-								<h3 class="mb-30" style="padding-bottom:25px; padding-top:100px"> @if($match->round < 7)
+								<h3 class="mb-30" style="padding-bottom:10px; padding-top:100px; text-align: center; font-size: 25px; font-weight: 550;"> @if($match->round < 7)
 																					Runda {{$match->round}}
 																				@elseif($match->round == 7)
 																					Ćwierćfinały
