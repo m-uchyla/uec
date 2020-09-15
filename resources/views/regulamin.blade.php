@@ -1,16 +1,5 @@
 @extends('layouts.app')
 
-@section('style')
-<style>
-.dt{
-    font-size: 22px;
-}
-.dd{
-    font-size: 19px;
-}
-</style>
-@endsection
-
 @section('content')
         <!--? Blog Area Start-->
         <section class="about-area section-padding2"  id="terms" style="padding-top:0px">
@@ -63,15 +52,15 @@
                                 <dt>2. Turniej UEC Sezon 2</dt>
                                 <br>
                                 <dd>2.1 System turnieju </dd>
-                                <dd>Pełny system turnieju oraz terminarz znajduje się na stronie: (….)</dd>
+                                <dd>Pełny system turnieju oraz terminarz znajduje się w zakładkach <a href="https://undergroundesportcup.pl/schedule">Terminarz</a> oraz <a href="https://undergroundesportcup.pl/bracket">Drabinka</a></dd>
                                 <br>
                                 <dd>2.2 Transmisje </dd>
                                 <dd>Z meczów będzie przeprowadzana transmisja na kanałach podawanych na fanpagu turnieju. Organizator zastrzega sobie prawo do transmisji</dd>
                                 <br>
                                 <dd>2.3 Social Media </dd>
-                                <dd>Fanpage:https://www.facebook.com/UndergroundEsportCup/
-                                Youtube: https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg
-                                Strona: https://undergroundesportcup.pl/</dd>
+                                <dd><a href="https://www.facebook.com/UndergroundEsportCup/">Fanpage</a><br />
+                                <a href="https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg">Youtube</a><br />
+                                 <a href="https://undergroundesportcup.pl/">Strona internetowa</a></dd>
                                 <br>
                                 <dd>2.4 Powtórki z meczów:</dd> 
                                 <dd>Powtórki transmisji z spotkań będą zamieszczone na naszym kanale Youtube. </dd>
@@ -102,7 +91,7 @@
                                 <br>
                                 <dt>3. Przygotowanie do gry</dt>
                                 <br>
-                                <dd>Uzgodnienia, uwagi i wszelkie związane z meczem problemy, muszą być zgłoszone przez graczy przed rozpoczęciem meczu - w wiadomości prywatnej do admina lub na FP (https://www.facebook.com/UndergroundEsportCup/)</dd>
+                                <dd>Uzgodnienia, uwagi i wszelkie związane z meczem problemy, muszą być zgłoszone przez graczy przed rozpoczęciem meczu - w wiadomości prywatnej do admina lub na FP (<a href="https://www.facebook.com/UndergroundEsportCup/">Facebook</a>)</dd>
                                 <br>
                                 <dd>3.1. Serwer</dd>
                                 <dd>Mecze są rozgrywane na serwerach organizatora. W wyjątkowych sytuacjach mecz może zostać rozegrany na serwerze należącego do jednej z drużyn jeśli dany serwer spełnia wymogi wspomniane w regulaminie. Jeśli jedna z drużyn/jeden z graczy posiada serwer zlokalizowany w Polsce, natomiast druga strona posiada serwer zagraniczny - drużyna ma prawo zażądać rozegrania całego meczu na serwerze zlokalizowanym w Polsce.</dd>
@@ -117,31 +106,31 @@
                                 <dd>3.4 Banowanie</dd>
                                 <br>
                                 <dd>3.4.1 Miejsce banowania</dd>
-                                <dd>Banowanie odbywa się na stronie https://www.mapban.gg/. Kapitanowie przed              spotkaniem dostają linki do strony od administratora i tam przeprowadzają banowanie. Na banowanie należy stawić się 10 minut przed spotkaniem na serwerze discord lecz może się ono odbyć dopiero po zakończeniu poprzedniego spotkania ponieważ odbywa się one na żywo podczas transmisji. </dd>
+                                <dd>Banowanie odbywa się na stronie <a href="https://www.mapban.gg/">Mapban.gg</a>. Kapitanowie przed              spotkaniem dostają linki do strony od administratora i tam przeprowadzają banowanie. Na banowanie należy stawić się 10 minut przed spotkaniem na serwerze discord lecz może się ono odbyć dopiero po zakończeniu poprzedniego spotkania ponieważ odbywa się one na żywo podczas transmisji. </dd>
                                 <br>
                                 <dd>3.4.2 System Banowania</dd>
-                                <dd>A) Bo1: 
-                                Team A - Ban
-                                Team B - Ban
-                                Team A - Ban
-                                Team B - Ban
-                                Team A- Ban
-                                Team B - Pick ( Nożówka decyduje o wyborze strony)
-                                B) Bo2: 
-                                Team A - Ban 
-                                Team B - Ban 
-                                Team A - Pick 
-                                Team B - Pick 
-                                Team A - Wybór strony (mapa rywala)
-                                Team B - Wybór strony (mapa rywala)
-                                C) Bo3: 
-                                Team A - Ban 
-                                Team B - Ban 
-                                Team A - Pick 
-                                Team B - Pick 
-                                Team A - Ban 
-                                Team B - Pick (Nożówka decyduje o wyborze strony)
-                                Team A - Wybór strony (mapa rywala)
+                                <dd>A) Bo1: <br />
+                                Team A - Ban<br />
+                                Team B - Ban<br />
+                                Team A - Ban<br />
+                                Team B - Ban<br />
+                                Team A- Ban<br />
+                                Team B - Pick ( Nożówka decyduje o wyborze strony)<br />
+                                B) Bo2: <br />
+                                Team A - Ban <br />
+                                Team B - Ban <br />
+                                Team A - Pick <br />
+                                Team B - Pick<br />
+                                Team A - Wybór strony (mapa rywala)<br />
+                                Team B - Wybór strony (mapa rywala)<br />
+                                C) Bo3: <br />
+                                Team A - Ban <br />
+                                Team B - Ban<br />
+                                Team A - Pick <br />
+                                Team B - Pick <br />
+                                Team A - Ban <br />
+                                Team B - Pick (Nożówka decyduje o wyborze strony)<br />
+                                Team A - Wybór strony (mapa rywala)<br />
                                 Team B - Wybór strony (mapa rywala)</dd>
 
                                 <br>
