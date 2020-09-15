@@ -35,8 +35,19 @@
 
 				<div class="section-top-border">
 					@forelse($matches as $match)
-							@if($match->round == 1)
-								<h3 class="mb-30" style="padding-bottom:125px"></h3>
+							@if($match->round != 0)
+								<h3 class="mb-30" style="padding-bottom:125px"> @if($match->round < 7)
+																					Runda {{$match->round}}
+																				@elseif($match->round == 7)
+																					Ćwierćfinały
+																				@elseif($match->round == 8)
+																					Półfinały
+																				@elseif($match->round == 9)
+																					Mecz o trzecie miejsce
+																				@elseif($match->round == 10)
+																					Wielki finał
+																				@endif
+								</h3>
 							@endif
 							<div class="row">
 								<div class="col-md-4">

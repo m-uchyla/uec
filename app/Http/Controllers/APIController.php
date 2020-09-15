@@ -232,10 +232,12 @@ class APIController extends Controller {
         $matches= json_decode($matches);
 
         $iter = 0;
+        $round = 1;
         foreach ($matches as $m){
-            if($iter == 8 || $iter == 16 || $iter == 24 || $iter == 28 || $iter == 32 || $iter == 36 || $iter == 40 || $iter == 41 || $iter == 42){
-                $m->round=1;
+            if($iter == 8 || $iter == 16 || $iter == 24 || $iter == 28 || $iter == 32 || $iter == 36 || $iter == 40 || $iter == 42 || $iter == 43){
+                $m->round=$round;
                 $iter++;
+                $round++;
             } else{
                 $m->round=0;
                 $iter++;
