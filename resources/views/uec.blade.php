@@ -35,6 +35,14 @@
               <input class="single-checkbox" type="checkbox" name="{{'player'.$i}}" value="{{$players[$i]->id}}"> {{$players[$i]->name}} "{{$players[$i]->nick}}" {{$players[$i]->lastName}}<br>
               @endfor
             </div>
+            <br>
+            <div class="form-group">
+			     <div class="icheck-material-white">
+                   <input type="checkbox" id="user-checkbox" checked="" required />
+                   <label for="user-checkbox">Zgadzam się z <a href="{{ route('regulamin') }}" target="_blank">REGULAMINEM TURNIEJU</a></label>
+			     </div>
+			    </div>
+          <br>
             <div class="form-group">
               <button type="submit" id="submit" class="btn btn-light px-5"><i class="zmdi zmdi-assignment" ></i>  Zapisz się!</button>
             </div>
