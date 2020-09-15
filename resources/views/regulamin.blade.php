@@ -52,15 +52,15 @@
                                 <dt>2. Turniej UEC Sezon 2</dt>
                                 <br>
                                 <dd>2.1 System turnieju </dd>
-                                <dd>Pełny system turnieju oraz terminarz znajduje się w zakładkach <a href="https://undergroundesportcup.pl/schedule">Terminarz</a> oraz <a href="https://undergroundesportcup.pl/bracket">Drabinka</a></dd>
+                                <dd>Pełny system turnieju oraz terminarz znajduje się w zakładkach <a href="https://undergroundesportcup.pl/schedule" style="color:#c72020;">Terminarz</a> oraz <a href="https://undergroundesportcup.pl/bracket" style="color:#c72020;">Drabinka</a></dd>
                                 <br>
                                 <dd>2.2 Transmisje </dd>
                                 <dd>Z meczów będzie przeprowadzana transmisja na kanałach podawanych na fanpagu turnieju. Organizator zastrzega sobie prawo do transmisji</dd>
                                 <br>
                                 <dd>2.3 Social Media </dd>
-                                <dd><a href="https://www.facebook.com/UndergroundEsportCup/">Fanpage</a><br />
-                                <a href="https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg">Youtube</a><br />
-                                 <a href="https://undergroundesportcup.pl/">Strona internetowa</a></dd>
+                                <dd><a href="https://www.facebook.com/UndergroundEsportCup/" style="color:#c72020;">Fanpage</a><br />
+                                <a href="https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg" style="color:#c72020;">Youtube</a><br />
+                                 <a href="https://undergroundesportcup.pl/" style="color:#c72020;">Strona internetowa</a></dd>
                                 <br>
                                 <dd>2.4 Powtórki z meczów:</dd> 
                                 <dd>Powtórki transmisji z spotkań będą zamieszczone na naszym kanale Youtube. </dd>
@@ -91,7 +91,7 @@
                                 <br>
                                 <dt>3. Przygotowanie do gry</dt>
                                 <br>
-                                <dd>Uzgodnienia, uwagi i wszelkie związane z meczem problemy, muszą być zgłoszone przez graczy przed rozpoczęciem meczu - w wiadomości prywatnej do admina lub na FP (<a href="https://www.facebook.com/UndergroundEsportCup/">Facebook</a>)</dd>
+                                <dd>Uzgodnienia, uwagi i wszelkie związane z meczem problemy, muszą być zgłoszone przez graczy przed rozpoczęciem meczu - w wiadomości prywatnej do admina lub na FP (<a href="https://www.facebook.com/UndergroundEsportCup/" style="color:#c72020;">Facebook</a>)</dd>
                                 <br>
                                 <dd>3.1. Serwer</dd>
                                 <dd>Mecze są rozgrywane na serwerach organizatora. W wyjątkowych sytuacjach mecz może zostać rozegrany na serwerze należącego do jednej z drużyn jeśli dany serwer spełnia wymogi wspomniane w regulaminie. Jeśli jedna z drużyn/jeden z graczy posiada serwer zlokalizowany w Polsce, natomiast druga strona posiada serwer zagraniczny - drużyna ma prawo zażądać rozegrania całego meczu na serwerze zlokalizowanym w Polsce.</dd>
@@ -106,7 +106,7 @@
                                 <dd>3.4 Banowanie</dd>
                                 <br>
                                 <dd>3.4.1 Miejsce banowania</dd>
-                                <dd>Banowanie odbywa się na stronie <a href="https://www.mapban.gg/">Mapban.gg</a>. Kapitanowie przed              spotkaniem dostają linki do strony od administratora i tam przeprowadzają banowanie. Na banowanie należy stawić się 10 minut przed spotkaniem na serwerze discord lecz może się ono odbyć dopiero po zakończeniu poprzedniego spotkania ponieważ odbywa się one na żywo podczas transmisji. </dd>
+                                <dd>Banowanie odbywa się na stronie <a href="https://www.mapban.gg/" style="color:#c72020;">Mapban.gg</a>. Kapitanowie przed              spotkaniem dostają linki do strony od administratora i tam przeprowadzają banowanie. Na banowanie należy stawić się 10 minut przed spotkaniem na serwerze discord lecz może się ono odbyć dopiero po zakończeniu poprzedniego spotkania ponieważ odbywa się one na żywo podczas transmisji. </dd>
                                 <br>
                                 <dd>3.4.2 System Banowania</dd>
                                 <dd>A) Bo1: <br />
