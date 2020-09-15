@@ -100,7 +100,7 @@
                             <aside class="single_sidebar_widget popular_post_widget">
                                 <h3 class="widget_title" style="color: #2d2d2d;">Zapisz się do turnieju</h3>
                                 <div class="media post_item">
-                                    <p>Wkrótce rozpoczną się zapisy do turnieju. Bądz gotowy i załóż konto już teraz!</p>
+                                    <p>Zapisy rozpoczęte. Załóż konto już teraz!</p>
                                 </div>
                                 <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('register') }}';"
                                         type="submit">Rejestracja</button>
@@ -110,7 +110,7 @@
                             <aside class="single_sidebar_widget popular_post_widget">
                                 <h3 class="widget_title" style="color: #2d2d2d;">Zapisz się do turnieju</h3>
                                 <div class="media post_item">
-                                    <p>Zostałeś już zapisany do drużyny? Jeżeli nie- odwiedź swój profil, dołącz do istniejącej drużyny, lub utwórz ją i bądz gotów na zapisy do turnieju!</p>
+                                    <p>Zostałeś już zapisany do drużyny? Jeżeli nie- odwiedź swój profil, dołącz do istniejącej drużyny, lub utwórz ją i zapisz się do turnieju!</p>
                                 </div>
                                 <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('dashboard') }}';"
                                         type="button">Panel drużyn</button>
