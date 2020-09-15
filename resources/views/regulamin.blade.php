@@ -1,5 +1,16 @@
 @extends('layouts.app')
 
+@section('style')
+<style>
+.dt{
+    font-size: 22px;
+}
+.dd{
+    font-size: 19px;
+}
+</style>
+@endsection
+
 @section('content')
         <!--? Blog Area Start-->
         <section class="about-area section-padding2"  id="terms" style="padding-top:0px">
