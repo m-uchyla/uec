@@ -21,20 +21,27 @@
 									<ul id="navigation">
                                         <li><a href="{{ route('homepage') }}">Strona główna</a></li>
                                             <li>
-                                                <a href="blog.html">Bieżący turniej</a>
+                                                <a href="{{ route('bracket') }}">Bieżący turniej</a>
                                                 <ul class="submenu">
                                                     <li><a href="{{ route('schedule') }}">Harmonogram meczy</a></li>
                                                     <li><a href="{{ route('bracket') }}">Drabinka</a></li>
                                                     <li><a href="{{ route('teams') }}">Drużyny</a></li>
                                                 </ul>
                                             </li>
-                                        <li>
-											<a href="{{ route('about') }}">O nas</a>
-											<ul class="submenu">
-                                                <li><a href="{{ route('about') }}">O projekcie</a></li>
-                                                <li><a href="https://facebook.com/UndergroundEsportCup/">Kontakt</a></li>
-											</ul>
-										</li>
+                                            <li>
+                                                <a href="{{ route('regulamin') }}">Zasady</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ route('regulamin') }}">Regulamin turnieju</a></li>
+                                                    <li><a href="{{ route('terms') }}">Regulamin serwisu</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('about') }}">O nas</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ route('about') }}">O projekcie</a></li>
+                                                    <li><a href="https://facebook.com/UndergroundEsportCup/">Kontakt</a></li>
+                                                </ul>
+                                            </li>
                                         @guest
                                         <li>
                                             <a href="{{ route('login') }}" class="genric-btn danger small" style="padding-top: 2%;padding-bottom: 2%" hover="color:red">Logowanie</a>
