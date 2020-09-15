@@ -217,8 +217,6 @@ class APIController extends Controller {
 
     public function getSchedule (){
 
-        date_default_timezone_set('Europe/Warsaw');
-        $now = date("Y-m-d\TH:i:sP",strtotime("now"));
 
         $matches = Http::withHeaders([
             'X-Api-Key' => $this->x_api_key,
@@ -226,7 +224,6 @@ class APIController extends Controller {
             'Range' => 'matches=0-99'
         ])->get($this->toornament_link.$this->tournament_id.'/matches',[
             'is_scheduled' => 1,
-            'scheduled_after' => $now,
             'sort' => 'schedule'
         ]);
         $matches= json_decode($matches);

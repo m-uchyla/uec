@@ -63,7 +63,15 @@
 									<div class="single-defination" style="text-align:center">
 										<p class="vs">VS</p>
 										@if($match->scheduled_datetime)
-										<h4 class="mb-20">{{date("H:i:s d-m-Y", strtotime($match->scheduled_datetime))}}</h4>
+											<h4 class="mb-20">
+												@if ($match->opponents[0]->participant->score && $match->opponents[1]->participant->score)
+													{{$match->opponents[0]->participant->score}}
+													 : 
+													{{$match->opponents[1]->participant->score}}
+												@else
+													{{date("H:i:s d-m-Y", strtotime($match->scheduled_datetime))}}
+												@endif
+											</h4>
 										@endif
 									</div>
 								</div>
