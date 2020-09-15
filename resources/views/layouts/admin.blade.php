@@ -122,7 +122,17 @@
           <i class="zmdi zmdi-info"></i> <span>O nas</span>
         </a>
       </li>
-
+      <li class="sidebar-header">ZASADY</li>
+      <li>
+        <a href="{{ route('regulamin') }}">
+          <i class="zmdi zmdi-assignment-check"></i> <span>Regulamin turnieju</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ route('terms') }}">
+          <i class="zmdi zmdi-assignment-account"></i> <span>Regulamin serwisu</span>
+        </a>
+      </li>
       <!-- <li>
         <a href="icons.html">
           <i class="zmdi zmdi-invert-colors"></i> <span>UI Icons</span>
