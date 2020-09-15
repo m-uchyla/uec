@@ -64,10 +64,14 @@
 										<p class="vs">VS</p>
 										@if($match->scheduled_datetime)
 											<h4 class="mb-20">
-												@if ($match->opponents[0]->participant->score && $match->opponents[1]->participant->score)
-													{{$match->opponents[0]->participant->score}}
-													 : 
-													{{$match->opponents[1]->participant->score}}
+												@if ($match->opponents[0]->participant && $match->opponents[1]->participant)
+													@if ($match->opponents[0]->participant->score && $match->opponents[1]->participant->score)
+														{{$match->opponents[0]->participant->score}}
+														: 
+														{{$match->opponents[1]->participant->score}}
+													@else
+														{{date("H:i:s d-m-Y", strtotime($match->scheduled_datetime))}}
+													@endif
 												@else
 													{{date("H:i:s d-m-Y", strtotime($match->scheduled_datetime))}}
 												@endif
