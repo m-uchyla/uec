@@ -217,6 +217,7 @@ class APIController extends Controller {
 
     public function getSchedule (){
 
+        date_default_timezone_set('Europe/Warsaw');
 
         $matches = Http::withHeaders([
             'X-Api-Key' => $this->x_api_key,
