@@ -14,7 +14,7 @@
 										@endforeach
 										</h1>
 										<p>{{ $f->subtitle }}</p>
-										<a class="btn" href="article/{{ $f->id }}">Zobacz więcej</a>
+										<a class="btn" href="{{ route('viewArticle',[$f->id]) }}">Zobacz więcej</a>
 									</div>
 								</div>
 							</div>
