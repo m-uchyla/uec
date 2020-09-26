@@ -51,6 +51,7 @@ Route::middleware('can:accessPanel')->group(function() {
         Route::middleware('can:accessDashboard')->group(function() {
             Route::get('admin', 'AdminController@get')->name('admin');
             Route::get('registration', 'APIController@registration')->name('registration');
+            Route::get('uec2', 'TeamsController@getTournamentTeams')->name('uec2');
         });
 
         Route::middleware('can:accessArticles')->group(function() {

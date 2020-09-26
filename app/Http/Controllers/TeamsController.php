@@ -95,6 +95,28 @@ class TeamsController extends Controller {
         return redirect()->route('dashboard');
     }
 
+    public function getTournamentTeams(){
+        $records = DB::table('teams-users')
+            ->join('teams', 'teams-users.teamID', '=', 'teams.teamID')
+            ->join('users', 'teams-users.userID', '=', 'users.id')
+            ->select('users.steamID', 'users.name', 'users.lastName', 'users.nick', 'teams.teamName', 'users.id')
+            ->where('teams-users.uec2', 1)
+            ->get();
+
+        $list = null;
+
+        foreach ($records as $record){
+            $list->sid = $record->steamID;
+            $list->real_name = $record->name." ".$record->lastName;
+            $list->displayed_name = $record->nick;
+            $list->country_code = "Poland";
+            $list->team = $record->teamName;
+            $list->_id = $record->id;
+        }
+ 
+        return $list;
+    }
+
     public function acceptInvite(Request $request){
         $teamuserID = $request->input('teamuserID');
 
