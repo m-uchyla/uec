@@ -107,15 +107,15 @@ class TeamsController extends Controller {
 
         foreach ($records as $record){
             if($record->steamID){
-                $list->sid = $record->steamID;
+                $list["sid"] = $record->steamID;
             }else{
-                $list->sid = null;
+                $list["sid"] = null;
             }
-            $list->real_name = $record->name." ".$record->lastName;
-            $list->displayed_name = $record->nick;
-            $list->country_code = "Poland";
-            $list->team = $record->teamName;
-            $list->_id = $record->id;
+            $list["real_name"] = $record->name." ".$record->lastName;
+            $list["displayed_name"] = $record->nick;
+            $list["country_code"] = "Poland";
+            $list["team"] = $record->teamName;
+            $list["_id"] = $record->id;
         }
  
         return json_encode($list);
