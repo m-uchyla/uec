@@ -7,7 +7,7 @@
 <body>
 @forelse ($list as $record)
 <li>$record</li>
-@else
+@empty
 <p>Brak użytkowników :(</p>
 @endforelse
 </body
