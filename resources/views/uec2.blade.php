@@ -5,8 +5,8 @@
 </head>
 
 <body>
-@if ($records)
-{{$records}}
+@if ($list)
+{{$list}}
 @else
 <p>Brak użytkowników :(</p>
 @endif
