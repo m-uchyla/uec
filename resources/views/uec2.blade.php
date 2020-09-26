@@ -5,9 +5,9 @@
 </head>
 
 <body>
-@forelse ($records as $record)
-<li>{{$record}}</li>
-@empty
+@if ($records)
+{{$records}}
+@else
 <p>Brak użytkowników :(</p>
-@endforelse
+@endif
 </body
