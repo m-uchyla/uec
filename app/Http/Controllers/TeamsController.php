@@ -118,7 +118,7 @@ class TeamsController extends Controller {
             $list["_id"] = $record->id;
         }
  
-        return json_encode($list);
+        return view('uec2', ['list' => json_encode($list)]);
     }
 
     public function acceptInvite(Request $request){
