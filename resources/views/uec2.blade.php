@@ -6,7 +6,7 @@
 
 <body>
 @if ($list)
-{{$list}}
+{!! $list !!}
 @else
 <p>Brak użytkowników :(</p>
 @endif
