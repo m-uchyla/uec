@@ -105,18 +105,18 @@ class TeamsController extends Controller {
 
         $list = [];
 
-        for($i=0;$i< count($records); $i++){
-            if($records->steamID){
-                $list[$i]["sid"] = $records->steamID;
-            }else{
-                $list[$i]["sid"] = null;
-            }
-            $list[$i]["real_name"] = $records->name." ".$records->lastName;
-            $list[$i]["displayed_name"] = $records->nick;
-            $list[$i]["country_code"] = "Poland";
-            $list[$i]["team"] = $records->teamName;
-            $list[$i]["_id"] = $records->id;
-        }
+        // for($i=0;$i< count($records); $i++){
+        //     if($records->steamID){
+        //         $list[$i]["sid"] = $records->steamID;
+        //     }else{
+        //         $list[$i]["sid"] = null;
+        //     }
+        //     $list[$i]["real_name"] = $records->name." ".$records->lastName;
+        //     $list[$i]["displayed_name"] = $records->nick;
+        //     $list[$i]["country_code"] = "Poland";
+        //     $list[$i]["team"] = $records->teamName;
+        //     $list[$i]["_id"] = $records->id;
+        // }
  
         return view('uec2', ['list' => json_encode($list), 'records' => $records]);
     }
