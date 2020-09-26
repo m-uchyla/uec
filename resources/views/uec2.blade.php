@@ -7,6 +7,6 @@
 
 <body>
 @foreach ($list as $l)
-<li>{{ $l }}</li>
+<li>{{ $l->steamID }}</li>
 @endforeach
 </body
