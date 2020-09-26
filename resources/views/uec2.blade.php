@@ -8,7 +8,5 @@
 <body>
 @foreach ($list as $l)
 <li>{!! $l !!}</li>
-<!-- @empty
-<p>Brak użytkowników :(</p> -->
 @endforeach
 </body
