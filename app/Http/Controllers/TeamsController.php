@@ -105,20 +105,20 @@ class TeamsController extends Controller {
 
         $list = [];
 
-        foreach ($records as $record){
+        for($i=0;$i< count($records); $i++){
             if($record->steamID){
-                $list["sid"] = $record->steamID;
+                $list[$i]["sid"] = $record->steamID;
             }else{
-                $list["sid"] = null;
+                $list[$i]["sid"] = null;
             }
-            $list["real_name"] = $record->name." ".$record->lastName;
-            $list["displayed_name"] = $record->nick;
-            $list["country_code"] = "Poland";
-            $list["team"] = $record->teamName;
-            $list["_id"] = $record->id;
+            $list[$i]["real_name"] = $record->name." ".$record->lastName;
+            $list[$i]["displayed_name"] = $record->nick;
+            $list[$i]["country_code"] = "Poland";
+            $list[$i]["team"] = $record->teamName;
+            $list[$i]["_id"] = $record->id;
         }
  
-        return view('uec2', ['list' => json_encode($list)]);
+        return view('uec2', ['list' => json_encode($list), 'records' => $records]);
     }
 
     public function acceptInvite(Request $request){
