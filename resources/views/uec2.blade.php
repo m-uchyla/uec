@@ -6,7 +6,7 @@
 </head>
 
 <body>
-@foreach ($list as $l)
-<li>{{ $l->steamID }}</li>
-@endforeach
+@for ($i = 0; $i < count($list); $i++)
+<li>{{ $list[$i] }}</li>
+@endfor
 </body
