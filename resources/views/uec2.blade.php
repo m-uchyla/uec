@@ -6,9 +6,9 @@
 </head>
 
 <body>
-@if ($list)
-{!! $list !!}
-@else
+@forelse ($list as $l)
+<li>{!! $l !!}</li>
+@empty
 <p>Brak użytkowników :(</p>
 @endif
 </body
