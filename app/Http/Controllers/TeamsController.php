@@ -100,7 +100,7 @@ class TeamsController extends Controller {
             ->join('teams', 'teams-users.teamID', '=', 'teams.teamID')
             ->join('users', 'teams-users.userID', '=', 'users.id')
             ->select('users.steamID', 'users.name', 'users.lastName', 'users.nick', 'teams.teamName', 'users.id')
-            ->where('teams-users.uec2', 1)
+            ->where('teams.uec2', 1)
             ->get();
 
         $list = null;
