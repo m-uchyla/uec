@@ -106,7 +106,11 @@ class TeamsController extends Controller {
         $list = null;
 
         foreach ($records as $record){
-            $list->sid = $record->steamID;
+            if($record->steamID){
+                $list->sid = $record->steamID;
+            }else{
+                $list->sid = null;
+            }
             $list->real_name = $record->name." ".$record->lastName;
             $list->displayed_name = $record->nick;
             $list->country_code = "Poland";
