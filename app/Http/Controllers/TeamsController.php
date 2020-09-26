@@ -103,7 +103,7 @@ class TeamsController extends Controller {
             ->where('teams.uec2', 1)
             ->get();
 
-        $list = null;
+        $list = [];
 
         foreach ($records as $record){
             if($record->steamID){
@@ -118,7 +118,7 @@ class TeamsController extends Controller {
             $list->_id = $record->id;
         }
  
-        return $list;
+        return json_encode($list);
     }
 
     public function acceptInvite(Request $request){
