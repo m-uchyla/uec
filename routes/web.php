@@ -20,7 +20,6 @@ Route::get('/regulamin', 'ArticleInsertController@getRegulamin')->name('regulami
 Route::get('/bracket', 'APIController@getBracket')->name('bracket');
 Route::get('/teams', 'APIController@getList')->name('teams');
 Route::get('/schedule', 'APIController@getSchedule')->name('schedule');
-Route::get('uec2', 'TeamsController@getTournamentTeams')->name('uec2');
 
 Route::get('article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
 
@@ -51,7 +50,7 @@ Route::middleware('can:accessPanel')->group(function() {
         Route::middleware('can:accessDashboard')->group(function() {
             Route::get('admin', 'AdminController@get')->name('admin');
             Route::get('registration', 'APIController@registration')->name('registration');
-            
+            Route::get('uec2', 'TeamsController@getTournamentTeams')->name('uec2');
         });
 
         Route::middleware('can:accessArticles')->group(function() {

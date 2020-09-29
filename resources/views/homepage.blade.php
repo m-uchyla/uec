@@ -96,26 +96,14 @@
                             </aside>
                         
                         --}}
-                            @guest
                             <aside class="single_sidebar_widget popular_post_widget">
-                                <h3 class="widget_title" style="color: #2d2d2d;">Zapisz się do turnieju</h3>
+                                <h3 class="widget_title" style="color: #2d2d2d;">Harmonogram</h3>
                                 <div class="media post_item">
-                                    <p>Zapisy rozpoczęte. Załóż konto już teraz!</p>
+                                    <p>Śledź rozgrywki najbliższej edycji!</p>
                                 </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('register') }}';"
-                                        type="submit">Rejestracja</button>
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('schedule') }}';"
+                                        type="submit">Harmonogram</button>
                             </aside>
-                            @endguest
-                            @auth
-                            <aside class="single_sidebar_widget popular_post_widget">
-                                <h3 class="widget_title" style="color: #2d2d2d;">Zapisz się do turnieju</h3>
-                                <div class="media post_item">
-                                    <p>Zostałeś już zapisany do drużyny? Jeżeli nie- odwiedź swój profil, dołącz do istniejącej drużyny, lub utwórz ją i zapisz się do turnieju!</p>
-                                </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('dashboard') }}';"
-                                        type="button">Panel drużyn</button>
-                            </aside>
-                            @endauth
                             <aside class="single_sidebar_widget popular_post_widget">
                                 <h3 class="widget_title" style="color: #2d2d2d;">Najpopularniejsze posty</h3>
                                 @foreach ($also as $a)

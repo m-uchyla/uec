@@ -65,12 +65,12 @@
         </a>
       </li>
 
-      <li>
+      <!-- <li>
         <a href="{{ route('signIn') }}">
           <i class="zmdi zmdi-alert-circle-o text-danger"></i> <span>Zapisy do UEC</span>
           <small class="badge float-right badge-light">New</small>
         </a>
-      </li>
+      </li> -->
 
       @if ((Auth::user()->role) < 2)
         <li>

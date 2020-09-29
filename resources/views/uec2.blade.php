@@ -7,6 +7,6 @@
 
 <body>
 @for ($i = 0; $i < count($list); $i++)
-<p>{{ json_encode($list[$i], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) }}</p>
+<li>{{ json_encode($list[$i], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) }}</li>
 @endfor
 </body
