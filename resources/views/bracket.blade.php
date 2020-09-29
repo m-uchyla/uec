@@ -187,7 +187,7 @@
 								<div class="visit">{{$groups["D"][$i]->properties->wins}}</div>
 								<div class="visit">{{$groups["D"][$i]->properties->losses}}</div>
 								<div class="visit">{{$groups["D"][$i]->properties->played}}</div>
-								<div class="visit">{{$groups["E"][$i]->properties->score_difference}}</div>
+								<div class="visit">{{$groups["D"][$i]->properties->score_difference}}</div>
 								<div class="visit">{{$groups["D"][$i]->points}}</div>
 							</div>
 							@else
