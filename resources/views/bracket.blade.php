@@ -25,6 +25,7 @@
 								<div class="visit">Zwycięstwa</div>
 								<div class="visit">Porażki</div>
 								<div class="visit">Meczy</div>
+								<div class="visit">+/-</div>
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
@@ -42,12 +43,14 @@
 								<div class="visit">{{$groups["A"][$i]->properties->wins}}</div>
 								<div class="visit">{{$groups["A"][$i]->properties->losses}}</div>
 								<div class="visit">{{$groups["A"][$i]->properties->played}}</div>
+								<div class="visit">{{$groups["A"][$i]->properties->score_difference}}</div>
 								<div class="visit">{{$groups["A"][$i]->points}}</div>
 							</div>
 							@else
 									<div class="table-row">
 										<div class="serial">{{$i+1}}</div>
 										<div class="country"></div>
+										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
@@ -70,6 +73,7 @@
 								<div class="visit">Zwycięstwa</div>
 								<div class="visit">Porażki</div>
 								<div class="visit">Meczy</div>
+								<div class="visit">+/-</div>
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
@@ -87,12 +91,14 @@
 								<div class="visit">{{$groups["B"][$i]->properties->wins}}</div>
 								<div class="visit">{{$groups["B"][$i]->properties->losses}}</div>
 								<div class="visit">{{$groups["B"][$i]->properties->played}}</div>
+								<div class="visit">{{$groups["B"][$i]->properties->score_difference}}</div>
 								<div class="visit">{{$groups["B"][$i]->points}}</div>
 							</div>
 							@else
 									<div class="table-row">
 										<div class="serial">{{$i+1}}</div>
 										<div class="country"></div>
+										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
@@ -115,6 +121,7 @@
 								<div class="visit">Zwycięstwa</div>
 								<div class="visit">Porażki</div>
 								<div class="visit">Meczy</div>
+								<div class="visit">+/-</div>
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
@@ -132,12 +139,14 @@
 								<div class="visit">{{$groups["C"][$i]->properties->wins}}</div>
 								<div class="visit">{{$groups["C"][$i]->properties->losses}}</div>
 								<div class="visit">{{$groups["C"][$i]->properties->played}}</div>
+								<div class="visit">{{$groups["C"][$i]->properties->score_difference}}</div>
 								<div class="visit">{{$groups["C"][$i]->points}}</div>
 							</div>
 							@else
 									<div class="table-row">
 										<div class="serial">{{$i+1}}</div>
 										<div class="country"></div>
+										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
@@ -160,6 +169,7 @@
 								<div class="visit">Zwycięstwa</div>
 								<div class="visit">Porażki</div>
 								<div class="visit">Meczy</div>
+								<div class="visit">+/-</div>
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
@@ -177,12 +187,14 @@
 								<div class="visit">{{$groups["D"][$i]->properties->wins}}</div>
 								<div class="visit">{{$groups["D"][$i]->properties->losses}}</div>
 								<div class="visit">{{$groups["D"][$i]->properties->played}}</div>
+								<div class="visit">{{$groups["E"][$i]->properties->score_difference}}</div>
 								<div class="visit">{{$groups["D"][$i]->points}}</div>
 							</div>
 							@else
 									<div class="table-row">
 										<div class="serial">{{$i+1}}</div>
 										<div class="country"></div>
+										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
@@ -216,6 +228,7 @@
 								<div class="visit">Zwycięstwa</div>
 								<div class="visit">Porażki</div>
 								<div class="visit">Meczy</div>
+								<div class="visit">+/-</div>
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
@@ -233,12 +246,14 @@
 										<div class="visit">{{$aditional["E"][$i]->properties->wins}}</div>
 										<div class="visit">{{$aditional["E"][$i]->properties->losses}}</div>
 										<div class="visit">{{$aditional["E"][$i]->properties->played}}</div>
+										<div class="visit">{{$aditional["E"][$i]->properties->score_difference}}</div>
 										<div class="visit">{{$aditional["E"][$i]->points}}</div>
 									</div>
 								@else
 									<div class="table-row">
 										<div class="serial">{{$i+1}}</div>
 										<div class="country"></div>
+										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
@@ -261,6 +276,7 @@
 								<div class="visit">Zwycięstwa</div>
 								<div class="visit">Porażki</div>
 								<div class="visit">Meczy</div>
+								<div class="visit">+/-</div>
 								<div class="visit">Punkty</div>
 							</div>
 							@for ($i=0;$i < 4;$i++)
@@ -278,12 +294,14 @@
 										<div class="visit">{{$aditional["F"][$i]->properties->wins}}</div>
 										<div class="visit">{{$aditional["F"][$i]->properties->losses}}</div>
 										<div class="visit">{{$aditional["F"][$i]->properties->played}}</div>
+										<div class="visit">{{$aditional["F"][$i]->properties->score_difference}}</div>
 										<div class="visit">{{$aditional["F"][$i]->points}}</div>
 									</div>
 								@else
 									<div class="table-row">
 										<div class="serial">{{$i+1}}</div>
 										<div class="country"></div>
+										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
