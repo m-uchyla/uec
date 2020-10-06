@@ -8,7 +8,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-10">
                         <div class="about-caption mb-50">
-                            <!-- Section Tittle -->
+                            <!-- Section Tittle chuj ci na pizde -->
                             <div class="section-tittle section-tittle2 mb-35">
                                 <span>O nas</span>
                                 <h2>Przede wszystkim doświadczenie</h2>
