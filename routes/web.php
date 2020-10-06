@@ -20,6 +20,7 @@ Route::get('/regulamin', 'ArticleInsertController@getRegulamin')->name('regulami
 Route::get('/bracket', 'APIController@getBracket')->name('bracket');
 Route::get('/teams', 'APIController@getList')->name('teams');
 Route::get('/schedule', 'APIController@getSchedule')->name('schedule');
+Route::get('/test', 'ArticleInsertController@getTest')->name('test');
 
 Route::get('article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
 

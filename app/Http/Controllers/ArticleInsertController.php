@@ -71,6 +71,12 @@ class ArticleInsertController extends Controller {
         return view('regulamin', ['featured' => $featured]);
     }
 
+    public function getTest(){
+
+        $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','asc')->get();
+        return view('test', ['featured' => $featured]);
+    }
+
     public function edit(Request $request){
         $id = $request->input("articleID");
         $article = DB::table('articles')->where('id',$id)->first();
