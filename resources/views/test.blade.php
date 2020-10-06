@@ -26,17 +26,47 @@
 								<div class="visit">+/-</div>
 								<div class="visit">Punkty</div>
 							</div>
-						    
-									<div class="table-row">
-										<div class="serial"></div>
-										<div class="country"></div>
-										<div class="visit"></div>
-										<div class="visit"></div>
-										<div class="visit"></div>
-										<div class="visit"></div>
-										<div class="visit"></div>
-									</div>
-								
+						        <!-- First Team-->
+								<div class="table-row">
+									<div class="serial"></div>
+									<div class="country"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+                                </div>
+                                <!-- Second Team-->
+								<div class="table-row">
+									<div class="serial"></div>
+									<div class="country"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+                                </div>
+                                <!-- Third Team-->
+								<div class="table-row">
+									<div class="serial"></div>
+									<div class="country"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+                                </div>
+                                <!-- Fourth Team-->
+								<div class="table-row">
+									<div class="serial"></div>
+									<div class="country"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+									<div class="visit"></div>
+                                </div>
+								    
 							
 						</div>
 					</div>
