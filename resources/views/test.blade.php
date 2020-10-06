@@ -28,7 +28,7 @@
 							</div>
 						    
 									<div class="table-row">
-										<div class="serial">{{$i+1}}</div>
+										<div class="serial"></div>
 										<div class="country"></div>
 										<div class="visit"></div>
 										<div class="visit"></div>
