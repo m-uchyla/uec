@@ -99,7 +99,7 @@
                             <aside class="single_sidebar_widget popular_post_widget">
                                 <h3 class="widget_title" style="color: #2d2d2d;">Harmonogram</h3>
                                 <div class="media post_item">
-                                    <p>Śledź rozgrywki najbliższej edycji!</p>
+                                    <p>Śledź rozgrywki najbliższego turnieju</p>
                                 </div>
                                 <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" onclick="window.location.href='{{ route('schedule') }}';"
                                         type="submit">Harmonogram</button>
