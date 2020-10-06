@@ -6057,7 +6057,7 @@ del {
 }
 
 .progress-table .table-head {
-    display: flex
+    display: flex 
 }
 
 .progress-table .table-head .serial,
@@ -6072,7 +6072,7 @@ del {
 
 .progress-table .table-row {
     padding: 15px 0;
-    border-top: 1px solid #edf3fd;
+    border-top: 1px solid #1df39d;
     display: flex
 }
 
