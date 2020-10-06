@@ -26,7 +26,7 @@
 								<div class="visit">+/-</div>
 								<div class="visit">Punkty</div>
 							</div>
-						    @else
+						    
 									<div class="table-row">
 										<div class="serial">{{$i+1}}</div>
 										<div class="country"></div>
@@ -37,7 +37,7 @@
 										<div class="visit"></div>
 									</div>
 								
-							@endif
+							
 						</div>
 					</div>
             </div>
