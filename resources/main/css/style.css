@@ -6081,23 +6081,11 @@ del {
 .bracket-name {
    font-size: 30px;
    color: #1d2434;
-   text-shadow: 2px 2px 4px#3c4b6d;
-}
-#first {
-    border: 1px solid #078b07;
-    border-radius: 7px;
+   text-shadow: 2px 2px 5px#3c4b6d;
 }
 
-#second {
-    border-top: 1px solid #fbff00;
-    border-bottom: 1px dotted #fbff00;
-}
-#third {
-    border-bottom: 1px solid #fbff00;
-}
-#fourth {
-    border: 2px solid #ff0000;
-    border-radius: 8px;
+#border-no {
+    border: none;
 }
 
 .progress-table .table-row .serial,

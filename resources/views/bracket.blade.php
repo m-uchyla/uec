@@ -392,7 +392,7 @@
                     <div class="progress-table-wrap">
 					<div class="progress-table" style="padding:0px">
 								@if($finals[2]->opponents[0]->participant)
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">{{$finals[2]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[2]->opponents[0]->score}}</div>
 									</div>
