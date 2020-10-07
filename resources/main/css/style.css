@@ -6033,7 +6033,7 @@ del {
 }
 
 .progress-table {
-    background: #555555;
+    background: #1d2434;
     padding: 15px 0px 30px 0px;
     min-width: 800px;
     border-radius: 15px;
@@ -6065,7 +6065,7 @@ del {
 .progress-table .table-head .country,
 .progress-table .table-head .visit,
 .progress-table .table-head .percentage {
-    color: #415094;
+    color: #ffffff;
     line-height: 40px;
     text-transform: uppercase;
     font-weight: 500
@@ -6077,19 +6077,20 @@ del {
     margin: 3px;
 }
 #first {
-    border: 3px solid #078b07;
+    border: 1px solid #078b07;
+    border-radius: 8px;
 }
 
 #second {
-    border-top: 3px solid #fbff00;
-    border-bottom: 3px dotted #fbff00;
+    border-top: 1px solid #fbff00;
+    border-bottom: 1px dotted #fbff00;
 }
-#third
-#second {
-    border-bottom: 3px solid #fbff00;
+#third {
+    border-bottom: 1px solid #fbff00;
 }
 #fourth {
-    border: 3px solid #ff0000;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
 }
 
 .progress-table .table-row .serial,
