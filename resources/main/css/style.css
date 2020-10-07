@@ -1940,13 +1940,13 @@ hr {
     -o-animation-name: float-bob;
     -o-animation-duration: 2s;
     -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: linear
+    -o-animation-timing-function: linear;
 }
 
 @-webkit-keyframes float-bob {
     0% {
         -webkit-transform: translateY(-20px);
-        transform: translateY(-20px)
+        transform: translateY(-20px);
     }
 
     50% {
@@ -1967,7 +1967,7 @@ hr {
 @-webkit-keyframes heartbeat {
     to {
         -webkit-transform: scale(1.03);
-        transform: scale(1.03)
+        transform: scale(1.03);
     }
 }
 
@@ -4153,7 +4153,7 @@ nav.nav-menu-show {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
-    transition: .4s
+    transition: .4s;
 }
 
 .single-blog {
@@ -4211,7 +4211,7 @@ nav.nav-menu-show {
     font-size: 13px;
     font-weight: 300;
     margin-right: 22px;
-    position: relative
+    position: relative;
 }
 
 .single-blog .tag:after {
