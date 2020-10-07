@@ -6072,7 +6072,7 @@ del {
 
 .progress-table .table-row {
     padding: 15px 0;
-    display: flex
+    display: flex;
 }
 #first {
     border-top: 2px solid #078b07;
