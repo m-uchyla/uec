@@ -6074,12 +6074,14 @@ del {
 .progress-table .table-row {
     padding: 15px 0;
     display: flex;
-    border-top: 1px solid #dbdbdb;
+    border-top: 1px solid #3c4b6d;
+    ;
 }
 
 .bracket-name {
    font-size: 30px;
    color: #1d2434;
+   text-shadow: 2px 2px 4px#3c4b6d;
 }
 #first {
     border: 1px solid #078b07;
