@@ -16,7 +16,7 @@
                 <div class="row">
                     <!-- single Tem -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">Grupa A</h2>
+                    <h2 style="text-align:center" class="bracket-name">Grupa A</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
 							<div class="table-head">
@@ -64,7 +64,7 @@
 
 					<!-- single Tem -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">Grupa B</h2>
+                    <h2 style="text-align:center" class="bracket-name">Grupa B</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
 							<div class="table-head">
@@ -112,7 +112,7 @@
 
 					<!-- single Tem -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">Grupa C</h2>
+                    <h2 style="text-align:center" class="bracket-name">Grupa C</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
 							<div class="table-head">
@@ -160,7 +160,7 @@
 
 					<!-- single Tem -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">Grupa D</h2>
+                    <h2 style="text-align:center" class="bracket-name">Grupa D</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
 							<div class="table-head">
@@ -219,7 +219,7 @@
                 <div class="row">
                     <!-- single Tem -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">Grupa E</h2>
+                    <h2 style="text-align:center" class="bracket-name">Grupa E</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
 							<div class="table-head">
@@ -267,7 +267,7 @@
 					<a href="#bracket" class="btn" id="click" style="visibility:hidden"></a>
 					<!-- single Tem -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">Grupa F</h2>
+                    <h2 style="text-align:center" class="bracket-name">Grupa F</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table">
 							<div class="table-head">
