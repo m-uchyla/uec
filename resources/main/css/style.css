@@ -6072,10 +6072,17 @@ del {
 
 .progress-table .table-row {
     padding: 15px 0;
-    border-top: 1px solid #1df39d;
     display: flex
 }
+#first {
+    border-top: 2px solid #078b07;
+    border-bottom: 2px solid#078b07;
+}
 
+#second {
+    border-top: 2px solid #fbff00;
+    border-bottom: 2px dotted #fbff00;
+}
 .progress-table .table-row .serial,
 .progress-table .table-row .country,
 .progress-table .table-row .visit,

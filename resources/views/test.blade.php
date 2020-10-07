@@ -27,7 +27,7 @@
 								<div class="visit">Punkty</div>
 							</div>
 						        <!-- First Team-->
-								<div class="table-row">
+								<div class="table-row" id="first">
 									<div class="serial"></div>
 									<div class="country"></div>
 									<div class="visit"></div>
@@ -37,7 +37,7 @@
 									<div class="visit"></div>
                                 </div>
                                 <!-- Second Team-->
-								<div class="table-row">
+								<div class="table-row" id="second">
 									<div class="serial"></div>
 									<div class="country"></div>
 									<div class="visit"></div>
@@ -47,7 +47,7 @@
 									<div class="visit"></div>
                                 </div>
                                 <!-- Third Team-->
-								<div class="table-row">
+								<div class="table-row" id="third">
 									<div class="serial"></div>
 									<div class="country"></div>
 									<div class="visit"></div>
@@ -57,7 +57,7 @@
 									<div class="visit"></div>
                                 </div>
                                 <!-- Fourth Team-->
-								<div class="table-row">
+								<div class="table-row" id="fourth">
 									<div class="serial"></div>
 									<div class="country"></div>
 									<div class="visit"></div>
