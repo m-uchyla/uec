@@ -6074,8 +6074,11 @@ del {
 .progress-table .table-row {
     padding: 15px 0;
     display: flex;
-    border: #ffffff 1px;
 
+}
+
+.bracket-name {
+   
 }
 #first {
     border: 1px solid #078b07;
@@ -6101,6 +6104,7 @@ del {
     display: flex;
     align-items: center;
     color: #f5f5f5;
+    border: #ffffff 1px;
 }
 
 .progress-table .table-row .country img {
