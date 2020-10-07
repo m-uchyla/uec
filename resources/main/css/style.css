@@ -6074,7 +6074,8 @@ del {
 .progress-table .table-row {
     padding: 15px 0;
     display: flex;
-    margin: 3px;
+    border: #ffffff 1px;
+
 }
 #first {
     border: 1px solid #078b07;
