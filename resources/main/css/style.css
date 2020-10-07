@@ -6035,7 +6035,8 @@ del {
 .progress-table {
     background: #f9f9ff;
     padding: 15px 0px 30px 0px;
-    min-width: 800px
+    min-width: 800px;
+    border-radius: 8px;
 }
 
 .progress-table .serial {
@@ -6073,15 +6074,16 @@ del {
 .progress-table .table-row {
     padding: 15px 0;
     display: flex;
+    margin: 1px;
 }
 #first {
-    border-top: 2px solid #078b07;
-    border-bottom: 2px solid#078b07;
+    border-top: 3px solid #078b07;
+    border-bottom: 3px solid#078b07;
 }
 
 #second {
-    border-top: 2px solid #fbff00;
-    border-bottom: 2px dotted #fbff00;
+    border-top: 3px solid #fbff00;
+    border-bottom: 3px dotted #fbff00;
 }
 .progress-table .table-row .serial,
 .progress-table .table-row .country,
