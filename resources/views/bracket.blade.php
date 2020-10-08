@@ -338,7 +338,7 @@
 									</div>
 								@else
 									<div class="table-row" id="border-no">
-										<div class="country">TBA</div>
+										<div class="country" id="playoff-teamname">TBA</div>
 										<div class="serial" style="padding-left: 10px;" >--</div>
 									</div>
 								@endif
@@ -349,7 +349,7 @@
 									</div>
 								@else
 									<div class="table-row">
-										<div class="country">TBA</div>
+										<div class="country" id="playoff-teamname">TBA</div>
 										<div class="serial" style="padding-left: 10px;" >--</div>
 									</div>
 								@endif

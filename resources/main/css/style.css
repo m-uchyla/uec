@@ -6088,6 +6088,10 @@ del {
     border: solid 0px;
 }
 
+#playoff-teamname {
+    padding: 1em
+}
+
 .progress-table .table-row .serial,
 .progress-table .table-row .country,
 .progress-table .table-row .visit,
