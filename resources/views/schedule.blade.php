@@ -8,7 +8,7 @@
 	padding-bottom:20px;
 	text-align:center;
 	font-weight: 700;
-	color: #262d48;
+	color: #1d2434;
 }
 .vs{
 	color: #ad1515;
