@@ -3,7 +3,7 @@
 @section('style')
 <style>
 .match {
-	background-color:#f9f9ff; 
+	background-color:#1d2434; 
 	padding-top:20px;
 	padding-bottom:20px;
 	text-align:center;
