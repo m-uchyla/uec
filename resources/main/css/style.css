@@ -6084,6 +6084,12 @@ del {
    text-shadow: 2px 2px 4px#3c4b6d;
 }
 
+.playoff-name {
+    font-size: 15px;
+    color: #1d2434;
+    text-shadow: 2px 2px 2px#3c4b6d;
+    text-align: center;
+}
 #border-no {
     border: solid 0px;
 }

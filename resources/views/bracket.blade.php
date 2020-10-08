@@ -328,7 +328,7 @@
                 <div class="row">
 					<!-- single quaterfinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">I ćwierćfinał</h2>
+                    <h2 class="playoff-name">I Ćwierćfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 								@if($finals[0]->opponents[0]->participant)
@@ -358,7 +358,7 @@
                     </div>
 					<!-- single quaterfinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">II ćwierćfinał</h2>
+                    <h2 class="playoff-name">II Ćwierćfinał</h2>
                     <div class="progress-table-wrap">
 							<div class="progress-table" style="padding:0px">
 								@if($finals[1]->opponents[0]->participant)
@@ -388,7 +388,7 @@
                     </div>
 					<!-- single quaterfinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">III ćwierćfinał</h2>
+                    <h2 class="playoff-name">III Ćwierćfinał</h2>
                     <div class="progress-table-wrap">
 					<div class="progress-table" style="padding:0px">
 								@if($finals[2]->opponents[0]->participant)
@@ -418,7 +418,7 @@
                     </div>
 					<!-- single quaterfinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
-                    <h2 style="text-align:center">IV ćwierćfinał</h2>
+                    <h2 class="playoff-name">IV Ćwierćfinał</h2>
                     <div class="progress-table-wrap">
 					<div class="progress-table" style="padding:0px">
 								@if($finals[3]->opponents[0]->participant)
@@ -451,7 +451,7 @@
 				<div class="row">
 					<!-- single semifinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2" style="margin-bottom:30px">
-                    <h2 style="text-align:center">I półfinał</h2>
+                    <h2 class="playoff-name">I Półfinał</h2>
                     <div class="progress-table-wrap">
 					<div class="progress-table" style="padding:0px">
 								@if($finals[4]->opponents[0]->participant)
@@ -481,7 +481,7 @@
                     </div>
 					<!-- single semifinal -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2" style="margin-bottom:30px">
-                    <h2 style="text-align:center">II półfinał</h2>
+                    <h2 class="playoff-name">II Półfinał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 								@if($finals[5]->opponents[0]->participant)
@@ -513,7 +513,7 @@
 				<div class="row">
 					<!-- single 3rd place -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2" style="margin-bottom:30px">
-                    <h2 style="text-align:center">Mecz o 3 msc.</h2>
+                    <h2 class="playoff-name">Mecz o 3 msc.</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							@if($finals[6]->opponents[0]->participant)
@@ -543,7 +543,7 @@
                     </div>
 					<!-- single final -->
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2" style="margin-bottom:30px">
-                    <h2 style="text-align:center">Finał</h2>
+                    <h2 class="playoff-name">Finał</h2>
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							@if($finals[7]->opponents[0]->participant)
