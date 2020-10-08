@@ -332,12 +332,12 @@
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 								@if($finals[0]->opponents[0]->participant)
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">{{$finals[0]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[0]->opponents[0]->score}}</div>
 									</div>
 								@else
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">TBA</div>
 										<div class="serial" style="padding-left: 10px;" >--</div>
 									</div>
@@ -362,12 +362,12 @@
                     <div class="progress-table-wrap">
 							<div class="progress-table" style="padding:0px">
 								@if($finals[1]->opponents[0]->participant)
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">{{$finals[1]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[1]->opponents[0]->score}}</div>
 									</div>
 								@else
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">TBA</div>
 										<div class="serial" style="padding-left: 10px;" >--</div>
 									</div>
@@ -422,12 +422,12 @@
                     <div class="progress-table-wrap">
 					<div class="progress-table" style="padding:0px">
 								@if($finals[3]->opponents[0]->participant)
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">{{$finals[3]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[3]->opponents[0]->score}}</div>
 									</div>
 								@else
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">TBA</div>
 										<div class="serial" style="padding-left: 10px;" >--</div>
 									</div>
@@ -455,12 +455,12 @@
                     <div class="progress-table-wrap">
 					<div class="progress-table" style="padding:0px">
 								@if($finals[4]->opponents[0]->participant)
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">{{$finals[4]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[4]->opponents[0]->score}}</div>
 									</div>
 								@else
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">TBA</div>
 										<div class="serial" style="padding-left: 10px;" >--</div>
 									</div>
@@ -485,12 +485,12 @@
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 								@if($finals[5]->opponents[0]->participant)
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">{{$finals[5]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[5]->opponents[0]->score}}</div>
 									</div>
 								@else
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">TBA</div>
 										<div class="serial" style="padding-left: 10px;" >--</div>
 									</div>
@@ -517,12 +517,12 @@
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							@if($finals[6]->opponents[0]->participant)
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">{{$finals[6]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[6]->opponents[0]->score}}</div>
 									</div>
 								@else
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">TBA</div>
 										<div class="serial" style="padding-left: 10px;" >--</div>
 									</div>
@@ -547,12 +547,12 @@
                     <div class="progress-table-wrap">
 						<div class="progress-table" style="padding:0px">
 							@if($finals[7]->opponents[0]->participant)
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">{{$finals[7]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[7]->opponents[0]->score}}</div>
 									</div>
 								@else
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">TBA</div>
 										<div class="serial" style="padding-left: 10px;" >--</div>
 									</div>
