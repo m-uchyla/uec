@@ -6085,7 +6085,7 @@ del {
 }
 
 #border-no {
-    border: none;
+    border: solid 0px;
 }
 
 .progress-table .table-row .serial,

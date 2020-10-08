@@ -397,7 +397,7 @@
 										<div class="serial" style="padding-left: 10px;" >{{$finals[2]->opponents[0]->score}}</div>
 									</div>
 								@else
-									<div class="table-row">
+									<div class="table-row" id="border-no">
 										<div class="country">TBA</div>
 										<div class="serial" style="padding-left: 10px;" >--</div>
 									</div>
