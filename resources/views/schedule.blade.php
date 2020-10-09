@@ -8,13 +8,14 @@
 	padding-bottom:20px;
 	text-align:center;
 	font-weight: 700;
-	color: #1d2434;
+	color: #f5f5f5;
 }
 .vs{
-	color: #ad1515;
+	color: #f5f5f5;
 	font-size: 20px;
 	font-weight: 550;
 	margin-bottom: 5px;
+	background-color:#3c4b6d; 
 }
 </style>
 @endsection
