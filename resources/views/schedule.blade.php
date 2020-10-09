@@ -30,6 +30,7 @@
 	font-size: 20px;
 	font-weight: 550;
 	margin-bottom: 5px;
+	border-radius: 20px;
 }
 </style>
 @endsection
