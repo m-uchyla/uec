@@ -9,6 +9,7 @@
 	text-align:center;
 	font-weight: 700;
 	color: #262d48;
+	border-radius: 20px;
 }
 .vs{
 	color: #ad1515;
