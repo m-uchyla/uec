@@ -24,13 +24,10 @@
 	border-radius: 20px;
 }
 .vs{
-	background: rgb(60,75,109);
-    background: linear-gradient(90deg, rgba(60,75,109,1) 0%, rgba(29,36,52,1) 50%, rgba(60,75,109,1) 100%);
 	color: #ad1515;
 	font-size: 20px;
 	font-weight: 550;
 	margin-bottom: 5px;
-	border-radius: 20px;
 }
 
 .result {
