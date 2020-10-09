@@ -3,7 +3,8 @@
 @section('style')
 <style>
 .match {
-	background-color:#1d2434; 
+	background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 	padding-top:20px;
 	padding-bottom:20px;
 	text-align:center;
@@ -15,6 +16,9 @@
 	font-size: 20px;
 	font-weight: 550;
 	margin-bottom: 5px;
+	background-color:#3c4b6d; 
+}
+.results {
 	background-color:#3c4b6d; 
 }
 </style>
@@ -52,7 +56,7 @@
 							@endif
 							<div class="row">
 								<div class="col-md-4">
-									<div class="single-defination match">
+									<div class="single-defination match" class="results">
 										@if ($match->opponents[0]->participant)
 										<h3>{{$match->opponents[0]->participant->name}}</h3>
 										@else
