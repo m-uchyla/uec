@@ -68,7 +68,7 @@
 																				@endif
 								</h3>
 							@endif
-							<div 
+							<div clas="table-match">
 								<div class="row">
 									<div class="col-md-4">
 										<div class="single-defination match">
@@ -112,6 +112,7 @@
 								@empty
 								<div class="row">
 								</div>
+                            </div>
 					@endforelse
 				</div>
                 </div>
