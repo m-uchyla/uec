@@ -3,8 +3,6 @@
 @section('style')
 <style>
 .match {
-	background: rgb(29,36,52);
-    background: linear-gradient(90deg, rgba(29,36,52,1) 0%, rgba(29,36,52,1) 70%, rgba(60,75,109,1) 100%);
 	padding-top:20px;
 	padding-bottom:20px;
 	text-align:center;
@@ -14,8 +12,6 @@
 }
 
 .match-2 {
-	background: rgb(60,75,109);
-    background: linear-gradient(90deg, rgba(60,75,109,1) 0%, rgba(29,36,52,1) 30%, rgba(29,36,52,1) 100%);
 	padding-top:20px;
 	padding-bottom:20px;
 	text-align:center;
@@ -35,6 +31,10 @@
     background: linear-gradient(90deg, rgba(60,75,109,1) 0%, rgba(29,36,52,1) 50%, rgba(60,75,109,1) 100%);
 }
 
+.table-match {
+	background: rgb(29,36,52);
+    background: linear-gradient(90deg, rgba(29,36,52,1) 0%, rgba(60,75,109,1) 50%, rgba(29,36,52,1) 100%);
+}
 </style>
 @endsection
 
@@ -68,49 +68,50 @@
 																				@endif
 								</h3>
 							@endif
-							<div class="row">
-								<div class="col-md-4">
-									<div class="single-defination match">
-										@if ($match->opponents[0]->participant)
-										<h3 id="schedule-teamname">{{$match->opponents[0]->participant->name}}</h3>
-										@else
-										<h3 id="schedule-teamname">TBA</h3>
-										@endif
+							<div 
+								<div class="row">
+									<div class="col-md-4">
+										<div class="single-defination match">
+											@if ($match->opponents[0]->participant)
+											<h3 id="schedule-teamname">{{$match->opponents[0]->participant->name}}</h3>
+											@else
+											<h3 id="schedule-teamname">TBA</h3>
+											@endif
+										</div>
 									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="single-defination" style="text-align:center">
-										<p class="vs">VS</p>
-										@if($match->scheduled_datetime)
-											<h4 class="mb-20">
-												@if ($match->opponents[0]->participant && $match->opponents[1]->participant)
-													@if ($match->opponents[0]->score && $match->opponents[1]->score)
-														{{$match->opponents[0]->score}}
-														: 
-														{{$match->opponents[1]->score}}
+									<div class="col-md-4">
+										<div class="single-defination" style="text-align:center">
+											<p class="vs">VS</p>
+											@if($match->scheduled_datetime)
+												<h4 class="mb-20">
+													@if ($match->opponents[0]->participant && $match->opponents[1]->participant)
+														@if ($match->opponents[0]->score && $match->opponents[1]->score)
+															{{$match->opponents[0]->score}}
+															: 
+															{{$match->opponents[1]->score}}
+														@else
+															{{date("H:i:s d-m-Y", strtotime($match->scheduled_datetime))}}
+														@endif
 													@else
 														{{date("H:i:s d-m-Y", strtotime($match->scheduled_datetime))}}
 													@endif
-												@else
-													{{date("H:i:s d-m-Y", strtotime($match->scheduled_datetime))}}
-												@endif
-											</h4>
-										@endif
+												</h4>
+											@endif
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="single-defination match-2">
+										@if ($match->opponents[1]->participant)
+											<h3 id="schedule-teamname">{{$match->opponents[1]->participant->name}}</h3>
+											@else
+											<h3 id="schedule-teamname">TBA</h3>
+											@endif
+										</div>
 									</div>
 								</div>
-								<div class="col-md-4">
-									<div class="single-defination match-2">
-									@if ($match->opponents[1]->participant)
-										<h3 id="schedule-teamname">{{$match->opponents[1]->participant->name}}</h3>
-										@else
-										<h3 id="schedule-teamname">TBA</h3>
-										@endif
-									</div>
+								@empty
+								<div class="row">
 								</div>
-							</div>
-							@empty
-							<div class="row">
-							</div>
 					@endforelse
 				</div>
                 </div>
