@@ -9,7 +9,18 @@
 	padding-bottom:20px;
 	text-align:center;
 	font-weight: 700;
-	color: #262d48;
+	color: #f9f9ff;
+	border-radius: 20px;
+}
+
+.match-2 {
+	background: rgb(29,36,52);
+    background: linear-gradient(90deg, rgba(29,36,52,1) 0%, rgba(29,36,52,1) 70%, rgba(60,75,109,1) 100%);
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
+	font-weight: 700;
+	color: #f9f9ff;
 	border-radius: 20px;
 }
 .vs{
@@ -82,7 +93,7 @@
 									</div>
 								</div>
 								<div class="col-md-4">
-									<div class="single-defination match">
+									<div class="single-defination match-2">
 									@if ($match->opponents[1]->participant)
 										<h3>{{$match->opponents[1]->participant->name}}</h3>
 										@else
