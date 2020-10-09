@@ -4,8 +4,8 @@
 <style>
 .match {
 	background-color: #1d2434;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	text-align:center;
 	font-weight: 700;
 	color: #f5f5f5;
