@@ -33,9 +33,10 @@
 
 .table-match {
 	background: rgb(29,36,52);
-	background: linear-gradient(90deg, rgba(29,36,52,1) 0%, rgba(60,75,109,1) 50%, rgba(29,36,52,1) 100%);
+    background: linear-gradient(90deg, rgba(29,36,52,1) 0%, rgba(60,75,109,1) 30%, rgba(29,36,52,1) 50%, rgba(60,75,109,1) 70%, rgba(29,36,52,1) 100%);
 	margin-top: 10px;
 	margin-bottom: 10px;
+	border-radius: 20px;
 }
 </style>
 @endsection
