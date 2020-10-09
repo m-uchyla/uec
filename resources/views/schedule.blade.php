@@ -64,11 +64,11 @@
 							@endif
 							<div class="row">
 								<div class="col-md-4">
-									<div class="single-defination match" id="schedule-teamname">
+									<div class="single-defination match">
 										@if ($match->opponents[0]->participant)
-										<h3>{{$match->opponents[0]->participant->name}}</h3>
+										<h3 id="schedule-teamname">{{$match->opponents[0]->participant->name}}</h3>
 										@else
-										<h3>TBA</h3>
+										<h3 id="schedule-teamname">TBA</h3>
 										@endif
 									</div>
 								</div>
@@ -93,11 +93,11 @@
 									</div>
 								</div>
 								<div class="col-md-4">
-									<div class="single-defination match-2" id="schedule-teamname">
+									<div class="single-defination match-2">
 									@if ($match->opponents[1]->participant)
-										<h3>{{$match->opponents[1]->participant->name}}</h3>
+										<h3 id="schedule-teamname">{{$match->opponents[1]->participant->name}}</h3>
 										@else
-										<h3>TBA</h3>
+										<h3 id="schedule-teamname">TBA</h3>
 										@endif
 									</div>
 								</div>
