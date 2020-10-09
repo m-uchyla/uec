@@ -15,7 +15,6 @@
 	font-size: 20px;
 	font-weight: 550;
 	margin-bottom: 5px;
-	background-color:#3c4b6d; 
 }
 .results {
 	background-color:#3c4b6d; 
