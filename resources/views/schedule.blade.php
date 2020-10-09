@@ -3,7 +3,8 @@
 @section('style')
 <style>
 .match {
-	background-color:#f9f9ff; 
+	background: rgb(29,36,52);
+    background: linear-gradient(90deg, rgba(29,36,52,1) 0%, rgba(29,36,52,1) 70%, rgba(60,75,109,1) 100%);
 	padding-top:20px;
 	padding-bottom:20px;
 	text-align:center;
