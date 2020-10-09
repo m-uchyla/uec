@@ -68,8 +68,7 @@
 																				@endif
 								</h3>
 							@endif
-							<div clas="table-match">
-								<div class="row">
+								<div class="row table-match">
 									<div class="col-md-4">
 										<div class="single-defination match">
 											@if ($match->opponents[0]->participant)
@@ -112,7 +111,6 @@
 								@empty
 								<div class="row">
 								</div>
-                            </div>
 					@endforelse
 				</div>
                 </div>
