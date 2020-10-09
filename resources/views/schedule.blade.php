@@ -25,19 +25,6 @@
 	font-weight: 550;
 	margin-bottom: 5px;
 }
-
-.result {
-	background: rgb(60,75,109);
-    background: linear-gradient(90deg, rgba(60,75,109,1) 0%, rgba(29,36,52,1) 50%, rgba(60,75,109,1) 100%);
-}
-
-.table-match {
-	background: rgb(29,36,52);
-    background: linear-gradient(90deg, rgba(29,36,52,1) 0%, rgba(60,75,109,1) 30%, rgba(29,36,52,1) 50%, rgba(60,75,109,1) 70%, rgba(29,36,52,1) 100%);
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-radius: 20px;
-}
 </style>
 @endsection
 
@@ -71,7 +58,7 @@
 																				@endif
 								</h3>
 							@endif
-								<div class="row table-match">
+								<div class="row">
 									<div class="col-md-4">
 										<div class="single-defination match">
 											@if ($match->opponents[0]->participant)
