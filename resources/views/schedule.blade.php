@@ -2,7 +2,7 @@
 
 @section('style')
 <style>
-.match {
+#match {
 	background: rgb(29,36,52);
     background: linear-gradient(90deg, rgba(29,36,52,1) 0%, rgba(29,36,52,1) 70%, rgba(60,75,109,1) 100%);
 	padding-top:20px;
@@ -13,7 +13,7 @@
 	border-radius: 20px;
 }
 
-.match-2 {
+#match-2 {
 	background: rgb(60,75,109);
     background: linear-gradient(90deg, rgba(60,75,109,1) 0%, rgba(29,36,52,1) 30%, rgba(29,36,52,1) 100%);
 	padding-top:20px;
@@ -64,7 +64,7 @@
 							@endif
 							<div class="row">
 								<div class="col-md-4">
-									<div class="single-defination match">
+									<div class="single-defination" id="match">
 										@if ($match->opponents[0]->participant)
 										<h3>{{$match->opponents[0]->participant->name}}</h3>
 										@else
@@ -93,7 +93,7 @@
 									</div>
 								</div>
 								<div class="col-md-4">
-									<div class="single-defination match-2">
+									<div class="single-defination" id="match-2">
 									@if ($match->opponents[1]->participant)
 										<h3>{{$match->opponents[1]->participant->name}}</h3>
 										@else
