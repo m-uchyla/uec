@@ -32,6 +32,12 @@
 	margin-bottom: 5px;
 	border-radius: 20px;
 }
+
+.result {
+	background: rgb(60,75,109);
+    background: linear-gradient(90deg, rgba(60,75,109,1) 0%, rgba(29,36,52,1) 50%, rgba(60,75,109,1) 100%);
+}
+
 </style>
 @endsection
 
@@ -79,7 +85,7 @@
 									<div class="single-defination" style="text-align:center">
 										<p class="vs">VS</p>
 										@if($match->scheduled_datetime)
-											<h4 class="mb-20">
+											<h4 class="mb-20 result">
 												@if ($match->opponents[0]->participant && $match->opponents[1]->participant)
 													@if ($match->opponents[0]->score && $match->opponents[1]->score)
 														{{$match->opponents[0]->score}}
