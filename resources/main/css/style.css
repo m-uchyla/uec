@@ -6078,6 +6078,10 @@ del {
     ;
 }
 
+#schedule-teamname {
+    color: #f5f5f5;
+}
+
 .bracket-name {
    font-size: 30px;
    color: #1d2434;
