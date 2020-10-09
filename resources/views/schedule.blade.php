@@ -85,7 +85,7 @@
 									<div class="single-defination" style="text-align:center">
 										<p class="vs">VS</p>
 										@if($match->scheduled_datetime)
-											<h4 class="mb-20 result">
+											<h4 class="mb-20">
 												@if ($match->opponents[0]->participant && $match->opponents[1]->participant)
 													@if ($match->opponents[0]->score && $match->opponents[1]->score)
 														{{$match->opponents[0]->score}}
