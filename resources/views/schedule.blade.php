@@ -3,8 +3,8 @@
 @section('style')
 <style>
 .match {
-	background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	background: rgb(29,36,52);
+    background: linear-gradient(90deg, rgba(29,36,52,1) 0%, rgba(60,75,109,1) 100%);
 	padding-top:20px;
 	padding-bottom:20px;
 	text-align:center;
@@ -56,7 +56,7 @@
 							@endif
 							<div class="row">
 								<div class="col-md-4">
-									<div class="single-defination match" class="results">
+									<div class="single-defination match">
 										@if ($match->opponents[0]->participant)
 										<h3>{{$match->opponents[0]->participant->name}}</h3>
 										@else
@@ -68,7 +68,7 @@
 									<div class="single-defination" style="text-align:center">
 										<p class="vs">VS</p>
 										@if($match->scheduled_datetime)
-											<h4 class="mb-20">
+											<h4 class="mb-20" class="results">
 												@if ($match->opponents[0]->participant && $match->opponents[1]->participant)
 													@if ($match->opponents[0]->score && $match->opponents[1]->score)
 														{{$match->opponents[0]->score}}
