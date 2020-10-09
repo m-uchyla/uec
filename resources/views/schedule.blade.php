@@ -3,21 +3,18 @@
 @section('style')
 <style>
 .match {
-	background-color: #1d2434;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	background-color:#f9f9ff; 
+	padding-top:20px;
+	padding-bottom:20px;
 	text-align:center;
 	font-weight: 700;
-	color: #f5f5f5;
+	color: #262d48;
 }
 .vs{
-	color: #f5f5f5;
+	color: #ad1515;
 	font-size: 20px;
 	font-weight: 550;
 	margin-bottom: 5px;
-}
-.results {
-	background-color:#3c4b6d; 
 }
 </style>
 @endsection
@@ -80,7 +77,7 @@
 												@endif
 											</h4>
 										@endif
-									
+									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="single-defination match">
@@ -105,12 +102,9 @@
 
 @section('script')
 <script>
-
 $(document).ready(function(){
     document.getElementById("click").click();
 });
-
-
 $('#nav').onePageNav({
 	currentClass: 'current',
 	changeHash: false,
