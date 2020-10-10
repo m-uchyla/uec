@@ -6104,7 +6104,7 @@ del {
 }
 
 #border-playoff-left {
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 0px 20px 0px 20px;
 }
 
 #border-playoff-no {
