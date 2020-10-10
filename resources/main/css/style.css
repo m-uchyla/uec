@@ -6107,6 +6107,14 @@ del {
     border-radius: 20px 0px 0px 20px;
 }
 
+#border-playoff-no {
+    border-radius: 0px;
+}
+
+#border-playoff-right {
+    border-radius: 0px 20px 20px 0px;
+}
+
 .progress-table .table-row .serial,
 .progress-table .table-row .country,
 .progress-table .table-row .visit,
