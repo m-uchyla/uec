@@ -6103,6 +6103,10 @@ del {
     width: 85%;
 }
 
+#border-playoff-left {
+    border-radius: 20px 0px 0px 20px;
+}
+
 .progress-table .table-row .serial,
 .progress-table .table-row .country,
 .progress-table .table-row .visit,

@@ -330,7 +330,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-" style="margin-bottom:30px">
                     <h2 class="playoff-name">I Ćwierćfinał</h2>
                     <div class="progress-table-wrap">
-						<div class="progress-table" style="padding:0px">
+						<div class="progress-table" style="padding:0px" id="border-playoff-left">
 								@if($finals[0]->opponents[0]->participant)
 									<div class="table-row" id="border-no">
 										<div class="country">{{$finals[0]->opponents[0]->participant->name}}</div>
@@ -453,7 +453,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2" style="margin-bottom:30px">
                     <h2 class="playoff-name">I Półfinał</h2>
                     <div class="progress-table-wrap">
-					<div class="progress-table" style="padding:0px">
+					<div class="progress-table" style="padding:0px" id="border-playoff-left">
 								@if($finals[4]->opponents[0]->participant)
 									<div class="table-row" id="border-no">
 										<div class="country">{{$finals[4]->opponents[0]->participant->name}}</div>
@@ -515,7 +515,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2" style="margin-bottom:30px">
                     <h2 class="playoff-name">Mecz o 3 msc.</h2>
                     <div class="progress-table-wrap">
-						<div class="progress-table" style="padding:0px">
+						<div class="progress-table" style="padding:0px" id="border-playoff-left">
 							@if($finals[6]->opponents[0]->participant)
 									<div class="table-row" id="border-no">
 										<div class="country">{{$finals[6]->opponents[0]->participant->name}}</div>
