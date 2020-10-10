@@ -78,11 +78,17 @@
                                 Remis 1 pkt (BO2),
                                 Przegrana 0 pkt</dd>
                                 <br>
-                                <dd>2.6.2 Taka sama ilość punktów</dd>
-
+                                <dd>2.6.2 Zasady klasyfikacji miejsc w grupie</dd>
+                                <br>
+                                <dd>2.6.2.1 Format BO1</dd>
                                 <dd>Jeżeli dwie lub więcej drużyn ma tyle samo punktów w grupie to o awansie zadecydują pojedynki bezpośrednie.
                                 Jeżeli statystyka pojedynków bezpośrednich nie jest w stanie wyznaczyć wyższości drużyny to zostaje uwzględniony bilans rund we wszystkich spotkaniach. 
                                 Jeżeli bilans rund jest identyczny liczą się rundy wygrane w danej fazie turnieju.</dd>
+                                <br>
+                                <dd>2.6.2.2 Format BO2</dd>
+                                <dd>Jeżeli dwie lub więcej drużyn ma tyle samo punktów w grupie to o awansie zadecydują pojedynki bezpośrednie.
+                                Jeżeli statystyka pojedynków bezpośrednich nie jest w stanie wyznaczyć wyższości drużyny to zostaje uwzględniony bilans map we wszystkich spotkaniach. 
+                                Jeżeli bilans map jest identyczny liczą się mapy wygrane w danej fazie turnieju. W przypadku dalszego braku możliwości wyłonienia zwycięzcy liczy się bilans rund a następnie ilość rund wygranych w danej fazie turnieju.</dd>
                                 <br>
                                 <dd>2.7 Przełożenie spotkania</dd>
 
