@@ -65,7 +65,7 @@
 										@if($match->scheduled_datetime)
 											<h4 class="mb-20">
 												@if ($match->opponents[0]->participant && $match->opponents[1]->participant)
-													@if (($match->opponents[0]->score =! null) && ($match->opponents[1]->score=! null))
+													@if ($match->opponents[0]->score || $match->opponents[1]->score)
 														{{$match->opponents[0]->score}}
 														: 
 														{{$match->opponents[1]->score}}
