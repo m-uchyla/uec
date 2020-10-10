@@ -6034,7 +6034,8 @@ del {
 
 .progress-table {
     background: #1d2434;
-    padding: 15px 0px 30px 0px;
+    padding: 15px 0px 15px 0px;
+    border-radius: 20px;
 }
 
 .progress-table .serial {
@@ -6099,6 +6100,7 @@ del {
 
 #playoff-teamname {
     padding-left: 12px;
+    width: 85%;
 }
 
 .progress-table .table-row .serial,
