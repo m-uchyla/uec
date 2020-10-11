@@ -2644,7 +2644,7 @@ hr {
 .header-area .main-header .main-menu ul li ul.submenu {
     position: absolute;
     width: 170px;
-    background: rgba(21,20 ,20 0.2);
+    background: rgba(21, 20, 20, 0.904);
     left: 0;
     top: 80%;
     visibility: hidden;
