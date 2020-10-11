@@ -6904,6 +6904,11 @@ del {
 }
 
 
-{
-    
+.f1-background {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 51%, rgba(255,0,0,1) 100%);
+}
+
+h2.f1 {
+    color: #e10600
 }
