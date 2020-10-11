@@ -6912,7 +6912,7 @@ del {
     background-image: url("../img/gallery/dark.jpg");
 }
 
-.section-padinng {
+#section-padinng {
     padding-bottom: 20rem;
 }
 
