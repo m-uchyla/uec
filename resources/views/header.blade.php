@@ -7,7 +7,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                                <a href="{{ route('homepage') }}"><img src="{{ asset('resources/main/img/logo/f1logo.png', true) }}" alt=""></a>
+                                <a href="{{ route('homepage') }}"><img src="{{ asset('resources/main/img/logo/logo1.png', true) }}" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-9 col-lg-10">
@@ -21,11 +21,11 @@
 									<ul id="navigation">
                                         <li><a href="{{ route('homepage') }}">Strona główna</a></li>
                                             <li>
-                                                <a href="{{ route('bracket') }}">Obecny Sezon</a>
+                                                <a href="{{ route('bracket') }}">Bieżący turniej</a>
                                                 <ul class="submenu">
-                                                    <li><a href="{{ route('schedule') }}">Harmonogram</a></li>
-                                                    <li><a href="{{ route('bracket') }}">Klasyfikacja Kierowców</a></li>
-                                                    <li><a href="{{ route('teams') }}">Klasyfikacja Konstruktorów</a></li>
+                                                    <li><a href="{{ route('schedule') }}">Harmonogram meczy</a></li>
+                                                    <li><a href="{{ route('bracket') }}">Drabinka</a></li>
+                                                    <li><a href="{{ route('teams') }}">Drużyny</a></li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -36,13 +36,10 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="{{ route('regulamin') }}">Inne Gry</a>
+                                                <a href="{{ route('about') }}">O nas</a>
                                                 <ul class="submenu">
-                                                    <li><a href="{{ route('bracket') }}">CS:GO</a></li>
-                                                    <li><a href="{{ route('teams') }}">Valorant</a></li>
-                                                </ul>
-                                            <li>
-                                                <a href="{{ route('about') }}">Kontakt</a>
+                                                    <li><a href="{{ route('about') }}">O projekcie</a></li>
+                                                    <li><a href="https://facebook.com/UndergroundEsportCup/">Kontakt</a></li>
                                                 </ul>
                                             </li>
                                         @guest
