@@ -6115,6 +6115,16 @@ del {
     border-radius: 0px 20px 20px 0px;
 }
 
+.teamname-a {
+   color: #f5f5f5;
+   transition-property: color;
+}
+
+.teamname-a:hover {
+    color: #b91010
+}
+
+
 .progress-table .table-row .serial,
 .progress-table .table-row .country,
 .progress-table .table-row .visit,
