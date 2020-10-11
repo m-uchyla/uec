@@ -6117,7 +6117,7 @@ del {
 
 #teamname-a {
    color: #f5f5f5;
-   transition: color 200ms;
+   transition: color 100ms;
 }
 
 #teamname-a:hover {
