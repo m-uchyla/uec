@@ -29,9 +29,6 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="{{ route('bracket') }}">Newsy</a>
-                                            </li>
-                                            <li>
                                                 <a href="{{ route('regulamin') }}">Zasady</a>
                                                 <ul class="submenu">
                                                     <li><a href="{{ route('regulamin') }}">Regulamin turnieju</a></li>
