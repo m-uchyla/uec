@@ -2644,7 +2644,7 @@ hr {
 .header-area .main-header .main-menu ul li ul.submenu {
     position: absolute;
     width: 170px;
-    background: rgba(21,20 ,20 0.9);
+    background: rgba(21,20 ,20 0.2);
     left: 0;
     top: 80%;
     visibility: hidden;
@@ -5967,13 +5967,13 @@ del {
 
 .genric-btn.danger {
     color: #fff;
-    background: #151414;
+    background: #f44a40;
     border: 1px solid transparent
 }
 
 .genric-btn.danger:hover {
     color: #f44a40;
-    border: 1px solid #f44a40;
+    border: 1px solid #151414;
     background: transparent
 }
 
