@@ -6910,10 +6910,8 @@ del {
 
 .section-1-f1 {
     background-image: url("../img/gallery/dark.jpg");
-}
-
-#section-padinng {
     padding-bottom: 20rem;
+    padding-top: 20rem;
 }
 
 h2.f1 {
