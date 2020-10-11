@@ -6912,11 +6912,15 @@ del {
     background-image: url("../img/gallery/dark.jpg");
 }
 
+.section-padinng {
+    padding-bottom: 20rem;
+}
+
 h2.f1 {
     color: #e10600;
     text-align: center;
     font-size: 8rem;
-    padding-top: 4rem
+    padding-top: 20rem
 }
 
 h1.f1 {

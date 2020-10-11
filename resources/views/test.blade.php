@@ -6,6 +6,8 @@
         <h2 class="f1"> Sezon 1 </h2>
         <br>
         <h1 class="f1"> UEC FORMULA 1 </h1>
-        <a class="button-f1">Zarejestruj się</a>
+        <div id="section-padinng">
+            <a class="button-f1">Zarejestruj się</a>-
+        </div>
     </div>
 @endsection
