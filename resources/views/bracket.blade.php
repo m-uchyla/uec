@@ -82,7 +82,7 @@
 								<div class="serial">{{$groups["B"][$i]->rank}}</div>
 								<div class="country">
 								@if($groups["B"][$i]->participant->custom_fields->fanpage)
-									<a href='{{$groups["B"][$i]->participant->custom_fields->fanpage}}' class="teamname">
+									<a href='{{$groups["B"][$i]->participant->custom_fields->fanpage}}' id="teamname-a">
 									{{$groups["B"][$i]->participant->name}}</a>
 									@else
 									{{$groups["B"][$i]->participant->name}}
@@ -130,7 +130,7 @@
 								<div class="serial">{{$groups["C"][$i]->rank}}</div>
 								<div class="country">
 								@if($groups["C"][$i]->participant->custom_fields->fanpage)
-									<a href='{{$groups["C"][$i]->participant->custom_fields->fanpage}}' class="teamname">
+									<a href='{{$groups["C"][$i]->participant->custom_fields->fanpage}}' id="teamname-a">
 									{{$groups["C"][$i]->participant->name}}</a>
 									@else
 									{{$groups["C"][$i]->participant->name}}
@@ -178,7 +178,7 @@
 								<div class="serial">{{$groups["D"][$i]->rank}}</div>
 								<div class="country">
 								@if($groups["D"][$i]->participant->custom_fields->fanpage)
-									<a href='{{$groups["D"][$i]->participant->custom_fields->fanpage}}' class="teamname">
+									<a href='{{$groups["D"][$i]->participant->custom_fields->fanpage}}' id="teamname-a">
 									{{$groups["D"][$i]->participant->name}}</a>
 									@else
 									{{$groups["D"][$i]->participant->name}}
@@ -237,7 +237,7 @@
 												<div class="serial">{{$aditional["E"][$i]->rank}}</div>
 												<div class="country">
 											@if($aditional["E"][$i]->participant->custom_fields->fanpage)
-											<a href='{{$aditional["E"][$i]->participant->custom_fields->fanpage}}' class="teamname">
+											<a href='{{$aditional["E"][$i]->participant->custom_fields->fanpage}}' id="teamname-a">
 											{{$aditional["E"][$i]->participant->name}}</a>
 											@else
 											{{$aditional["E"][$i]->participant->name}}
@@ -285,7 +285,7 @@
 										<div class="serial">{{$aditional["F"][$i]->rank}}</div>
 										<div class="country">
 											@if($aditional["F"][$i]->participant->custom_fields->fanpage)
-											<a href='{{$aditional["F"][$i]->participant->custom_fields->fanpage}}' class="teamname">
+											<a href='{{$aditional["F"][$i]->participant->custom_fields->fanpage}}' id="teamname-a">
 											{{$aditional["F"][$i]->participant->name}}</a>
 											@else
 											{{$aditional["F"][$i]->participant->name}}
