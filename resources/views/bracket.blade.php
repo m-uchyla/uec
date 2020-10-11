@@ -34,7 +34,7 @@
 								<div class="serial">{{$groups["A"][$i]->rank}}</div>
 								<div class="country">
 									@if($groups["A"][$i]->participant->custom_fields->fanpage)
-									<a href='{{$groups["A"][$i]->participant->custom_fields->fanpage}}' class="teamname">
+									<a href='{{$groups["A"][$i]->participant->custom_fields->fanpage}}' id="teamname-a">
 									{{$groups["A"][$i]->participant->name}}</a>
 									@else
 									{{$groups["A"][$i]->participant->name}}

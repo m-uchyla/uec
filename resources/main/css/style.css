@@ -6115,12 +6115,12 @@ del {
     border-radius: 0px 20px 20px 0px;
 }
 
-a .teamname {
+#teamname-a {
    color: #f5f5f5;
    transition: color 200ms;
 }
 
-a .teamname:hover {
+#teamname-a:hover {
     color: #b91010
 }
 
