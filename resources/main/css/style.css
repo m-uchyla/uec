@@ -2644,7 +2644,7 @@ hr {
 .header-area .main-header .main-menu ul li ul.submenu {
     position: absolute;
     width: 170px;
-    background: rgba(43, 43, 43, 0.7);
+    background: rgba(21,20 ,20 0.9);
     left: 0;
     top: 80%;
     visibility: hidden;
@@ -2762,7 +2762,7 @@ nav.nav-menu-show {
 }
 
 .header-sticky.sticky-bar {
-    background: #000
+    background: #e10600
 }
 
 .header-sticky.sticky-bar.sticky .main-menu ul li a {
@@ -5967,7 +5967,7 @@ del {
 
 .genric-btn.danger {
     color: #fff;
-    background: #f44a40;
+    background: #151414;
     border: 1px solid transparent
 }
 
