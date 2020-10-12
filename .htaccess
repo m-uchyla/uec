@@ -20,5 +20,7 @@
     RewriteRule ^ index.php [L]
 
     Header add Access-Control-Allow-Origin "http://uec-veex.herokuapp.com"
+    Header add Access-Control-Allow-Origin "http://milek-uec.herokuapp.com/"
+
 
 </IfModule>
