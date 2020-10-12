@@ -6922,6 +6922,9 @@ del {
     padding-top: 20rem;
 }
 
+.special-backgorund {
+    background: rgba(16,15,33,0.8);
+}
 h2.f1 {
     color: #e10600;
     text-align: center;
@@ -6965,11 +6968,7 @@ a.button-f1:hover {
 .item {
     margin: 0 75px;
 }
- h1#content-media {
-     color: #ffffff
- }
-
- h2#content-media {
-     color: #fff;
- }
-
+ 
+#kurwa {
+    color: #fff
+}
