@@ -6904,12 +6904,12 @@ del {
 }
 @font-face {
     font-family: "formula";
-    src: url(../fonts/Formula1-Regular.ttf) format(truetype);
+    src: url(../fonts/Formula1-Regular.ttf);
 }
 
 @font-face {
     font-family: "formula-bold";
-    src: url(../fonts/Formula1-Bold.ttf) format(truetype);
+    src: url(../fonts/Formula1-Bold.ttf);
 }
 
 .f1-background {
