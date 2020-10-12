@@ -6953,7 +6953,7 @@ a.button-f1 {
     width: 15%;
     margin: auto;
     transition: all 0.7s ease-in-out;
-    box-shadow: 0 0 40px 2px rgba(255, 8, 0, 0.308));
+    box-shadow: 0 0 40px 2px rgba(255, 8, 0, 0.4);
 }
 
 a.button-f1:hover {
