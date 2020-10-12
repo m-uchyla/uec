@@ -13,26 +13,26 @@
                     <div class="social-f1">
                         <a class="item">
                             <div id="content-media">
-                                <h2 id="kurwa">Facebook</h3>
-                                <h3 id="kurwa">undergroundesportcup</h3>
+                                <h3 id="kurwa">Facebook</h3>
+                                <h2 id="kurwa">undergroundesportcup</h2>
                             </div>
                         </a>
                         <a class="item">
                             <div id="content-media">
-                                <h2 id="kurwa">Youtube</h3>
-                                <h3 id="kurwa">undergroundesportcup</h3>
+                                <h3 id="kurwa">Youtube</h3>
+                                <h2 id="kurwa">undergroundesportcup</h2>
                             </div>
                         </a>   
                         <a class="item">
                             <div id="content-media">
-                                <h2 id="kurwa">Twitch</h3>
-                                <h3 id="kurwa">mil3k00</h3>
+                                <h3 id="kurwa">Twitch</h3>
+                                <h2 id="kurwa">mil3k00</h2>
                             </div>
                         </a>
                         <a class="item">
                             <div id="content-media">
-                                <h2 id="kurwa">Facebook</h3>
-                                <h3 id="kurwa">qn3k</h3>
+                                <h3 id="kurwa">Facebook</h3>
+                                <h2 id="kurwa">qn3k</h2>
                             </div>
                         </a>
                     </div>
