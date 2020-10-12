@@ -6910,7 +6910,7 @@ del {
 
 .section-1-f1 {
     background-image: url("../img/gallery/dark.jpg");
-    padding-bottom: 25rem;
+    padding-bottom: 20rem;
     padding-top: 35rem;
 }
 
@@ -6924,7 +6924,8 @@ h1.f1 {
     color: #fff;
     text-align: center;
     font-size: 10rem;
-    padding-bottom: 2rem;
+    padding-bottom: 7rem;
+    line-height: 0.6;
 }
 
 a.button-f1 {
@@ -6938,14 +6939,18 @@ a.button-f1 {
     cursor: pointer;
     width: 15%;
     margin: auto;
+    
 }
 .social-f1 {
     width: 100%;
-    height: 150px;
     display: flex;
     justify-content: center;
    }
 
 .item {
-    margin: 0 50px;
+    margin: 0 75px;
+}
+
+.content-media {
+    color: #fff;
 }

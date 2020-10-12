@@ -7,7 +7,7 @@
             <br>
             <h1 class="f1"> UEC FORMULA 1 </h1>
                 <div>
-                    <a class="button-f1">Zarejestruj się</a>-
+                    <a class="button-f1">Zarejestruj się</a>
                 </div>
                 <div class="social-f1">
                     <a class="item">
@@ -15,21 +15,25 @@
                             <h2>Facebook</h3>
                             <h3>undergroundesportcup</h3>
                         </div>
+                    </a>
                     <a class="item">
                         <div class="content-media">
                             <h2>Youtube</h3>
                             <h3>undergroundesportcup</h3>
                         </div>
+                    </a>   
                     <a class="item">
                         <div class="content-media">
                             <h2>Twitch</h3>
                             <h3>mil3k00</h3>
                         </div>
+                    </a>
                     <a class="item">
                         <div class="content-media">
                             <h2>Facebook</h3>
                             <h3>qn3k</h3>
                         </div>
+                    </a>
                 </div>
         </div>
     </div>
