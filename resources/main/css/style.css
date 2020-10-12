@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: "formula-bold";
+    font-family: "f1-bold";
     src: url(../fonts/Formula1-Bold.ttf);
 }
 
@@ -6925,7 +6925,7 @@ del {
 .special-backgorund {
     background: rgba(0, 0, 0, 0.93);
 }
-h2 {
+h2.f1 {
     color: #e10600;
     text-align: center;
     font-size: 7rem;
