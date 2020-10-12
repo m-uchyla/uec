@@ -1,4 +1,16 @@
 @extends('layouts.app')
+@section('style')
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6, {
+
+    }
+</style>
+@endsection
 @section('content')
     <div class="f1-background">
         <!-- Title Cup -->
@@ -12,6 +24,7 @@
                     </div>
                     <div class="social-f1">
                         <a class="item" href="https://www.facebook.com/UndergroundEsportCup">
+                        <i class="fab fa-facebook-square"></i>
                             <div id="content-media">
                                 <h3 id="kurwa">Facebook</h3>
                                 <h2 id="kurwa">undergroundesportcup</h2>
@@ -31,7 +44,7 @@
                         </a>
                         <a class="item" href="https://www.twitch.tv/qn3k">
                             <div id="content-media">
-                                <h3 id="kurwa">Facebook</h3>
+                                <h3 id="kurwa">twitch</h3>
                                 <h2 id="kurwa">qn3k</h2>
                             </div>
                         </a>
@@ -41,6 +54,7 @@
         </div>
         <div class="partner">
         </div>
+
         <div>
 
     </div>
