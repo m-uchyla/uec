@@ -6939,8 +6939,7 @@ h1.f1 {
 
 a.button-f1 {
     background-color: #e10600;
-    border: 1px;
-    border-color: #e10600;
+    border: 3px solid #e10600;
     color: #fff !important;
     padding: 15px 32px;
     text-align: center;
@@ -6949,24 +6948,22 @@ a.button-f1 {
     cursor: pointer;
     width: 15%;
     margin: auto;
-    transition: all 3s;
+    transition: all 1.5s;
 }
 
 a.button-f1:hover {
-    color: #e10600;
+    color: #e10600 !important;
     background-color: transparent;
 }
 .social-f1 {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 5rem;
    }
 
 .item {
     margin: 0 75px;
 }
 
-.content-media h2,
-.content-media h1 {
-    color: #fff !important;
-}
+
