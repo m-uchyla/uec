@@ -6948,7 +6948,7 @@ a.button-f1 {
     cursor: pointer;
     width: 15%;
     margin: auto;
-    transition: all 1.5s;
+    transition: all 1s;
 }
 
 a.button-f1:hover {
@@ -6959,11 +6959,17 @@ a.button-f1:hover {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 5rem;
+    padding-top: 20rem;
    }
 
 .item {
     margin: 0 75px;
 }
+ h1#f1 {
+     color: #ffffff
+ }
 
+ h2#f1 {
+     color: #fff;
+ }
 
