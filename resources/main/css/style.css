@@ -6980,7 +6980,7 @@ a.button-f1:hover {
     border-radius: 0px;
     border-color: transparent;
     transition: all 0.3s;
-    padding: 2px;
+    padding-right: 7px;
 }
 
 .item:hover {
@@ -6988,7 +6988,6 @@ a.button-f1:hover {
     border-right: solid 1px;
     border-radius: 0px 0px 10px 0px;
     border-color: #e10600 ;
-    padding: 2px;
 }
  
 #kurwa {
