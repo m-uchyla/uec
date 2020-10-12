@@ -12,7 +12,9 @@
                     </div>
                     <div class="social-f1">
                         <a class="item" href="https://www.facebook.com/UndergroundEsportCup">
-                        <i class="fab fa-facebook-square"></i>
+                            <div id="content-media">
+                                <i class="fab fa-facebook-square"></i>
+                            </div>
                             <div id="content-media">
                                 <h3 id="kurwa">Facebook</h3>
                                 <h2 id="kurwa">undergroundesportcup</h2>
