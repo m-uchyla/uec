@@ -6920,10 +6920,11 @@ del {
     background-image: url("../img/gallery/dark.jpg");
     padding-bottom: 4rem;
     padding-top: 20rem;
+    background: rgb(0,0,0);
 }
 
 .special-backgorund {
-    background: rgba(16,15,33,0.8);
+
 }
 h2.f1 {
     color: #e10600;
@@ -6951,7 +6952,7 @@ a.button-f1 {
     cursor: pointer;
     width: 15%;
     margin: auto;
-    transition: all 1s;
+    transition: all 1s ease-in-out;
 }
 
 a.button-f1:hover {
