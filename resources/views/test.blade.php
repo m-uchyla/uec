@@ -12,8 +12,8 @@
             <div class="social-f1">
                 <a class="item">
                     <div class="content-media">
-                        <h2>Facebook<h3>
-                        <h3>undergroundesportcup<h3>
+                        <h2>Facebook</h3>
+                        <h3>undergroundesportcup</h3>
                     <div>
             </div>
     </div>
