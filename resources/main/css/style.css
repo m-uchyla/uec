@@ -6926,7 +6926,7 @@ h2.f1 {
     color: #e10600;
     text-align: center;
     font-size: 7rem;
-    font-family: "formula-bold";
+    font-family: formula;
 }
 
 h1.f1 {
@@ -6961,6 +6961,7 @@ a.button-f1 {
     margin: 0 75px;
 }
 
-.content-media {
+.content-media h2,
+.content-media h1 {
     color: #fff !important;
 }
