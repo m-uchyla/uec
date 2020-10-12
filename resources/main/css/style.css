@@ -2,7 +2,8 @@
 
 @font-face {
     font-family: "F1";
-    src: url("../fonts/Formula1-Regular.ttf");
+    src: url("{{ asset('resources/main/fonts/Formula1-Regular.ttf', true) }}");
+
 }
 
 .white-bg {
@@ -145,7 +146,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Rajdhani", sans-serif;
+    font-family: "F1", sans-serif;
     color: #1d2434;
     margin-top: 0px;
     font-style: normal;
