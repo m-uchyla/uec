@@ -6918,18 +6918,18 @@ del {
 
 .section-1-f1 {
     background-image: url("../img/gallery/dark.jpg");
-    padding-bottom: 4rem;
-    padding-top: 20rem;
 }
 
 .special-backgorund {
-
+    background: rgba(16,15,33,0.8);
+    mix-blend-mode: multiply;
 }
 h2.f1 {
     color: #e10600;
     text-align: center;
     font-size: 7rem;
     font-family: formula;
+    padding-top: 20rem;
 }
 
 h1.f1 {
@@ -6963,6 +6963,7 @@ a.button-f1:hover {
     display: flex;
     justify-content: center;
     padding-top: 20rem;
+    padding-bottom: 5rem;
    }
 
 .item {
