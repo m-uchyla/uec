@@ -6923,6 +6923,7 @@ del {
 .special-backgorund {
     background: rgba(16,15,33,0.8);
     mix-blend-mode: multiply;
+    z-index: 1;
 }
 h2.f1 {
     color: #e10600;
