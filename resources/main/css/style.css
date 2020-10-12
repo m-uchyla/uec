@@ -6979,6 +6979,7 @@ a.button-f1:hover {
     border-right: 0px;
     border-radius: 0px;
     border-color: transparent;
+    transition: all 0.3s;
 }
 
 .item:hover {
