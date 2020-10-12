@@ -6975,16 +6975,16 @@ a.button-f1:hover {
 
 .item {
     margin: 0 75px;
-    border-bottom: 0px;
-    border-right: 0px;
+    border-bottom: solid 0px;
+    border-right: solid 0px;
     border-radius: 0px;
     border-color: transparent;
     transition: all 0.3s;
 }
 
 .item:hover {
-    border-bottom: 1px;
-    border-right: 1px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
     border-radius: 10px;
     border-color: #e10600 ;
     padding: 2px;
