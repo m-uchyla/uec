@@ -6928,7 +6928,7 @@ h2.f1 {
     color: #e10600;
     text-align: center;
     font-size: 7rem;
-    font-family: "formula";
+    font-family: "formula", sans-serif;
     padding-top: 20rem;
     z-index: 2;
     text-transform: uppercase;
