@@ -6949,7 +6949,12 @@ a.button-f1 {
     cursor: pointer;
     width: 15%;
     margin: auto;
-    transition: color;
+    transition: all 3s;
+}
+
+a.button-f1:hover {
+    color: #e10600;
+    background-color: transparent;
 }
 .social-f1 {
     width: 100%;
