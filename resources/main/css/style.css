@@ -6920,7 +6920,6 @@ del {
     background-image: url("../img/gallery/dark.jpg");
     padding-bottom: 4rem;
     padding-top: 20rem;
-    background: rgb(0,0,0);
 }
 
 .special-backgorund {
@@ -6972,4 +6971,9 @@ a.button-f1:hover {
  
 #kurwa {
     color: #fff
+}
+
+div.section-1-f1::after{
+    background: rgba(16,15,33,0.8);
+    mix-blend-mode: multiply;
 }
