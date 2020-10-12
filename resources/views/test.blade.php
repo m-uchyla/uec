@@ -11,25 +11,25 @@
                         <a class="button-f1">Zarejestruj się</a>
                     </div>
                     <div class="social-f1">
-                        <a class="item">
+                        <a class="item" href="https://www.facebook.com/UndergroundEsportCup">
                             <div id="content-media">
                                 <h3 id="kurwa">Facebook</h3>
                                 <h2 id="kurwa">undergroundesportcup</h2>
                             </div>
                         </a>
-                        <a class="item">
+                        <a class="item" href="https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg">
                             <div id="content-media">
                                 <h3 id="kurwa">Youtube</h3>
                                 <h2 id="kurwa">undergroundesportcup</h2>
                             </div>
                         </a>   
-                        <a class="item">
+                        <a class="item" href="https://www.twitch.tv/mil3k00">
                             <div id="content-media">
                                 <h3 id="kurwa">Twitch</h3>
                                 <h2 id="kurwa">mil3k00</h2>
                             </div>
                         </a>
-                        <a class="item">
+                        <a class="item" href="https://www.twitch.tv/qn3k">
                             <div id="content-media">
                                 <h3 id="kurwa">Facebook</h3>
                                 <h2 id="kurwa">qn3k</h2>

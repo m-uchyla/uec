@@ -6931,6 +6931,7 @@ h2.f1 {
     font-family: formula;
     padding-top: 20rem;
     z-index: 2;
+    text-transform: uppercase;
 }
 
 h1.f1 {
@@ -6939,6 +6940,7 @@ h1.f1 {
     font-size: 10rem;
     padding-bottom: 7rem;
     line-height: 0.5;
+    text-transform: uppercase;
 }
 
 a.button-f1 {
@@ -6952,14 +6954,14 @@ a.button-f1 {
     cursor: pointer;
     width: 15%;
     margin: auto;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
     box-shadow: 0 0 40px 2px rgba(255, 8, 0, 0.4);
 }
 
 a.button-f1:hover {
     color: #e10600 !important;
     background-color: transparent;
-    box-shadow: 0 0 40px 2px rgba(255, 8, 0, 0); ;
+    box-shadow: 0 0 40px 2px rgba(255, 8, 0, 0);
 }
 .social-f1 {
     width: 100%;
@@ -6974,7 +6976,13 @@ a.button-f1:hover {
 }
  
 #kurwa {
-    color: #fff
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+#kurwa:hover {
+    color: #e10600;
 }
 
 div.section-1-f1::after{
