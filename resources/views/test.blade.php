@@ -38,5 +38,7 @@
                     </div>
             </div>
         </div>
+        <div class="partner">
+        </div>
     </div>
 @endsection

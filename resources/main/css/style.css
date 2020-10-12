@@ -6989,3 +6989,7 @@ div.section-1-f1::after{
     background: rgba(16,15,33,0.8);
     mix-blend-mode: multiply;
 }
+.partner {
+    width: 100%;
+    height: 10rem;
+}
