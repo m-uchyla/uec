@@ -6975,8 +6975,8 @@ a.button-f1:hover {
 
 .item {
     margin: 0 75px;
-    border-bottom: solid 0px;
-    border-right: solid 0px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
     border-radius: 0px;
     border-color: transparent;
     transition: all 0.3s;
@@ -6996,9 +6996,6 @@ a.button-f1:hover {
     transition: color 0.3s;
 }
 
-#kurwa:hover {
-    color: #e10600;
-}
 
 div.section-1-f1::after{
     background: rgba(16,15,33,0.8);
