@@ -6902,7 +6902,15 @@ del {
 .switch-wrap {
     margin-bottom: 10px
 }
+@font-face {
+    font-family: "formula";
+    src: url(../fonts/Formula1-Regular.ttf) format(truetype);
+}
 
+@font-face {
+    font-family: "formula-bold";
+    src: url(../fonts/Formula1-Bold.ttf) format(truetype);
+}
 
 .f1-background {
     background: rgb(0,0,0);
@@ -6929,8 +6937,9 @@ h1.f1 {
 }
 
 a.button-f1 {
-    background-color: #4CAF50;
-    border: none;
+    background-color: #e10600;
+    border: 1px;
+    border-color: #e10600;
     color: #fff !important;
     padding: 15px 32px;
     text-align: center;
@@ -6939,7 +6948,7 @@ a.button-f1 {
     cursor: pointer;
     width: 15%;
     margin: auto;
-    
+    transition: color;
 }
 .social-f1 {
     width: 100%;
