@@ -6930,6 +6930,7 @@ h2.f1 {
     font-size: 7rem;
     font-family: formula;
     padding-top: 20rem;
+    z-index: 2;
 }
 
 h1.f1 {
