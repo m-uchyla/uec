@@ -17,10 +17,10 @@
                                 <h2 id="kurwa">undergroundesportcup</h2>
                             </div>
                         </a>
-                        <a class="item" href="https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg">
+                        <a class="item" href="https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg" id="kurwa">
                             <div id="content-media">
-                                <h3 id="kurwa">Youtube</h3>
-                                <h2 id="kurwa">undergroundesportcup</h2>
+                                <h3>Youtube</h3>
+                                <h2>undergroundesportcup</h2>
                             </div>
                         </a>   
                         <a class="item" href="https://www.twitch.tv/mil3k00">
@@ -37,8 +37,11 @@
                         </a>
                     </div>
             </div>
+        <!-- partners -->
         </div>
         <div class="partner">
         </div>
+        <div>
+
     </div>
 @endsection
