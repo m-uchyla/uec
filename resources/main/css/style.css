@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Rajdhani:wght@400;500;600;700&display=swap");
 
+@font-face {
+    font-family: "f1";
+    src: url(../fonts/Formula1-Regular.ttf);
+}
+
+@font-face {
+    font-family: "formula-bold";
+    src: url(../fonts/Formula1-Bold.ttf);
+}
+
 .white-bg {
     background: #ffffff
 }
@@ -6901,15 +6911,6 @@ del {
 
 .switch-wrap {
     margin-bottom: 10px
-}
-@font-face {
-    font-family: "f1";
-    src: url(../fonts/Formula1-Regular.ttf);
-}
-
-@font-face {
-    font-family: "formula-bold";
-    src: url(../fonts/Formula1-Bold.ttf);
 }
 
 .f1-background {
