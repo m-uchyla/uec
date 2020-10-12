@@ -2772,7 +2772,7 @@ nav.nav-menu-show {
 }
 
 .header-sticky.sticky-bar {
-    background: #000
+    background: red;
 }
 
 .header-sticky.sticky-bar.sticky .main-menu ul li a {
