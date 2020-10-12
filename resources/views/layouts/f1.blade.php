@@ -28,7 +28,6 @@
 @include('header')
     <!-- header end -->
     <main>
-@include('slider')
 
 @yield('content')
     </main>
