@@ -6520,6 +6520,7 @@ del {
 .section-1-f1 {
     background-image: url("../img/gallery/background-sec.jpg");
     background-position: center;
+    font-family: "f1";
 }
 
 .special-backgorund {
@@ -6595,6 +6596,7 @@ a.button-f1:hover {
     color: #fff;
     text-transform: uppercase;
     transition: color 0.3s;
+    text-decoration: none;
 }
 
 
