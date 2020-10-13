@@ -6581,6 +6581,7 @@ a.button-f1:hover {
     border-color: transparent;
     transition: all 0.3s;
     padding-right: 7px;
+    display: flex;
 }
 
 .item:hover {
@@ -6606,8 +6607,8 @@ div.section-1-f1::after{
     height: 50rem;
 }
 
-.logo-social {
-    color: red;
+.logo-social i {
+    color: #e10600;
     margin-right: 0.75rem;
 }
 

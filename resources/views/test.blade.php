@@ -12,8 +12,8 @@
                     </div>
                     <div class="social-f1">
                         <a class="item" href="https://www.facebook.com/UndergroundEsportCup">
-                            <div id="content-media">
-                                <i class="fab fa-facebook-square fa-3x" class="logo-social"></i>
+                            <div id="content-media" class="logo-social">
+                                <i class="fab fa-facebook-square fa-3x"></i>
                             </div>
                             <div id="content-media">
                                 <h3 id="kurwa">Facebook</h3>
@@ -21,8 +21,8 @@
                             </div>
                         </a>
                         <a class="item" href="https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg">
-                            <div id="content-media">
-                                <i class="fab fa-youtube fa-3x" class="logo-social"></i>
+                            <div id="content-media" class="logo-social">
+                                <i class="fab fa-youtube fa-3x"></i>
                             </div>
                             <div id="content-media">
                                 <h3 id="kurwa">Youtube</h3>
@@ -30,8 +30,8 @@
                             </div>
                         </a>   
                         <a class="item" href="https://www.twitch.tv/mil3k00">
-                            <div id="content-media">
-                                <i class="fab fa-twitch fa-3x" class="logo-social"></i>
+                            <div id="content-media" class="logo-social">
+                                <i class="fab fa-twitch fa-3x"></i>
                             </div>
                             <div id="content-media">
                                 <h3 id="kurwa">Twitch</h3>
@@ -39,8 +39,8 @@
                             </div>
                         </a>
                         <a class="item" href="https://www.twitch.tv/qn3k">
-                            <div id="content-media">
-                                <i class="fab fa-twitch fa-3x" class="logo-social"></i>
+                            <div id="content-media" class="logo-social">
+                                <i class="fab fa-twitch fa-3x"></i>
                             </div>
                             <div id="content-media">
                                 <h3 id="kurwa">twitch</h3>
