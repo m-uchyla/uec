@@ -6543,7 +6543,7 @@ h1.f1 {
     padding-bottom: 7rem;
     line-height: 0.5;
     text-transform: uppercase;
-    font-family: "f1", sans-serif;
+    font-family: "f1-bold", sans-serif;
 }
 
 a.button-f1 {
@@ -6592,6 +6592,7 @@ a.button-f1:hover {
     border-right: solid 1px;
     border-radius: 0px 0px 10px 0px;
     border-color: #e10600 ;
+    text-decoration: none;
 }
  
 #kurwa {
@@ -6600,6 +6601,7 @@ a.button-f1:hover {
     transition: color 0.3s;
     text-decoration: none;
     font-family: "f1", sans-serif;
+    font-size: 15px;
 }
 
 
