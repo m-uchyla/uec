@@ -6604,7 +6604,7 @@ a.button-f1:hover {
     font-size: 15px;
 }
 
-.media-text-1 {
+#media-text-1 {
         color: #fff;
         text-transform: uppercase;
         transition: color 0.3s;
