@@ -6604,6 +6604,14 @@ a.button-f1:hover {
     font-size: 15px;
 }
 
+.media-text-1 {
+        color: #fff;
+        text-transform: uppercase;
+        transition: color 0.3s;
+        text-decoration: none;
+        font-family: "f1", sans-serif;
+        font-size: 10px;
+}
 
 div.section-1-f1::after{
     background: rgba(16,15,33,0.8);
@@ -6616,7 +6624,8 @@ div.section-1-f1::after{
 
 .logo-social i {
     color: #e10600;
-    margin-right: 0.75rem;
+    margin-right: 1rem;
+    font-size: 2.5em;
 }
 
 .preloader {
