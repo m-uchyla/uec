@@ -456,7 +456,7 @@
 					<div class="progress-table" style="padding:0px" id="border-playoff-left">
 								@if($finals[4]->opponents[0]->participant)
 									<div class="table-row" id="border-no">
-										<div class="country">{{$finals[4]->opponents[0]->participant->name}}</div>
+										<div class="country" id="playoff-teamname">{{$finals[4]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[4]->opponents[0]->score}}</div>
 									</div>
 								@else
@@ -467,7 +467,7 @@
 								@endif
 								@if($finals[4]->opponents[1]->participant)
 									<div class="table-row">
-										<div class="country">{{$finals[4]->opponents[1]->participant->name}}</div>
+										<div class="country" id="playoff-teamname">{{$finals[4]->opponents[1]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[4]->opponents[1]->score}}</div>
 									</div>
 								@else
@@ -486,7 +486,7 @@
 						<div class="progress-table" style="padding:0px" id="border-playoff-right">
 								@if($finals[5]->opponents[0]->participant)
 									<div class="table-row" id="border-no">
-										<div class="country">{{$finals[5]->opponents[0]->participant->name}}</div>
+										<div class="country" id="playoff-teamname">{{$finals[5]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[5]->opponents[0]->score}}</div>
 									</div>
 								@else
@@ -497,7 +497,7 @@
 								@endif
 								@if($finals[5]->opponents[1]->participant)
 									<div class="table-row">
-										<div class="country">{{$finals[5]->opponents[1]->participant->name}}</div>
+										<div class="country" id="playoff-teamname">{{$finals[5]->opponents[1]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[5]->opponents[1]->score}}</div>
 									</div>
 								@else
@@ -518,7 +518,7 @@
 						<div class="progress-table" style="padding:0px" id="border-playoff-left">
 							@if($finals[6]->opponents[0]->participant)
 									<div class="table-row" id="border-no">
-										<div class="country">{{$finals[6]->opponents[0]->participant->name}}</div>
+										<div class="country" id="playoff-teamname">{{$finals[6]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[6]->opponents[0]->score}}</div>
 									</div>
 								@else
@@ -529,7 +529,7 @@
 								@endif
 								@if($finals[6]->opponents[1]->participant)
 									<div class="table-row">
-										<div class="country">{{$finals[6]->opponents[1]->participant->name}}</div>
+										<div class="country" id="playoff-teamname">{{$finals[6]->opponents[1]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[6]->opponents[1]->score}}</div>
 									</div>
 								@else
@@ -548,7 +548,7 @@
 						<div class="progress-table" style="padding:0px" id="border-playoff-right">
 							@if($finals[7]->opponents[0]->participant)
 									<div class="table-row" id="border-no">
-										<div class="country">{{$finals[7]->opponents[0]->participant->name}}</div>
+										<div class="country" id="playoff-teamname">{{$finals[7]->opponents[0]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[7]->opponents[0]->score}}</div>
 									</div>
 								@else
@@ -559,7 +559,7 @@
 								@endif
 								@if($finals[7]->opponents[1]->participant)
 									<div class="table-row">
-										<div class="country">{{$finals[7]->opponents[1]->participant->name}}</div>
+										<div class="country" id="playoff-teamname">{{$finals[7]->opponents[1]->participant->name}}</div>
 										<div class="serial" style="padding-left: 10px;" >{{$finals[7]->opponents[1]->score}}</div>
 									</div>
 								@else
