@@ -6520,7 +6520,7 @@ del {
 .section-1-f1 {
     background-image: url("../img/gallery/background-sec.jpg");
     background-position: center;
-    font-family: "f1";
+    font-family: "f1", sans-serif;
 }
 
 .special-backgorund {
@@ -6543,6 +6543,7 @@ h1.f1 {
     padding-bottom: 7rem;
     line-height: 0.5;
     text-transform: uppercase;
+    font-family: "f1", sans-serif;
 }
 
 a.button-f1 {
@@ -6572,6 +6573,7 @@ a.button-f1:hover {
     justify-content: center;
     padding-top: 20rem;
     padding-bottom: 5rem;
+    font-family: "f1", sans-serif;
    }
 
 .item {
@@ -6597,6 +6599,7 @@ a.button-f1:hover {
     text-transform: uppercase;
     transition: color 0.3s;
     text-decoration: none;
+    font-family: "f1", sans-serif;
 }
 
 
