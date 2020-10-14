@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Rajdhani:wght@400;500;600;700&display=swap");
 
 @font-face {
-    font-family: "F1";
-    src: url("{{ asset('resources/main/fonts/Formula1-Regular.ttf', true) }}");
+    font-family: "f1";
+    src: url(../fonts/Formula1-Regular.ttf);
+}
 
+@font-face {
+    font-family: "f1-bold";
+    src: url(../fonts/Formula1-Bold.ttf);
 }
 
 .white-bg {
@@ -146,7 +150,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "F1", sans-serif;
+    font-family: "Rajdhani", sans-serif;
     color: #1d2434;
     margin-top: 0px;
     font-style: normal;
@@ -1946,13 +1950,13 @@ hr {
     -o-animation-name: float-bob;
     -o-animation-duration: 2s;
     -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: linear
+    -o-animation-timing-function: linear;
 }
 
 @-webkit-keyframes float-bob {
     0% {
         -webkit-transform: translateY(-20px);
-        transform: translateY(-20px)
+        transform: translateY(-20px);
     }
 
     50% {
@@ -1973,7 +1977,7 @@ hr {
 @-webkit-keyframes heartbeat {
     to {
         -webkit-transform: scale(1.03);
-        transform: scale(1.03)
+        transform: scale(1.03);
     }
 }
 
@@ -4159,7 +4163,7 @@ nav.nav-menu-show {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
-    transition: .4s
+    transition: .4s;
 }
 
 .single-blog {
@@ -4217,7 +4221,7 @@ nav.nav-menu-show {
     font-size: 13px;
     font-weight: 300;
     margin-right: 22px;
-    position: relative
+    position: relative;
 }
 
 .single-blog .tag:after {
@@ -6039,9 +6043,9 @@ del {
 }
 
 .progress-table {
-    background: #f9f9ff;
-    padding: 15px 0px 30px 0px;
-    min-width: 800px
+    background: #1d2434;
+    padding: 15px 0px 15px 0px;
+    border-radius: 20px;
 }
 
 .progress-table .serial {
@@ -6070,7 +6074,7 @@ del {
 .progress-table .table-head .country,
 .progress-table .table-head .visit,
 .progress-table .table-head .percentage {
-    color: #415094;
+    color: #ffffff;
     line-height: 40px;
     text-transform: uppercase;
     font-weight: 500
@@ -6078,16 +6082,66 @@ del {
 
 .progress-table .table-row {
     padding: 15px 0;
-    border-top: 1px solid #edf3fd;
-    display: flex
+    display: flex;
+    border-top: 1px solid #3c4b6d;
+    ;
 }
+
+#schedule-teamname {
+    color: #f5f5f5;
+}
+
+.bracket-name {
+    font-size: 30px;
+    color: #1d2434;
+    text-shadow: 2px 2px 4px#3c4b6d;
+}
+
+.playoff-name {
+    font-size: 21px;
+    color: #1d2434;
+    text-shadow: 1px 1px 2px#3c4b6d;
+    text-align: center;
+}
+
+#border-no {
+    border: solid 0px;
+}
+
+#playoff-teamname {
+    padding-left: 12px;
+    width: 85%;
+}
+
+#border-playoff-left {
+    border-radius: 0px 20px 0px 20px;
+}
+
+#border-playoff-no {
+    border-radius: 0px;
+}
+
+#border-playoff-right {
+    border-radius: 20px 0px 20px 0px;
+}
+
+#teamname-a {
+    color: #f5f5f5;
+    transition: color 100ms;
+}
+
+#teamname-a:hover {
+    color: #b91010
+}
+
 
 .progress-table .table-row .serial,
 .progress-table .table-row .country,
 .progress-table .table-row .visit,
 .progress-table .table-row .percentage {
     display: flex;
-    align-items: center
+    align-items: center;
+    color: #f5f5f5;
 }
 
 .progress-table .table-row .country img {
@@ -6857,4 +6911,101 @@ del {
 
 .switch-wrap {
     margin-bottom: 10px
+}
+
+.f1-background {
+    background: rgb(0, 0, 0);
+}
+
+.section-1-f1 {
+    background-image: url("../img/gallery/background-sec.jpg");
+    background-position: center;
+}
+
+.special-backgorund {
+    background: rgba(0, 0, 0, 0.93);
+}
+
+h2.f1 {
+    color: #e10600;
+    text-align: center;
+    font-size: 7rem;
+    font-family: "f1", sans-serif;
+    padding-top: 20rem;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+h1.f1 {
+    color: #fff;
+    text-align: center;
+    font-size: 10rem;
+    padding-bottom: 7rem;
+    line-height: 0.5;
+    text-transform: uppercase;
+}
+
+a.button-f1 {
+    background-color: #e10600;
+    border: 3px solid #e10600;
+    color: #fff !important;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 15%;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 40px 2px rgba(255, 8, 0, 0.5);
+    border-radius: 0;
+}
+
+a.button-f1:hover {
+    color: #e10600 !important;
+    background-color: transparent;
+    box-shadow: 0 0 40px 2px rgba(255, 8, 0, 0);
+    border-radius: 20px;
+}
+
+.social-f1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+}
+
+.item {
+    margin: 0 75px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    border-radius: 0px;
+    border-color: transparent;
+    transition: all 0.3s;
+    padding-right: 7px;
+}
+
+.item:hover {
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    border-radius: 0px 0px 10px 0px;
+    border-color: #e10600;
+}
+
+#kurwa {
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+
+div.section-1-f1::after {
+    background: rgba(16, 15, 33, 0.8);
+    mix-blend-mode: multiply;
+}
+
+.partner {
+    width: 100%;
+    height: 14rem;
 }
