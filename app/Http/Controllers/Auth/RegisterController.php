@@ -71,7 +71,7 @@ class RegisterController extends Controller
         $now = date('Y-m');
             
         if(DB::table('stats')->where('month', $now)->exists()){
-            DB::table('stats')->where('month', $now)->increment('users');
+            DB::table('stats')->where('month', $now)->increment('newUsers');
         }
         return User::create([
             'name' => $data['name'],
