@@ -36,6 +36,13 @@ class ArticleInsertController extends Controller {
         $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','asc')->get();
         $also = DB::table('articles')->orderBy('views', 'desc')->latest()->simplePaginate(5);
 
+        date_default_timezone_set('Europe/Warsaw');
+        $now = date('Y-m');
+            
+        if(DB::table('stats')->where('month', $now)->exists()){
+            DB::table('stats')->where('month', $now)->increment('articlesViews');
+        }
+
         return view('articleView', ['article' => $article, 'featured' => $featured, 'contents' => $contents, 'also' => $also]);
     }
 
@@ -147,6 +154,13 @@ class ArticleInsertController extends Controller {
             "big_pic"=>$big_pic,
             "main_pic"=>$main_pic
         );
+
+        date_default_timezone_set('Europe/Warsaw');
+        $now = date('Y-m');
+            
+        if(DB::table('stats')->where('month', $now)->exists()){
+            DB::table('stats')->where('month', $now)->increment('articles');
+        }
 
         DB::table('articles')->insert($data);
 

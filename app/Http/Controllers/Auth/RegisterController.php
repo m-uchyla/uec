@@ -66,6 +66,12 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        date_default_timezone_set('Europe/Warsaw');
+        $now = date('Y-m');
+            
+        if(DB::table('stats')->where('month', $now)->exists()){
+            DB::table('stats')->where('month', $now)->increment('users');
+        }
         return User::create([
             'name' => $data['name'],
             'lastName' => $data['lastName'],
