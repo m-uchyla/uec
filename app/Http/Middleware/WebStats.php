@@ -19,7 +19,7 @@ class WebStats
     {
         if ($request->isMethod('get')) {
             
-            date_default_timezone_set('GMT+2');
+            date_default_timezone_set('Europe/Warsaw');
             $now = date('Y-m');
             
             if(DB::table('stats')->where('month', $now)->exists()){
