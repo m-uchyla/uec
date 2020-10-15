@@ -40,7 +40,7 @@ class ArticleInsertController extends Controller {
         $now = date('Y-m');
             
         if(DB::table('stats')->where('month', $now)->exists()){
-            DB::table('stats')->where('month', $now)->increment('articlesViews');
+            DB::table('stats')->where('month', $now)->increment('articleViews');
         }
 
         return view('articleView', ['article' => $article, 'featured' => $featured, 'contents' => $contents, 'also' => $also]);
