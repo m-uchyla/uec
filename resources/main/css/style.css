@@ -6958,6 +6958,7 @@ a.button-f1 {
     transition: all 0.5s ease-in-out;
     box-shadow: 0 0 40px 2px rgba(255, 8, 0, 0.5);
     border-radius: 0;
+    min-width: 250px;
 }
 
 a.button-f1:hover {
@@ -6972,6 +6973,7 @@ a.button-f1:hover {
     justify-content: center;
     padding-top: 20rem;
     padding-bottom: 5rem;
+    flex-wrap: wrap;
    }
 
 .item {
