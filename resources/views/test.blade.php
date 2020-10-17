@@ -19,15 +19,6 @@
                                 <h2 id="kurwa">undergroundesportcup</h2>
                             </div>
                         </a>
-                        <a class="item" href="https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg">
-                            <div id="content-media" class="logo-social">
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                            <div id="content-media">
-                                <h3 id="media-text-1">Youtube</h3>
-                                <h2 id="kurwa">undergroundesportcup</h2>
-                            </div>
-                        </a>   
                         <a class="item" href="https://www.twitch.tv/mil3k00">
                             <div id="content-media" class="logo-social">
                                 <i class="fab fa-twitch"></i>
@@ -37,6 +28,15 @@
                                 <h2 id="kurwa">mil3k00</h2>
                             </div>
                         </a>
+                        <a class="item" href="https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg">
+                            <div id="content-media" class="logo-social">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div id="content-media">
+                                <h3 id="media-text-1">Youtube</h3>
+                                <h2 id="kurwa">undergroundesportcup</h2>
+                            </div>
+                        </a>  
                         <a class="item" href="https://www.twitch.tv/qn3k">
                             <div id="content-media" class="logo-social">
                                 <i class="fab fa-twitch"></i>
