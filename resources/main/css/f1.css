@@ -6929,12 +6929,14 @@ del {
 
 .section-1-f1 {
     background-image: url("../img/gallery/background-sec.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     background-position: center;
     font-family: "f1", sans-serif;
 }
 
 .special-backgorund {
-    background: rgba(0, 0, 0, 0.93);
+    background: rgba(0, 0, 0, 0.92);
 }
 h2.f1 {
     color: #e10600;
