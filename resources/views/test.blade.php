@@ -51,7 +51,7 @@
         </div>
         <!-- partners -->
         <div class="partner">
-            <div class="mt-2">
+            <div class="m-auto">
                 <img class="logo-partner" src="{{ asset('resources/main/img/loga/kxn.svg', true) }}" alt="kxn-logo">
                 <img class="logo-partner" src="{{ asset('resources/main/img/loga/astro.svg', true) }}" alt="astro-logo">
                 <img class="logo-partner" src="{{ asset('resources/main/img/loga/toornament.svg', true) }}" alt="toornament-logo">
