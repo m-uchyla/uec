@@ -6513,6 +6513,12 @@ del {
     margin-bottom: 10px
 }
 
+@media screen and (max-width: 650px) {
+    h1.f1 {
+        font-size: 9rem;
+    }
+}
+
 .f1-background {
     background: rgb(0,0,0);
 }
@@ -6580,7 +6586,7 @@ a.button-f1:hover {
    }
 
 .item {
-    margin: 0 75px;
+    margin: 10px 75px;
     border-bottom: solid 1px;
     border-right: solid 1px;
     border-radius: 0px;
