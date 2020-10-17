@@ -48,9 +48,12 @@
                         </a>
                     </div>
             </div>
-        <!-- partners -->
         </div>
+        <!-- partners -->
         <div class="partner">
+            <img src="../img/loga/pittsburgh-metro-logo.svg" alt="testlogo1">
+            <img src="../img/loga/veterinary.svg" alt="testlogo2">
+            <img src="../img/loga/twitter-sketched-logo-variant.svg" alt="testlogo3">
         </div>
 
         <div>
