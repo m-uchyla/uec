@@ -11,7 +11,7 @@
                         <a href="{{ route('login') }}" class="button-f1">Weź udział</a>
                     </div>
                     <div class=" row social-f1">
-                        <div class="col-sm-6 col-lg-4 mx-1">
+                        <div class="col-sm-6 col-lg-3">
                             <a class="item" href="https://www.facebook.com/UndergroundEsportCup">
                                 <div id="content-media" class="logo-social">
                                     <i class="fab fa-facebook-square"></i>
@@ -22,7 +22,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-lg-4 mx-1">
+                        <div class="col-sm-6 col-lg-3">
                             <a class="item" href="https://www.youtube.com/channel/UCfP-0qKvorx7JWYMg_rpyqg">
                                 <div id="content-media" class="logo-social">
                                     <i class="fab fa-youtube"></i>
@@ -33,7 +33,7 @@
                                 </div>
                             </a>   
                         </div>
-                        <div class="col-sm-6 col-lg-2 mx-1">
+                        <div class="col-sm-6 col-lg-2">
                             <a class="item" href="https://www.twitch.tv/mil3k00">
                                 <div id="content-media" class="logo-social">
                                     <i class="fab fa-twitch"></i>
@@ -44,7 +44,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-lg-2 mx-1">
+                        <div class="col-sm-6 col-lg-2">
                             <a class="item" href="https://www.twitch.tv/qn3k">
                                 <div id="content-media" class="logo-social">
                                     <i class="fab fa-twitch"></i>
