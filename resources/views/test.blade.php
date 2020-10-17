@@ -10,7 +10,7 @@
                     <div>
                         <a href="{{ route('login') }}" class="button-f1">Weź udział</a>
                     </div>
-                    <div class="social-f1" class="row">
+                    <div class=" row social-f1" >
                         <a class="col-md-3 item" href="https://www.facebook.com/UndergroundEsportCup">
                             <div id="content-media" class="logo-social">
                                 <i class="fab fa-facebook-square"></i>
