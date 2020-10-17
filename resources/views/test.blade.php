@@ -51,7 +51,7 @@
         </div>
         <!-- partners -->
         <div class="partner">
-            <img src="../main/img/loga/testlogo.svg" alt="testlogo1">
+            <img src="{{ asset('resources/main/img/loga/testlogo.svg', true) }}" alt="testlogo1">
             <img src="../img/loga/veterinary.svg" alt="testlogo2">
             <img src="../img/loga/twitter-sketched-logo-variant.svg" alt="testlogo3">
         </div>
