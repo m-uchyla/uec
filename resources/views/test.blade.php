@@ -1,6 +1,6 @@
 @extends('layouts.f1')
 @section('content')
-    <div class="f1-background" class="container">
+    <div class=" container f1-background">
         <!-- Title Cup -->
         <div class="section-1-f1">
             <div class="special-backgorund">
