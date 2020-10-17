@@ -7041,7 +7041,6 @@ div.section-1-f1::after{
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .logo-social i {

@@ -51,7 +51,7 @@
         </div>
         <!-- partners -->
         <div class="partner">
-            <div class="my-5">
+            <div class="my-5 d-flex justify-content-center flex-wrap">
                 <a href="https://www.facebook.com/KXNPL">
                     <img class="logo-partner" src="{{ asset('resources/main/img/loga/kxn.svg', true) }}" alt="kxn-logo">
                 </a>
