@@ -51,8 +51,8 @@
         </div>
         <!-- partners -->
         <div class="partner">
-            <img src="{{ asset('resources/main/img/loga/veterinary.svg', true) }}" alt="testlogo2">
-            <img src="{{ asset('resources/main/img/loga/twitter-sketched-logo-variant.svg', true) }}" alt="testlogo3">
+            <img class="logo-partner" src="{{ asset('resources/main/img/loga/veterinary.svg', true) }}" alt="testlogo2">
+            <img class="logo-partner" src="{{ asset('resources/main/img/loga/twitter-sketched-logo-variant.svg', true) }}" alt="testlogo3">
         </div>
 
         <div>
