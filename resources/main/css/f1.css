@@ -6000,7 +6000,7 @@ del {
 
 .genric-btn.danger-border:hover {
     color: #fff;
-    background: #e10600;
+    background: transparent;
     border: 1px solid transparent
 }
 
