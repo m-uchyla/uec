@@ -7039,7 +7039,7 @@ div.section-1-f1::after{
 }
 .partner {
     width: 100%;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
