@@ -6930,7 +6930,7 @@ del {
 .section-1-f1 {
     background-image: url("../img/gallery/background-sec.jpg");
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     font-family: "f1", sans-serif;
 }
