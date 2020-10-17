@@ -7039,7 +7039,9 @@ div.section-1-f1::after{
 }
 .partner {
     width: 100%;
-    height: 50rem;
+    height: 20rem;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .logo-social i {
@@ -7050,4 +7052,5 @@ div.section-1-f1::after{
 
 .partner .logo-partner {
     color: #fff;
+    margin: 1rem
 }
