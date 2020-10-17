@@ -52,10 +52,18 @@
         <!-- partners -->
         <div class="partner">
             <div class="my-5">
-                <img class="logo-partner" src="{{ asset('resources/main/img/loga/kxn.svg', true) }}" alt="kxn-logo">
-                <img class="logo-partner" src="{{ asset('resources/main/img/loga/astro.svg', true) }}" alt="astro-logo">
-                <img class="logo-partner" src="{{ asset('resources/main/img/loga/toornament.svg', true) }}" alt="toornament-logo">
-                <img class="logo-partner" src="{{ asset('resources/main/img/loga/luke.svg', true) }}" alt="luke-logo">
+                <a href="https://www.facebook.com/KXNPL">
+                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/kxn.svg', true) }}" alt="kxn-logo">
+                </a>
+                <a href="https://www.facebook.com/AstroBoyzGG">
+                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/astro.svg', true) }}" alt="astro-logo">
+                </a>
+                <a href="https://www.toornament.com/pl/">
+                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/toornament.svg', true) }}" alt="toornament-logo">
+                </a>
+                <a href="#">
+                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/luke.svg', true) }}" alt="luke-logo">
+                </a>
             </div>
         </div>
 
