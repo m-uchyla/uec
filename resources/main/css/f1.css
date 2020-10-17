@@ -2642,7 +2642,7 @@ hr {
     transition: all 0.3s;
 }
 
-header-area .main-header .main-menu ul li a:hover {
+.header-area .main-header .main-menu ul li a:hover {
     background-color:#e10600;
 }
 
