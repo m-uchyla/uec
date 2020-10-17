@@ -1,6 +1,6 @@
 @extends('layouts.f1')
 @section('content')
-    <div class=" container f1-background">
+    <div class=" container-fluid f1-background">
         <!-- Title Cup -->
         <div class="section-1-f1">
             <div class="special-backgorund">
@@ -10,7 +10,7 @@
                     <div>
                         <a href="{{ route('login') }}" class="button-f1">Weź udział</a>
                     </div>
-                    <div class=" row social-f1" >
+                    <div class=" row social-f1">
                         <a class="col-md-3 item" href="https://www.facebook.com/UndergroundEsportCup">
                             <div id="content-media" class="logo-social">
                                 <i class="fab fa-facebook-square"></i>
