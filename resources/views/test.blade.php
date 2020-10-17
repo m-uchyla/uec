@@ -5,7 +5,6 @@
         <div class="section-1-f1">
             <div class="special-backgorund">
                 <h2 class="f1"> Sezon 1 </h2>
-                <br>
                 <h1 class="f1"> UEC FORMULA 1 </h1>
                     <div>
                         <a href="{{ route('login') }}" class="button-f1">Weź udział</a>
