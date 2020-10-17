@@ -66,8 +66,11 @@
                 </a>
             </div>
         </div>
-
+        <!-- newsy -->
         <div>
-
+        
+        </div>
+        <!-- description cup -->
+        
     </div>
 @endsection

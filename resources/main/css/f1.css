@@ -6991,7 +6991,7 @@ a.button-f1:hover {
     display: flex;
     justify-content: center;
     padding-top: 20rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     font-family: "f1", sans-serif;
     flex-wrap: wrap;
    }
