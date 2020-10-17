@@ -7055,7 +7055,7 @@ div.section-1-f1::after{
     max-width: 200px;
     height: 45px;
     opacity: 0.58;
-    transition: all 3s ease-in-out;
+    transition: 0.6s ease-in-out;
 }
 
 .partner .logo-partner:hover {
