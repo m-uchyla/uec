@@ -7052,5 +7052,7 @@ div.section-1-f1::after{
 
 .partner .logo-partner {
     color: #fff;
-    margin: 1rem
+    margin: 3rem 1rem;
+    max-width: 200px;
+    height: 45px;
 }
