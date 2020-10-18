@@ -7066,7 +7066,7 @@ div.section-1-f1::after{
     color: #fff;
     font-size: 35px;
     text-transform: capitalize;
-    background-image: url("../img/gallery/about2.png");
+    border: 3px groove #e10600;
 }
 
 .list-description li {
