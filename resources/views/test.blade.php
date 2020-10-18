@@ -72,9 +72,32 @@
         </div>
         <!-- description cup -->
         <div>
+        <div class="starups-area testimonial-area fix">
             <div class="starups-img">
                 <div class="play-btn"><a class="popup-video" href="https://www.youtube.com/watch?v=gv2uuj-nIJE"><i class="flaticon-null-3"></i></a></div>
             </div>
+            <div class="starups">
+                <div class="h1-testimonial-active">
+                    <div class="single-testimonial text-center">
+                        <div class="testimonial-caption ">
+                            <div class="testimonial-founder d-flex align-items-center justify-content-center mb-40">
+                                <div class="founder-img">
+                                    <img src="https://i.imgur.com/6ewtPHO.png" alt="">
+                                </div>
+                                <div class="founder-text">
+                                    <span>Krzysiek "KXN" Szymczak</span>
+                                    <p>Były manager ACTINA PACT i Pompa Team</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-top-cap">
+                                <p>Jest to jeden z najlepiej organizowanych turniejów na amatorskim szczeblu na które trafiłem. Szczególnie warto uwagę zwrócić na realizację transmisji, która jest boska. Jeśli szukasz turnieju dla swojej drużyny- UEC to najlepszy wybór</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 @endsection
