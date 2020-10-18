@@ -7081,3 +7081,8 @@ li::before {
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
   }
+
+  .starups h3 {
+      background-image: url(../img/gallery/pattern-title.svg);
+      background-size: auto;
+  }
