@@ -7065,6 +7065,10 @@ div.section-1-f1::after{
 .list-description {
     color: #fff;
     font-size: 35px;
-    list-style-type: disc;
+    list-style-type: square;
     text-transform: capitalize;
+}
+
+.list-description li {
+    padding: 2rem 0;
 }
