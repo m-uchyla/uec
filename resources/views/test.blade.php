@@ -77,10 +77,7 @@
                 <div class="play-btn"><a class="popup-video" href="https://www.youtube.com/watch?v=gv2uuj-nIJE"><i class="flaticon-null-3"></i></a></div>
             </div>
             <div class="starups">
-                <div class="h1-testimonial-active">
-                    <div class="single-testimonial text-center">
-                        <div class="testimonial-caption ">
-                            <div class="testimonial-founder d-flex align-items-center justify-content-center mb-40">
+                            <div d-flex align-items-center justify-content-center mb-40">
                                 <div class="founder-text">
                                     <ul>
                                         <li>pula nagród 0000 zł</li>
@@ -91,9 +88,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        
             </div>
         </div>
         </div>
