@@ -77,7 +77,7 @@
                 <div class="play-btn"><a class="popup-video" href="https://www.youtube.com/watch?v=gv2uuj-nIJE"><i class="flaticon-null-3"></i></a></div>
             </div>
             <div class="starups">
-                <div d-flex align-items-center justify-content-center mb-40">
+                <div class="d-flex mb-40 list-description">
                         <ul>
                             <li>pula nagród 0000 zł</li>
                             <li>20 kierowców</li>

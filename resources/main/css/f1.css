@@ -150,7 +150,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Rajdhani", sans-serif;
+    font-family: "f1", sans-serif;
     color: #1d2434;
     margin-top: 0px;
     font-style: normal;
@@ -3507,7 +3507,7 @@ nav.nav-menu-show {
     display: flex;
     align-items: center;
     width: 50%;
-    padding: 0 9%;
+    padding: 0 3%;
     background-image: url(../img/gallery/section_bg03.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -7060,4 +7060,9 @@ div.section-1-f1::after{
 
 .partner .logo-partner:hover {
     opacity: 1;
+}
+
+.list-description {
+    color: #fff;
+    font-size: 25px;
 }
