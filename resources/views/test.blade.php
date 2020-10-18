@@ -71,6 +71,10 @@
         
         </div>
         <!-- description cup -->
-        
+        <div>
+            <div class="starups-img">
+                <div class="play-btn"><a class="popup-video" href="https://www.youtube.com/watch?v=gv2uuj-nIJE"><i class="flaticon-null-3"></i></a></div>
+            </div>
+        </div>
     </div>
 @endsection
