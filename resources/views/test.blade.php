@@ -85,14 +85,15 @@
                                     <img src="https://i.imgur.com/6ewtPHO.png" alt="">
                                 </div>
                                 <div class="founder-text">
-                                    <span>Krzysiek "KXN" Szymczak</span>
-                                    <p>Były manager ACTINA PACT i Pompa Team</p>
+                                    <ul>
+                                        <li>pula nagród 0000 zł</li>
+                                        <li>20 kierowców</li>
+                                        <li>22 wyścigi</li>
+                                        <li>10 zespołów</li>
+                                        <li>3 miesiące emocji</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="testimonial-top-cap">
-                                <p>Jest to jeden z najlepiej organizowanych turniejów na amatorskim szczeblu na które trafiłem. Szczególnie warto uwagę zwrócić na realizację transmisji, która jest boska. Jeśli szukasz turnieju dla swojej drużyny- UEC to najlepszy wybór</p>
-                            </div>
-
                         </div>
                     </div>
                 </div>
