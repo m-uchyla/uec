@@ -81,9 +81,6 @@
                     <div class="single-testimonial text-center">
                         <div class="testimonial-caption ">
                             <div class="testimonial-founder d-flex align-items-center justify-content-center mb-40">
-                                <div class="founder-img">
-                                    <img src="https://i.imgur.com/6ewtPHO.png" alt="">
-                                </div>
                                 <div class="founder-text">
                                     <ul>
                                         <li>pula nagród 0000 zł</li>
