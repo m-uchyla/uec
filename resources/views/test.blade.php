@@ -78,15 +78,17 @@
             </div>
             <div class="starups">
                 <div class="d-flex mb-40">
+                    <div>
                         <h3>UEC F1 <br> Sezon 1
                         </h3>
-                        <ul class="list-description">
-                            <li>pula nagród 0000 zł</li>
-                            <li>20 kierowców</li>
-                            <li>22 wyścigi</li>
-                            <li>10 zespołów</li>
-                            <li>3 miesiące emocji</li>
-                        </ul>
+                    </div>
+                    <ul class="list-description">
+                        <li>pula nagród 0000 zł</li>
+                        <li>20 kierowców</li>
+                        <li>22 wyścigi</li>
+                        <li>10 zespołów</li>
+                        <li>3 miesiące emocji</li>
+                    </ul>
                 </div>
              </div>
         </div>
