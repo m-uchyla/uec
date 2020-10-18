@@ -7073,14 +7073,6 @@ div.section-1-f1::after{
     padding: 2rem 0;
 }
 
-li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #e10600;
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
 
   .starups h3 {
       background-image: url(../img/gallery/pattern-title.svg);

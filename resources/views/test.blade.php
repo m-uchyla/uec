@@ -79,7 +79,7 @@
             <div class="starups">
                 <div class="d-flex mb-40">
                     <div>
-                        <h3>UEC F1 <br> Sezon 1
+                        <h3 class="h1">UEC F1 <br> Sezon 1
                         </h3>
                     </div>
                     <ul class="list-description">
