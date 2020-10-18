@@ -77,19 +77,16 @@
                 <div class="play-btn"><a class="popup-video" href="https://www.youtube.com/watch?v=gv2uuj-nIJE"><i class="flaticon-null-3"></i></a></div>
             </div>
             <div class="starups">
-                            <div d-flex align-items-center justify-content-center mb-40">
-                                <div class="founder-text">
-                                    <ul>
-                                        <li>pula nagród 0000 zł</li>
-                                        <li>20 kierowców</li>
-                                        <li>22 wyścigi</li>
-                                        <li>10 zespołów</li>
-                                        <li>3 miesiące emocji</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        
-            </div>
+                <div d-flex align-items-center justify-content-center mb-40">
+                        <ul>
+                            <li>pula nagród 0000 zł</li>
+                            <li>20 kierowców</li>
+                            <li>22 wyścigi</li>
+                            <li>10 zespołów</li>
+                            <li>3 miesiące emocji</li>
+                        </ul>
+                </div>
+             </div>
         </div>
         </div>
     </div>
