@@ -6931,7 +6931,7 @@ del {
 }
 
 .f1-background {
-    background: rgb(0,0,0);
+    background: #15151e;
 }
 
 .section-1-f1 {
@@ -7043,6 +7043,7 @@ div.section-1-f1::after{
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 
 .logo-social i {
@@ -7094,7 +7095,7 @@ ul.slicknav_nav {
 }
 
 .f1-sec3 h3 {
-    color: red;
+    color: #e10600;
     font-size: 3rem;
 }
 
@@ -7118,6 +7119,6 @@ ul.slicknav_nav {
 }
 
 .sec3-content div i {
-    color: red;
+    color: #e10600;
     font-size: 10rem;
 }
