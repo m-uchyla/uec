@@ -5983,7 +5983,8 @@ del {
 .genric-btn.danger {
     color: #fff;
     background: #e10600;
-    border: 1px solid transparent
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
 
 .genric-btn.danger:hover {
