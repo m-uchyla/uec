@@ -7090,11 +7090,16 @@ ul.slicknav_nav {
 }
 
 .f1-sec3 {
-    display: flex;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
-.sec3-content h3{
+.sec3-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec3-content div h3 {
     color: #fff;
     display: flex;
 }
