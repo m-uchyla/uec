@@ -7097,16 +7097,17 @@ ul.slicknav_nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .sec3-content div h3 {
     color: #fff;
     display: flex;
     margin: 0 3rem;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .sec3-content div i {
     color: red;
-    font-size: 7rem;
+    font-size: 5rem;
 }
