@@ -7092,6 +7092,7 @@ ul.slicknav_nav {
 
 .f1-sec3 {
     text-align: center;
+    margin: 5rem 0;
 }
 
 .f1-sec3 h3 {
@@ -7114,7 +7115,7 @@ ul.slicknav_nav {
 .sec3-content div h3 {
     color: #fff;
     display: flex;
-    margin: 0 3rem;
+    margin: 2rem 3rem;
     font-size: 3rem;
 }
 
