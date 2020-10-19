@@ -7082,9 +7082,9 @@ div.section-1-f1::after{
   }
 
 ul.slicknav_nav {
-    background: #15151e !important;
+    background: #15151e;
 }
 
 .slicknav_nav a { 
-    color: #fff !important;
+    color: #fff;
 }
