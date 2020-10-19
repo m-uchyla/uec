@@ -7080,3 +7080,11 @@ div.section-1-f1::after{
       background-image: url(../img/gallery/pattern-title.svg);
       background-size: auto;
   }
+
+ul.slicknav_nav {
+    background: #15151e !important;
+}
+
+.slicknav_nav a { 
+    color: #fff !important;
+}
