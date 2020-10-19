@@ -11,6 +11,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('resources/main/img/favicon.png', true) }}">
     @include('css_f1')
     <script data-ad-client="ca-pub-9696942259354560" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://kit.fontawesome.com/04d0fe2525.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- ? Preloader Start -->
