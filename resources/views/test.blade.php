@@ -68,7 +68,7 @@
         </div>
         <!-- newsy -->
         <div>
-        
+        @include('slider')
         </div>
         <!-- description cup -->
         <div class="f1-sec3">
