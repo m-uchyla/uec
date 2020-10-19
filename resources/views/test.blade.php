@@ -71,28 +71,28 @@
         
         </div>
         <!-- description cup -->
-        <div>
+        <div class="f1-sec3">
             <h3> UEC F1 </h3>
             <h2>Kurwa nie wiem co napisać</h2>
+            <div clas="sec3-content">
+                <div>
+                    <i class="fas fa-coins"></i>
+                    <h3 class=>Pula nagród 0000zł </h3>
+                </div>
+                <div>
+                    <i class="fas fa-users"></i>
+                    <h3>20 kierowców</h3>
+                </div>
+                <div>
+                    <i class="fas fa-user-friends"></i>
+                    <h3>10 Zespołów</h3>
+                </div>
+                <div>
+                    <i class="fas fa-flag-checkered"></i>
+                    <h3>12 wyścigów</h3>
+                </div>
+            </div>
         </div>
-            <div>
-                <i class="fas fa-coins"></i>
-                <h3>Pula nagród 0000zł </h3>
-            </div>
-            <div>
-                <i class="fas fa-users"></i>
-                <h3>20 kierowców</h3>
-            </div>
-            <div>
-                <i class="fas fa-user-friends"></i>
-                <h3>10 Zespołów</h3>
-            </div>
-            <div>
-                <i class="fas fa-flag-checkered"></i>
-                <h3>12 wyścigów</h3>
-            </div>
-        
-        <div>
         <div class="starups-area testimonial-area fix">
             <div class="starups-img">
                 <div class="play-btn"><a class="popup-video" href="https://www.youtube.com/watch?v=gv2uuj-nIJE"><i class="flaticon-null-3"></i></a></div>

@@ -7088,3 +7088,13 @@ ul.slicknav_nav {
 .slicknav_nav a { 
     color: #fff;
 }
+
+.f1-sec3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sec3-content h3{
+    color: #fff;
+    display: flex;
+}
