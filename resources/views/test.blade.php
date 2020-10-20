@@ -73,7 +73,7 @@
         <!-- description cup -->
         <div class="f1-sec3">
             <h3> UEC F1 </h3>
-            <h2>Kurwa nie wiem co napisać</h2>
+            <h2>Co nas czeka ?</h2>
             <div class="sec3-content">
                 <div>
                     <i class="fas fa-coins"></i>
