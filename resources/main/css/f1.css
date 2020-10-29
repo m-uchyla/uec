@@ -7128,4 +7128,11 @@ ul.slicknav_nav {
 .film-f1 {
     background-image: url(..//img/gallery/background-sec-one.jpg);
     margin-top: 2rem;
+    margin: auto;
+    padding: 250px 300px;
+    width: 1200px;
+}
+
+.film-f1 a i {
+    font-size: 5rem;
 }
