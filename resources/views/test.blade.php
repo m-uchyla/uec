@@ -75,7 +75,7 @@
             <h3> UEC F1 </h3>
             <h2>Co nas czeka ?</h2>
             <div class="film-f1">
-                
+                <a href="#"><i class="flaticon-null-3"></i></a>
             </div>
             <div class="sec3-content">
                 <div>
