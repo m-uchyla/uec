@@ -7103,13 +7103,14 @@ ul.slicknav_nav {
 .f1-sec3 h2 {
     color: #fff;
     font-size: 4rem;
+    padding-bottom: 4rem;
 }
 
 .sec3-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20em;
+    margin-top: 4em;
 }
 
 .sec3-content div h3 {
@@ -7129,10 +7130,12 @@ ul.slicknav_nav {
     background-image: url(..//img/gallery/background-sec-one.jpg);
     margin-top: 2rem;
     margin: auto;
-    padding: 250px 300px;
+    padding: 200px 300px;
     width: 1200px;
+    border: solid red 4px;
+    border-radius: 10px;
 }
 
 .film-f1 a i {
-    font-size: 5rem;
+    font-size: 6rem;
 }
