@@ -7110,7 +7110,7 @@ ul.slicknav_nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 4em;
+    margin-top: 3em;
 }
 
 .sec3-content div h3 {
@@ -7122,7 +7122,7 @@ ul.slicknav_nav {
 
 .sec3-content div i {
     color: #e10600;
-    font-size: 10rem;
+    font-size: 7.5rem;
     text-shadow: 1px 1px 1px #ff7878
 } 
 
@@ -7138,4 +7138,11 @@ ul.slicknav_nav {
 
 .film-f1 a i {
     font-size: 6rem;
+    transition: all 0.3s;
+    color: white;
+
+}
+
+.film-f1 a i:hover {
+ color: #e10600;
 }
