@@ -74,8 +74,8 @@
         <div class="f1-sec3">
             <h3> UEC F1 </h3>
             <h2>Co nas czeka ?</h2>
-            <div class="starups-img">
-                <div class="play-btn"><a class="popup-video" href="https://www.youtube.com/watch?v=gv2uuj-nIJE"><i class="flaticon-null-3"></i></a></div>
+            <div class="film-f1">
+                
             </div>
             <div class="sec3-content">
                 <div>
