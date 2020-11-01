@@ -29,6 +29,9 @@
                                                 </ul>
                                             </li>
                                             <li>
+                                                <p>UEC F1</p>
+                                            </li>
+                                            <li>
                                                 <a href="{{ route('regulamin') }}">Zasady</a>
                                                 <ul class="submenu">
                                                     <li><a href="{{ route('regulamin') }}">Regulamin turnieju</a></li>
