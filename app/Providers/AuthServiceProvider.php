@@ -34,7 +34,7 @@ class AuthServiceProvider extends ServiceProvider
         });
 
         Gate::define('accessDashboard', function($user) {
-            return $user->role(['0','1']);
+            return $user->role(['0','1', '4']);
         });
 
         Gate::define('accessUsers', function($user) {
