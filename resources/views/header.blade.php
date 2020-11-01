@@ -29,7 +29,7 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <p>UEC F1</p>
+                                                <p style="color:#6d6d6d">UEC F1</p>
                                             </li>
                                             <li>
                                                 <a href="{{ route('regulamin') }}">Zasady</a>
