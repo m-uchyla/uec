@@ -7153,6 +7153,8 @@ ul.slicknav_nav {
     padding: 15rem 0rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 a.button-f1-sec4 {
@@ -7167,7 +7169,7 @@ a.button-f1-sec4 {
     transition: all 0.5s ease-in-out;
     border-radius: 0;
     min-width: 250px;
-    margin: 0rem 3rem;
+    margin: 1rem 3rem;
 }
 
 a.button-f1-sec4:hover {
@@ -7179,5 +7181,11 @@ a.button-f1-sec4:hover {
 
 .sec4-title {
     color: #fff ;
+    text-align: center;
+    font-size: 16rem;
+    text-transform: uppercase;
+    padding: 4rem;
+    
+
 
 }
