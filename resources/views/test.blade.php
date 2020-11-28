@@ -99,7 +99,8 @@
         <!-- button -->
         <div class="section-1-f1">
             <div class="special-backgorund">
-                <div class="section-4">
+                <h2 class="sec4-title">sprawdź wyniki</h2>
+                <div class="button-section-4">
                     <a class="button-f1-sec4">Harmonogram</a>
                     <a class="button-f1-sec4">Klasyfikacja kierowców</a>
                     <a class="button-f1-sec4">Klasyfikacja kierowców</a>
