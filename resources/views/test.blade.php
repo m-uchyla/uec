@@ -100,9 +100,9 @@
         <div class="section-1-f1">
             <div class="special-backgorund">
                 <div class="section-4">
-                    <a class="button-f1">Harmonogram</a>
-                    <a class="button-f1">Klasyfikacja kierowców</a>
-                    <a class="button-f1">Klasyfikacja kierowców</a>
+                    <a class="button-f1-sec4">Harmonogram</a>
+                    <a class="button-f1-sec4">Klasyfikacja kierowców</a>
+                    <a class="button-f1-sec4">Klasyfikacja kierowców</a>
                 </div>
             </div>
         </div>
