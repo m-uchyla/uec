@@ -21,7 +21,7 @@ Route::get('/bracket', 'APIController@getBracket')->name('bracket');
 Route::get('/teams', 'APIController@getList')->name('teams');
 Route::get('/schedule', 'APIController@getSchedule')->name('schedule');
 Route::get('/test', 'ArticleInsertController@getTest')->name('test');
-Route::get('/schedule-f1', function () {return view('schedule-f1');});
+Route::get('/schedule-f1', function () {return view('schedule-f1');})->name("schedule-f1");
 
 Route::get('article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
 
