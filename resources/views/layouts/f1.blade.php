@@ -34,7 +34,7 @@
     </main>
         
     
-    @include('footer')
+    @include('footerf1')
 
     <!-- Scroll Up -->
     <!-- <div id="back-top" >
