@@ -4,10 +4,10 @@
     <div class="container">
     <div class="row">
         <div class="col-sm col-md-6 col-lg-4">
-            
+        chuj coś tam
         </div>
-        <div class="col-sm col-md-6 col-lg-4">
-        One of three columns
+        <div class="col-sm col-md-6 col-lg-4">\
+        chuj coś tam
         </div>
         <div class="col-sm col-md-6 col-lg-4">
         One of three columns
