@@ -7197,6 +7197,8 @@ a.button-f1-sec4:hover {
 }
 
 .table-f1 {
+    border-color: red;
+    border-style: solid;
 }
 
 .margin {
@@ -7209,7 +7211,7 @@ a.button-f1-sec4:hover {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
     .margin {
         margin: 0px 6rem;
     }
