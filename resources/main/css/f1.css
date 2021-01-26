@@ -6920,6 +6920,10 @@ del {
     margin-bottom: 10px
 }
 
+.slicknav_nav .slicknav_row:hover, .slicknav_nav .slicknav_row:hover .slicknav_arrow {
+    color: #e10600 !important;
+}
+
 .f1-background {
     background: rgb(0,0,0);
 }
