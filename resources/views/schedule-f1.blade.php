@@ -10,7 +10,7 @@
             <div class="col-sm col-md-6 col-lg-4">
             <p class="schedule-name">Bahrian</p>
             </div>
-            <div class="col-sm col-md-6 col-lg-4">\
+            <div class="col-sm col-md-6 col-lg-4">
             <p class="schedule-name">Wietnam</p>
             </div>
             <div class="col-sm col-md-6 col-lg-4">

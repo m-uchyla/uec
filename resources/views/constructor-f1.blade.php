@@ -3,7 +3,7 @@
 <head>
 <title>Kwalifikacja Konstruktorów | UEC F1</title>
 </head>
-<div class="f1-background pb-15" >
+<div class="f1-background pb-19" >
     <h1 class="name-page">Klasyfikacja Konstruktorów</h1>
     <div class="margin">
         <table class="table table-striped table-dark table-f1">
