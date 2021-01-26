@@ -1,5 +1,8 @@
 @extends('layouts.f1')
 @section('content')
+<head>
+<title>Kwalifikacja Konstruktorów | UEC F1</title>
+</head>
 <div class="f1-background">
     <h1 class="name-page">Terminarz</h1>
     <div class="container">

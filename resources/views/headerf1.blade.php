@@ -21,19 +21,19 @@
 									<ul id="navigation">
                                         <li><a href="{{ route('homepage') }}">Strona główna</a></li>
                                             <li>
-                                                <a href="{{ route('bracket') }}">Nasze gry</a>
+                                                <a href="{{ route('homepage') }}">Nasze gry</a>
                                                 <ul class="submenu">
                                                     <li><a href="{{ route('homepage') }}">CS:GO</a></li>
-                                                    <li><a href="{{ route('bracket') }}">Formula 1</a></li>
+                                                    <li><a href="{{ route('f1') }}">Formula 1</a></li>
                                                     <li><a href="{{ route('teams') }}">Raindow Six Siege</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="{{ route('bracket') }}">Bieżący Sezon</a>
+                                                <a href="{{ route('f1') }}">Bieżący Sezon</a>
                                                 <ul class="submenu">
-                                                    <li><a href="{{ route('schedule') }}">Terminarz</a></li>
-                                                    <li><a href="{{ route('bracket') }}">Kwalifikacja kierowców</a></li>
-                                                    <li><a href="{{ route('teams') }}">Kwalifikacja Konstruktorów</a></li>
+                                                    <li><a href="{{ route('schedule-f1') }}">Terminarz</a></li>
+                                                    <li><a href="{{ route('team-f1') }}">Kwalifikacja kierowców</a></li>
+                                                    <li><a href="{{ route('constructor-f1') }}">Kwalifikacja Konstruktorów</a></li>
                                                 </ul>
                                             </li>
                                             <li>

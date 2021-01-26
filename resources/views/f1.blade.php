@@ -1,5 +1,8 @@
 @extends('layouts.f1')
 @section('content')
+<head>
+<title>UEC F1</title>
+</head>
     <div class="f1-background">
         <!-- Title Cup -->
         <div class="section-1-f1">
