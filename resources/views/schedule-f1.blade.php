@@ -1,7 +1,7 @@
 @extends('layouts.f1')
 @section('content')
 <head>
-<title>Terminarz F1</title>
+<title>Terminarz | UEC F1</title>
 </head>
 <div class="f1-background">
     <h1 class="name-page">Terminarz</h1>
