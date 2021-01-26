@@ -105,8 +105,8 @@
                 <h2 class="sec4-title">sprawdź wyniki</h2>
                 <div class="button-section-4">
                     <a href="{{ route('schedule-f1') }}" class="button-f1-sec4">Harmonogram</a>
-                    <a class="button-f1-sec4">Klasyfikacja Kierowców</a>
-                    <a class="button-f1-sec4">Klasyfikacja Zespołów</a>
+                    <a href="{{ route('team-f1') }}" class="button-f1-sec4">Klasyfikacja Kierowców</a>
+                    <a href="{{ route('constructor-f1') }}" class="button-f1-sec4">Klasyfikacja Zespołów</a>
                 </div>
             </div>
         </div>
