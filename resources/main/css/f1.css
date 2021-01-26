@@ -7197,7 +7197,7 @@ a.button-f1-sec4:hover {
 }
 
 .table-f1 {
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .margin {
@@ -7226,6 +7226,6 @@ a.button-f1-sec4:hover {
     border-color: #e10600 !important;
 }
 
-#border {
-    border: 0px;
+#no-border {
+    border-top: transparent;
 }
