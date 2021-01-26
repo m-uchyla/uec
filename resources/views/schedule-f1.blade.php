@@ -1,7 +1,7 @@
 @extends('layouts.f1')
 @section('content')
 <div class="f1-background">
-    <table class="table table-striped table-dark">
+    <table class="table table-striped table-dark table-f1">
     <thead>
         <tr>
         <th scope="col">#</th>
