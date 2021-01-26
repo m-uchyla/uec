@@ -25,7 +25,7 @@
                                                 <ul class="submenu">
                                                     <li><a href="{{ route('homepage') }}">CS:GO</a></li>
                                                     <li><a href="{{ route('f1') }}">Formula 1</a></li>
-                                                    <li><a href="{{ route('#') }}">Raindow Six Siege</a></li>
+                                                    <li><a href="{{ route('homepage') }}">Raindow Six Siege</a></li>
                                                 </ul>
                                             </li>
                                             <li>
