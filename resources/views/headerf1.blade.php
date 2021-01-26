@@ -39,7 +39,7 @@
                                             <li>
                                                 <a href="{{ route('regulamin') }}">Zasady</a>
                                                 <ul class="submenu">
-                                                    <li><a href="{{ route('regulamin') }}">Regulamin turnieju</a></li>
+                                                    <li><a href="{{ route('regulamin-f1') }}">Regulamin turnieju</a></li>
                                                     <li><a href="{{ route('terms') }}">Regulamin serwisu</a></li>
                                                 </ul>
                                             </li>
