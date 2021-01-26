@@ -7210,9 +7210,15 @@ a.button-f1-sec4:hover {
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1500px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
     .margin {
         margin: 0px 6rem;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+    .margin {
+        margin: 0px 10rem;
     }
 }
 
