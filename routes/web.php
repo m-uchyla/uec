@@ -24,6 +24,7 @@ Route::get('/f1', 'ArticleInsertController@getTest')->name('f1');
 Route::get('/schedule-f1', function () {return view('schedule-f1');})->name("schedule-f1");
 Route::get('/team-f1', function () {return view('team-f1');})->name("team-f1");
 Route::get('/constructor-f1', function () {return view('constructor-f1');})->name("constructor-f1");
+Route::get('/regulamin-f1', function () {return view('regulamin-f1');})->name("regulamin-f1");
 
 Route::get('article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
 
