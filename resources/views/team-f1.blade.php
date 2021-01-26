@@ -3,7 +3,11 @@
 <head>
 <title>Kwalifikacja Kierowców | UEC F1</title>
 </head>
-
+<div class="f1-background pb-5" >
+    <h1 class="name-page">Klasyfikacja kierowców</h1>
+    <div class="margin">
+        <table class="table table-striped table-dark table-f1">
+        <thead>
             <tr id="head-border">
             <th scope="col" id="no-border">#</th>
             <th scope="col" id="no-border">Nick</th>
@@ -37,11 +41,7 @@
             <td>@mdo</td>
             </tr>
             <tr>
-            <th scope="row">5</th><div class="f1-background pb-5" >
-    <h1 class="name-page">Klasyfikacja kierowców</h1>
-    <div class="margin">
-        <table class="table table-striped table-dark table-f1">
-        <thead>
+            <th scope="row">5</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
