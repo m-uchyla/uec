@@ -74,7 +74,7 @@ class ArticleInsertController extends Controller {
     public function getTest(){
 
         $featured = DB::table('articles')->where('isFeatured','>',0)->orderBy('isFeatured','asc')->get();
-        return view('test', ['featured' => $featured]);
+        return view('f1', ['featured' => $featured]);
     }
 
     public function edit(Request $request){
