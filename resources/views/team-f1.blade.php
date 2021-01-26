@@ -1,5 +1,8 @@
 @extends('layouts.f1')
 @section('content')
+<head>
+<title>Kwalifikacja kierowców|UEC</title>
+</head>
 <div class="f1-background pb-5" >
     <h1 class="name-page">Klasyfikacja kierowców</h1>
     <div class="margin">
