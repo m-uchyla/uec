@@ -8,7 +8,7 @@
     <div class="margin">
         <table class="table table-striped table-dark table-f1">
         <thead>
-            <tr>
+            <tr id="head-border">
             <th scope="col" id="no-border">#</th>
             <th scope="col" id="no-border">Nick</th>
             <th scope="col" id="no-border">Zespół</th>
