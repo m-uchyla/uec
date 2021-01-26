@@ -7200,11 +7200,11 @@ a.button-f1-sec4:hover {
 }
 
 .margin {
-    margin: 0px 15rem;
+    margin: 0px 25rem;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
     .margin {
-        margin: 0px 5rem;
+        margin: 0px 3rem;
     }
 }
