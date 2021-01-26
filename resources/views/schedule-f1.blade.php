@@ -1,7 +1,7 @@
 @extends('layouts.f1')
 @section('content')
-<div class="f1-background">
-    <h1 class="name-page">Terminarz</h1>
+<div class="f1-background pb-3" >
+    <h1 class="name-page">Klasyfikacja kierowców</h1>
         <table class="table table-striped table-dark table-f1">
         <thead>
             <tr>
