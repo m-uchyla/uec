@@ -7233,3 +7233,7 @@ a.button-f1-sec4:hover {
 .table-f1 tbody tr th {
     color:#e10600 !important ;
 }
+
+.table-f1 thead tr th {
+    color:#e10600 !important ;
+}
