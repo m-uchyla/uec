@@ -7214,3 +7214,7 @@ a.button-f1-sec4:hover {
         margin: 0px 6rem;
     }
 }
+
+.table-dark td, .table-dark th, .table-dark thead th {
+    border-color: #e10600 !important;
+}
