@@ -7201,6 +7201,16 @@ a.button-f1-sec4:hover {
     text-shadow: 3px 5px 10px rgb(255 8 0 / 50%);
 }
 
+@media screen and (max-width: 750px) {
+    .name-page {
+        color: #e10600;
+        text-align: center;
+        font-size: 5rem;
+        font-family: "f1", sans-serif;
+        padding-top: 15rem;
+        padding-bottom: 7rem;
+        text-shadow: 3px 5px 10px rgb(255 8 0 / 50%);
+}
 .table-f1 {
     border-radius: 20px;
 }
