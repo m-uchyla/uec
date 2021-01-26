@@ -7233,6 +7233,8 @@ a.button-f1-sec4:hover {
 
 #no-border {
     border-top: transparent;
+    background-color: #080808;
+    border: outset;
 }
 
 .table-f1 tbody tr th {
@@ -7242,3 +7244,4 @@ a.button-f1-sec4:hover {
 .table-f1 thead tr th {
     color:#e10600 !important ;
 }
+
