@@ -6,10 +6,10 @@
             <table class="table table-striped table-dark table-f1">
             <thead>
                 <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nick</th>
-                <th scope="col">Zespół</th>
-                <th scope="col">Punkty</th>
+                <th scope="col" id="no-border"></th>
+                <th scope="col" id="no-border">Nick</th>
+                <th scope="col" id="no-border">Zespół</th>
+                <th scope="col" id="no-border">Punkty</th>
                 </tr>
             </thead>
             <tbody>

@@ -7197,8 +7197,7 @@ a.button-f1-sec4:hover {
 }
 
 .table-f1 {
-    border-color: red;
-    border-style: solid;
+    border-radius: 5px;
 }
 
 .margin {
@@ -7219,4 +7218,8 @@ a.button-f1-sec4:hover {
 
 .table-dark td, .table-dark th, .table-dark thead th {
     border-color: #e10600 !important;
+}
+
+#border {
+    border: 0px;
 }
