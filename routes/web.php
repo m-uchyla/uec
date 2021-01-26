@@ -20,7 +20,7 @@ Route::get('/regulamin', 'ArticleInsertController@getRegulamin')->name('regulami
 Route::get('/bracket', 'APIController@getBracket')->name('bracket');
 Route::get('/teams', 'APIController@getList')->name('teams');
 Route::get('/schedule', 'APIController@getSchedule')->name('schedule');
-Route::get('/test', 'ArticleInsertController@getTest')->name('test');
+Route::get('/f1', 'ArticleInsertController@getTest')->name('f1');
 Route::get('/schedule-f1', function () {return view('schedule-f1');})->name("schedule-f1");
 Route::get('/team-f1', function () {return view('team-f1');})->name("team-f1");
 Route::get('/constructor-f1', function () {return view('constructor-f1');})->name("constructor-f1");
