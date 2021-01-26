@@ -6931,7 +6931,7 @@ del {
 }
 
 .f1-background {
-    background: #32383e;
+    background: #212529;
 }
 
 .section-1-f1 {
@@ -7200,7 +7200,7 @@ a.button-f1-sec4:hover {
 }
 
 .margin {
-    margin: 0px 25rem;
+    margin: 0px 40rem;
 }
 
 @media screen and (max-width: 750px) {

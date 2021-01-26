@@ -1,6 +1,6 @@
 @extends('layouts.f1')
 @section('content')
-<div class="f1-background pb-3" >
+<div class="f1-background pb-5" >
     <h1 class="name-page">Klasyfikacja kierowców</h1>
         <div class="margin">
             <table class="table table-striped table-dark table-f1">
