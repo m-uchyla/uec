@@ -7248,3 +7248,7 @@ a.button-f1-sec4:hover {
     border-color: red;
     background: #080808;
 }
+
+.pb-10 {
+    padding: 10rem
+}
