@@ -1,7 +1,7 @@
 @extends('layouts.f1')
 @section('content')
 <div class="f1-background">
-    <h1 class="schedule-name">Terminarz</h1>
+    <h1 class="name-page">Terminarz</h1>
     <div class="container">
         <div class="row">
             <div class="col-sm col-md-6 col-lg-4">
