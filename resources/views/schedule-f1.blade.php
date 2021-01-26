@@ -1,46 +1,35 @@
 @extends('layouts.f1')
 @section('content')
 <div class="f1-background">
-    <h1 class="name-page">Terminarz</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm col-md-6 col-lg-4">
-            <p class="schedule-name">Bahrian</p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4">\
-            <p class="schedule-name">Wietnam</p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4">
-            <p class="schedule-name">Azerbejdżan</p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4">
-            <p class="schedule-name">Monako</p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4">
-            <p class="schedule-name">Kanada</p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4">
-            <p class="schedule-name">Austria</p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4">
-            <p class="schedule-name">Wielka Brytania</p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4">
-            <p class="schedule-name">Węgry</p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4">
-            <p class="schedule-name">Belgia</p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4">
-            <p class="schedule-name">Holandia</p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4">
-            <p class="schedule-name">Włochy</p>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4">
-            <p class="schedule-name">Brazylia</p>
-            </div>
-        </div>
-    </div>
-</div>-
+    <table class="table table-striped table-dark">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        </tr>
+        <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        </tr>
+        <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
 @endsection
