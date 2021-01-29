@@ -7266,7 +7266,7 @@ a.button-f1-sec4:hover {
 .schedule-tor {
     background-color: rgba(255, 255, 255, 0.2);
     width:440px;
-    height:440px;
+    height:420px;
     padding: 20px;
     color:white;
     border-bottom: solid 1px;
@@ -7283,12 +7283,11 @@ a.button-f1-sec4:hover {
     border-radius: 0px 0px 10px 0px;
     border-color: #e10600 ;
     text-decoration: none;
-    height:640px;
+    height:600px;
 }
 
 .schedule-track {
     max-width: 400px;
-    padding-left:40px;
     padding-right:40px;
     float:left;
 }
@@ -7311,20 +7310,28 @@ a.button-f1-sec4:hover {
     border: 1px solid black;
 }
 
-.schedule-track-date {
+.schedule-box {
     line-height: 40px;
     width:100%;
     font-size: 20px;
+    float:left;
+    border: 1px solid gray;
+}
+
+.schedule-title {
+    color:gray;
+    font-size:10px;
+    text-align: left;
+}
+
+.schedule-track-date {
     font-weight:1000;
-    text-align:center;
+    text-align: right;
     float:left;
 }
 
 .schedule-track-name {
-    line-height: 40px;
-    width:100%;
-    font-size: 20px;
     font-weight:1000;
-    text-align:center;
+    text-align: right;
     float:left;
 }

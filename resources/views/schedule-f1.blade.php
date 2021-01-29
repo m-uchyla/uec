@@ -13,8 +13,19 @@
                 <div class="schedule-name">Bahrajn</div>
                 <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/bahrain_flag.png', true) }}" alt="bahrain-flag">
                 <img class="schedule-track" src="{{ asset('resources/main/img/tracks/bahrain1.png', true) }}" alt="bahrain-track">
-                <div class="schedule-track-date">3 marca 2021</div>
-                <div class="schedule-track-name">Bahrain International Circuit</div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Data wyścigu</div>
+                    <div class="schedule-track-date">3 marca 2021</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Nazwa toru</div>
+                    <div class="schedule-track-name">Bahrain International Circuit</div>
+                </div>
+                <!--
+                <div class="schedule-track-lengh">5.412 km</div>
+                <div class="schedule-track-laps">29</div>
+                <div class="schedule-track-racelengh">Bahrain International Circuit</div> 
+                <!-->
             </div>
             <div class="col-sm col-md-6 col-lg-4 term-tor">
                 <p class="schedule-name">Wietnam</p>
