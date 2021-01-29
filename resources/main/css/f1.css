@@ -7329,7 +7329,7 @@ a.button-f1-sec4:hover {
     float:left;
     border-top: solid 1px;
     border-right: solid 1px;
-    border-radius: 0px 0px 10px 0px;
+    border-radius: 0px 10px 0px 0px;
     border-color:gray;
     margin-bottom:10px;
 }
