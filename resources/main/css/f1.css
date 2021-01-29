@@ -7266,6 +7266,7 @@ a.button-f1-sec4:hover {
 
 .schedule-tor {
     background-color: rgba(255, 255, 255, 0.2);
+    width:440px;
     height:440px;
     padding: 20px;
     color:white;
@@ -7295,7 +7296,7 @@ a.button-f1-sec4:hover {
 
 .schedule-name {
     float:left;
-    font-size: 26px;
+    font-size: 30px;
     width:60%;
     max-height: 40px;
     color:white;
@@ -7318,17 +7319,6 @@ a.button-f1-sec4:hover {
     border-bottom: solid 1px;
     border-right: solid 1px;
     border-radius: 0px 0px 10px 0px;
-    border-color:gray;
-    margin-bottom:10px;
-}
-
-.schedule-box-results {
-    width:100%;
-    font-size: 20px;
-    float:left;
-    border-top: solid 1px;
-    border-right: solid 1px;
-    border-radius: 0px 10px 0px 0px;
     border-color:gray;
     margin-bottom:10px;
 }
@@ -7358,30 +7348,11 @@ a.button-f1-sec4:hover {
     clear:both;
 }
 
-.button-section-5 {
-    justify-content: center;
-    flex-wrap: wrap;
-    height:40px;
-    float:left;
-    padding-left:30%;
-}
-
-a.button-f1-sec5 {
-    background-color: #e10600;
-    border: 3px solid #e10600;
-    color: #fff !important;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    border-radius: 0;
-    width: 250px;
-}
-
-a.button-f1-sec5:hover {
-    color: #e10600 !important;
-    background-color: transparent;
-    box-shadow: 0 0 40px 2px rgba(255, 8, 0, 0);
-    text-decoration: none;
+.section-4-f1 {
+    background-image: url("../img/gallery/background-sec-4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "f1", sans-serif;
+    background-size: 100%;
 }
