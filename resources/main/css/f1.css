@@ -7274,7 +7274,7 @@ a.button-f1-sec4:hover {
     border-radius: 0px;
     border-color: transparent;
     transition: all 0.3s;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .schedule-tor:hover {
@@ -7328,7 +7328,7 @@ a.button-f1-sec4:hover {
     text-align: left;
 }
 
-.schedule-track-date {
+.schedule-data {
     line-height: 30px;
     font-weight:1000;
     text-align: right;
@@ -7336,10 +7336,9 @@ a.button-f1-sec4:hover {
     display: inline;
 }
 
-.schedule-track-name {
-    line-height: 30px;
-    font-weight:1000;
-    text-align: right;
-    float:left;
-    display: inline;
+.schedule-header {
+    color:white;
+    font-size:20px;
+    margin-bottom:10px;
+    text-align:left;
 }
