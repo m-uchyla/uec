@@ -100,7 +100,7 @@
             </div>
         </div>
         <!-- button -->
-        <div class="section-1-f1">
+        <div class="section-4-f1">
             <div class="special-backgorund">
                 <h2 class="sec4-title">sprawdź wyniki</h2>
                 <div class="button-section-4">

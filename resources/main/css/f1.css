@@ -7154,7 +7154,8 @@ ul.slicknav_nav {
 }
 
 .button-section-4 {
-    padding: 15rem 0rem;
+    padding-top: 15rem;
+    padding-bottom: 30rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -7188,7 +7189,7 @@ a.button-f1-sec4:hover {
     text-align: center;
     font-size: 7rem;
     text-transform: uppercase;
-    padding-top: 7rem;
+    padding-top: 15rem;
 }
 
 .name-page {
@@ -7346,4 +7347,13 @@ a.button-f1-sec4:hover {
     margin-bottom:10px;
     text-align:left;
     clear:both;
+}
+
+.section-4-f1 {
+    background-image: url("../img/gallery/background-sec-4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "f1", sans-serif;
+    background-size: 100%;
 }
