@@ -47,18 +47,28 @@
                         <div class="schedule-data">Bahrain International Circuit</div>
                     </div>
                     <div class="schedule-header">Wyniki wyścigu</div>
-                    <div class="schedule-box-results">
-                        <div class="schedule-data">1. Jan Kowalski</div>
-                    </div>
-                    <div class="schedule-box-results">
-                        <div class="schedule-data">2. Kowal Jankowski</div>
-                    </div>
-                    <div class="schedule-box-results">
-                        <div class="schedule-data">3. Michał Michałowski</div> 
-                    </div>
-                    <div class="button-section-5">
-                        <a href="{{ route('schedule-f1') }}" class="button-f1-sec5">Zobacz wyniki</a>
-                    </div>
+                    <ul>
+                        <li>
+                        <div class="schedule-box-results">
+                            <div class="schedule-data">1. Jan Kowalski</div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="schedule-box-results">
+                            <div class="schedule-data">2. Kowal Jankowski</div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="schedule-box-results">
+                            <div class="schedule-data">3. Michał Michałowski</div> 
+                        </div>
+                        </li>
+                        <li>
+                        <div class="button-section-5">
+                            <a href="{{ route('schedule-f1') }}" class="button-f1-sec5">Zobacz wyniki</a>
+                        </div>
+                        </li>
+                    </ul>
                 </div> 
             </div>
             <div class="col-sm col-lg-4">
