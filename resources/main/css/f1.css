@@ -7323,6 +7323,17 @@ a.button-f1-sec4:hover {
     margin-bottom:10px;
 }
 
+.schedule-box-results {
+    width:100%;
+    font-size: 20px;
+    float:left;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    border-radius: 0px 0px 10px 0px;
+    border-color:gray;
+    margin-bottom:10px;
+}
+
 .schedule-title {
     color:white;
     font-size:10px;

@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-                <div class="schedule-name">Bahrajn</div>
+                <!--<div class="schedule-name">Bahrajn</div>
                 <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/bahrain_flag.png', true) }}" alt="bahrain-flag">
                 <img class="schedule-track" src="{{ asset('resources/main/img/tracks/bahrain1.png', true) }}" alt="bahrain-track">
                 <div class="schedule-box">
@@ -33,6 +33,27 @@
                 <div class="schedule-box">
                     <div class="schedule-title">Długość wyścigu</div>
                     <div class="schedule-data">156.948 km</div> 
+                </div> <!-->
+                <div class="schedule-name">Bahrajn</div>
+                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/bahrain_flag.png', true) }}" alt="bahrain-flag">
+                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/bahrain1.png', true) }}" alt="bahrain-track">
+                <div class="schedule-box">
+                    <div class="schedule-title">Data wyścigu</div>
+                    <div class="schedule-data">3 marca 2021</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Nazwa toru</div>
+                    <div class="schedule-data">Bahrain International Circuit</div>
+                </div>
+                <div class="schedule-header">Wyniki wyścigu</div>
+                <div class="schedule-box-results">
+                    <div class="schedule-data">1. Jan Kowalski</div>
+                </div>
+                <div class="schedule-box-results">
+                    <div class="schedule-data">2. Kowal Jankowski</div>
+                </div>
+                <div class="schedule-box-results">
+                    <div class="schedule-data">3. Michał Michałowski</div> 
                 </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
@@ -166,7 +187,7 @@
                 </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-            <div class="schedule-name">Austia</div>
+            <div class="schedule-name">Austria</div>
                 <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/austria_flag.png', true) }}" alt="austria-flag">
                 <img class="schedule-track" src="{{ asset('resources/main/img/tracks/austria1.png', true) }}" alt="austria-track">
                 <div class="schedule-box">
