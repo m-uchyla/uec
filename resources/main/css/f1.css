@@ -7154,7 +7154,8 @@ ul.slicknav_nav {
 }
 
 .button-section-4 {
-    padding: 15rem 0rem;
+    padding-top: 15rem;
+    padding-bottom: 30rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -7188,7 +7189,7 @@ a.button-f1-sec4:hover {
     text-align: center;
     font-size: 7rem;
     text-transform: uppercase;
-    padding-top: 7rem;
+    padding-top: 15rem;
 }
 
 .name-page {
