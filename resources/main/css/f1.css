@@ -7264,6 +7264,5 @@ a.button-f1-sec4:hover {
 }
 
 .term-tor {
-    min-width: 240px;
-    min-height:240px;
+    background-color: rgba (0,0,0,0,7);
 }
