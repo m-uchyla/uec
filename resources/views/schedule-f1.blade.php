@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-                <div class="schedule-name">Bahrian</div>
+                <div class="schedule-name">Bahrajn</div>
                 <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/bahrain_flag.png', true) }}" alt="bahrain-flag">
                 <img class="schedule-track" src="{{ asset('resources/main/img/tracks/bahrain1.png', true) }}" alt="bahrain-track">
                 <div class="schedule-track-date">3 marca 2021</div>
