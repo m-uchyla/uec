@@ -58,7 +58,8 @@
                     </div>
                     <div class="button-section-5">
                         <a href="{{ route('schedule-f1') }}" class="button-f1-sec5">Zobacz wyniki</a>
-                    </div>    
+                    </div>
+                </div> 
             </div>
             <div class="col-sm col-md-6 col-lg-4 ">
                 <div class="schedule-tor">
@@ -86,6 +87,7 @@
                         <div class="schedule-title">Długość wyścigu</div>
                         <div class="schedule-data">157.164 km</div> 
                     </div>
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 ">
                 <div class="schedule-tor">
@@ -113,6 +115,7 @@
                         <div class="schedule-title">Długość wyścigu</div>
                         <div class="schedule-data">153.324 km</div> 
                     </div>
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 ">
                 <div class="schedule-tor">
@@ -140,6 +143,7 @@
                         <div class="schedule-title">Długość wyścigu</div>
                         <div class="schedule-data">130.143 km</div> 
                     </div>
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 ">
                 <div class="schedule-tor">
@@ -167,6 +171,7 @@
                         <div class="schedule-title">Długość wyścigu</div>
                         <div class="schedule-data">156.078 km</div> 
                     </div>
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 ">
                 <div class="schedule-tor">
@@ -195,32 +200,34 @@
                         <div class="schedule-data">152.635 km</div> 
                     </div>
                 </div>
+            </div>
             <div class="col-sm col-md-6 col-lg-4 ">
                 <div class="schedule-tor">
                     <div class="schedule-name">Austria</div>
-                        <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/austria_flag.png', true) }}" alt="austria-flag">
-                        <img class="schedule-track" src="{{ asset('resources/main/img/tracks/austria1.png', true) }}" alt="austria-track">
-                        <div class="schedule-box">
-                            <div class="schedule-title">Data wyścigu</div>
-                            <div class="schedule-data">24 marca 2021</div>
-                        </div>
-                        <div class="schedule-box">
-                            <div class="schedule-title">Nazwa toru</div>
-                            <div class="schedule-data">Red Bull Ring</div>
-                        </div>
-                        <div class="schedule-header">Dane wyścigu</div>
-                        <div class="schedule-box">
-                            <div class="schedule-title">Długość okrążenia</div>
-                            <div class="schedule-data">4.318 km</div>
-                        </div>
-                        <div class="schedule-box">
-                            <div class="schedule-title">Ilość okrążeń</div>
-                            <div class="schedule-data">36</div>
-                        </div>
-                        <div class="schedule-box">
-                            <div class="schedule-title">Długość wyścigu</div>
-                            <div class="schedule-data">155.448 km</div> 
-                        </div>
+                    <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/austria_flag.png', true) }}" alt="austria-flag">
+                    <img class="schedule-track" src="{{ asset('resources/main/img/tracks/austria1.png', true) }}" alt="austria-track">
+                    <div class="schedule-box">
+                        <div class="schedule-title">Data wyścigu</div>
+                        <div class="schedule-data">24 marca 2021</div>
+                    </div>
+                    <div class="schedule-box">
+                        <div class="schedule-title">Nazwa toru</div>
+                        <div class="schedule-data">Red Bull Ring</div>
+                    </div>
+                    <div class="schedule-header">Dane wyścigu</div>
+                    <div class="schedule-box">
+                        <div class="schedule-title">Długość okrążenia</div>
+                        <div class="schedule-data">4.318 km</div>
+                    </div>
+                    <div class="schedule-box">
+                        <div class="schedule-title">Ilość okrążeń</div>
+                        <div class="schedule-data">36</div>
+                    </div>
+                    <div class="schedule-box">
+                        <div class="schedule-title">Długość wyścigu</div>
+                        <div class="schedule-data">155.448 km</div> 
+                    </div>
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 ">
                 <div class="schedule-tor">
@@ -248,6 +255,7 @@
                         <div class="schedule-title">Długość wyścigu</div>
                         <div class="schedule-data">153.099 km</div> 
                     </div>
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 ">
                 <div class="schedule-tor">
@@ -275,6 +283,7 @@
                         <div class="schedule-title">Długość wyścigu</div>
                         <div class="schedule-data">153.315 km</div> 
                     </div>
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 ">
                 <div class="schedule-tor">
@@ -302,6 +311,7 @@
                         <div class="schedule-title">Długość wyścigu</div>
                         <div class="schedule-data">154.027 km</div> 
                     </div>
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 ">
                 <div class="schedule-tor">
@@ -329,6 +339,7 @@
                         <div class="schedule-title">Długość wyścigu</div>
                         <div class="schedule-data">156.411 km</div> 
                     </div>
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 ">
                 <div class="schedule-tor">
@@ -356,6 +367,7 @@
                         <div class="schedule-title">Długość wyścigu</div>
                         <div class="schedule-data">155.124 km</div> 
                     </div>
+                </div>
             </div>
         </div>
     </div>
