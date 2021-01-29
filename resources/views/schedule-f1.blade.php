@@ -148,108 +148,119 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-            <div class="schedule-name">Azerbejżan</div>
-                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/baku_flag.png', true) }}" alt="azerbaijan-flag">
-                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/baku1.png', true) }}" alt="azerbaijan-track">
-                <div class="schedule-box">
-                    <div class="schedule-title">Data wyścigu</div>
-                    <div class="schedule-data">17 marca 2021</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Nazwa toru</div>
-                    <div class="schedule-data">Baku City Circuit</div>
-                </div>
-                <div class="schedule-header">Dane wyścigu</div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Długość okrążenia</div>
-                    <div class="schedule-data">6.003 km</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Ilość okrążeń</div>
-                    <div class="schedule-data">26</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Długość wyścigu</div>
-                    <div class="schedule-data">156.078 km</div> 
-                </div>
-            </div>
-            <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-            <div class="schedule-name">Kanada</div>
-                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/canada_flag.png', true) }}" alt="canada-flag">
-                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/canada1.png', true) }}" alt="canada-track">
-                <div class="schedule-box">
-                    <div class="schedule-title">Data wyścigu</div>
-                    <div class="schedule-data">21 marca 2021</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Nazwa toru</div>
-                    <div class="schedule-data">Circuit Gilles-Villeneuve</div>
-                </div>
-                <div class="schedule-header">Dane wyścigu</div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Długość okrążenia</div>
-                    <div class="schedule-data">4.361 km</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Ilość okrążeń</div>
-                    <div class="schedule-data">35</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Długość wyścigu</div>
-                    <div class="schedule-data">152.635 km</div> 
+            <div class="col-sm col-md-6 col-lg-4">
+                <div class="schedule-tor">
+                    <div class="schedule-name">Azerbejżan</div>
+                        <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/baku_flag.png', true) }}" alt="azerbaijan-flag">
+                        <img class="schedule-track" src="{{ asset('resources/main/img/tracks/baku1.png', true) }}" alt="azerbaijan-track">
+                        <div class="schedule-box">
+                            <div class="schedule-title">Data wyścigu</div>
+                            <div class="schedule-data">17 marca 2021</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Nazwa toru</div>
+                            <div class="schedule-data">Baku City Circuit</div>
+                        </div>
+                        <div class="schedule-header">Dane wyścigu</div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Długość okrążenia</div>
+                            <div class="schedule-data">6.003 km</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Ilość okrążeń</div>
+                            <div class="schedule-data">26</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Długość wyścigu</div>
+                            <div class="schedule-data">156.078 km</div> 
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-            <div class="schedule-name">Austria</div>
-                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/austria_flag.png', true) }}" alt="austria-flag">
-                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/austria1.png', true) }}" alt="austria-track">
-                <div class="schedule-box">
-                    <div class="schedule-title">Data wyścigu</div>
-                    <div class="schedule-data">24 marca 2021</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Nazwa toru</div>
-                    <div class="schedule-data">Red Bull Ring</div>
-                </div>
-                <div class="schedule-header">Dane wyścigu</div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Długość okrążenia</div>
-                    <div class="schedule-data">4.318 km</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Ilość okrążeń</div>
-                    <div class="schedule-data">36</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Długość wyścigu</div>
-                    <div class="schedule-data">155.448 km</div> 
+            <div class="col-sm col-md-6 col-lg-4">
+                <div class="schedule-tor">
+                    <div class="schedule-name">Kanada</div>
+                        <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/canada_flag.png', true) }}" alt="canada-flag">
+                        <img class="schedule-track" src="{{ asset('resources/main/img/tracks/canada1.png', true) }}" alt="canada-track">
+                        <div class="schedule-box">
+                            <div class="schedule-title">Data wyścigu</div>
+                            <div class="schedule-data">21 marca 2021</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Nazwa toru</div>
+                            <div class="schedule-data">Circuit Gilles-Villeneuve</div>
+                        </div>
+                        <div class="schedule-header">Dane wyścigu</div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Długość okrążenia</div>
+                            <div class="schedule-data">4.361 km</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Ilość okrążeń</div>
+                            <div class="schedule-data">35</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Długość wyścigu</div>
+                            <div class="schedule-data">152.635 km</div> 
+                        </div>
+                    </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-4">
+                <div class="schedule-tor">
+                    <div class="schedule-name">Austria</div>
+                        <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/austria_flag.png', true) }}" alt="austria-flag">
+                        <img class="schedule-track" src="{{ asset('resources/main/img/tracks/austria1.png', true) }}" alt="austria-track">
+                        <div class="schedule-box">
+                            <div class="schedule-title">Data wyścigu</div>
+                            <div class="schedule-data">24 marca 2021</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Nazwa toru</div>
+                            <div class="schedule-data">Red Bull Ring</div>
+                        </div>
+                        <div class="schedule-header">Dane wyścigu</div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Długość okrążenia</div>
+                            <div class="schedule-data">4.318 km</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Ilość okrążeń</div>
+                            <div class="schedule-data">36</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Długość wyścigu</div>
+                            <div class="schedule-data">155.448 km</div> 
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-            <div class="schedule-name">Wielka Brytania</div>
-                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/gb_flag.png', true) }}" alt="gb-flag">
-                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/gb1.png', true) }}" alt="gb-track">
-                <div class="schedule-box">
-                    <div class="schedule-title">Data wyścigu</div>
-                    <div class="schedule-data">28 marca 2021</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Nazwa toru</div>
-                    <div class="schedule-data">Silverstone Circuit</div>
-                </div>
-                <div class="schedule-header">Dane wyścigu</div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Długość okrążenia</div>
-                    <div class="schedule-data">5.891 km</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Ilość okrążeń</div>
-                    <div class="schedule-data">26</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Długość wyścigu</div>
-                    <div class="schedule-data">153.099 km</div> 
+            <div class="col-sm col-md-6 col-lg-4">
+                <div class="schedule-tor">
+                    <div class="schedule-name">Wielka Brytania</div>
+                        <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/gb_flag.png', true) }}" alt="gb-flag">
+                        <img class="schedule-track" src="{{ asset('resources/main/img/tracks/gb1.png', true) }}" alt="gb-track">
+                        <div class="schedule-box">
+                            <div class="schedule-title">Data wyścigu</div>
+                            <div class="schedule-data">28 marca 2021</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Nazwa toru</div>
+                            <div class="schedule-data">Silverstone Circuit</div>
+                        </div>
+                        <div class="schedule-header">Dane wyścigu</div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Długość okrążenia</div>
+                            <div class="schedule-data">5.891 km</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Ilość okrążeń</div>
+                            <div class="schedule-data">26</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Długość wyścigu</div>
+                            <div class="schedule-data">153.099 km</div> 
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
