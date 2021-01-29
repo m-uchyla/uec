@@ -9,7 +9,7 @@
     <h1 class="name-page">Terminarz</h1>
     <div class="container">
         <div class="row">
-            <div class="col-sm col-md-6 col-lg-4">
+            <div class="col-sm col-md-6 col-lg-4 offset-lg-1 schedule-tor">
                 <!--<div class="schedule-name">Bahrajn</div>
                 <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/bahrain_flag.png', true) }}" alt="bahrain-flag">
                 <img class="schedule-track" src="{{ asset('resources/main/img/tracks/bahrain1.png', true) }}" alt="bahrain-track">
