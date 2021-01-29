@@ -7347,3 +7347,11 @@ a.button-f1-sec4:hover {
     text-align:left;
     clear:both;
 }
+
+.section-4-f1 {
+    background-image: url("../img/gallery/background-sec-4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "f1", sans-serif;
+}
