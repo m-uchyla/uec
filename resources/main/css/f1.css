@@ -7274,6 +7274,7 @@ a.button-f1-sec4:hover {
     border-radius: 0px;
     border-color: transparent;
     transition: all 0.3s;
+    overflow: hidden;
 }
 
 .schedule-tor:hover {
@@ -7319,7 +7320,6 @@ a.button-f1-sec4:hover {
     border-radius: 0px 0px 10px 0px;
     border-color:gray;
     margin-bottom:10px;
-    overflow: hidden;
 }
 
 .schedule-title {
