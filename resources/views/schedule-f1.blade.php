@@ -35,7 +35,7 @@
                     <div class="schedule-data">156.948 km</div> 
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 term-tor">
+            <div class="col-sm col-md-6 col-lg-4 schedule-tor">
             <div class="schedule-name">Wietnam</div>
                 <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/vietnam_flag.png', true) }}" alt="bahrain-flag">
                 <img class="schedule-track" src="{{ asset('resources/main/img/tracks/vietnam1.png', true) }}" alt="bahrain-track">
@@ -61,7 +61,7 @@
                     <div class="schedule-data">157.164 km</div> 
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4">
+            <div class="col-sm col-md-6 col-lg-4 schedule-tor">
             <div class="schedule-name">Holandia</div>
                 <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/netherland_flag.png', true) }}" alt="bahrain-flag">
                 <img class="schedule-track" src="{{ asset('resources/main/img/tracks/netherland1.png', true) }}" alt="bahrain-track">
