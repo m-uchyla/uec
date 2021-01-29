@@ -7287,8 +7287,9 @@ a.button-f1-sec4:hover {
 }
 
 .schedule-track {
-    max-width: 400px;
-    padding-right:40px;
+    max-width: 360px;
+    padding-left:20px;
+    padding-right:20px;
     float:left;
 }
 
@@ -7318,6 +7319,7 @@ a.button-f1-sec4:hover {
     border-right: solid 1px;
     border-radius: 0px 0px 10px 0px;
     border-color:gray;
+    margin-bottom:10px;
 }
 
 .schedule-title {
@@ -7331,6 +7333,7 @@ a.button-f1-sec4:hover {
     font-weight:1000;
     text-align: right;
     float:left;
+    display: inline;
 }
 
 .schedule-track-name {
@@ -7338,4 +7341,5 @@ a.button-f1-sec4:hover {
     font-weight:1000;
     text-align: right;
     float:left;
+    display: inline;
 }
