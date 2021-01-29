@@ -119,30 +119,33 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-            <div class="schedule-name">Monako</div>
-                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/monaco_flag.png', true) }}" alt="monaco-flag">
-                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/monaco1.png', true) }}" alt="monaco-track">
-                <div class="schedule-box">
-                    <div class="schedule-title">Data wyścigu</div>
-                    <div class="schedule-data">14 marca 2021</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Nazwa toru</div>
-                    <div class="schedule-data">Circuit de Monaco</div>
-                </div>
-                <div class="schedule-header">Dane wyścigu</div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Długość okrążenia</div>
-                    <div class="schedule-data">3.337 km</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Ilość okrążeń</div>
-                    <div class="schedule-data">39</div>
-                </div>
-                <div class="schedule-box">
-                    <div class="schedule-title">Długość wyścigu</div>
-                    <div class="schedule-data">130.143 km</div> 
+            <div class="col-sm col-md-6 col-lg-4">
+                <div class="schedule-tor">
+                    <div class="schedule-name">Monako</div>
+                        <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/monaco_flag.png', true) }}" alt="monaco-flag">
+                        <img class="schedule-track" src="{{ asset('resources/main/img/tracks/monaco1.png', true) }}" alt="monaco-track">
+                        <div class="schedule-box">
+                            <div class="schedule-title">Data wyścigu</div>
+                            <div class="schedule-data">14 marca 2021</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Nazwa toru</div>
+                            <div class="schedule-data">Circuit de Monaco</div>
+                        </div>
+                        <div class="schedule-header">Dane wyścigu</div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Długość okrążenia</div>
+                            <div class="schedule-data">3.337 km</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Ilość okrążeń</div>
+                            <div class="schedule-data">39</div>
+                        </div>
+                        <div class="schedule-box">
+                            <div class="schedule-title">Długość wyścigu</div>
+                            <div class="schedule-data">130.143 km</div> 
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
