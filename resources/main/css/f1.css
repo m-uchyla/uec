@@ -7266,7 +7266,7 @@ a.button-f1-sec4:hover {
 .schedule-tor {
     background-color: rgba(255, 255, 255, 0.2);
     width:440px;
-    height:640px;
+    height:440px;
     padding: 20px;
     color:white;
     border-bottom: solid 1px;
@@ -7339,9 +7339,9 @@ a.button-f1-sec4:hover {
 .schedule-header {
     width:100%;
     color:white;
-    font-size:20px;
+    font-size:16px;
+    font-weight:1000;
     margin-bottom:10px;
     text-align:left;
     clear:both;
-    display: inline;
 }
