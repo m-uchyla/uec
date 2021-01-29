@@ -7,10 +7,10 @@
     <h1 class="name-page">Terminarz</h1>
     <div class="container">
         <div class="row">
-            <div class="col-sm col-md-6 col-lg-4">
+            <div class="col-sm col-md-6 col-lg-4 term-tor">
             <p class="schedule-name">Bahrian</p>
             </div>
-            <div class="col-sm col-md-6 col-lg-4">
+            <div class="col-sm col-md-6 col-lg-4 term-tor">
             <p class="schedule-name">Wietnam</p>
             </div>
             <div class="col-sm col-md-6 col-lg-4">

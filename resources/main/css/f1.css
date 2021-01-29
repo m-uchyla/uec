@@ -7262,3 +7262,8 @@ a.button-f1-sec4:hover {
 .pb-19 {
     padding-bottom: 19rem;
 }
+
+.term-tor {
+    min-width: 240px;
+    min-height:240px;
+}
