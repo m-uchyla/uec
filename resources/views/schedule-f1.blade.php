@@ -14,7 +14,7 @@
                 <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/bahrain_flag.png', true) }}" alt="bahrain-flag">
                 <img class="schedule-track" src="{{ asset('resources/main/img/tracks/bahrain1.png', true) }}" alt="bahrain-track">
                 <div class="schedule-box">
-                    <div class="schedule-title">Dane wyścigu</div>
+                    <div class="schedule-title">Data wyścigu</div>
                     <div class="schedule-data">3 marca 2021</div>
                 </div>
                 <div class="schedule-box">
