@@ -7362,7 +7362,6 @@ a.button-f1-sec4:hover {
 .button-section-5 {
     justify-content: center;
     flex-wrap: wrap;
-    margin:auto;
 
 }
 
@@ -7378,4 +7377,5 @@ a.button-f1-sec5 {
     transition: all 0.5s ease-in-out;
     border-radius: 0;
     min-width: 250px;
+    margin:auto;
 }
