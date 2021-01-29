@@ -7364,6 +7364,7 @@ a.button-f1-sec4:hover {
     flex-wrap: wrap;
     height:40px;
     width:100%;
+    float:left;
 }
 
 a.button-f1-sec5 {
