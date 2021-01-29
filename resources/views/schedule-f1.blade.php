@@ -166,22 +166,160 @@
                 </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-                <p class="schedule-name">Wielka Brytania</p>
+            <div class="schedule-name">Austia</div>
+                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/austria_flag.png', true) }}" alt="austria-flag">
+                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/austria1.png', true) }}" alt="austria-track">
+                <div class="schedule-box">
+                    <div class="schedule-title">Data wyścigu</div>
+                    <div class="schedule-data">24 marca 2021</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Nazwa toru</div>
+                    <div class="schedule-data">Red Bull Ring</div>
+                </div>
+                <div class="schedule-header">Dane wyścigu</div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość okrążenia</div>
+                    <div class="schedule-data">4.318 km</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Ilość okrążeń</div>
+                    <div class="schedule-data">36</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość wyścigu</div>
+                    <div class="schedule-data">155.448 km</div> 
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-                <p class="schedule-name">Węgry</p>
+            <div class="schedule-name">Wielka Brytania</div>
+                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/gb_flag.png', true) }}" alt="gb-flag">
+                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/gb1.png', true) }}" alt="gb-track">
+                <div class="schedule-box">
+                    <div class="schedule-title">Data wyścigu</div>
+                    <div class="schedule-data">28 marca 2021</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Nazwa toru</div>
+                    <div class="schedule-data">Silverstone Circuit</div>
+                </div>
+                <div class="schedule-header">Dane wyścigu</div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość okrążenia</div>
+                    <div class="schedule-data">5.891 km</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Ilość okrążeń</div>
+                    <div class="schedule-data">26</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość wyścigu</div>
+                    <div class="schedule-data">153.099 km</div> 
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-                <p class="schedule-name">Belgia</p>
+            <div class="schedule-name">Węgry</div>
+                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/hungary_flag.png', true) }}" alt="hungary-flag">
+                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/hungary1.png', true) }}" alt="hungary-track">
+                <div class="schedule-box">
+                    <div class="schedule-title">Data wyścigu</div>
+                    <div class="schedule-data">7 kwietnia 2021</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Nazwa toru</div>
+                    <div class="schedule-data">Hungaroring</div>
+                </div>
+                <div class="schedule-header">Dane wyścigu</div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość okrążenia</div>
+                    <div class="schedule-data">4.381 km</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Ilość okrążeń</div>
+                    <div class="schedule-data">35</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość wyścigu</div>
+                    <div class="schedule-data">153.315 km</div> 
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-                <p class="schedule-name">Holandia</p>
+            <div class="schedule-name">Belgia</div>
+                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/belgium_flag.png', true) }}" alt="belgium-flag">
+                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/belgium1.png', true) }}" alt="belgium-track">
+                <div class="schedule-box">
+                    <div class="schedule-title">Data wyścigu</div>
+                    <div class="schedule-data">11 kwietnia 2021</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Nazwa toru</div>
+                    <div class="schedule-data">Circuit de Spa-Francorchamps</div>
+                </div>
+                <div class="schedule-header">Dane wyścigu</div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość okrążenia</div>
+                    <div class="schedule-data">7.004 km</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Ilość okrążeń</div>
+                    <div class="schedule-data">22</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość wyścigu</div>
+                    <div class="schedule-data">154.027 km</div> 
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-                <p class="schedule-name">Włochy</p>
+            <div class="schedule-name">Włochy</div>
+                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/italy_flag.png', true) }}" alt="italy-flag">
+                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/italy1.png', true) }}" alt="italy-track">
+                <div class="schedule-box">
+                    <div class="schedule-title">Data wyścigu</div>
+                    <div class="schedule-data">14 kwietnia 2021</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Nazwa toru</div>
+                    <div class="schedule-data">Autodromo Nazionale Monza</div>
+                </div>
+                <div class="schedule-header">Dane wyścigu</div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość okrążenia</div>
+                    <div class="schedule-data">5.793 km</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Ilość okrążeń</div>
+                    <div class="schedule-data">27</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość wyścigu</div>
+                    <div class="schedule-data">156.411 km</div> 
+                </div>
             </div>
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">
-                <p class="schedule-name">Brazylia</p>
+            <div class="schedule-name">Brazylia</div>
+                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/brasil_flag.png', true) }}" alt="brasil-flag">
+                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/brasil1.png', true) }}" alt="brasil-track">
+                <div class="schedule-box">
+                    <div class="schedule-title">Data wyścigu</div>
+                    <div class="schedule-data">18 kwietnia 2021</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Nazwa toru</div>
+                    <div class="schedule-data">Autódromo José Carlos Pace</div>
+                </div>
+                <div class="schedule-header">Dane wyścigu</div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość okrążenia</div>
+                    <div class="schedule-data">4.309 km</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Ilość okrążeń</div>
+                    <div class="schedule-data">36</div>
+                </div>
+                <div class="schedule-box">
+                    <div class="schedule-title">Długość wyścigu</div>
+                    <div class="schedule-data">155.124 km</div> 
+                </div>
             </div>
         </div>
     </div>
