@@ -7266,7 +7266,7 @@ a.button-f1-sec4:hover {
 .schedule-tor {
     background-color: rgba(255, 255, 255, 0.2);
     width:440px;
-    height:440px;
+    height:640px;
     padding: 20px;
     color:white;
     border-bottom: solid 1px;
@@ -7283,7 +7283,7 @@ a.button-f1-sec4:hover {
     border-radius: 0px 0px 10px 0px;
     border-color: #e10600 ;
     text-decoration: none;
-    height:600px;
+    height:640px;
 }
 
 .schedule-track {
