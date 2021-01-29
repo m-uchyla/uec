@@ -7340,6 +7340,17 @@ a.button-f1-sec4:hover {
     margin-bottom:10px;
 }
 
+.schedule-box-results {
+    width:100%;
+    font-size: 20px;
+    float:left;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    border-radius: 0px 10px 0px 0px;
+    border-color:gray;
+    margin-bottom:10px;
+}
+
 .schedule-title {
     color:white;
     font-size:10px;
@@ -7372,4 +7383,30 @@ a.button-f1-sec4:hover {
     background-position: center;
     font-family: "f1", sans-serif;
     background-size: 100%;
+}
+
+.button-section-5 {
+    justify-content: center;
+    flex-wrap: wrap;
+    float:left;
+}
+
+a.button-f1-sec4 {
+    background-color: #e10600;
+    border: 3px solid #e10600;
+    color: #fff !important;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 0;
+    width: 250px;
+}
+
+a.button-f1-sec4:hover {
+    color: #e10600 !important;
+    background-color: transparent;
+    box-shadow: 0 0 40px 2px rgba(255, 8, 0, 0);
+    text-decoration: none;
 }
