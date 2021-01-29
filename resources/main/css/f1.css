@@ -7360,9 +7360,9 @@ a.button-f1-sec4:hover {
 }
 
 .button-section-5 {
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin:auto;
 
 }
 
