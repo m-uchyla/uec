@@ -9,7 +9,7 @@
     <h1 class="name-page">Terminarz</h1>
     <div class="container">
         <div class="row">
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <!--<div class="schedule-name">Bahrajn</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/bahrain_flag.png', true) }}" alt="bahrain-flag">
@@ -61,7 +61,7 @@
                     </div>
                 </div> 
             </div>
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <div class="schedule-name">Wietnam</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/vietnam_flag.png', true) }}" alt="vietnam-flag">
@@ -89,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <div class="schedule-name">Holandia</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/netherland_flag.png', true) }}" alt="netherland-flag">
@@ -117,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <div class="schedule-name">Monako</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/monaco_flag.png', true) }}" alt="monaco-flag">
@@ -145,7 +145,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <div class="schedule-name">Azerbejżan</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/baku_flag.png', true) }}" alt="azerbaijan-flag">
@@ -173,7 +173,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <div class="schedule-name">Kanada</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/canada_flag.png', true) }}" alt="canada-flag">
@@ -201,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <div class="schedule-name">Austria</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/austria_flag.png', true) }}" alt="austria-flag">
@@ -229,7 +229,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <div class="schedule-name">Wielka Brytania</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/gb_flag.png', true) }}" alt="gb-flag">
@@ -257,7 +257,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <div class="schedule-name">Węgry</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/hungary_flag.png', true) }}" alt="hungary-flag">
@@ -285,7 +285,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <div class="schedule-name">Belgia</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/belgium_flag.png', true) }}" alt="belgium-flag">
@@ -313,7 +313,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <div class="schedule-name">Włochy</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/italy_flag.png', true) }}" alt="italy-flag">
@@ -341,7 +341,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg-4 ">
+            <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
                     <div class="schedule-name">Brazylia</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/brasil_flag.png', true) }}" alt="brasil-flag">
