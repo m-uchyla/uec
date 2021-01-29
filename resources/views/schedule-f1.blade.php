@@ -55,8 +55,8 @@
                 <div class="schedule-box-results">
                     <div class="schedule-data">3. Michał Michałowski</div> 
                 </div>
-                <div class="button-section-4">
-                    <a href="{{ route('schedule-f1') }}" class="button-f1-sec4">Zobacz wyniki</a>
+                <div class="button-section-5">
+                    <a href="{{ route('schedule-f1') }}" class="button-f1-sec5">Zobacz wyniki</a>
                 </div>    
             </div>
             <div class="col-sm col-md-6 col-lg-4 schedule-tor">

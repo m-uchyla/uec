@@ -7358,3 +7358,25 @@ a.button-f1-sec4:hover {
     text-align:left;
     clear:both;
 }
+
+.button-section-5 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+a.button-f1-sec5 {
+    background-color: #e10600;
+    border: 3px solid #e10600;
+    color: #fff !important;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width: 15%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 0;
+    min-width: 250px;
+    margin: 1rem 3rem;
+}
