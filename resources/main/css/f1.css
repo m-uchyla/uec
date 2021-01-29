@@ -7307,7 +7307,7 @@ a.button-f1-sec4:hover {
 .schedule-track-flag {
     float:left;
     width: 20%;
-    height: 20%;
+    height: fit-content;
 }
 
 .schedule-track-date {
