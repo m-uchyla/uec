@@ -7263,6 +7263,25 @@ a.button-f1-sec4:hover {
     padding-bottom: 19rem;
 }
 
-.term-tor {
+.schedule-tor {
     background-color: red;
+    width:200px;
+    height:200px;
+    padding: 20px;
+}
+
+.schedule-track {
+    clear:both;
+    max-width: 160px;
+    max-height: 160px;
+}
+
+.schedule-name {
+    float:left;
+    font-size: 30px;
+}
+
+.schedule-track-flag {
+    float:left;
+    max-width: 30px;
 }
