@@ -7266,7 +7266,7 @@ a.button-f1-sec4:hover {
 .schedule-tor {
     background-color: rgba(255, 255, 255, 0.2);
     width:440px;
-    height:420px;
+    height:440px;
     padding: 20px;
     color:white;
     border-bottom: solid 1px;
@@ -7311,26 +7311,30 @@ a.button-f1-sec4:hover {
 }
 
 .schedule-box {
-    line-height: 40px;
     width:100%;
     font-size: 20px;
     float:left;
-    border: 1px solid gray;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    border-radius: 0px 0px 10px 0px;
+    border-color:gray;
 }
 
 .schedule-title {
-    color:gray;
+    color:white;
     font-size:10px;
     text-align: left;
 }
 
 .schedule-track-date {
+    line-height: 30px;
     font-weight:1000;
     text-align: right;
     float:left;
 }
 
 .schedule-track-name {
+    line-height: 30px;
     font-weight:1000;
     text-align: right;
     float:left;
