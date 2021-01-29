@@ -7274,7 +7274,6 @@ a.button-f1-sec4:hover {
     border-radius: 0px;
     border-color: transparent;
     transition: all 0.3s;
-    display:flex;
     /*overflow: hidden;*/
 }
 
