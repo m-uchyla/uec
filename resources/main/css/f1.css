@@ -7266,7 +7266,7 @@ a.button-f1-sec4:hover {
 
 .schedule-tor {
     background-color: rgba(255, 255, 255, 0.2);
-    width:440px;
+    width:390px;
     height:440px;
     padding: 20px;
     color:white;
@@ -7276,6 +7276,7 @@ a.button-f1-sec4:hover {
     border-color: transparent;
     transition: all 0.3s;
     overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 .schedule-tor:hover {
