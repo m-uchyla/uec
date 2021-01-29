@@ -7279,7 +7279,7 @@ a.button-f1-sec4:hover {
     margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .schedule-tor {
         background-color: rgba(255, 255, 255, 0.2);
         height:440px;
@@ -7292,6 +7292,7 @@ a.button-f1-sec4:hover {
         transition: all 0.3s;
         overflow: hidden;
         margin-bottom: 2rem;
+        width: unset;
     }
 }
 .schedule-tor:hover {
