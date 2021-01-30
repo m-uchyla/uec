@@ -12,7 +12,9 @@
             <th scope="col" id="no-border">#</th>
             <th scope="col" id="no-border">Nick</th>
             <th scope="col" id="no-border">Zespół</th>
-            <th scope="col" id="no-border">Punkty</th>
+            <th scope="col" id="no-border">Czas</th>
+            <th scope="col" id="no-border">Najlepsze okrążenie</th>
+            <th scope="col" id="no-border">Ilość postojów</th>
             </tr>
         </thead>
         <tbody>
@@ -20,13 +22,17 @@
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
-            <td>@mdo</td>
+            <td>45:00:00</td>
+            <td>1:32:607</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
-            <td>@fat</td>
+            <td>+5.567</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">3</th>
