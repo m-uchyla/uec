@@ -10,7 +10,7 @@
                         <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
                             <!-- Section Tittle -->
                             <div class="section-tittle-f1 text-center mb-70">
-                                <span>Regulamin</span>
+                                <span style="color-#e10600">Regulamin</span>
                                 <h2>Zasady rozgrywek sezonu drugiego</h2>
                             </div> 
                         </div>
