@@ -57,7 +57,7 @@
                     <div class="schedule-box-results">
                         <div class="schedule-data">3. Michał Michałowski</div> 
                     </div>
-                    <div class="schedule-box">
+                    <div class="schedule-box-results">
                         <div class="schedule-title">Najlepsze okrążenie</div>
                         <div class="schedule-data">Jacek Jackowski</div>
                     </div>

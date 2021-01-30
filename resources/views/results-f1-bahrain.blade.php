@@ -1,7 +1,7 @@
 @extends('layouts.f1')
 @section('content')
 <head>
-<title>Wyniki - Bahrajn<</title>
+<title>Wyniki - Bahrajn</title>
 </head>
 <div class="f1-background pb-5" >
     <h1 class="name-page">Wyniki - Bahrajn</h1>
