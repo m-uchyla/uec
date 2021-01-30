@@ -57,7 +57,7 @@
                         <div class="schedule-data">3. Michał Michałowski</div> 
                     </div>
                     <div class="button-section-5">
-                        <a href="{{ route('schedule-f1') }}" class="button-f1-sec5">Zobacz wyniki</a>
+                        <a href="{{ route('results-bahrain') }}" class="button-f1-sec5">Zobacz wyniki</a>
                     </div>
                 </div> 
             </div>
