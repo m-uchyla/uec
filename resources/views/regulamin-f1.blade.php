@@ -1,11 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-            <!--? Team Start -->
-            <div class="team-area section-padding30" style="padding-top:50px">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
                             <!-- Section Tittle -->
                             <div class="section-tittle text-center mb-70">
                                 <span>Regulamin</span>
