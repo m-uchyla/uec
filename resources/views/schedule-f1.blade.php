@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
-                    <a href="{{ route('results-f1-bahrain') }}"></a>
+                    <a href="{{ route('results-f1-bahrain') }}">
                     <!--<div class="schedule-name">Bahrajn</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/bahrain_flag.png', true) }}" alt="bahrain-flag">
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/bahrain1.png', true) }}" alt="bahrain-track">
@@ -61,6 +61,7 @@
                         <div class="schedule-title">Najlepsze okrążenie</div>
                         <div class="schedule-data">Jacek Jackowski</div>
                     </div>
+                    </a>
                 </div> 
             </div>
             <div class="col-sm col-lg-4">
