@@ -7344,7 +7344,7 @@ a.button-f1-sec4:hover {
     width:100%;
     font-size: 20px;
     float:left;
-    border-bottom: solid 1px;
+    border-top: solid 1px;
     border-right: solid 1px;
     border-radius: 0px 10px 0px 0px;
     border-color:gray;
