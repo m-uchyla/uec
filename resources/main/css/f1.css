@@ -6924,9 +6924,6 @@ del {
     color: #e10600 !important;
 }
 
-.f1-background {
-    background: rgb(0,0,0);
-}
 
 @media screen and (max-width: 650px) {
     h1.f1 {
@@ -7414,4 +7411,5 @@ a.button-f1-sec5:hover {
 
 .regulamin-f1 {
     color: white!important;
+    background: #0f1010 !important;
 }

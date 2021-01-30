@@ -4,7 +4,7 @@
 <head>
 <title>Regulamin F1 | UEC</title>
 </head>
-<div class="team-area section-padding30 regulamin-f1 f1-backgorund" >
+<div class="team-area section-padding30 regulamin-f1" >
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
