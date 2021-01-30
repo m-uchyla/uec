@@ -26,7 +26,7 @@ Route::get('/team-f1', function () {return view('team-f1');})->name("team-f1");
 Route::get('/constructor-f1', function () {return view('constructor-f1');})->name("constructor-f1");
 Route::get('/regulamin-f1', function () {return view('regulamin-f1');})->name("regulamin-f1");
 Route::get('/teams-f1', function () {return view('teams-f1');})->name("teams-f1");
-Route::get('/results-bahrain', function () {return view('results-bahrain');})->name("results-bahrain");
+Route::get('/results-f1-bahrain', function () {return view('results-f1-bahrain');})->name("results-f1-bahrain");
 
 Route::get('article/{id}', 'ArticleInsertController@viewArticle')->name('viewArticle');
 
