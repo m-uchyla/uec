@@ -1,7 +1,10 @@
 @extends('layouts.f1')
 @section('content')
 <!--? Team Start -->
-<div class="team-area section-padding30" style="padding-top:50px">
+<head>
+<title>Regulamin F1 | UEC</title>
+</head>
+<div class="team-area section-padding30 regulamin-f1 f1-backgorund" >
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
