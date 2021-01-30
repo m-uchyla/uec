@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.f1')
 
 @section('content')
                             <!-- Section Tittle -->
