@@ -7464,9 +7464,9 @@ a.button-f1-sec5:hover {
     border-radius: 0px;
     border-color: transparent;
     transition: all 0.3s;
-    overflow: hidden;
     float:left;
     margin-bottom: 2rem;
+    margin-left:3rem;
 }
 
 
