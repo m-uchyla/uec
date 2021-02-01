@@ -7440,6 +7440,11 @@ a.button-f1-sec5:hover {
     margin-left:20rem;
 }
 
+.table-f1-results {
+    border-radius: 20px;
+    width:70%;
+}
+
 .section-tittle-f1 h2 {
     font-size: 50px;
     display: block;
