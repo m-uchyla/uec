@@ -160,7 +160,32 @@
             </tr>
         </tbody>
         </table>
-        <div class="results-tor"></div>
+        <div class="results-tor">
+            <div class="schedule-name">Bahrajn</div>
+                <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/bahrain_flag.png', true) }}" alt="bahrain-flag">
+                <img class="schedule-track" src="{{ asset('resources/main/img/tracks/bahrain1.png', true) }}" alt="bahrain-track">
+            <div class="schedule-box">
+                <div class="schedule-title">Data wyścigu</div>
+                <div class="schedule-data">3 marca 2021</div>
+            </div>
+            <div class="schedule-box">
+                <div class="schedule-title">Nazwa toru</div>
+                <div class="schedule-data">Bahrain International Circuit</div>
+            </div>
+            <div class="schedule-header">Dane wyścigu</div>
+            <div class="schedule-box">
+                <div class="schedule-title">Długość okrążenia</div>
+                <div class="schedule-data">5.412 km</div>
+            </div>
+            <div class="schedule-box">
+                <div class="schedule-title">Ilość okrążeń</div>
+                <div class="schedule-data">29</div>
+            </div>
+            <div class="schedule-box">
+                <div class="schedule-title">Długość wyścigu</div>
+                <div class="schedule-data">156.948 km</div> 
+            </div>
+        </div>
     </div>
 </div>
 @endsection
