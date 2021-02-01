@@ -6,15 +6,15 @@
 <div class="f1-background pb-5" >
     <h1 class="name-page">Wyniki - Bahrajn</h1>
     <div class="margin">
-        <table class="table table-striped table-dark table-f1 table-results">
+        <table class="table table-striped table-dark table-f1">
         <thead>
             <tr id="head-border">
             <th scope="col" id="no-border">#</th>
-            <th scope="col" id="no-border">Nick</th>
-            <th scope="col" id="no-border">Zespół</th>
-            <th scope="col" id="no-border">Czas</th>
-            <th scope="col" id="no-border">Najlepsze okrążenie</th>
-            <th scope="col" id="no-border">Ilość postojów</th>
+            <th scope="col" id="no-border" class="table-results-name">Nick</th>
+            <th scope="col" id="no-border" class="table-results-lastname">Zespół</th>
+            <th scope="col" id="no-border" class="table-results-time">Czas</th>
+            <th scope="col" id="no-border" class="table-results-besttime">Najlepsze okrążenie</th>
+            <th scope="col" id="no-border" class="table-results-pitstops">Ilość postojów</th>
             </tr>
         </thead>
         <tbody>

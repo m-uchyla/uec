@@ -7413,9 +7413,21 @@ a.button-f1-sec5:hover {
     color: white!important;
 }
 
-.table-results {
-    width:40%;
-    background: #0f1010 !important;
+.table-results-name {
+    width:10%;
+}
+.table-results-lastname {
+    width:20%;
+}
+.table-results-time {
+    width:10%;
+}
+
+.table-results-besttime {
+    width:8%;
+}
+.table-results-pistops {
+    width:2%;
 }
 
 .section-tittle-f1 h2 {
