@@ -11,7 +11,7 @@
             <tr id="head-border">
             <th scope="col" id="no-border" class="table-results-place">#</th>
             <th scope="col" id="no-border" class="table-results-name">Nick</th>
-            <th scope="col" id="no-border" class="table-results-lastname">Zespół</th>
+            <th scope="col" id="no-border" class="table-results-team">Zespół</th>
             <th scope="col" id="no-border" class="table-results-time">Czas</th>
             <th scope="col" id="no-border" class="table-results-besttime">Najlepsze okrążenie</th>
             <th scope="col" id="no-border" class="table-results-pitstops">Ilość postojów</th>
@@ -103,42 +103,56 @@
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">12</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">13</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">14</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">15</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">16</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">17</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">18</th>
@@ -151,12 +165,16 @@
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">20</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
         </tbody>
         </table>

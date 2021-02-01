@@ -7420,7 +7420,7 @@ a.button-f1-sec5:hover {
 .table-results-place {
     width:5%;
 }
-.table-results-lastname {
+.table-results-team {
     width:40%;
 }
 .table-results-time {
@@ -7449,7 +7449,6 @@ a.button-f1-sec5:hover {
 
 .table-f1-results {
     width:65%;
-    min-width:500px;
     display: inline-block;
 }
 
