@@ -160,6 +160,7 @@
             </tr>
         </tbody>
         </table>
+        <div class="schedule-tor"></div>
     </div>
 </div>
 @endsection
