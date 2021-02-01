@@ -7430,6 +7430,10 @@ a.button-f1-sec5:hover {
     width:2%;
 }
 
+.margin-results {
+    margin: 0px 20rem;
+}
+
 .section-tittle-f1 h2 {
     font-size: 50px;
     display: block;
