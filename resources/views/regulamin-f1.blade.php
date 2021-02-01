@@ -4,13 +4,13 @@
 <head>
 <title>Regulamin F1 | UEC</title>
 </head>
-<div class="team-area section-padding30 regulamin-f1 f1-backgorund" >
+<div class="team-area section-padding30 regulamin-f1" >
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
                             <!-- Section Tittle -->
-                            <div class="section-tittle text-center mb-70">
-                                <span>Regulamin</span>
+                            <div class="section-tittle-f1 text-center mb-70">
+                                <span style="color: #e10600">Regulamin</span>
                                 <h2>Zasady rozgrywek sezonu drugiego</h2>
                             </div> 
                         </div>
