@@ -6,7 +6,7 @@
 <div class="f1-background pb-5" >
     <h1 class="name-page">Wyniki - Bahrajn</h1>
     <div class="margin-results">
-        <table class="table table-striped table-dark table-f1">
+        <table class="table table-striped table-dark table-f1 table-f1-results">
         <thead>
             <tr id="head-border">
             <th scope="col" id="no-border" class="table-results-place">#</th>
