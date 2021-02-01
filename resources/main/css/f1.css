@@ -7443,13 +7443,13 @@ a.button-f1-sec5:hover {
 
 @media screen and (min-width: 751px) and (max-width: 1250px) {
     .margin-results {
-        margin: 0px 10rem;
+        margin-left: 10rem;
     }
 }
 
 @media screen and (max-width: 750px) {
     .margin-results {
-        margin: 0px 2rem;
+        margin-left: 2rem;
     }
 }
 
