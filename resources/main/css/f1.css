@@ -7456,7 +7456,12 @@ a.button-f1-sec5:hover {
 .table-f1-results {
     width:65%;
     min-width:600px;
-    display: inline-block;
+}
+
+@media screen and (min-width: 750px) {
+    .table-f1-results {
+        display: inline-block;
+    }
 }
 
 .section-tittle-f1 h2 {
