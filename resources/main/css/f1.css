@@ -7442,6 +7442,7 @@ a.button-f1-sec5:hover {
 
 .table-f1-results {
     width:50%;
+    float:left;
 }
 
 .section-tittle-f1 h2 {
