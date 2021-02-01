@@ -7449,6 +7449,7 @@ a.button-f1-sec5:hover {
 
 .table-f1-results {
     width:65%;
+    min-width:690px;
     display: inline-block;
 }
 
