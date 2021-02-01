@@ -3,7 +3,7 @@
 <head>
 <title>Wyniki - Bahrajn</title>
 </head>
-<div class="f1-background pb-5" >
+<div class="f1-background pad-results" >
     <h1 class="name-page">Wyniki - Bahrajn</h1>
     <div class="margin-results">
         <table class="table table-striped table-dark table-f1 table-f1-results">
