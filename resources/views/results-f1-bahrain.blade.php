@@ -39,18 +39,24 @@
             <td>Larry</td>
             <td>the Bird</td>
             <td>@twitter</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">4</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">5</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>1:33:305</td>
+            <td>1</td>
             </tr>
             <tr>
             <th scope="row">6</th>
