@@ -7441,9 +7441,9 @@ a.button-f1-sec5:hover {
     margin-right:20rem;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 750px) {
     .margin-results {
-        margin: 0px 10rem;
+        margin: 0px 2rem;
     }
 }
 
