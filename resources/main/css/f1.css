@@ -7414,14 +7414,5 @@ a.button-f1-sec5:hover {
 }
 
 .table-results {
-    width:60%;
-    background: #0f1010 !important;
-}
-
-.section-tittle-f1 h2 {
-    font-size: 50px;
-    display: block;
-    color: #e10600;
-    font-weight: 800;
-    text-transform: uppercase;
+    width:400px;
 }
