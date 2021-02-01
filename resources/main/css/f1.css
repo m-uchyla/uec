@@ -7490,7 +7490,8 @@ a.button-f1-sec5:hover {
 
 @media screen and (max-width: 750px) {
     .results-tor {
-        margin: 10%;
+        margin-left: 10%;
+        margin-top: 10px;
     }
 }
 
