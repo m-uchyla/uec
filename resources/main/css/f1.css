@@ -7439,12 +7439,11 @@ a.button-f1-sec5:hover {
     margin-bottom:0px;
     margin-left:20rem;
     margin-right:20rem;
-    width:100%;
 }
 
 .table-f1-results {
     width:50%;
-    float:left;
+    display: inline-block;
 }
 
 .section-tittle-f1 h2 {
@@ -7466,7 +7465,7 @@ a.button-f1-sec5:hover {
     border-radius: 0px;
     border-color: transparent;
     transition: all 0.3s;
-    float:left;
+    display: inline-block;
     margin-bottom: 2rem;
     margin-left:3rem;
 }
