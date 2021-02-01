@@ -9,7 +9,7 @@
         <table class="table table-striped table-dark table-f1">
         <thead>
             <tr id="head-border">
-            <th scope="col" id="no-border">#</th>
+            <th scope="col" id="no-border" class="table-results-place">#</th>
             <th scope="col" id="no-border" class="table-results-name">Nick</th>
             <th scope="col" id="no-border" class="table-results-lastname">Zespół</th>
             <th scope="col" id="no-border" class="table-results-time">Czas</th>

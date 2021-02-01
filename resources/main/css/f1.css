@@ -7414,20 +7414,24 @@ a.button-f1-sec5:hover {
 }
 
 .table-results-name {
-    width:15%;
+    width:10%;
+}
+
+.table-results-place {
+    width:20%;
 }
 .table-results-lastname {
-    width:30%;
+    width:40%;
 }
 .table-results-time {
     width:15%;
 }
 
 .table-results-besttime {
-    width:8%;
+    width:10%;
 }
 .table-results-pistops {
-    width:2%;
+    width:5%;
 }
 
 .margin-results {
