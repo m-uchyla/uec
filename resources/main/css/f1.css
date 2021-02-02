@@ -7443,13 +7443,13 @@ a.button-f1-sec5:hover {
 
 @media screen and (min-width: 751px) and (max-width: 1250px) {
     .margin-results {
-        margin-left: 30%;
+        margin-left: 35%;
     }
 }
 
 @media screen and (max-width: 750px) {
     .margin-results {
-        margin-left: 5%;
+        margin-left: 15%;
     }
 }
 
@@ -7460,6 +7460,8 @@ a.button-f1-sec5:hover {
 @media screen and (min-width: 750px) {
     .table-f1-results {
         display: inline-block;
+        width:40%;
+        font-size:13px;
     }
 }
 
@@ -7489,7 +7491,7 @@ a.button-f1-sec5:hover {
 
 @media screen and (max-width: 750px) {
     .results-tor {
-        margin-left: 15%;
+        margin-left: 20%;
         margin-top: 10px;
     }
 }
