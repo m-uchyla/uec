@@ -7500,7 +7500,7 @@ a.button-f1-sec5:hover {
     padding-bottom:10px;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1250px) {
     .pad-results {
         padding-bottom:700px;
     }
