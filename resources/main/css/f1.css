@@ -7443,21 +7443,36 @@ a.button-f1-sec5:hover {
 
 @media screen and (min-width: 751px) and (max-width: 1250px) {
     .margin-results {
-        margin: 0px 10rem;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 }
 
 @media screen and (max-width: 750px) {
     .margin-results {
-        margin: 0px 2rem;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 
 .table-f1-results {
-    width:65%;
-    min-width:600px;
-    display: inline-block;
+    width:60%;
 }
+
+@media screen and (min-width: 750px) {
+    .table-f1-results {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .table-f1-results {
+        width:40%;
+        font-size:12px;
+    }
+}
+
+
 
 .section-tittle-f1 h2 {
     font-size: 50px;
@@ -7485,9 +7500,19 @@ a.button-f1-sec5:hover {
 
 @media screen and (max-width: 750px) {
     .results-tor {
-        margin: 10%;
+        margin-left: 20%;
+        margin-top: 10px;
     }
 }
 
+.pad-results {
+    padding-bottom:10px;
+}
+
+@media screen and (max-width: 1250px) {
+    .pad-results {
+        padding-bottom:700px;
+    }
+}
 
 
