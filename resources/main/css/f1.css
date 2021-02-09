@@ -7450,10 +7450,11 @@ a.button-f1-sec5:hover {
 
 @media screen and (max-width: 750px) {
     .margin-results {
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 7%;
     }
 }
+
+
 
 .table-f1-results {
     width:60%;
