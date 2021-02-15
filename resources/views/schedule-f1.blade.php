@@ -60,8 +60,8 @@
                     <div class="schedule-box-results">
                         <div class="schedule-title">Najlepsze okrążenie</div>
                         <div class="schedule-data">Jacek Jackowski</div>
-                    </div><!-->
-                    </a>
+                    </div>
+                    </a><!-->
                 </div> 
             </div>
             <div class="col-sm col-lg-4">
