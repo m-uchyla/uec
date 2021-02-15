@@ -11,8 +11,8 @@
         <div class="row">
             <div class="col-sm col-lg-4">
                 <div class="schedule-tor">
-                    <a href="{{ route('results-f1-bahrain') }}">
-                    <!--<div class="schedule-name">Bahrajn</div>
+                    <!--<a href="{{ route('results-f1-bahrain') }}"><!-->
+                    <div class="schedule-name">Bahrajn</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/bahrain_flag.png', true) }}" alt="bahrain-flag">
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/bahrain1.png', true) }}" alt="bahrain-track">
                     <div class="schedule-box">
@@ -35,8 +35,8 @@
                     <div class="schedule-box">
                         <div class="schedule-title">Długość wyścigu</div>
                         <div class="schedule-data">156.948 km</div> 
-                    </div> <!-->
-                    <div class="schedule-name">Bahrajn</div>
+                    </div> 
+                    <!--<div class="schedule-name">Bahrajn</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/bahrain_flag.png', true) }}" alt="bahrain-flag">
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/bahrain1.png', true) }}" alt="bahrain-track">
                     <div class="schedule-box">
@@ -60,7 +60,7 @@
                     <div class="schedule-box-results">
                         <div class="schedule-title">Najlepsze okrążenie</div>
                         <div class="schedule-data">Jacek Jackowski</div>
-                    </div>
+                    </div><!-->
                     </a>
                 </div> 
             </div>
