@@ -7203,7 +7203,7 @@ a.button-f1-sec4:hover {
     .name-page {
         color: #e10600;
         text-align: center;
-        font-size: 5rem;
+        font-size: 4rem;
         font-family: "f1", sans-serif;
         padding-top: 15rem;
         padding-bottom: 7rem;
@@ -7411,6 +7411,7 @@ a.button-f1-sec5:hover {
 
 .regulamin-f1 {
     color: white!important;
+    background-color:#0f1010 ;
 }
 
 .table-results-name {
@@ -7450,10 +7451,11 @@ a.button-f1-sec5:hover {
 
 @media screen and (max-width: 750px) {
     .margin-results {
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 4%;
     }
 }
+
+
 
 .table-f1-results {
     width:60%;
@@ -7500,7 +7502,6 @@ a.button-f1-sec5:hover {
 
 @media screen and (max-width: 750px) {
     .results-tor {
-        margin-left: 15%;
         margin-top: 10px;
     }
 }

@@ -10,7 +10,7 @@
                 <h2 class="f1"> Sezon 1 </h2>
                 <h1 class="f1"> UEC FORMULA 1 </h1>
                     <div>
-                        <a href="{{ route('login') }}" class="button-f1">Weź udział</a>
+                        <a href="https://forms.gle/bZoGZqHh7adjmDeR9" class="button-f1">Weź udział</a>
                     </div>
                     <div class="social-f1">
                         <a class="item" href="https://www.facebook.com/UndergroundEsportCup">
