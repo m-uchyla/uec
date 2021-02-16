@@ -78,12 +78,12 @@
             <h3> UEC F1 </h3>
             <h2>Co nas czeka ?</h2>
             <div class="film-f1">
-                <a href="#"><i class="flaticon-null-3"></i></a>
+            <a class="popup-video" href="https://www.youtube.com/watch?v=GNuU84S2lHU&feature=youtu.be"><i class="flaticon-null-3"></i></a>
             </div>
             <div class="sec3-content">
                 <div>
                     <i class="fas fa-coins"></i>
-                    <h3 class=>Pula nagród 0000zł </h3>
+                    <h3 class=>Pula nagród 400zł </h3>
                 </div>
                 <div>
                     <i class="fas fa-users"></i>
