@@ -48,7 +48,7 @@
                                 <dt>2. Turniej UEC F1 Sezon 1</dt>
                                 <br>
                                 <dd>2.1 System turnieju </dd>
-                                <dd>Pełny terminarz znajduje się w zakładce <a href="https://undergroundesportcup.pl/schedule" style="color:#c72020;">Terminarz</a> System sezonu został opisany w punkcie 2.6</dd>
+                                <dd>Pełny terminarz znajduje się w zakładce <a href="https://undergroundesportcup.pl/schedule-f1" style="color:#c72020;">Terminarz</a> System sezonu został opisany w punkcie 2.6</dd>
                                 <br>
                                 <dd>2.2 Transmisje </dd>
                                 <dd>Z wyścigów będzie przeprowadzana transmisja na kanałach podawanych na fanpagu turnieju. Organizator zastrzega sobie prawo do transmisji. Jeżeli dany zawodnik ma chęć na prowadzenie streama z własnego “pova” ma obowiązek umieszczenia loga turnieju na swojej transmisji w widocznym miejscu oraz umieścić odpowiednią informację w opisie i/lub na czacie która będzie się pojawiać regularnie o fanpage turnieju lub transmisji głównej.</dd>
@@ -109,7 +109,7 @@
                                 <dt>3. Przygotowanie do gry</dt>
                                 <br>
                                 <dd>
-                                Uzgodnienia, uwagi i wszelkie związane z meczem problemy, muszą być zgłoszone przez graczy przed rozpoczęciem wyścigu - w wiadomości prywatnej do administratora lub na FP (Facebook)
+                                Uzgodnienia, uwagi i wszelkie związane z meczem problemy, muszą być zgłoszone przez graczy przed rozpoczęciem wyścigu - w wiadomości prywatnej do administratora lub na FP
                                 (<a href="https://www.facebook.com/UndergroundEsportCup/" style="color:#c72020;">Facebook</a>)</dd>
                                 <br>
                                 <dd>3.1. Serwer</dd>
