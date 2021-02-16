@@ -55,8 +55,8 @@
         <!-- partners -->
         <div class="partner">
             <div class="my-5 d-flex justify-content-center flex-wrap">
-                <a href="https://www.facebook.com/KXNPL">
-                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/kxn.svg', true) }}" alt="kxn-logo">
+                <a href="https://www.facebook.com/Wi7oo">
+                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/Wi7o.svg', true) }}" alt="wi7o-logo">
                 </a>
                 <a href="https://www.facebook.com/AstroBoyzGG">
                     <img class="logo-partner" src="{{ asset('resources/main/img/loga/astro.svg', true) }}" alt="astro-logo">
