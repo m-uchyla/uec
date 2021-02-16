@@ -68,7 +68,7 @@
                 <div class="schedule-tor">
                     <div class="schedule-name">Wietnam</div>
                     <img class="schedule-track-flag" src="{{ asset('resources/main/img/tracks/vietnam_flag.png', true) }}" alt="vietnam-flag">
-                    <img class="schedule-track" src="{{ asset('resources/main/img/tracks/vietnam1.png', true) }}" alt="vietnam-track">
+                    <img class="schedule-track" src="{{ asset('resources/main/img/tracks/vietnam2.png', true) }}" alt="vietnam-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
                         <div class="schedule-data">7 marca 2021</div>
