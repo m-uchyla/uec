@@ -59,7 +59,7 @@
                     <img class="logo-partner" src="{{ asset('resources/main/img/loga/wi7o.svg', true) }}" alt="wi7o-logo">
                 </a>
                 <a href="https://www.facebook.com/AstroBoyzGG">
-                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/veex.svg', true) }}" alt="astro-logo">
+                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/veex.svg', true) }}" alt="veex-logo">
                 </a>
                 <a href="https://www.toornament.com/pl/">
                     <img class="logo-partner" src="{{ asset('resources/main/img/loga/toornament.svg', true) }}" alt="toornament-logo">
