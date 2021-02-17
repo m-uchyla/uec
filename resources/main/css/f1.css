@@ -7362,6 +7362,15 @@ a.button-f1-sec4:hover {
     display: inline;
 }
 
+.schedule-time {
+    line-height: 30px;
+    font-weight:1000;
+    float:right;
+    text-align: right;
+    display: inline;
+}
+
+
 .schedule-header {
     width:100%;
     color:white;
