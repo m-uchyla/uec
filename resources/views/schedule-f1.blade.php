@@ -218,6 +218,7 @@
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
                         <div class="schedule-data">24 marca 2021</div>
+                        <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
@@ -246,6 +247,7 @@
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
                         <div class="schedule-data">28 marca 2021</div>
+                        <div class="schedule-time">18:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
@@ -274,6 +276,7 @@
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
                         <div class="schedule-data">7 kwietnia 2021</div>
+                        <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
@@ -302,6 +305,7 @@
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
                         <div class="schedule-data">11 kwietnia 2021</div>
+                        <div class="schedule-time">18:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
@@ -330,6 +334,7 @@
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
                         <div class="schedule-data">14 kwietnia 2021</div>
+                        <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
@@ -358,6 +363,7 @@
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
                         <div class="schedule-data">18 kwietnia 2021</div>
+                        <div class="schedule-time">18:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
