@@ -52,23 +52,6 @@
                     </div>
             </div>
         </div>
-        <!-- partners -->
-        <div class="partner">
-            <div class="my-5 d-flex justify-content-center flex-wrap">
-                <a href="https://www.facebook.com/Wi7oo">
-                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/wi7o.svg', true) }}" alt="wi7o-logo">
-                </a>
-                <a href="https://www.facebook.com/AstroBoyzGG">
-                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/veex.svg', true) }}" alt="veex-logo">
-                </a>
-                <a href="https://www.toornament.com/pl/">
-                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/toornament.svg', true) }}" alt="toornament-logo">
-                </a>
-                <a href="#">
-                    <img class="logo-partner" src="{{ asset('resources/main/img/loga/luke.svg', true) }}" alt="luke-logo">
-                </a>
-            </div>
-        </div>
         <!-- newsy -->
         <div>
         @include('slider')
