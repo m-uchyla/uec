@@ -21,7 +21,9 @@
 									<ul id="navigation">
                                         <li><a href="{{ route('homepage') }}">Strona główna</a></li>
                                             <li>
-                                                <a href="{{ route('bracket') }}">Bieżący turniej</a>
+                                                <a href="{{ route('f1') }}">Formula 1</a>
+                                            <li>
+                                                <a href="{{ route('bracket') }}">CS:GO</a>
                                                 <ul class="submenu">
                                                     <li><a href="{{ route('schedule') }}">Harmonogram meczy</a></li>
                                                     <li><a href="{{ route('bracket') }}">Drabinka</a></li>
