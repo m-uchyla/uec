@@ -31,7 +31,7 @@
             <tr>
             <th scope="row">2</th>
             <td>mil3k</td>
-            <td class="results-team-merc"></td>
+            <td class="results-team-redbull"></td>
             <td>Red Bull</td>
             <td>+1.465</td>
             <td style="color:purple;">1:22:356</td>
