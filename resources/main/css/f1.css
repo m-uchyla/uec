@@ -7217,6 +7217,13 @@ a.button-f1-sec4:hover {
     font-size:12px;
 }
 
+@media screen and (max-width: 992px) {}
+    .table-f1-results {
+        font-size:10px;
+    }
+}
+
+
 .margin {
     margin: 0px 40rem;
 }
@@ -7439,6 +7446,11 @@ a.button-f1-sec5:hover {
 .table-results-upper {
     font-size:12px;
 }
+
+@media screen and (max-width: 992px) {
+    .table-results-upper {
+        font-size:10px;
+    }
 
 .results-best-lap {
     color:plum;
