@@ -7213,6 +7213,11 @@ a.button-f1-sec4:hover {
     border-radius: 20px;
 }
 
+.table-f1-results {
+    border-radius: 20px;
+    font-size:13px;
+}
+
 .margin {
     margin: 0px 40rem;
 }
