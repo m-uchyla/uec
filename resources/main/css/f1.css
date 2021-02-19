@@ -7441,7 +7441,8 @@ a.button-f1-sec5:hover {
 }
 
 .results-team {
-    width:5px;
+    width:0px;
+    height:0px;
 }
 
 .results-team-merc {
