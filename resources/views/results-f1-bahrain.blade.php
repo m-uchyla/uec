@@ -11,8 +11,8 @@
             <tr id="head-border" class="table-results-upper">
             <th scope="col" id="no-border">#</th>
             <th scope="col" id="no-border">Nick</th>
-            <th scope="col" id="no-border">Zespół</th>
             <th scope="col" id="no-border"></th>
+            <th scope="col" id="no-border">Zespół</th>
             <th scope="col" id="no-border">Czas</th>
             <th scope="col" id="no-border">Najlepsze okrążenie</th>
             <th scope="col" id="no-border">Pitstopy</th>
