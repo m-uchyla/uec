@@ -7440,8 +7440,11 @@ a.button-f1-sec5:hover {
     font-size:12px;
 }
 
-.results-team-merc {
+.results-team {
     width:5px;
+}
+
+.results-team-merc {
     background-color: #28ECFF;
 }
 
