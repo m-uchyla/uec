@@ -34,7 +34,7 @@
             <td class="results-team-redbull"></td>
             <td>Red Bull</td>
             <td>+1.465</td>
-            <td style="color:purple;">1:22:356</td>
+            <td class="results-best-lap">1:22:356</td>
             <td>3</td>
             </tr>
             <tr>

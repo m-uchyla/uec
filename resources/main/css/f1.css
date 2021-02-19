@@ -7440,6 +7440,10 @@ a.button-f1-sec5:hover {
     font-size:12px;
 }
 
+.results-best-lap {
+    color:plum;
+}
+
 .results-team {
     width:1px;
     height:1px;
