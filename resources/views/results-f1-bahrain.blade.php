@@ -12,6 +12,7 @@
             <th scope="col" id="no-border">#</th>
             <th scope="col" id="no-border">Nick</th>
             <th scope="col" id="no-border">Zespół</th>
+            <th scope="col" id="no-border"></th>
             <th scope="col" id="no-border">Czas</th>
             <th scope="col" id="no-border">Najlepsze okrążenie</th>
             <th scope="col" id="no-border">Pitstopy</th>
@@ -21,6 +22,7 @@
             <tr>
             <th scope="row">1</th>
             <td>qn3k</td>
+            <td class="results-team-merc"></td>
             <td>Mercedes</td>
             <td>45:11:223</td>
             <td>1:23:442</td>
