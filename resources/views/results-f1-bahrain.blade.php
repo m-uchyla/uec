@@ -14,7 +14,7 @@
             <th scope="col" id="no-border">Zespół</th>
             <th scope="col" id="no-border">Czas</th>
             <th scope="col" id="no-border">Najlepsze okrążenie</th>
-            <th scope="col" id="no-border">Ilość postojów</th>
+            <th scope="col" id="no-border">Pitstopy</th>
             </tr>
         </thead>
         <tbody>
