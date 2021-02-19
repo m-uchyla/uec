@@ -7442,16 +7442,16 @@ a.button-f1-sec5:hover {
 
 .results-team {
     width:5px;
-    padding:0px;
 }
 
 .results-team-merc {
     background-color: #28ECFF;
+    padding:0px;
 }
 
 .results-team-redbull {
     background-color: #1E41FF;
-
+    padding:0px;
 }
 
 
