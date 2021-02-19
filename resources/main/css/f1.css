@@ -7257,13 +7257,6 @@ a.button-f1-sec4:hover {
     background: #080808;
 }
 
-#head-border-results {
-    border: 3px inset;
-    border-color: red;
-    background: #080808;
-    font-size:13px;
-}
-
 .pb-19 {
     padding-bottom: 19rem;
 }
@@ -7531,6 +7524,10 @@ a.button-f1-sec5:hover {
     .pad-results {
         padding-bottom:700px;
     }
+}
+
+#table-results-upper {
+    font-size:13px;
 }
 
 
