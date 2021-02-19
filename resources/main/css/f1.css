@@ -7424,106 +7424,12 @@ a.button-f1-sec5:hover {
     background-color:#0f1010 ;
 }
 
-.table-results-name {
-    width:25%;
-}
-
-.table-results-place {
-    width:5%;
-}
-.table-results-team {
-    width:40%;
-}
-.table-results-time {
-    width:15%;
-}
-
-.table-results-besttime {
-    width:10%;
-}
-.table-results-pistops {
-    width:5%;
-}
-
-.margin-results {
-    margin-top: 0px;
-    margin-bottom:0px;
-    margin-left:20rem;
-    margin-right:20rem;
-}
-
-@media screen and (min-width: 751px) and (max-width: 1250px) {
-    .margin-results {
-        margin-left: auto;
-        margin-right: auto%;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .margin-results {
-        margin-left: 4%;
-    }
-}
-
-
-
-.table-f1-results {
-    width:60%;
-}
-
-@media screen and (min-width: 750px) {
-    .table-f1-results {
-        display: inline-block;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .table-f1-results {
-        width:40%;
-        font-size:12px;
-    }
-}
-
-
-
 .section-tittle-f1 h2 {
     font-size: 50px;
     display: block;
     color: #e10600;
     font-weight: 800;
     text-transform: uppercase;
-}
-
-.results-tor {
-    background-color: rgba(255, 255, 255, 0.2);
-    width:390px;
-    height:640px;
-    padding: 20px;
-    color:white;
-    border-bottom: solid 1px;
-    border-right: solid 1px;
-    border-radius: 0px;
-    border-color: transparent;
-    transition: all 0.3s;
-    float:left;
-    margin-bottom: 2rem;
-    margin-right:4%;
-}
-
-@media screen and (max-width: 750px) {
-    .results-tor {
-        margin-top: 10px;
-    }
-}
-
-.pad-results {
-    padding-bottom:10px;
-}
-
-@media screen and (max-width: 1250px) {
-    .pad-results {
-        padding-bottom:700px;
-    }
 }
 
 #table-results-upper {
