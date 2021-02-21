@@ -66,7 +66,7 @@
             <div class="sec3-content">
                 <div>
                     <i class="fas fa-coins"></i>
-                    <h3 class=>Pula nagród 400zł </h3>
+                    <h3 class=>Pula nagród 150zł </h3>
                 </div>
                 <div>
                     <i class="fas fa-users"></i>

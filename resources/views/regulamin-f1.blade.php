@@ -29,20 +29,13 @@
                                 Nazwy, które posiadają prawne zastrzeżenie wyłączności oraz nazewnictwo, które wyraźnie kłóci się z ogólnie przyjętymi normami dobrego zachowania nie będą akceptowane. Zespoły ich używające zostaną odrzucone. Loga zastrzeżone prawnie (copyrighted) oraz loga, które są sprzeczne z ogólnie przyjętymi zasadami dobrego wychowania, nie zostaną zaakceptowane. Uczestnicy zgłaszając się do turnieju i podając imię oraz nazwisko wyrażają zgodę na użycie ich imienia oraz nazwiska oraz zdjęcia podczas streama .
                                 Zgłoszenie zostaje przyjęte w momencie zaksięgowania wpisowego na koncie bankowym lub Paypalu. Szczegóły w podpunkcie 1.3</dd>
                                 <br>
-                                <dd>1.3 Wpisowe</dd> 
-                                <dd>Wpisowe na turniej wynosi 15 złotych i może być wpłacone poprzez Paypal lub przelewem na konto bankowe pod godność Jakub Milewski. Wpłat poprzez skiny, paysafecard lub inne metody płatności nie przyjmujemy. Wpisowe należy wpłacić do 3 dni od zgłoszenia. Jeżeli 4-tego dnia środki nie dojdą na konto bankowe lub paypal to rejestracja w turnieju zostanie anulowana, a informacja o tym zostanie przesłana na adres e-mail podany podczas rejestracji.
-                                W przypadku kiedy pieniądze dojdą po upływie 3 dni od zgłoszenia to zostaną one zwrócone na podany przez kapitana numer konta lub konto paypal. 
-                                Wysyłając wpisowe należy wpisać w tytule nazwę imię i nazwisko oraz nazwę turnieju np “ Janusz Kowalski UEC F1 “
-                                Paypal: kubim2002@gmail.com	
-                                Numer konta: 20 1160 2202 0000 0003 6767 2348</dd>
-                                <br>
-                                <dd>1.4 Zaakceptowanie zgłoszenia</dd>
+                                <dd>1.3 Zaakceptowanie zgłoszenia</dd>
                                 <dd>Po zgłoszeniu drużyny i przesłaniu wpisowego, należy poczekać do momentu zaksięgowania kwoty wpisowego na koncie bankowym lub Paypalu. Dopiero wtedy zgłoszenie zostanie zaakceptowane. Informacja o zaakceptowaniu zgłoszenia zostanie potwierdzona przez wiadomość e-mail w której zostaną podane podstawowe informacje na temat turnieju, działań przed meczem, link do serwera discord itp. </dd>
                                 <br>
-                                <dd>1.5 Podszywanie się i zmiana konta.</dd>
+                                <dd>1.4 Podszywanie się i zmiana konta.</dd>
                                 <dd>W rozgrywkach UEC mogą brać udział jedynie wcześniej zarejestrowani gracze Podszywanie się pod zawodnika w postaci zmiany nicku i informacji na swoim profilu steam przez osoby niezapisane będzie surowo karane.</dd>
                                 <br>
-                                <dd>1.6 Rezygnacja </dd>
+                                <dd>1.5 Rezygnacja </dd>
                                 <dd>Zawodnik może zrezygnować z udziału w turnieju lecz musi liczyć się z idącymi za tym konsekwencjami. Jeżeli drużyna zrezygnuje 2 dni przed rozpoczęciem turnieju kwota która wysłali za wpisowe zostanie im odesłana (odejmując prowizje za transakcje w systemie paypal) i nie ponosi żadnych konsekwencji. Jeżeli drużyna zrezygnuje z udziału później niż 48 godzin przed rozpoczęciem pierwszego spotkania lub w czasie trwania turnieju kwota nie zostanie odesłana i pozostanie w puli nagród. </dd>
                                 <br>
                                 <dt>2. Turniej UEC F1 Sezon 1</dt>
@@ -64,14 +57,9 @@
                                 <dd>2.5 Nagrody</dd>
                                 <dd>
                                 Kwalifikacja kierowców:
-                                1 miejsce - 130 zł
-                                2 miejsce - 70 zł
-                                3 miejsce - 50 zł
-                                4 miejsce - 30 zł
-                                5 miejsce - 20 zł
-                                Kwalifikacja konstruktorów:
-                                1 miejsce - 100 zł 
-                                Nagrody mogą ulec zmianie jeżeli w turnieju weźmie udział mniej drużyn niż wcześniej planowana ilość zachowując jednak stosunki procentowe do podanych wyżej kwot.</dd>
+                                1 miejsce - 75 zł
+                                2 miejsce - 50 zł
+                                3 miejsce - 25 zł</dd>
                                 <br>
                                 <dd>2.6 Tory oraz punktacja</dd>
                                 <br>
