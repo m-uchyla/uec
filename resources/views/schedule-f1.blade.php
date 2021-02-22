@@ -305,7 +305,7 @@
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
                         <div class="schedule-data">27 maja 2021</div>
-                        <div class="schedule-time">18:00</div>
+                        <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
