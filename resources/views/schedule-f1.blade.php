@@ -17,7 +17,7 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/bahrain1.png', true) }}" alt="bahrain-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">3 marca 2021</div>
+                        <div class="schedule-data">11 marca 2021</div>
                         <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
@@ -72,8 +72,8 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/vietnam2.png', true) }}" alt="vietnam-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">7 marca 2021</div>
-                        <div class="schedule-time">18:00</div>
+                        <div class="schedule-data">18 marca 2021</div>
+                        <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
@@ -101,7 +101,7 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/netherland1.png', true) }}" alt="netherland-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">10 marca 2021</div>
+                        <div class="schedule-data">25 marca 2021</div>
                         <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
@@ -130,8 +130,8 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/monaco1.png', true) }}" alt="monaco-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">14 marca 2021</div>
-                        <div class="schedule-time">18:00</div>
+                        <div class="schedule-data">8 kwietnia 2021</div>
+                        <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
@@ -159,7 +159,7 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/baku1.png', true) }}" alt="azerbaijan-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">17 marca 2021</div>
+                        <div class="schedule-data">15 kwietnia 2021</div>
                         <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
@@ -188,8 +188,8 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/canada1.png', true) }}" alt="canada-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">21 marca 2021</div>
-                        <div class="schedule-time">18:00</div>
+                        <div class="schedule-data">22 kwietnia 2021</div>
+                        <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
@@ -217,7 +217,7 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/austria1.png', true) }}" alt="austria-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">24 marca 2021</div>
+                        <div class="schedule-data">6 maja 2021</div>
                         <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
@@ -246,8 +246,8 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/gb1.png', true) }}" alt="gb-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">28 marca 2021</div>
-                        <div class="schedule-time">18:00</div>
+                        <div class="schedule-data">13 maja 2021</div>
+                        <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
@@ -275,7 +275,7 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/hungary1.png', true) }}" alt="hungary-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">7 kwietnia 2021</div>
+                        <div class="schedule-data">20 maja 2021</div>
                         <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
@@ -304,7 +304,7 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/belgium1.png', true) }}" alt="belgium-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">11 kwietnia 2021</div>
+                        <div class="schedule-data">27 maja 2021</div>
                         <div class="schedule-time">18:00</div>
                     </div>
                     <div class="schedule-box">
@@ -333,7 +333,7 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/italy1.png', true) }}" alt="italy-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">14 kwietnia 2021</div>
+                        <div class="schedule-data">10 czerwca 2021</div>
                         <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
@@ -362,8 +362,8 @@
                     <img class="schedule-track" src="{{ asset('resources/main/img/tracks/brasil1.png', true) }}" alt="brasil-track">
                     <div class="schedule-box">
                         <div class="schedule-title">Data wyścigu</div>
-                        <div class="schedule-data">18 kwietnia 2021</div>
-                        <div class="schedule-time">18:00</div>
+                        <div class="schedule-data">17 czerwca 2021</div>
+                        <div class="schedule-time">19:00</div>
                     </div>
                     <div class="schedule-box">
                         <div class="schedule-title">Nazwa toru</div>
